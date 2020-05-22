@@ -1,0 +1,44 @@
+/*  agg 20200522 0734  */
+/*
+fare attenzione alle approssimazioni
+se si usano i frazionari non tutti i
+browser usano lo stesso metodo
+*/
+
+  /*  reset debugging  */
+.bordomain, .bordosection, .bordoarticle, .bordoaside, .bordodiv, .bordop, .bordospan, .bordoimg{ border:transparent !important; border:solid 0rem maroon !important; }
+
+.bordosection{ border:solid 0rem maroon !important; }
+
+
+
+
+
+.cursoredefault{ cursor:default !important; background-color:transparent !important; }
+.mese{ background-color:oldlace !important; cursor:default !important;}
+.giorno{ 
+background-color:rgba(255,200,50,1) !important;
+color:black !important; cursor:default !important;}
+
+
+
+
+
+a.trasparent {  /* background-color:transparent !important;  */  }
+
+article.subquote { margin-top:4.6rem !important; }
+
+blockquote {
+margin:0; padding:0; 
+/*  background-color:transparent !important;  */
+border:solid 0.1rem transparent !important; 
+}
+
+
+
+ .menupagina { position:fixed; top:0.3rem; left:5.7rem;
+width:80%; background-color:transparent; 
+  z-index:1 !important; opacity:1.0; }
+
+
+

@@ -1,0 +1,650 @@
+<?php session_start(); 
+if(!isset($_SESSION['UserData']['Username'])){
+header("location:/index.php");
+exit;
+}
+?>
+
+<!DOCTYPE html> 
+<html lang="it"> 
+  
+<head> 
+
+<meta http-equiv="content-type"content="text/html; charset=UTF-8" /> 
+<meta name="viewport"content="width=device-width, initial-scale=1,shrink-to-fit=no"/> 
+<meta name="generator"content="AlterVista - Editor HTML" /> 
+
+    <title> 
+    
+   20200521-1252-T1test   
+    
+    </title> 
+    
+
+
+   
+ <link href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel= "stylesheet"> 
+ 
+ <script src= "https://code.jquery.com/jquery-3.1.1.min.js" integrity= "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8= " crossorigin= "anonymous"> 
+ </script> 
+ 
+ <link rel= "stylesheet" href= "https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"> 
+ 
+ <script src= "https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"> 
+ </script> 
+   
+   
+ <script src= "https://github.com/Semantic-Org/Semantic-UI-React/blob/master/src/elements/Button/Button.js">
+ </script>
+
+ 
+
+
+
+<!-- script esterni con aggiornamento forzato -->
+
+ <script>
+ 
+ var script01 = document.createElement('script'); 
+ var script02 = document.createElement('script'); 
+ var script03 = document.createElement('script'); 
+ var script04 = document.createElement('script'); 
+ 
+ numerocasuale = Math.floor(Math.random() * 10000);
+ esteso=numerocasuale.toString();
+ 
+ /*  var nome01 = "t1DMtest06.js";  */
+ 
+ var nome01 = "http://veneziavi.altervista.org/t1/01/t1DM.js";
+ var nome02 = "http://veneziavi.altervista.org/t1/01/t1showhide.js";
+ var nome03 = "http://veneziavi.altervista.org/t1/01/t1L5indicatorescorrimentopagina.js";
+ var nome04 = "http://veneziavi.altervista.org/t1/01/t1intestazionepiedipagina.js";
+ 
+ nome01 = nome01 + "?" + esteso ;
+ nome02 = nome02 + "?" + esteso ;
+ nome03 = nome03 + "?" + esteso ; 
+ nome04 = nome04 + "?" + esteso ;
+ 
+ script01.src = nome01 ;
+ script02.src = nome02 ;
+ script03.src = nome03 ; 
+ script04.src = nome04 ;
+ 
+        document.head.appendChild(script01);
+        document.head.appendChild(script02);		
+        document.head.appendChild(script03);
+        document.head.appendChild(script04);
+		
+ </script>
+
+
+ 
+<!-- fogli di stile esterni con aggiornamento forzato --> 
+
+ <script>
+ /* t1stiletest01.css */
+ /* t1stileagenda.css */
+ 
+var elementstile01 = document.createElement("link");
+ numerocasuale = Math.floor(Math.random() * 10000);
+ esteso=numerocasuale.toString();
+ 
+ var nomestile01 = "http://veneziavi.altervista.org/t1/01/t1stile.css";
+ nomestile01 = nomestile01+"?"+esteso;
+ 
+elementstile01.setAttribute("rel", "stylesheet");
+elementstile01.setAttribute("type", "text/css");
+elementstile01.setAttribute("href", nomestile01);
+document.getElementsByTagName("head")[0].appendChild(elementstile01);
+
+
+var elementstile02 = document.createElement("link");
+ 
+ var nomestile02 = "http://veneziavi.altervista.org/t1/01/t1stileagenda.css";
+ nomestile02 = nomestile02+"?"+esteso;
+ 
+elementstile02.setAttribute("rel", "stylesheet");
+elementstile02.setAttribute("type", "text/css");
+elementstile02.setAttribute("href", nomestile02);
+document.getElementsByTagName("head")[0].appendChild(elementstile02);
+ 
+/*  */
+ 
+ </script>
+ 
+  
+	
+	
+	
+	
+</head> 
+  
+<body  onload="attesa()"  class="sfondo">
+
+<main class= "ui container bordomain"> 
+
+
+
+ 
+  <section class= "bordosection" style= "position:relative;">
+  
+  
+
+		<!--  menu interno  -->
+  
+  
+  <div class="menupagina">
+
+
+		 <article class="ui internally celled grid" 
+         style="background-color:transparent;">
+
+
+					<a id="1992-11--02" class="ui mini button giorno trasparent" 
+                    href="#1992-11-02" style="">
+					02</a>
+					<a id="1992-11--03" class="ui mini button giorno trasparent" 
+                    href="#1992-11-03">
+					03</a>
+					<a id="1992-11--04" class="ui mini button giorno trasparent" 
+                    href="#1992-11-04">
+					04</a>
+					<a id="1992-11--05" class="ui mini button giorno trasparent" 
+                    href="#1992-11-05">
+					05</a>					
+					<a id="1992-11--08" class="ui mini button giorno trasparent" 
+                    href="#1992-11-08">
+					08</a>				
+					<a id="1992-11--09" class="ui mini button giorno trasparent" 
+                    href="#1992-11-09">
+					09</a>
+					<a id="1992-11--10" class="ui mini button giorno trasparent" 
+                    href="#1992-11-10">
+					10</a>	
+					<a id="1992-11--13" class="ui mini button giorno trasparent" 
+                    href="#1992-11-13">
+					13</a>					
+					<a id="1992-11--16" class="ui mini button giorno trasparent" 
+                    href="#1992-11-16">
+					16</a>
+					<a id="1992-11--18" class="ui mini button giorno trasparent" 
+                    href="#1992-11-18">
+					18</a>
+					<a id="1992-11--21" class="ui mini button giorno trasparent" 
+                    href="#1992-11-21">
+					21</a>					
+					<a id="1992-11--25" class="ui mini button giorno trasparent" 
+                    href="#1992-11-25">
+					25</a>	
+					<a id="1992-11--27" class="ui mini button giorno trasparent" 
+                    href="#1992-11-27">
+					27</a>
+					<a id="1992-11--30" class="ui mini button giorno trasparent" 
+                    href="#1992-11-30">
+					30</a>
+                    
+					<div class="ui mini button" 
+                    style="text-align:center !important;">
+						<a href="#">
+						<span style="
+						font-size:1.1rem;
+						font-weight:bold !important;">
+						novembre 1992 </span>
+						- Agenda 19892010
+						</a>
+					</div>
+
+					
+					
+
+					
+	</article>
+
+  </div>
+  
+
+
+
+
+
+<blockquote id="1992-11-02">	
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-02
+			<i class="caret down icon"></i> 			
+			</p>
+         </div>
+
+		 	<img class="bordoimg" src= "../004/1992-11-02.jpg" alt="" title="" />
+	
+      </aside>
+    </article>
+</blockquote>		
+
+
+
+<blockquote id="1992-11-03" >		
+    <article class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-03
+			<i class="caret down icon"></i>
+			</p>
+         </div>
+		
+		<img class="bordoimg" src= "../004/1992-11-03.jpg" alt="" title="" /> 		 
+      </aside>
+    </article>
+</blockquote>
+
+		
+	
+
+
+
+<blockquote id="1992-11-04">		
+    <article class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-04
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-04.jpg" alt="" title="" /> 
+      </aside>
+    </article>
+</blockquote>
+
+		
+
+
+
+<blockquote id="1992-11-05">		
+    <article class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-05
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-05.jpg" alt="" title="" /> 
+      </aside>
+    </article>
+</blockquote>
+		
+	
+
+<blockquote id="1992-11-08">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-08
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-08.jpg" alt="" title="" /> 
+      </aside>
+    </article>
+</blockquote>
+		
+	
+
+<blockquote id="1992-11-09">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-09
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-09.jpg" alt="" title="" /> 
+      </aside>
+    </article>
+</blockquote>
+		
+	
+
+<blockquote id="1992-11-10">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-10
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-10.jpg" alt="" title="" /> 
+	
+      </aside>
+    </article>
+</blockquote>
+
+		
+	
+	
+
+<blockquote id="1992-11-13">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-13
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-13.jpg" alt="" title="" />
+      </aside>
+    </article>
+</blockquote>
+		
+	
+
+<blockquote id="1992-11-16">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-16
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-16.jpg" alt="" title="" /> 
+      </aside>
+    </article>
+</blockquote>
+	
+
+
+<blockquote id="1992-11-18">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-18
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-18.jpg" alt="" title="" /> 
+      </aside>
+    </article>
+</blockquote>
+
+	
+
+
+
+
+<blockquote id="1992-11-21">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-21
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-21.jpg" alt="" title="" /> 
+      </aside>
+    </article>
+</blockquote>
+		
+
+
+
+<blockquote id="1992-11-25">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-25
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-25.jpg" alt="" title="" />
+      </aside>
+    </article>
+</blockquote>
+
+		
+
+
+<blockquote id="1992-11-27">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-27
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-27.jpg" alt="" title="" /> 
+      </aside>
+    </article>
+</blockquote>
+		
+	
+
+
+
+<blockquote id="1992-11-30">		
+    <article  class= "ui internally celled grid subquote bordoarticle">
+      <aside class= "row bordoaside">
+        <div class= "sixteen wide column bordodiv">
+			<p>
+			1992-11-30
+			<i class="caret down icon"></i>
+			</p>
+         </div>		<img class="bordoimg" src= "../004/1992-11-30.jpg" alt="" title="" />
+      </aside>
+    </article>
+</blockquote>
+		
+	
+
+
+
+
+
+
+  <article class= "ui internally celled grid subquote bordoarticle">
+
+	 <aside class= "row bordoaside">
+
+		<div class= "sixteen wide column bordodiv">
+		
+		<!--  &#42;&#42;&#42;  -->
+		&dot;&dot;&dot;
+		
+		
+		</div>
+	 </aside>
+  </article>
+
+
+
+
+  </section>
+  
+  
+  
+  
+ 
+
+ 
+</main>
+
+
+<!--  utility  -->
+
+<div id= "intestazionepiedipagina"></div> 
+<div id="DM"></div>
+<div id= "L5indicatorescorrimentopagina"></div>
+
+
+<!--  terminato il documento  -->
+<div id="fine"></div>
+
+<!-- avviso caricamento pagina in corso -->
+
+<div style= "position:fixed; top:0.5rem; left:2.0rem;
+background-color:transparent;">
+<div class= "ui primary small loading button" id= "spinnerattivo" 
+style= ""> </div>
+</div>
+
+ <script>
+ function attesa(){
+ if (document.all){
+ document.all["spinnerattivo"].style.visibility= "hidden";
+ } else if (document.getElementById){
+ node = document.getElementById("spinnerattivo").style.visibility='hidden';
+ }
+ }
+ 
+ </script>
+
+
+
+
+<!--  script esercizio  -->
+
+<script>
+
+  var para = document.createElement("P");
+  
+  var numerocasuale = Math.floor(Math.random() * 10000);
+  
+  var oggi =  Date();
+  
+  
+  para.innerText = oggi
+  
+  ;
+  
+  document.body.appendChild(para).style.fontSize='x-small';
+
+</script>
+
+</body> 
+  
+</html> 
+
+
+<!--
+< ?php
+$actual_link = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+
+
+$oggi_est = date("l") . " ";
+$oggi_est = $oggi_est . date("Y/m/d");
+$oggi_est_time = date("h:i:sa");
+
+$fp = fopen('/membri/odlanir/text.txt', 'w');
+fwrite($fp, $actual_link. " " .$oggi_est. " ". $oggi_est_time);
+fclose($fp);
+
+$myfile = fopen("/membri/odlanir/logs.txt", "a") or die("Unable to open file!");
+// $actual_link = "cronologia";
+fwrite($myfile, "\n". $actual_link. " " .$oggi_est. " ". $oggi_est_time);
+fclose($myfile);
+
+? >
+-->
+
+
+ <!--
+ 
+ <script>
+ var script = document.createElement('script'); 
+ 
+ numerocasuale = Math.floor(Math.random() * 10000);
+ esteso=numerocasuale.toString();
+ 
+ var nome = "t1DMtest05.js";
+ 
+ nome = nome+"?"+esteso;
+ 
+ script.src = nome ;
+        document.head.appendChild(script);
+ </script>
+
+ -->
+
+
+ <!--
+ <script>
+ var script02 = document.createElement('script'); 
+ 
+ numerocasuale = Math.floor(Math.random() * 10000);
+ esteso=numerocasuale.toString();
+ 
+ var nome02 = "http://veneziavi.altervista.org/t1/01/t1showhide.js";
+ 
+ nome02 = nome02+"?"+esteso;
+ 
+ script02.src = nome02 ;
+ 
+        document.head.appendChild(script02);
+ </script>
+ -->
+
+
+
+ <!--
+ <script>
+ var script03 = document.createElement('script'); 
+ 
+ numerocasuale = Math.floor(Math.random() * 10000);
+ esteso=numerocasuale.toString();
+ 
+ var nome03 = "http://veneziavi.altervista.org/t1/01/t1L5indicatorescorrimentopagina.js";
+ 
+ nome03 = nome03+"?"+esteso;
+ 
+ script03.src = nome03 ;
+        document.head.appendChild(script03);
+ </script>
+ -->
+
+
+
+
+ <!--
+ <script>
+ var script04 = document.createElement('script'); 
+ 
+ numerocasuale = Math.floor(Math.random() * 10000);
+ esteso=numerocasuale.toString();
+ 
+ var nome04 = "http://veneziavi.altervista.org/t1/01/t1intestazionepiedipagina.js";
+ 
+ nome04 = nome04 + "?" + esteso;
+ 
+ script04.src = nome04 ;
+        document.head.appendChild(script04);
+ </script>
+ -->
+ 
+ 
+ 
+
+
+<!--
+ <script>  
+ 
+ 
+var element = document.createElement("link");
+ numerocasuale = Math.floor(Math.random() * 10000);
+ esteso=numerocasuale.toString();
+ 
+ var nomestile02 = "t1stileagenda.css";
+ nomestile02 = nomestile02+"?"+esteso;
+ 
+element.setAttribute("rel", "stylesheet");
+element.setAttribute("type", "text/css");
+element.setAttribute("href", nomestile02);
+document.getElementsByTagName("head")[0].appendChild(element);
+ 
+ </script>
+-->
+ 
+ 
+ 
+
+ 

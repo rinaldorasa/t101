@@ -1,0 +1,156 @@
+/*
+
+aggiornamento 20200519
+di adattamento 20200424
+
+*/
+
+ :root {  }
+
+body {
+background-image:url('https://ed-ora-andiamo.com/immagini/carta01x.gif'); 
+background-repeat: repeat; 
+background-attachment: fixed; 
+
+background-color:rgba(253,245,230,0.5) !important;  /* old lace */ 
+
+color:black; }
+
+main 
+{ 
+
+padding-left:0em; padding-right:0em;
+padding-top:4em; padding-bottom:4em;
+
+border:solid 0.0em maroon !important; 
+
+}
+.bordomain{
+border:solid 0.1em maroon !important;
+}
+
+
+
+
+section
+{
+margin-left:0em; margin-right:0em;
+margin-top:1em; margin-bottom:1em;
+
+padding-left:2em; padding-right:2em;
+padding-top:1em; padding-bottom:1em;
+
+/*  background-color:rgba(222,184,135,0.25); burlywood */ 
+
+font-size:1em; font-family:monospace !important;
+border:solid 0.0em orange !important;
+
+}
+.bordosection{
+border:solid 0.1em orange !important;
+}
+
+
+article
+{
+
+background-color:rgba(222,184,135,0.25); /* burlywood */ 
+
+border:solid 0.0em navy !important;
+
+}
+.bordoarticle{
+border:solid 0.1em navy !important;
+}
+
+
+
+
+aside
+{
+border:solid 0.0em teal !important;
+
+}
+.bordoaside{
+border:solid 0.1em teal !important;
+}
+
+
+
+div
+{
+border:solid 0.0em fuchsia !important;
+
+}
+.bordodiv{
+border:solid 0.1em fuchsia !important;
+}
+
+
+
+
+p
+{
+border:solid 0.0em red !important;
+
+}
+.bordop{
+border:solid 0.1em red !important;
+}
+
+
+
+
+span
+{
+border:solid 0.0em black !important;
+
+}
+.bordospan{
+border:solid 0.1em black !important;
+}
+
+
+
+img
+{
+
+border:solid 0.0em lime!important;
+
+}
+.bordoimg{
+border:solid 0.1em lime !important;
+}
+
+
+
+.sfondo{ 
+background-image:url('https://ed-ora-andiamo.com/immagini/carta01x.gif'); 
+background-repeat: repeat; 
+background-attachment: fixed;  
+background-color:rgba(253,245,230,0.5);  /* old lace */ 
+color:black;} 
+
+
+.versionedelprogramma{
+
+text-align:center;
+background-color:rgba(25,1,104,1);
+color:white;
+padding-top:0.25em; padding-bottom:0.25em;
+padding-left:0.2em; padding-right:0.2em;
+font-size:0.8em; font-family:monospace; z-index:4000;
+visibility:hidden;}
+
+
+.intestazione{
+position:fixed; left:0; top:0; width:100%; height:4em;
+background-color:rgba(50,128,13,1);
+background-color:transparent;
+}
+
+.piedipagina{
+position:fixed; left:0; bottom:0; width:100%; height:1em;
+background-color:rgba(50,128,13,1);
+background-color:transparent;
+}
