@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html id="html" lang="it" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title> 1930 TOGMENU TEST 20210102</title>
+
+<script src="http://beatsupernovarasa.altervista.org/radice/radice.js"></script>
+
+
+</head>
+
+
+
+
+<body id="body" onload="pausa()" style="visibility:hidden !important;">
+
+
+<main id="main" class="mx-5">
+
+<table id="tablone" class="table"> 
+<tbody> 
+<tr> 
+ 
+<td id="tablone-td-sinistra" class="p-0"> </td>
+ 
+<td id="tablone-td-destra" >
+ 
+<table id="tablette" class="table"> 
+<tr> 
+<td> 
+ 
+	[qui le sezioni o gli articoli]
+
+</td> 
+</tr> 
+</table> 
+ 
+</td> 
+</tr> 
+</tbody> 
+</table> 
+ 	
+
+</main>
+
+
+
+
+
+
+
+
+
+
+<span id="bsnr_kickstart_test"></div>
+<script src="http://beatsupernovarasa.altervista.org/alfabeta/bs/default.js"></script>
+
+
+<!-- -->
+<div id="menu" class="vediXoY"></div>
+<script>
+/* menu (da togglare) class vediXoY */
+/* 20210102_1245   */
+/*
+
+ per funzionare come menu collapse
+ necessita di bootstrap alfabeta-bs
+ html asterisk pt mono
+ 
+*/
+document.getElementById("menu").innerHTML=
+' <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet"> '+
+
+
+' <div style=" '+
+' position:fixed !important; '+
+' bottom:0rem !important; '+
+' left:0rem !important; '+
+
+' margin-left:0.5% !important; '+
+' margin-right:0.5% !important; '+
+
+' background-color:oldlace !important; '+
+' background-color:rgba(253,245,230,0.75) !important; '+
+
+
+' width:99% !important; '+
+' height:auto !important; '+
+' font-size:1.1rem !important; '+
+' '+
+' '+
+' text-align:left !important; '+
+' '+
+' border:solid 0.2rem transparent !important; '+
+' '+
+' '+
+' "> '+
+
+
+
+' <button type="button" '+
+' class="btn shadow-none '+
+' bg-warning rounded" '+ 	
+' data-toggle="collapse" '+
+' data-target="#COLLAPSE_MENU" '+ 	
+' aria-expanded="false" '+ 	
+' style="position:fixed !important; '+
+' top:2.5rem !important; right:0 !important; '+
+' font-size:1rem !important; '+
+' "> '+ 
+
+' '+ 	
+' <svg width="1rem" height="1rem" '+
+' viewBox="0 0 16 16" '+
+' class="bi bi-back" '+
+' fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/> '+ 	
+' </svg> '+ 	' '+ 	
+' </button> '+
+
+
+
+' <span style="'+
+' visibility:hidden !important; '+
+' font-size:0.45rem !important; '+
+' border:solid 0.2rem transparent !important; '+
+' "> '+
+' menu</span> '+
+
+
+
+' <span style=" '+
+' margin-right:2.3rem !important;'+
+' padding:0.2rem !important;'+
+
+' background-color:oldlace !important; '+
+' background-color:rgba(253,245,230,1) !important; '+
+
+' font-size:1.1rem !important; '+
+
+' border-radius:0.4rem !important;'+
+' border:solid 0.05rem navy !important;"> '+ 
+
+' <a href="#fine"> '+ 	
+' <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none" /> <path fill="maroon" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/> '+ 	
+' </svg></a> '+ 	
+
+
+
+' <span style="'+
+' visibility:hidden !important; '+
+' font-size:0.45rem !important; '+
+' border:solid 0.2rem transparent !important; '+
+' ">menu</span> '+ 	
+' '+ 	
+
+
+
+' <a href="#"> '+ 	
+' <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"> <path d="M0 0h24v24H0V0z" fill="none"/> <path fill="maroon" d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/> '+ 	
+' </svg></a> '+ 	
+' '+	 	
+' </span> '+ 
+
+' '+
+
+
+
+
+
+
+
+
+
+' <div '+
+' id="COLLAPSE_MENU" '+
+' class="collapse dropdown-menuY border-0" '+
+' style=" '+
+' margin-left:2rem !important; '+
+' margin-right:2rem !important; '+
+' margin-bottom:2rem !important; '+
+' border:solid 0.2rem transparent !important;" > '+
+
+' '+
+
+' <ul style="'+
+' border:solid 0.25rem indigo !important; '+
+' border:solid 0.10rem rgba(75,0,130,1) !important; '+
+' height:11.5rem !important; '+
+' overflow:auto !important; '+
+' border-radius:0.2rem !important; ">'+
+
+
+
+' <div id="menu_argomento"></div> '+
+
+
+
+' <p class="my-1"><hr/></p> '+
+
+
+
+' <div id="menu_note"></div> '+
+
+
+
+' '+
+' '+
+' '+
+
+
+' 	 '+ 	' '+ 	
+' </ul> '+
+
+
+' '+
+' '+
+' '+
+' <div id="menu_copyright"></div> '+
+' '+
+' '+
+' '+
+' '+
+' '+
+' </div> '+
+' </div> '+
+' '+
+
+' '
+;
+
+
+</script>
+
+
+
+
+
+
+<script>
+document.getElementById("menu_argomento").innerHTML=
+' '+
+' '+
+
+' <a class="btn rounded" '+ 
+' href="#argomento_"> '+ 	
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' argomento_</span></a> '+
+
+' '+
+' ';
+</script>
+
+
+
+
+
+<script>
+document.getElementById("menu_note").innerHTML=
+' <span style=" '+
+' background-color:oldlace !important; '+
+' color:indigo !important; '+
+' '+
+' '+
+' font-size:small !important;'+
+' font-weight:bold !important; '+
+'">'+
+' note: </span> '+
+' '+
+' <a href="#nota_" class="note-cerchietto mr-1"> '+
+' nota_ </a> '+
+' '+
+' ';
+</script>
+
+
+
+
+
+<script>
+document.getElementById("menu_copyright").innerHTML=
+' '+
+' <div style="font-size:small !important;"> '+
+' alfabeta 20210102_1815 '+
+' </div> '+
+' '+
+' '+
+' ';
+</script>
+
+
+
+
+
+
+<span id="togglato"></span>
+<script>
+/*
+
+id togglato class vediXoY
+
+20210102_1245
+
+posizionato in linea con
+la nuova versione
+
+*/
+
+
+ document.getElementById("togglato").innerHTML=
+ ' <style> ' + 
+ ' .togXbordo,.togYbordo { ' + 
+ ' position:fixed !important; ' + 
+ ' bottom:0rem !important; ' + 
+ ' right:0rem !important; ' + 
+ ' margin:0.5rem; ' +
+ ' margin-bottom:0.15rem; ' + 
+ ' margin-right:0rem; ' + 
+ ' cursor:pointer !important; ' + 
+ ' font-size:1rem !important; ' + 
+ ' font-family:monospace !important; ' + 
+ ' border-radius:0.20rem !important; ' + 
+ ' ' + 
+ ' } ' + 
+ ' ' + 
+ ' .togXbordo{ ' + 
+ ' border:solid 0.2rem indigo !important; ' + 
+ ' border:solid 0.10rem rgba(75,0,130,0.75) !important; ' + 
+ ' background-color:orange !important; ' + 
+ ' background-color:rgba(255,165,0,1) !important; ' + 
+ ' } ' + 
+ ' ' + 
+ ' .togYbordo{ ' + 
+ ' border:solid 0.10rem rgba(255,165,0,0.75) !important; ' + 
+ ' background-color:rgba(75,0,130,1) !important; ' + 
+ ' } ' + 
+ ' ' + 
+ ' </style> ' + 
+ ' ' + 
+ ' ' + 
+ ' ' + 
+ ' <span onclick="vedi()" class="togYbordo nascondiY vediY"> ' + 
+ ' &nbsp; ' + 
+ ' </span> ' + 
+ ' <span onclick="nascondi()" class="togXbordo nascondiX vediX"> ' + 
+ ' &nbsp; ' + 
+ ' </span> ' + 
+ ' ' + 
+ ' '
+ ;
+ 
+ function nascondi(){
+ elemento=document.querySelector(".vediXoY");
+ elemento.style.visibility="hidden";
+ elemento=document.querySelector(".nascondiX");
+ elemento.style.visibility="hidden";
+ elemento=document.querySelector(".vediY");
+ elemento.style.visibility="visible";
+ 
+ }
+ 
+ function vedi(){
+ elemento=document.querySelector(".vediXoY");
+ elemento.style.visibility="visible";
+ elemento=document.querySelector(".nascondiY");
+ elemento.style.visibility="hidden";
+ elemento=document.querySelector(".vediX");
+ elemento.style.visibility="visible";
+ 
+ }
+
+ 
+
+</script>
+
+
+
+<style>
+/* tablone stile */
+/* 
+ 20210102 1845
+
+*/
+
+ 
+:root {
+ --bsnr-giallo: rgba(255, 170, 0, 0.035);
+ --bsnr-html: rgba(255, 170, 0, 0.035);
+ --bsnr-oldlace: rgba(253,245,230,0.5);
+ --bsnr-oldlace: rgba(253,245,230,0.275);
+ 
+ background-color:rgba(255,170,0,0.5);
+ 
+ }
+
+
+html * {
+color:black !important;
+font-size:1.2rem !important;
+font-family: 'PT Mono', monospace !important;
+text-align:left !important;
+} 
+
+body{
+ background-color:default; 
+ background-color:oldlace;
+ background-color:rgba(253,245,230,0.5);
+
+}
+
+main{
+margin-top:2.5rem !important;
+margin-bottom:18.5rem !important;
+border:solid 0.1rem red;
+overflow:auto !important;
+
+}
+
+
+table#tablone, table#tablette{ 
+border:solid 0.0rem green !important;	
+}
+
+td#tablone-td-sinistra{
+	width:0.5rem !important;
+	border:solid 0.0rem grey !important;		
+}
+
+td#tablone-td-destra{
+	border:solid 0.0rem lawngreen !important;		
+}
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="divpausa" style="position:fixed;
+	top:2.5rem;left:0;
+	top:50%;left:50%;
+	background-color:var(--bs-white) !important;
+	margin-left:-8.5rem !important; margin-top:-2rem !important; 
+	border-radius:0.2rem !important; visibility:visible !important;">
+	<span id="pausa" class="spinner-border text-warning"></span>
+	
+	<span style="background-color:transparent !important;">
+	<span id="Loading"
+	style="color:var(--bs-indigo) !important; font-size:2rem !important;">
+	Loading...</span>
+	<span id="percento" 
+	style="color:var(--bs-indigo) !important;
+	font-size:2rem !important;font-variant:small-caps !important;">
+	</span>
+	</span>
+	</div> 
+	
+	
+	
+	
+	
+	 <script>
+	 
+	function pausa(){
+	if (document.all){} 
+	else if 
+	(document.getElementById)
+	 { 
+	 document.getElementById("pausa").style.visibility="hidden";
+	 document.getElementById("percento").style.visibility="hidden";
+	 document.getElementById("Loading").style.visibility="hidden";
+	 document.getElementById("divpausa").style.visibility="hidden";
+	
+	 document.getElementById("body").style.visibility="visible";
+	 document.getElementById("body").style.backgroundColor = 'default';
+	 document.getElementById("html").style.backgroundColor = 'transparent';
+	
+	 }
+	
+	}
+	
+	var percento=document.getElementById("percento");
+	var contatore=1; 
+	var intervallo=setInterval( function() { percento.innerHTML=contatore+"%"; 
+	contatore++; if (contatore===101) {clearInterval(intervallo);} 
+	} , 9000) 
+	
+	 </script>
+
+
+
+
+
+<div id="fine"></div>
+</body>
+</html>
