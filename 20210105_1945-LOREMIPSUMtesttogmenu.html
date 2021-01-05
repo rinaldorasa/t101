@@ -1,0 +1,3194 @@
+<!DOCTYPE html>
+<html id="html" lang="it" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8">
+<meta name="generator" content="AlterVista - Editor HTML"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title> 1945 loremipsum TOGMenu 20210105 </title>
+
+
+</head>
+<body id="body" onload="pausa()" style="visibility:hidden !important;">
+
+<main id="main" class="mx-5">
+
+<table id="tablone" class="table"> 
+<tbody> 
+<tr> 
+
+<td id="tablone-td-sinistra" class="p-0"> </td>
+
+<td id="tablone-td-destra" >
+
+<table id="tablette" class="table"> 
+<tr> 
+<td> 
+
+
+
+
+
+
+<aside id="argomento-0000" class="argomento bg-warning"><span class="id">0000</span>
+<span class="articolo">
+
+La funzione di documentgetElementById DGEBI nel framework MAGIC PATCHES.
+
+</span>
+</aside>
+
+<aside id="argomento-0001" class="argomento"><span class="id">0001</span>
+<span class="articolo">
+
+In questo programma manca uno pseudo-main o ( main ) dato che contiene le informazioni da visualizzare rappresenta un file personalizzato per la pagina la quale è stata impostata come una struttura standard [*]. Lo pseudo-main è scritto in html indi "compilato" in DGEBI e inserito come script. (Comunque rappresenta già una fase avanzata di un progetto, vale a dire un prodotto finito.)
+
+</span>
+</aside>
+
+<aside id="argomento-0002" class="argomento"><span class="id">0002</span>
+<span class="articolo">
+
+Quale sarebbe il vantaggio?
+Un codice adeguatamente uniformato ad un metodo, risulta il primo vantaggio. Naturalmente si parte dal principio che utilizzando il DGEBI si riutilizzano elementi standard senza doverli riscrivere questo comporta una diminuizione del peso di html nella economia del codice. Un programma si avvale di componenti come ad esempio i menu definenti la navigazione standard e le informazioni su aggiornamenti pagina che interessanto il dominio globalmente.
+
+</span>
+</aside>
+
+<aside id="argomento-0003" class="argomento"><span class="id">0003</span>
+<span class="articolo">
+
+Utilizzare un framework come Bootstrap attraverso i CDN richiede una connessione ad Internet. Questo attraverso il DGEBI diventa evitabile facendo un copia e incolla del contenuto del CDN in locale. Agevolmente si possono effettuare aggiustamenti al codice di boostrap aggiungendo linee nuove nel file locale. In particolare BS permette di uniformare la immagine delle pagine web cross-browser ma il contenuto del framework talvolta contiene molte features che al momento non servovo. Mi riferisco alla fase alfa e beta del framework. In fase di costruzione sono aggiunte funzionalità e magari se ne perdono altre. Dopo diversi passaggi in locale ci si trova un framework che mixa alfa e beta in modo perfettamente adeguato alle esigenze del client. 
+
+</span>
+</aside>
+
+<aside id="argomento-0004" class="argomento"><span class="id">0004</span>
+<span class="articolo">
+
+Con l'ultima versione di BS è stato rimosso jQuery come dipendenza può succedere che in alfa un javascript funzioni mentre non in beta, mentre i css funzionano ancora bene e occorre solamente fare un minimo aggiustamento in aggiunta delle nuove funzionalità.
+Utilizzando il DGEBI si presuppone che client abbia già attivato l'interprete javascript potrebbe essere un drawback ma oramai nei browser javascript è attivato per default e la commistione html+css+javascript è talmente uno standard che difficilmente ci si troverà ad incontrare problemi a questo riguardo.
+Nella fase di compilazione del DGEBI ci possono essere dei problemi riguardanti il fatto che nello script ci sia un conflitto con caratteri speciali non approvati dallo script ma perfettamenti accettati da html. Risulta essere il caso del carattere ' (apice) il quale fa da delimitatore delle stringhe concatenate. Compilando il testo occorre istruire una conversione utilizzando i caratteri di escape \' (apice singolo) oppure \" (doppio apice) oppure \\ (barra inversa).
+
+</span>
+</aside>
+
+<aside id="argomento-0005" class="argomento bg-warning"><span class="id">0005</span>
+<span class="articolo">
+
+Utilizzo generico del DGEBI
+
+</span>
+</aside>
+
+<aside id="argomento-0006" class="argomento"><span class="id">0006</span>
+<span class="articolo">
+
+document.getElementById("test").innerHTML='';
+
+</span>
+</aside>
+
+<aside id="argomento-0007" class="argomento"><span class="id">0007</span>
+<span class="articolo">
+
+Prima di compilare occorre usare un editor (es.Notepad++ o Visual Studio Code) per sostituire gli apici singoli presenti in alcuni link . Ad esempio 'http://nomedominio.com' va sostituito con apici doppi; in realtà il link funziona regolarmente anche con apici singoli ma con la sostituzione si evitano problemi con gli apici di apertura e chiusra del DGEBI.
+
+</span>
+</aside>
+
+<aside id="argomento-0008" class="argomento"><span class="id">0008</span>
+<span class="articolo">
+
+document.getElementById("test").style.visibility='visible';
+
+</span>
+</aside>
+
+<aside id="argomento-0009" class="argomento"><span class="id">0009</span>
+<span class="articolo">
+
+Lo stile con i metodi javascript richiede un controllo della grammatica dei metodi javascript poiché possono differire dallo standard html-css.
+
+</span>
+</aside>
+
+
+<aside id="argomento-0010" class="argomento"><span class="id">0010</span>
+<span class="articolo">
+
+<a href="https://www.w3schools.com/jsref/dom_obj_style.asp" class="argomento">HTML DOM Style Object</a>
+
+
+</span>
+</aside>
+
+<aside id="argomento-0011" class="argomento bg-warning"><span class="id">0011</span>
+<span class="articolo">
+
+Un esempio di uso del DGEBI : lo spinner blues...
+
+</span>
+</aside>
+
+<aside id="argomento-0012" class="argomento"><span class="id">0012</span>
+<span class="articolo">
+
+Quando il tempo di caricamento loading è piuttosto lungo risulta utile uno spinner per avvertire l'utente che il browser sta funzionando, in realtà anche il browser ha un suo spinner, quindi lo spinner personalizzato sarebbe ridondante. Senonchè rafforza il messaggio in più se aggiungiamo anche un progress bar allora la funzione diventa veramente una aggiunta. Il progress bar è prevista per tempi lunghissimi, in tal caso il programmatore è a conoscenza del tempo medio di caricamento della pagina per cui si può mettere un avvertimento (es.Loading... percentuale).
+
+</span>
+</aside>
+
+<aside id="argomento-0013" class="argomento"><span class="id">0013</span>
+<span class="articolo">
+
+<pre>
+function attesa(){
+if (document.all){}
+else if
+(document.getElementById)
+{ document.getElementById("spinner").style.visibility="hidden"; }
+}
+</pre>
+
+</span>
+</aside>
+
+<aside id="argomento-0014" class="argomento"><span class="id">0014</span>
+<span class="articolo">
+
+Questa funzione è molto interessante poichè utilizza document.all il quale fa un check se il documento è in corso di caricamento. In questo caso non fa nulla {} in realtà si realizza un errore intercettato da id="spinner" e visualizza lo spinner . Allorquando il documento è completamente caricato si attiva lo stile il quale cancella lo spinner.
+
+</span>
+</aside>
+
+<aside id="argomento-0015" class="argomento"><span class="id">0015</span>
+<span class="articolo">
+
+<pre>
+
+&#60;div id&#61;"spinner" class&#61;"spinner-border"&#62;&#60;/div&#62;
+
+&#60;span id&#61;"spinner" class&#61;"spinner-border mx-5" style&#61;"border:dashed 0.2rem;"&#62;&#60;/span&#62;
+
+</pre>
+
+</span>
+
+</aside>
+
+<aside id="argomento-0016" class="argomento"><span class="id">0016</span>
+<span class="articolo">
+
+<span id="spinner" class="spinner-border mx-5"></span>
+<span id="spinner" class="spinner-border mx-5" style="border:dashed 0.2rem;"></span>
+</span>
+</aside>
+
+<aside id="argomento-0017" class="argomento"><span class="id">0017</span>
+<span class="articolo">
+
+Il frammento di codice html con id intercetta il document.all , lo spinner utilizzato può essere una icona animata oppure preso da boostrap spinner standard di bootstrap
+
+
+</span>
+</aside>
+
+<aside id="argomento-0018" class="argomento"><span class="id">0018</span>
+<span class="articolo">
+
+<pre>
+&#60;body onload&#61;"attesa()"&#62;
+</pre>
+
+</span>
+</aside>
+
+<aside id="argomento-0019" class="argomento"><span class="id">0019</span>
+<span class="articolo">
+
+Una funzione javascript non si attiva da sola, ha bisogno di un evento che faccia da avvio. In questo caso viene attivato al momento dell'avvio della pagina 
+Ora è possibile assemblare le componenti 
+</span>
+</aside>
+
+
+<aside id="argomento-0020" class="argomento"><span class="id">0020</span>
+<span class="articolo">
+<pre>
+&#60;body onload&#61;"attesa()"&#62;
+&#60;div id&#61;"spinner" class&#61;"spinner-border"&#62;&#60;/div&#62;
+&#60;script&#62;
+function attesa(){
+if (document.all){} 
+else if 
+(document.getElementById)
+{ document.getElementById("spinner").style.visibility&#61;"hidden"; }
+}
+&#60;/script&#62;
+&#60;/body&#62;
+
+</pre>
+</span>
+</aside>
+
+
+<aside id="argomento-0021" class="argomento"><span class="id">0021</span>
+<span class="articolo">
+
+Un ulteriore perfezionamento con interazioni html body e percentuale di caricamento (qui fissata in 15minuti) 
+
+</span>
+<pre>
+
+&#60;html id&#61;"html"&#62;
+
+</pre>
+<pre>
+&#60;style&#62;
+:root {background-color:rgba(255,170,0,0.5);}
+
+body{ background-color:default; }
+&#60;/style&#62;
+
+</pre>
+<pre>
+
+&#60;body id&#61;"body" onload&#61;"pausa()" style&#61;"visibility:hidden;"&#62;
+
+</pre>
+<pre>
+
+
+&#60;div id&#61;"divpausa" style&#61;"position:fixed;
+top:2.5rem;left:0;
+top:50%;left:50%;
+background-color:var(--bs-white) !important;
+margin-left:-8.5rem !important; margin-top:-2rem !important; 
+border-radius:0.2rem !important; visibility:visible !important;"&#62;
+&#60;span id&#61;"pausa" class&#61;"spinner-border text-warning"&#62;&#60;/span&#62;
+
+&#60;span style&#61;"background-color:transparent !important;"&#62;
+&#60;span id&#61;"Loading"
+style&#61;"color:var(--bs-indigo) !important; font-size:2rem !important;"&#62;
+Loading...&#60;/span&#62;
+&#60;span id&#61;"percento" 
+style&#61;"color:var(--bs-indigo) !important;
+font-size:2rem !important;font-variant:small-caps !important;"&#62;
+&#60;/span&#62;
+&#60;/span&#62;
+&#60;/div&#62; 
+
+
+
+
+
+&#60;script&#62;
+
+function pausa(){
+if (document.all){} 
+else if 
+(document.getElementById)
+{ 
+document.getElementById("pausa").style.visibility&#61;"hidden";
+document.getElementById("percento").style.visibility&#61;"hidden";
+document.getElementById("Loading").style.visibility&#61;"hidden";
+document.getElementById("divpausa").style.visibility&#61;"hidden";
+
+document.getElementById("body").style.visibility&#61;"visible";
+document.getElementById("body").style.backgroundColor &#61; 'default';
+document.getElementById("html").style.backgroundColor &#61; 'transparent';
+
+}
+
+}
+
+var percento&#61;document.getElementById("percento");
+var contatore&#61;1; 
+var intervallo&#61;setInterval( function() { percento.innerHTML&#61;contatore+"%"; 
+contatore++; if (contatore&#61;&#61;&#61;101) {clearInterval(intervallo);} 
+} , 9000) 
+
+&#60;/script&#62;
+
+
+</pre>
+</aside>
+
+
+<aside id="argomento-0022" class="argomento"><span class="id">0022</span>
+<span class="articolo">
+
+Qui il codice completo da inserire nel body. Vi si vede il settaggio di interval a 9000 = 9sec , ogni 9secondi vi è un avanzamento del conteggio del 1percento 9x100=900sec = 15minuti , naturalmente viene visualizzato dal programma il 100% , lo spinner in questione è indicativo del tempo di caricamento ed è gestito in modo statico dal programmatore. Se il tempo fosse maggiore di 15minuti si rifà il calcolo e si aggiorna lo script. 
+Qualche aggiunta per posizionare adeguatamente lo spinner tramite position fixed o qualcosa di simile. L'uso di bootstrap permette di velocizzare le operazioni dal punto di vista di come appare lo spinner. In aggiunta la immagine dello spinner richiede una più che sufficiente esperienza con i css. 
+</span>
+</aside>
+
+
+
+<aside id="argomento-0023" class="argomento bg-warning"><span class="id">0023</span>
+<span class="articolo">
+
+Caricamenti a/sincroni
+
+</span>
+</aside>
+
+
+<aside id="argomento-0024" class="argomento"><span class="id">0024</span>
+<span class="articolo">
+
+Quando si scrivono file esterni contenenti istruzioni per lo stile e script nei browser l'aggiornamento ai nuovi valori non avviene automaticamente creando soprattutto in fase di debugging una difficoltà di comprensione dei fattori anomali e quindi a perdita di tempo. L'idea base è quella di effettuare un aggiustamento al volo ricorrendo al indirizzo?qualcosa questa soluzione richiede un continuo estenuante passaggio tra file html e file css o js . La soluzione è creare uno script per il caricamento degli script esterni e dei fogli di stile esterni.
+
+</span>
+</aside>
+
+
+<aside id="argomento-0025" class="argomento"><span class="id">0025</span>
+<span class="articolo">
+
+Per ottenere questa funzionalità occorre usare il metodo document.createElement("script"); nel caso di uno script
+
+oppure document.createElement("link"); nel caso di link a file esterno css.
+
+Questi script depositano in head il loro contenuto. 
+
+</span>
+</aside>
+
+
+<aside id="argomento-0026" class="argomento"><span class="id">0026</span>
+<span class="articolo">
+
+<pre>
+
+var carica_script &#61; document.createElement&#40;"script"&#41;;
+
+document.getElementsByTagName&#40;"head"&#41;[0].appendChild&#40;carica_script&#41;;
+
+</pre>
+
+<pre>
+
+var carica_link &#61; document.createElement&#40;"link"&#41;;
+
+document.getElementsByTagName&#40;"head"&#41;[0].appendChild&#40;carica_link&#41;;
+
+</pre>
+
+</span>
+</aside>
+
+
+<aside id="argomento-0027" class="argomento"><span class="id">0027</span>
+<span class="articolo">
+
+Le due sequenze di codice si riferiscono a due tipologie di elementi ma per entrambe occorre creare un postfisso. 
+Il postfisso è un indice con il quale si individualizza un refresh nella ricerca del file comunicando al browser che è una nuova istanza di caricamento. Come postfisso si può usare anche un generatore di numeri random. Invece con new Date() si indicizza utilizzando il datario javascript il quale si aggiorna quando si fa il check della pagina html. Il postfisso è comune ad entrambe le tipologie. 
+</span>
+<span class="span-block">
+<a href="https://www.w3schools.com/jsref/jsref_obj_date.asp"> JavaScript Date Reference</a>
+</span><span class="span-block-fine"></span>
+</aside>
+
+
+
+<aside id="argomento-0028" class="argomento"><span class="id">0028</span>
+<span class="articolo">
+<pre>
+var postfisso &#61; new Date&#40;&#41;;
+</pre> 
+</span>
+
+<span id="test_date_statico" style="font-size:0.8rem !important;font-style: oblique !important;">bug test_date_statico</span>
+<script>
+document.getElementById("test_date_statico").innerHTML=Date();
+</script>
+
+</aside>
+
+
+<aside id="argomento-0029" class="argomento"><span class="id">0029</span>
+<span class="articolo">
+
+Aggiungiamo ora il nome del file da includere 
+<pre>
+
+var nome &#61; &#34;file.js&#34;;
+nome &#61; nome + &#34;?&#34; + postfisso;
+
+</pre>
+<span class="span-block">
+Quando il file esterno è un DGEBI occorre tenere conto che per mnemonico il nome richiama l'ID , ad esempio extras.js richiama mnemonicamente id="extras" ovviamente questa è una raccomandazione non una necessità, ma se si usa DGEBI risulta di estrema utilità.
+
+Ora dobbiamo combinare il nome dello script con un elemento di nome 
+</span><span class="span-block-fine"></span>
+
+<pre>
+
+carica_script&#46;src&#61;nome;
+
+</pre>
+<span class="span-block">
+Corrisponde al comando src="file.js" 
+</span><span class="span-block-fine"></span>
+</span>
+</aside>
+
+
+
+<aside id="argomento-0030" class="argomento"><span class="id">0030</span>
+<span class="articolo">
+Un caso interessante è la decodifica di
+<pre>
+
+&#60;link rel&#61;"stylesheet" href&#61;"file&#46;css"/&#62;
+
+</pre>
+che diventa
+<pre>
+
+carica_link&#46;href &#61; nome;
+carica_link&#46;rel&#61;&#34;stylesheet&#34;
+</pre>
+
+</span>
+</aside>
+
+
+
+<aside id="argomento-0031" class="argomento"><span class="id">0031</span>
+<span class="articolo">
+
+Schema completo a/sincrono per javascript DGEBI 
+<pre>
+var carica_script &#61; document&#46;createElement&#40;"script"&#41;;
+var postfisso &#61; new Date&#40;&#41;;
+var nome &#61; "file&#46;js";
+nome &#61; nome + "?" + postfisso;
+carica_script&#46;src&#61;nome;
+document&#46;getElementsByTagName&#40;"head"&#41;[0]&#46;appendChild&#40;carica_script&#41;;
+
+
+</pre>
+
+<pre>
+
+var carica_link &#61; document.createElement&#40;&#34;link&#34;&#41;;
+var postfisso &#61; new Date&#40;&#41;;
+var nome &#61; &#34;file.css&#34;;
+nome &#61; nome + &#34;?&#34; + postfisso;
+carica_link.href&#61;nome;
+carica_link.rel&#61;&#34;stylesheet&#34;;
+document.getElementsByTagName&#40;&#34;head&#34;&#41;[0].appendChild&#40;carica_link&#41;;
+
+</pre>
+
+</span>
+</aside>
+
+
+<aside id="argomento-0032" class="argomento"><span class="id">0032</span>
+<span class="articolo">
+
+Consideriamo ora un aggiustamento usufruendo della flessibilità di javascript 
+<pre>
+
+var radice&#61;&#34;http://nomedominio.com/radice.js&#34; ;
+
+</pre>
+
+Permette di riferirsi tramite il nome radice ad una porzione dell'indirizzo web server depositato nel file radice.js risparmiando così la digitazione dell'indirizzo completo. 
+<pre>
+
+var nome &#61; radice+&#34;nome.js&#34;;
+
+</pre>
+
+
+
+
+</span>
+</aside>
+
+
+<aside id="argomento-0033" class="argomento"><span class="id">0033</span>
+<span class="articolo">
+
+[.....]
+
+</span>
+</aside>
+
+<aside id="argomento-0034" class="argomento"><span class="id">0034</span>
+<span class="articolo">
+
+Molto interessante è il compattamento di tutti i link standard o di default.
+Con un unico script si caricano tutti i file necessari per user lasciando libero spazio al main e alle sezioni.
+
+<pre>
+
+
+
+var postfisso &#61; new Date&#40;&#41;; 
+
+var carica_script_JQUERY &#61; document&#46;createElement&#40;&#34;script&#34;&#41;;
+var nome_JQUERY &#61; &#34;https://ajax&#46;googleapis&#46;com/ajax/libs/jquery/3&#46;5&#46;1/jquery&#46;min&#46;js&#34;;
+nome_JQUERY &#61; nome_JQUERY + &#34;?&#34; + postfisso;
+carica_script_JQUERY&#46;src&#61;nome_JQUERY;
+document&#46;getElementsByTagName&#40;&#34;head&#34;&#41;[0]&#46;appendChild&#40;carica_script_JQUERY&#41;;
+
+var carica_script_BSNR_KICKSTART_TEST &#61; document&#46;createElement&#40;&#34;script&#34;&#41;;
+var nome_BSNR_KICKSTART_TEST &#61; &#34;http://beatsupernovarasa&#46;altervista&#46;org/zap/bs/kickstart/bsnr_kickstart_test/default&#46;js&#34;;
+nome_BSNR_KICKSTART_TEST &#61; nome_BSNR_KICKSTART_TEST + &#34;?&#34; + postfisso;
+carica_script_BSNR_KICKSTART_TEST&#46;src&#61;nome_BSNR_KICKSTART_TEST;
+document&#46;getElementsByTagName&#40;&#34;head&#34;&#41;[0]&#46;appendChild&#40;carica_script_BSNR_KICKSTART_TEST&#41;;
+
+var carica_script_PIEDIPAGINA_MENU_TEST &#61; document&#46;createElement&#40;&#34;script&#34;&#41;;
+var nome_PIEDIPAGINA_MENU_TEST &#61; &#34;http://beatsupernovarasa&#46;altervista&#46;org/zap/bs/kickstart/piedipagina_menu_test/default&#46;js&#34;;
+nome_PIEDIPAGINA_MENU_TEST &#61; nome_PIEDIPAGINA_MENU_TEST + &#34;?&#34; + postfisso;
+carica_script_PIEDIPAGINA_MENU_TEST&#46;src&#61;nome_PIEDIPAGINA_MENU_TEST;
+document&#46;getElementsByTagName&#40;&#34;head&#34;&#41;[0]&#46;appendChild&#40;carica_script_PIEDIPAGINA_MENU_TEST&#41;;
+
+var carica_script_SHOW_HIDE &#61; document&#46;createElement&#40;&#34;script&#34;&#41;;
+var nome_SHOW_HIDE &#61; &#34;http://beatsupernovarasa&#46;altervista&#46;org/zap/bs/kickstart/show_hide/default&#46;js&#34;;
+nome_SHOW_HIDE &#61; nome_SHOW_HIDE + &#34;?&#34; + postfisso;
+carica_script_SHOW_HIDE&#46;src&#61;nome_SHOW_HIDE;
+document&#46;getElementsByTagName&#40;&#34;head&#34;&#41;[0]&#46;appendChild&#40;carica_script_SHOW_HIDE&#41;;
+
+var carica_link_TABLONE &#61; document&#46;createElement&#40;&#34;link&#34;&#41;;
+var nome_TABLONE &#61; &#34;http://beatsupernovarasa&#46;altervista&#46;org/zap/bs/tablone/default&#46;css&#34;;
+nome_TABLONE &#61; nome_TABLONE + &#34;?&#34; + postfisso;
+carica_link_TABLONE&#46;href&#61;nome_TABLONE;
+carica_link_TABLONE&#46;rel&#61;&#34;stylesheet&#34;;
+document&#46;getElementsByTagName&#40;&#34;head&#34;&#41;[0]&#46;appendChild&#40;carica_link_TABLONE&#41;;
+
+
+
+
+</pre>
+
+Con un ulteriore passaggio si potrebbe avere un caricamento generico (un es. di script)
+<pre>
+
+&#60;script&#62;
+
+var radice_alfabeta&#61;"http://beatsupernovarasa&#46;altervista&#46;org/alfabeta/";
+var adesso&#61;new Date&#40;&#41;;
+var postfisso_test&#61;"default&#46;js?"+adesso;
+
+var script_menu&#61;document&#46;createElement&#40;"script"&#41;;
+var nome_menu&#61;radice_alfabeta+"/menu/"+postfisso_test;
+script_menu&#46;src&#61;nome_menu; document&#46;getElementsByTagName&#40;"head"&#41;[0]&#46;appendChild&#40;script_menu&#41;;
+
+&#60;/script&#62;
+
+</pre>
+
+Riferimenti concreti:
+<span class="span-block"></span><span class="span-block-fine"></span>
+<a href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">jQuery</a>
+<a href="http://beatsupernovarasa.altervista.org/zap/bs/kickstart/bsnr_kickstart_test/default.js">bootstrap</a>
+<a href="http://beatsupernovarasa.altervista.org/zap/bs/kickstart/piedipagina_menu_test/default.js">piedipagina</a>
+<a href="http://beatsupernovarasa.altervista.org/zap/bs/kickstart/show_hide/default.js">show_hide</a>
+<a href="http://beatsupernovarasa.altervista.org/zap/bs/tablone/default.css">tablone</a>
+<a href="http://beatsupernovarasa.altervista.org/zap/bs/kickstart/default.js">links</a>
+<a href="http://beatsupernovarasa.altervista.org/zap/bs/bs_2020_12_21a.js"> bscompatto</a>
+
+</span>
+</aside>
+
+
+<aside id="argomento-0035" class="argomento bg-warning"><span class="id">0035</span>
+<span class="articolo">
+
+Le font 
+
+</span>
+</aside>
+
+
+
+
+<aside id="argomento-0036" class="argomento"><span class="id">0036</span>
+<span class="articolo">
+
+La ricerca della font monospace adeguata interessa per il problema dei bastoni soprattutto nelle elle che si possono confondere con le i maiuscole e nelle o che si possono confonedere con lo zero e viceversa se non si usa il monospace. Alcune porzioni di programmazione richiedono un adeguato modo differenziato per non incorrere in bug insidiosi.
+
+<pre>
+
+
+&#60;link href&#61;"https:&#47;&#47;fonts.googleapis.com&#47;css2?family&#61;Fira+Code:wght@400;500&family&#61;Inconsolata:wght@500&family&#61;PT+Mono&family&#61;Roboto+Mono&display&#61;swap" rel&#61;"stylesheet"&#62;
+
+html * &#123;font-family: 'PT Mono', monospace !important;&#125; 
+
+</pre>
+
+
+</span>
+</aside>
+
+
+<aside id="argomento-0037" class="argomento"><span class="id">0037</span>
+<span class="articolo">
+
+<span class="span-block">
+
+ascii code (da 32 a 127) visualizzati secondo font-family predisposta 
+
+</span><span class="span-block-fine"></span>
+<pre class="text-xmp">
+	32		space
+	33	!	exclamation mark
+	34	"	quotation mark
+	35	#	number sign
+	36	$	dollar sign
+	37	%	percent sign
+	38	&	ampersand
+	39	'	apostrophe
+	40	(	left parenthesis
+	41	)	right parenthesis
+	42	*	asterisk
+	43	+	plus sign
+	44	,	comma
+	45	-	hyphen-minus
+	46	.	full stop
+	47	/	solidus
+	48	0	digit zero
+	49	1	digit one
+	50	2	digit two
+	51	3	digit three
+	52	4	digit four
+	53	5	digit five
+	54	6	digit six
+	55	7	digit seven
+	56	8	digit eight
+	57	9	digit nine
+	58	:	colon
+	59	;	semicolon
+	60	&#60;	less-than sign
+	61	=	equals sign
+	62	&#62;	greater-than sign
+	63	?	question mark
+	64	@	commercial at
+	65	A	Latin capital letter A
+	66	B	Latin capital letter B
+	67	C	Latin capital letter C
+	68	D	Latin capital letter D
+	69	E	Latin capital letter E
+	70	F	Latin capital letter F
+	71	G	Latin capital letter G
+	72	H	Latin capital letter H
+	73	I	Latin capital letter I
+	74	J	Latin capital letter J
+	75	K	Latin capital letter K
+	76	L	Latin capital letter L
+	77	M	Latin capital letter M
+	78	N	Latin capital letter N
+	79	O	Latin capital letter O
+	80	P	Latin capital letter P
+	81	Q	Latin capital letter Q
+	82	R	Latin capital letter R
+	83	S	Latin capital letter S
+	84	T	Latin capital letter T
+	85	U	Latin capital letter U
+	86	V	Latin capital letter V
+	87	W	Latin capital letter W
+	88	X	Latin capital letter X
+	89	Y	Latin capital letter Y
+	90	Z	Latin capital letter Z
+	91	[	left square bracket
+	92	\	reverse solidus
+	93	]	right square bracket
+	94	^	circumflex accent
+	95	_	low line
+	96	`	grave accent
+	97	a	Latin small letter a
+	98	b	Latin small letter b
+	99	c	Latin small letter c
+	100	d	Latin small letter d
+	101	e	Latin small letter e
+	102	f	Latin small letter f
+	103	g	Latin small letter g
+	104	h	Latin small letter h
+	105	i	Latin small letter i
+	106	j	Latin small letter j
+	107	k	Latin small letter k
+	108	l	Latin small letter l
+	109	m	Latin small letter m
+	110	n	Latin small letter n
+	111	o	Latin small letter o
+	112	p	Latin small letter p
+	113	q	Latin small letter q
+	114	r	Latin small letter r
+	115	s	Latin small letter s
+	116	t	Latin small letter t
+	117	u	Latin small letter u
+	118	v	Latin small letter v
+	119	w	Latin small letter w
+	120	x	Latin small letter x
+	121	y	Latin small letter y
+	122	z	Latin small letter z
+	123	{	left curly bracket
+	124	|	vertical line
+	125	}	right curly bracket
+	126	~	tilde
+	127	DEL	 	 	 	 
+	
+	</pre>
+
+</span>
+
+<div class="mb-5" style="background-color:burlywood !important;">
+<span class="span-block">
+  Carattere:  
+  <input type="text" id="primo_carattere" name="UN_CARATTERE" maxLength="1">	
+
+</span>
+
+<button onclick="myFunction()" 
+class="btn btn-success btn-sm" style="color:var(--bs-yellow) !important;">
+ASCII code</button>
+
+<span id="TEST" class="span-block-fine"></span>
+
+
+<script>
+
+function myFunction(){
+    var str=document.getElementById("primo_carattere");
+    if (str.value=="") {
+       str.focus();
+       return;
+    }
+	var etc1="&#38"+"#";
+	var etc2=";";
+document.getElementById("TEST").innerHTML =etc1+str.value.charCodeAt(0)+etc2;
+}
+
+</script>
+
+</div>
+
+</aside>
+
+<aside id="argomento-0038" class="argomento bg-warning"><span class="id">0038</span>
+<span class="articolo">
+
+Il collapse
+
+</span>
+</aside>
+<aside id="argomento-0039" class="argomento"><span class="id">0039</span>
+<span class="articolo">
+
+Collapse effettua una apparizione/sparizione del menu gestito da bootstrap molto importante per la pagina in quanto riduce l'affollamento di sticker. 
+
+</span>
+</aside>
+<aside id="argomento-0040" class="argomento"><span class="id">0040</span>
+<span class="articolo">
+
+<pre>
+
+&#60;div style&#61;"position:fixed; bottom:0; left:0;
+width:100%; text-align:left; border:solid 0rem green;"&#62;
+
+&#60;button type&#61;"button" class&#61;"btn shadow-none bg-warning rounded" 
+aria-expanded&#61;"false" data-toggle&#61;"collapse" data-target&#61;"#collapseMenu" 
+style&#61;"position:fixed; top:2.5rem; right:0; "&#62; 
+&#60;svg width&#61;"1em" height&#61;"1em" viewBox&#61;"0 0 16 16" class&#61;"bi bi-back" fill&#61;"currentColor" xmlns&#61;"http:&#47;&#47;www.w3.org&#47;2000&#47;svg"&#62;&#60;path fill-rule&#61;"evenodd" d&#61;"M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"&#47;&#62;
+&#60;&#47;svg&#62;
+&#60;&#47;button&#62;
+
+&#60;div id&#61;"collapseMenu" class&#61;"collapse border-0"&#62;
+&#60;ul style&#61;"border:solid 0.25rem indigo !important;
+height:11.5rem !important; 
+overflow:auto !important; border-radius:0.2rem !important; "&#62;
+
+&#60;a href&#61;"#"&#62;link_del_menu&#60;&#47;a&#62;
+
+&#60;&#47;ul&#62;
+&#60;&#47;div&#62;
+
+&#60;&#47;div&#62;
+
+</pre>
+
+<span>Cliccando (toggle) sul bottone</span>
+<button type="button" class="btn shadow-none bg-warning rounded" 
+aria-expanded="false" data-toggle="collapse" data-target="#collapseMenu" 
+style="position:static; top:2.5rem; right:0; opacity:0.5 !important;"> 
+<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-back" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
+</svg>
+</button>
+<span> si produce la visualizzazione di 
+un pop up.
+</span>
+
+
+</span>
+</aside>
+<aside id="argomento-0041" class="argomento bg-warning"><span class="id">0041</span>
+<span class="articolo">
+
+Sign in 
+
+</span>
+</aside>
+<aside id="argomento-0042" class="argomento"><span class="id">0042</span>
+<span class="articolo">
+<span class="span-block">
+Il sign in rappresenta una richiesta di utenza e password per accedere al contenuto della pagina. Per ottenere questo effetto occorre usare il linguaggio php il quale usa essere dal lato server quindi funziona direttamente dal sito e il codice php non può essere visto quando si esegue il codice phpche lo lancia; tuttavia con un programma apposito si può eseguire il codice php in locale tramite xampp . Una volta installato eseguire il comando per attivare il control panel drive:\xampp\xampp-control.exe trovare la icona e cliccare. Quando appare il pannello di controllo xampp cliccare start e l'ambiente è in funzione come localhost dal quale con il comando localhost/file.php digitandolo dal browser si emula il comportamento da server. 
+</span><span class="span-block-fine"></span>
+<span class="span-block">
+Fare attenzione a depositare il file php nella cartella htdocs.
+</span><span class="span-block-fine"></span>
+La combinazione user password permette di gestire una sessione di file php, una volta loggatoi successivi file controllano se user password sono corretti prima di evidenziare il loro contenuto . 
+</span>
+</aside>
+<aside id="argomento-0043" class="argomento"><span class="id">0043</span>
+<span class="articolo">
+
+<pre>
+
+
+&#60;?php session_start&#40;&#41;; 
+if&#40;!isset&#40;$_SESSION['UserData']['Username']&#41;&#41;&#123;
+header&#40;"location:&#47;index.php"&#41;;
+exit;
+&#125;
+?&#62;
+
+</pre>
+
+</span>
+</aside>
+<aside id="argomento-0044" class="argomento"><span class="id">0044</span>
+<span class="articolo">
+
+<span class="span-block">
+Nel file index.php è contenuto il form per inserire username password. 
+</span><span class="span-block-fine"></span>
+
+<pre>
+
+
+
+&#60;?php session_start(); 
+if(isset($_POST['Submit']))&#123;
+
+$logins &#61; array('rinaldo' &#61;&#62; '1234','username1' &#61;&#62; 'password1','username2' &#61;&#62; 'password2');
+
+$Username &#61; isset($_POST['Username']) ? $_POST['Username'] : '';
+$Password &#61; isset($_POST['Password']) ? $_POST['Password'] : '';
+
+if (isset($logins[$Username]) && $logins[$Username] &#61;&#61; $Password)&#123;
+
+$_SESSION['UserData']['Username']&#61;$logins[$Username];
+header("location:file.php");
+exit;
+&#125; else &#123;
+
+$msg&#61;"&#60;span style&#61;'color:red'&#62;Invalid Login Details&#60;/span&#62;";
+
+&#125;
+&#125;
+?&#62; 
+
+
+
+</pre>
+
+</span>
+</aside>
+
+<aside id="argomento-0045" class="argomento"><span class="id">0045</span>
+<span class="articolo">
+
+Il form accetta username password indi invia i dati al file file.php che controlla la validità del sign in ed esegue il codice se corrisponde altrimenti reinvia ad index.php. Ogni altro file della catena è vincolato dal login (sign in) anche se un client cerca di accedere senza usare la home page. 
+
+<pre>
+
+
+
+
+&#60;form method&#61;"post" name&#61;"Login_Form"&#62;
+&#60;table&#62;
+&#60;tr&#62; &#60;td&#62;&#60;h3&#62;&#60;span&#62;Login&#60;/span&#62;&#60;/h3&#62;&#60;/td&#62; &#60;td&#62;&#60;/td&#62; &#60;/tr&#62;
+&#60;tr&#62; &#60;td&#62;Username&#60;/td&#62; &#60;td&#62;&#60;input name&#61;"Username" type&#61;"text" class&#61;"Input"&#62;
+&#60;span style&#61;"background-color:oldlace; color:maroon;"&#62;username1&#60;/span&#62;&#60;/td&#62;&#60;/tr&#62;
+&#60;tr&#62;&#60;td&#62;Password &#60;/td&#62;&#60;td&#62;&#60;input name&#61;"Password" type&#61;"password" class&#61;"Input"&#62;
+&#60;span style&#61;"background-color:oldlace; color:maroon;"&#62;password1&#60;/span&#62;&#60;/td&#62;
+&#60;/tr&#62;
+&#60;tr&#62; &#60;td&#62;&#60;input name&#61;"Submit" type&#61;"submit" value&#61;"Login" style&#61;" cursor:pointer !important;"&#62;
+&#60;/td&#62;&#60;td&#62; &#60;/td&#62;&#60;/tr&#62;
+&#60;/table&#62;
+&#60;/form&#62; 
+
+</pre>
+
+<span class="span-block">
+Porzione di codice html per inserire i dati username password necessari per php al fine di aprire una sessione di lavoro.
+</span><span class="span-block-fine"></span>
+
+<form method="post" name="Login_Form" style="background-color:burlywood !important;">
+<table>
+<tr> <td><h3><span>INSERIRE USERNAME E PASSWORD</span></h3></td> <td></td> </tr>
+<tr> <td>Username</td> <td><input name="Username" type="text" class="Input">
+<span style="background-color:oldlace; color:maroon;opacity:0.5 !important;">username1</span></td></tr>
+<tr><td>Password </td><td><input name="Password" type="password" class="Input">
+<span style="background-color:oldlace; color:maroon;opacity:0.5 !important;">password1</span></td>
+</tr>
+<tr> <td><input name="Submit" type="submit" value="Login" style=" cursor:pointer !important;">
+</td><td> </td></tr>
+</table>
+</form> 
+
+
+</span>
+</aside>
+<aside id="argomento-0044" class="argomento"><span class="id">0044</span>
+<span class="articolo">
+<span class="span-block">
+L'uscita dalla sessione di lavoro viene eseguita dal codice di log out. La fase di logout può diventare molto importante dato che se una sessione viene lasciata aperta chiunque può accedere ai dati del file.php senza conoscere username e password. Per ovviare a questo inconveniente si può mettere un contatore a rovescio (ad esempio ogni secondo) a scandire la fine della sessione
+</span><span class="span-block-fine"></span>
+<span class="span-block">
+Da tenere presente che un vero fine sessione comporterebbe una interruzione quando l'user non esegue alcuna operazione per un determinato periodo di tempo. Qui invece la sessione viene staccata comunque vadano le cose. Per questo è utile inserire un visualizzatore del tempo rimanente affinché user non sia sorpreso dalla fine della sessione.
+</span><span class="span-block-fine"></span>
+
+<pre>
+
+
+
+&#60;div&#62;
+&#60;?php session_start(); /* Starts the session */
+session_destroy(); /* Destroy started session */
+header("location:test.php"); /* Redirect to login page */
+exit;
+?&#62;
+&#60;/div&#62;
+
+
+
+</pre>
+
+<span class="span-block">
+Il timer che fa scadere una sessione o un form
+</span><span class="span-block-fine"></span>
+
+<pre>
+
+
+
+ var elem &#61; document&#46;getElementById&#40;"incremento"&#41;;
+ var numero &#61; 0; 
+ var intervallo &#61; setInterval&#40;contatore, 1000&#41;;
+ function contatore&#40;&#41; &#123;
+ numero&#61;numero+1;
+ elem&#46;innerHTML &#61; numero;
+ 
+ if &#40;numero&#61;&#61;40&#41; &#123;
+ window&#46;location&#46;href&#61;"test&#46;php" 
+ &#125;
+ &#125;
+
+</pre>
+
+
+
+<div>
+	<div id="incremento"></div>
+	<script>
+	 var elem = document.getElementById("incremento");
+	 var numeroTEST = 0; 
+	 var intervalloTEST = setInterval(contatore, 1000);
+	 function contatore() {
+	 numeroTEST=numeroTEST+1;
+	 elem.innerHTML = numeroTEST;
+	 
+	 if (numeroTEST==40) {
+	 // window.location.href="test.php" 
+	 clearInterval(intervalloTEST);
+	 }
+	 }	
+	</script>
+</div>
+
+
+
+	
+<pre>
+
+
+
+
+&#60;span id&#61;"timeragenda" 
+style&#61;"cursor:default !important; opacity:1 !important;"&#62;
+&#60;/span&#62;
+&#60;script&#62;
+document&#46;getElementById&#40;"timeragenda"&#41;&#46;innerHTML&#61;
+' &#60;span id&#61;"incremento_timer"&#62; '+
+' '+
+' &#60;/span&#62;'+
+' &#60;span&#62; '+
+' &#47;5 '+
+' &#60;/span&#62;'+
+' '+
+' ' ;
+
+var elem_timer &#61; document&#46;getElementById&#40;"incremento_timer"&#41;;
+ var numero_timer &#61; 0; 
+ var intervallo_timer &#61; setInterval&#40;contatore_timer, 1000&#41;;
+ function contatore_timer&#40;&#41; &#123;
+ numero_timer&#61;numero_timer+1;
+ elem_timer&#46;innerHTML &#61; numero_timer;
+ 
+ if &#40;numero_timer&#61;&#61;5&#41; &#123;
+ // window&#46;location&#46;href&#61;"test&#46;php" 
+ clearInterval&#40;intervallo_timer&#41;;
+ &#125;
+ &#125;	
+&#60;/script&#62;
+
+
+
+</pre>
+
+<span id="timeragenda" 
+style="cursor:default !important; opacity:1 !important;">
+</span>
+<script>
+document.getElementById("timeragenda").innerHTML=
+' <span id="incremento_timer"> '+
+' '+
+' </span>'+
+' <span> '+
+' &#47;5 '+
+' </span>'+
+' '+
+' ' ;
+
+var elem_timer = document.getElementById("incremento_timer");
+ var numero_timer = 0; 
+ var intervallo_timer = setInterval(contatore_timer, 1000);
+ function contatore_timer() {
+ numero_timer=numero_timer+1;
+ elem_timer.innerHTML = numero_timer;
+ 
+ if (numero_timer==5) {
+ // window.location.href="test.php" 
+ clearInterval(intervallo_timer);
+ }
+ }	
+</script>
+
+
+
+</span>
+</aside>
+
+
+
+
+<aside id="argomento-0046" class="argomento bg-warning"><span class="id">0046</span>
+<span class="articolo">
+
+Struttura 
+
+</span>
+</aside>
+<aside id="argomento-0047" class="argomento"><span class="id">0047</span>
+<span class="articolo">
+
+Arriviamo ora alla struttura html da cui normalmente si inizia ma qui appare dopo seguendo una linea di pensiero bottom-up.
+
+Quando si crea il DGEBI si digita la combinazione ID script la quale è molto lieve però nasconde il meccanismo di funzionamento. Alcune porzioni di codice devono però assolutamente essere scritti in html. Per non parlare dei magic numbers vale a dire "trucchi" per risolvere alcuni problemi di aggiustamento strutturale (hacking) . Se non vengono sottolineati e commentati riesce poi difficile rintracciarne sia la funzione che la corretta scrittura. 
+
+</span>
+</aside>
+
+<aside id="argomento-0048" class="argomento"><span class="id">0048</span>
+<span class="articolo">
+
+Si definisce il tipo di html
+<pre>
+
+&#60;!DOCTYPE html&#62;
+
+</pre>
+
+
+<pre>
+
+
+
+&#60;html id&#61;"html" lang&#61;"it" xmlns&#61;"http://www.w3.org/1999/xhtml"&#62;
+
+
+</pre>
+</span>
+</aside>
+
+<aside id="argomento-0049" class="argomento"><span class="id">0049</span>
+<span class="articolo">
+Il contenitore del codice. Qui inizia la sequenza di elementi html aventi la caratteristica di separatori o linee di serialità nella esecuzione del codice html considerare ogni elemento come una linea alla quale sono appesi come fogli dei comandi. Definire un width height di un div non significa altro che fornire una grandezza alla linea di appoggio dei comandi seguenti. 
+
+<pre>
+
+&#60;head&#62;
+
+</pre>
+Rappresenta il posto nel quale si dovrebbero inserire i fogli di stile e altre dipendenze del programma html ad esempio i CDN come visto nella sezione asincrono tramite script si possono aggiungere a head i link necessari. 
+
+<pre>
+
+&#60;meta charset&#61;"utf-8"&#62;
+
+</pre>
+
+Molto importante per la decodifica dei caratteri europei.
+
+<pre>
+
+&#60;meta name&#61;"viewport" content&#61;"width&#61;device-width, initial-scale&#61;1, shrink-to-fit&#61;no"&#62;
+
+</pre>
+
+Necessario per il responsive e cross browser. Inoltre evita la simplified view in Chrome.
+
+<pre>
+
+&#60;title&#62;
+
+</pre>
+Titolo della pagina visualizzata
+
+<pre>
+
+&#60;link href&#61;"bs&#47;kickstart&#47;tablone_aggiunte_test&#47;default.js" rel&#61;"stylesheet" &#47;&#62;
+
+</pre>
+Fogli di stile personalizzati
+
+
+</span>
+</aside>
+
+
+<aside id="argomento-0050" class="argomento"><span class="id">0050</span>
+<span class="articolo">
+
+</span>
+</aside>
+
+
+<aside id="argomento-0051" class="argomento"><span class="id">0051</span>
+<span class="articolo">
+
+
+Allorquando siano stabilizzati i codici css js di bootstrap si possono inserire in head senza sincronizzarli. 
+<pre>
+
+&#60;script src&#61;"bs&#47;kickstart&#47;bsnr_kickstart_test&#47;default.js"&#62;&#60;&#47;script&#62;
+
+</pre>
+Fornisce i codici css js base di bootstrap localizzati. 
+<pre>
+
+&#60;script src&#61;"bs&#47;kickstart&#47;piedipagina_menu_test&#47;default.js"&#62;&#60;&#47;script&#62;
+
+</pre>
+Fornisce il menu in fondo alla pagina in modo da poter spostarsi tra i link interni ed esterni. Come detto è possibile con javascript creare in head una var radice che permette di personalizzare il dominio nel quale sono archiviati i files. 
+<a href="http://beatsupernovarasa.altervista.org/radice/radice.js">un_esempio_di_radice</a>
+
+Fogli di stile personalizzati
+
+<pre>
+
+&#60;link href&#61;"bs&#47;kickstart&#47;tablone_aggiunte_test&#47;default.js" rel&#61;"stylesheet" &#47;&#62;
+
+</pre>
+
+Aggiusta il body.
+<pre>
+
+&#60;body id&#61;"body" style&#61;"border-right:solid 0.2rem indigo !important;"&#62;
+
+</pre>
+
+</span>
+</aside>
+
+
+
+
+
+
+<aside id="argomento-0052" class="argomento"><span class="id">0052</span>
+<span class="articolo">
+
+
+</span>
+</aside>
+
+
+
+
+<aside id="argomento-0053" class="argomento bg-warning"><span class="id">0053</span>
+<span class="articolo">
+Composizione di una struttura base pagina in html
+
+</span>
+</aside>
+
+
+<aside id="argomento-0054" class="argomento"><span class="id">0054</span>
+<span class="articolo">
+
+<pre>
+
+
+
+
+&#60;!DOCTYPE html&#62;
+&#60;html lang&#61;"it" xmlns&#61;"http:&#47;&#47;www.w3.org&#47;1999&#47;xhtml"&#62;
+&#60;head&#62;
+&#60;meta charset&#61;"utf-8"&#62;
+&#60;meta name&#61;"viewport" content&#61;"width&#61;device-width, initial-scale&#61;1, shrink-to-fit&#61;no"&#62;
+
+&#60;title&#62;&#60;&#47;title&#62;
+
+&#60;link href&#61;"http:&#47;&#47;beatsupernovarasa.altervista.org&#47;zap&#47;bs&#47;tablone&#47;default.css" rel&#61;"stylesheet" &#47;&#62;
+
+&#60;style&#62;
+html * {font-family: 'PT Mono', monospace !important;} 
+&#60;&#47;style&#62;
+
+&#60;&#47;head&#62;
+
+&#60;body style&#61;"border-right:solid 0.2rem indigo !important;"&#62;
+
+
+&#60;div id&#61;"bsnr_kickstart_test"&#62;bug bsnr_kickstart_test&#60;&#47;div&#62;
+&#60;script src&#61;"http:&#47;&#47;beatsupernovarasa.altervista.org&#47;zap&#47;bs&#47;kickstart&#47;bsnr_kickstart_test&#47;default.js"&#62;&#60;&#47;script&#62;
+
+&#60;div id&#61;"piedipagina_menu_test"&#62;bug piedipagina_menu_test&#60;&#47;div&#62;
+&#60;script src&#61;"http:&#47;&#47;beatsupernovarasa.altervista.org&#47;zap&#47;bs&#47;kickstart&#47;piedipagina_menu_test&#47;default.js"&#62;&#60;&#47;script&#62;
+
+
+&#60;div id&#61;"spinner" class&#61;"spinner-border text-warning" style&#61;"position:fixed; top:2.5rem; left:0; background-color:oldlace;"&#62;&#60;&#47;div&#62;
+
+&#60;&#47;body&#62;
+
+&#60;&#47;html&#62;
+
+
+
+</pre>
+
+</span>
+</aside>
+<aside id="argomento-0055" class="argomento"><span class="id">0055</span>
+<span class="articolo">
+
+I due DGEBI vanno inseriti esattamente in questa posizione altrimenti non funzionano. Rispettare la precedenza prima gli id poi gli script. Lo id dello spinner agisce su una funzione script presente in bsnr_kickstart_test. In head è posizionato uno style che istruisce la pagina ad usare monospace PT. Assieme al magic patch in body questo è un fuorisacco, e un candidato ad essere inserito in un aggiornamento di bsnr_kickstart_test. 4
+
+La struttura base qui presentata è mancante di main il quale è un contenitore delle informazioni da veicolare con la pagina. Il main è una struttura di secondo livello appartenente al user. 
+
+</span>
+</aside>
+<aside id="argomento-0056" class="argomento"><span class="id">0056</span>
+<span class="articolo">
+
+Alcuni problemi con il footer si rilevano dato che il collapse ha una priorità la quale impedisce di accedere ad alcune funzionalità del programma. Occorre quindi procedere con il hide del componente bloccante. 
+
+</span>
+</aside>
+
+<aside id="argomento-0057" class="argomento"><span class="id">0057</span>
+<span class="articolo">
+Il toggle utilizza un solo bottone per attivare o disattivare una determinata attività.
+
+<pre>
+
+
+&#60;span class&#61;"versionedelprogramma"&#61;VEDI/NASCONDI&#60;/span&#62;
+
+&#60;span class&#61;"position-fixed bottom-0 right-0 m-1 versionedelprogramma"&#62;
+&#60;span onclick&#61;"showElement&#40;&#41;" class&#61;"vedi"&#62; &#60;/span&#62;
+&#60;span onclick&#61;"hideElement&#40;&#41;" class&#61;"nascondi"&#62; &#60;/span&#62;
+&#60;/span&#61; 
+function showElement&#40;&#41; { 
+element &#61; document.querySelector&#40;'.versionedelprogramma'&#41;; 
+element.style.visibility &#61; 'visible'; 
+} 
+
+function hideElement&#40;&#41; { 
+element &#61; document.querySelector&#40;'.versionedelprogramma'&#41;; 
+element.style.visibility &#61; 'hidden'; 
+} 
+
+
+
+</pre>
+
+</span>
+</aside>
+
+
+
+<aside id="argomento-0058" class="argomento"><span class="id">0058</span>
+<span class="articolo">
+Un ulteriore miglioramento avviene se i due pulsanti X e Y sono fatti visualmente coincidere effettuando un unico pulsante toggle ovvero attiva/disattiva
+
+<pre>
+
+
+
+&#60;span id&#61;"vedoXoY"&#62;bug vedoXoY&#60;/span&#62;
+
+&#60;script&#62;
+document.getElementById&#40;"vedoXoY"&#41;.innerHTML&#61;
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#60;style&#62; &#39;+
+&#39; &#39;+
+&#39; .posvedoXoY&#123;&#39;+
+&#39; position:fixed !important;&#39;+
+&#39; right:0 !important;&#39;+
+&#39; bottom:0 !important;&#39;+
+&#39; color:transparent !important;&#39;+
+&#39; margin-right: 0.5rem !important;&#39;+
+&#39; margin-bottom: 1.0rem !important;&#39;+
+
+&#39; &#39;+
+&#39; &#125;&#39;+
+&#39; &#39;+
+&#39; .vediY&#123; &#39;+
+&#39; cursor:pointer !important;&#39;+
+&#39; background-color:indigo !important;&#39;+
+&#39; background-color:rgba&#40;75,0,130,1&#41; !important;&#39;+
+&#39; border:solid 0.12rem rgba&#40;75,0,130,1&#41; !important;&#39;+
+&#39; &#39;+
+&#39; &#125;&#39;+
+&#39; &#39;+
+&#39; .vediX&#123; &#39;+
+&#39; cursor:pointer !important;&#39;+
+&#39; background-color:orange !important;&#39;+
+&#39; background-color:rgba&#40;255,165,0,1&#41; !important;&#39;+
+&#39; border:solid 0.12rem rgba&#40;75,0,130,1&#41; !important;&#39;+
+&#39; &#39;+
+&#39; &#125;&#39;+
+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#60;/style&#62; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+
+&#39;&#60;span onclick&#61;"showElement&#40;&#41;" class&#61;"vedi nascondiY vediY posvedoXoY"&#62;Y&#60;/span&#62; &#39;+
+
+&#39;&#60;span onclick&#61;"hideElement&#40;&#41;" class&#61;"nascondi nascondiX vediX posvedoXoY"&#62;X&#60;/span&#62; &#39;+
+
+&#39; &#39;
+;
+
+function hideElement&#40;&#41; &#123; 
+element &#61; document.querySelector&#40;&#39;.vedoXoY&#39;&#41;; 
+element.style.visibility &#61; &#39;hidden&#39;; 
+element &#61; document.querySelector&#40;&#39;.nascondiX&#39;&#41;; 
+element.style.visibility &#61; &#39;hidden&#39;; 
+element &#61; document.querySelector&#40;&#39;.vediY&#39;&#41;; 
+element.style.visibility &#61; &#39;visible&#39;; 
+
+&#125; 
+
+
+function showElement&#40;&#41; &#123; 
+element &#61; document.querySelector&#40;&#39;.vedoXoY&#39;&#41;; 
+element.style.visibility &#61; &#39;visible&#39;;
+element &#61; document.querySelector&#40;&#39;.vediX&#39;&#41;; 
+element.style.visibility &#61; &#39;visible&#39;;
+element &#61; document.querySelector&#40;&#39;.nascondiY&#39;&#41;; 
+element.style.visibility &#61; &#39;hidden&#39;;
+
+&#125; 
+
+&#60;/script&#62;
+
+
+</pre>
+
+</span>
+</aside>
+
+
+
+
+
+<aside id="argomento-0059" class="argomento bg-warning"><span class="id">0059</span>
+<span class="articolo">
+
+Linee guida per main.
+
+</span>
+</aside>
+
+
+<aside id="argomento-0060" class="argomento"><span class="id">0060</span>
+<span class="articolo">
+<pre>
+[----------------table------------------]
+[----------------tr---------------------]
+[------td-----------][-----td-----------]
+.....................[-----tablette-----]
+.....................[-----tr-----------]
+.....................[-----td-----------]
+
+</pre>
+
+</span>
+</aside>
+
+
+
+<aside id="argomento-0061" class="argomento"><span class="id">0061</span>
+<span class="articolo">
+
+Il main sarà poi "compilato" in DGEBI e richiede <a href="http://beatsupernovarasa.altervista.org/zap/bs/tablone/default.css">tablone.css</a>
+
+La table usa la class table di bootstrap che da sola risolve abbastanza. In tablone.css si ha una aggiunta 
+
+Di particolare interesse è fissare table e relativa larghezza.
+
+In aggiunta fissare anche con un valore la larghezza della colonnina sinistra del 
+table principale.
+
+<pre>
+
+
+
+table&#123; table-layout&#58; fixed !important; width&#58;100% !important; &#125;
+
+</pre>
+</span>
+</aside>
+
+
+<aside id="argomento-0062" class="argomento"><span class="id">0062</span>
+<span class="articolo">
+
+L'inserimento delle sections presuppone esse non forino la barriera del td è necessario avere attenzione per overflow.
+<span class="span-block" style="background-color: whitesmoke;">
+Fare molta attenzione ad un drawback in Chrome che riconosce (in modo errato) il segno meno come spazio e quindi non applica overflow.
+Da notare un possibile problema di rendering dato dalla comune idea che una string viene spezzata dal browser 
+quando trova uno space il quale fa da separazione per individuare le parole in una proposizione. 
+Ora appare un behavior non congruo con questo comportamento tra 0123456789-0123456789 e 01234567890123456789 oppure 0123456789 0123456789 , 
+normalmente le prime due string sono una unica parola mentre la terza string è composta da due parole tuttavia 
+nel browser Chrome la string uno è formata da due parole e solo la seconda è interpretata come una singola string. 
+</span><span class="span-block-fine"></span>
+Comunque se Chrome si comporta in modo anomalo occorre segnalare che anche 
+Firefox non manca di segnalare una barra di scorrimento se si esagera con gli 
+overflow (es.un overflow in main)
+
+</span>
+</aside>
+
+
+<aside id="argomento-0063" class="argomento bg-warning"><span class="id">0063</span>
+<span class="articolo">
+
+Framework Magic Patches
+
+</span>
+</aside>
+
+
+
+<aside id="argomento-0064" class="argomento"><span class="id">0064</span>
+<span class="articolo">
+
+<pre>
+
+
+
+
+&#60;!DOCTYPE html&#62;
+
+&#60;html id&#61;"html" lang&#61;"it" xmlns&#61;"http&#58;&#47;&#47;www&#46;w3&#46;org&#47;1999&#47;xhtml"&#62;
+&#60;head&#62;
+&#60;meta charset&#61;"utf-8"&#62;
+&#60;meta name&#61;"viewport" content&#61;"width&#61;device-width, initial-scale&#61;1, shrink-to-fit&#61;no"&#62;
+
+&#60;title&#62; 2200 struttura base 20201227&#60;&#47;title&#62;
+
+&#60;script src&#61;"http&#58;&#47;&#47;beatsupernovarasa&#46;altervista&#46;org&#47;radice&#47;radice&#46;js"&#62;&#60;&#47;script&#62;
+
+&#60;style&#62;
+&#58;root &#123;background-color&#58;rgba&#40;255,170,0,0&#46;5&#41;;&#125;
+
+body&#123; background-color&#58;default; &#125;
+&#60;&#47;style&#62;
+
+&#60;&#47;head&#62;
+
+&#60;body id&#61;"body" onload&#61;"pausa&#40;&#41;" style&#61;"visibility&#58;hidden;"&#62;
+
+&#60;main class&#61;"px-5"&#62; 
+
+
+&#60;header class&#61;"titolo"&#62; 
+&#60;blockquote class&#61;"text-center"&#62; 
+ &#60;div class&#61;"overflow-auto"&#62; 
+ titolo &#60;span style&#61;"font-size&#58;1&#46;25rem !important; "&#62;[&#46;&#46;&#46;]&#60;&#47;span&#62; 
+ &#60;&#47;div&#62; 
+&#60;&#47;blockquote&#62; 
+&#60;&#47;header&#62; 
+
+&#60;table class&#61;"table"&#62; 
+&#60;tbody&#62; 
+&#60;tr&#62; 
+ 
+&#60;td id&#61;"colonna-sinistra" class&#61;"p-0 colonna-sinistra"&#62; &#60;&#47;td&#62;
+ 
+&#60;td&#62;
+ 
+&#60;table class&#61;"table"&#62; 
+&#60;tr&#62; 
+&#60;td&#62; 
+ 
+ &#60;section&#62;
+[qui le sezioni o gli articoli] 
+ &#60;&#47;section&#62; 
+&#60;&#47;td&#62; 
+&#60;&#47;tr&#62; 
+&#60;&#47;table&#62; 
+ 
+&#60;&#47;td&#62; 
+&#60;&#47;tr&#62; 
+&#60;&#47;tbody&#62; 
+&#60;&#47;table&#62; 
+ 
+ 
+ 
+&#60;&#47;main&#62;
+
+
+
+&#60;div id&#61;"bsnr_kickstart_test"&#62;bug bsnr_kickstart_test&#60;&#47;div&#62;
+
+&#60;div id&#61;"piedipagina_menu_postcards" class&#61;"versionedelprogramma"&#62;bug piedipagina_menu_postcards&#60;&#47;div&#62;
+
+&#60;div id&#61;"show_hide_postcards"&#62;bug show_hide_postcards&#60;&#47;div&#62;
+
+&#60;script src&#61;"http&#58;&#47;&#47;beatsupernovarasa&#46;altervista&#46;org&#47;zap&#47;bs&#47;kickstart&#47;default&#46;js"&#62;&#60;&#47;script&#62;
+
+
+
+&#60;script&#62;
+
+document&#46;getElementById&#40;"piedipagina_menu_postcards"&#41;&#46;innerHTML&#61;
+&#39; &#60;section style&#61;"position&#58;fixed; bottom&#58;0; left&#58;0;&#39;+
+&#39; width&#58;100%; text-align&#58;left; border&#58;solid 1rem transparent;"&#62; &#39;+
+
+&#39; &#60;span style&#61;"margin-right&#58;2&#46;3rem !important;&#39;+
+&#39; padding&#58;0&#46;2rem;&#39;+
+&#39; background-color&#58;oldlace; &#39;+
+&#39; border-radius&#58;0&#46;4rem !important;&#39;+
+&#39; border&#58;solid 0&#46;05rem navy !important;"&#62; &#39;+ 
+&#39; &#39;+ 
+
+&#39; &#60;button type&#61;"button" class&#61;"btn shadow-none bg-warning rounded" &#39;+ 
+&#39; data-toggle&#61;"collapse" data-target&#61;"#collapsemenuapdp" &#39;+ 
+&#39; aria-expanded&#61;"false" &#39;+ 
+&#39; style&#61;"position&#58;fixed; top&#58;2&#46;5rem; right&#58;0; &#47;* border-radius&#58;0rem !important; border&#58;solid 0rem black; *&#47; "&#62; &#39;+ 
+&#39; &#39;+ 
+&#39; &#60;svg width&#61;"1em" height&#61;"1em" viewBox&#61;"0 0 16 16" class&#61;"bi bi-back" fill&#61;"currentColor" xmlns&#61;"http&#58;&#47;&#47;www&#46;w3&#46;org&#47;2000&#47;svg"&#62;&#60;path fill-rule&#61;"evenodd" d&#61;"M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"&#47;&#62; &#39;+ 
+&#39; &#60;&#47;svg&#62; &#39;+ &#39; &#39;+ 
+&#39; &#60;&#47;button&#62; &#39;+ 
+
+
+&#39; &#60;span style&#61;"visibility&#58;hidden !important;"&#62;menu&#60;&#47;span&#62; &#39;+
+
+
+&#39; &#60;a href&#61;"#fine"&#62; &#39;+ 
+&#39; &#60;svg xmlns&#61;"http&#58;&#47;&#47;www&#46;w3&#46;org&#47;2000&#47;svg" height&#61;"24" viewBox&#61;"0 0 24 24" width&#61;"24"&#62;&#60;path d&#61;"M0 0h24v24H0V0z" fill&#61;"none" &#47;&#62; &#60;path fill&#61;"maroon" d&#61;"M20 12l-1&#46;41-1&#46;41L13 16&#46;17V4h-2v12&#46;17l-5&#46;58-5&#46;59L4 12l8 8 8-8z"&#47;&#62; &#39;+ 
+&#39; &#60;&#47;svg&#62;&#60;&#47;a&#62; &#39;+ 
+&#39; &#60;span style&#61;"visibility&#58;hidden !important;"&#62;menu&#60;&#47;span&#62; &#39;+ 
+&#39; &#39;+ 
+
+&#39; &#60;a href&#61;"#"&#62; &#39;+ 
+&#39; &#60;svg xmlns&#61;"http&#58;&#47;&#47;www&#46;w3&#46;org&#47;2000&#47;svg" height&#61;"24" viewBox&#61;"0 0 24 24" width&#61;"24"&#62; &#60;path d&#61;"M0 0h24v24H0V0z" fill&#61;"none"&#47;&#62; &#60;path fill&#61;"maroon" d&#61;"M4 12l1&#46;41 1&#46;41L11 7&#46;83V20h2V7&#46;83l5&#46;58 5&#46;59L20 12l-8-8-8 8z"&#47;&#62; &#39;+ 
+&#39; &#60;&#47;svg&#62;&#60;&#47;a&#62; &#39;+ 
+&#39; &#39;+ 
+&#39; &#60;&#47;span&#62; &#39;+ 
+
+&#39; &#39;+ 
+&#39; &#39;+ 
+&#39; &#39;+ 
+&#39; &#39;+ 
+
+&#39; &#39;+ 
+&#39; &#39;+ 
+&#39; &#39;+ 
+&#39; &#39;+ 
+
+&#39; &#60;div id&#61;"collapsemenuapdp" &#39;+
+&#39; class&#61;"collapse dropdown-menuY border-0" &#39;+ 
+&#39; style&#61;" padding&#58;0rem !important; &#39;+ 
+&#39; &#39;+ 
+&#39; background-color&#58;rgba&#40;0,85,85,0&#41;; &#39;+ 
+&#39; border-left&#58;solid 0&#46;1rem rgba&#40;255,170,0,1&#41; !important; &#39;+ 
+&#39; border-radius&#58;0rem !important; &#39;+ 
+&#39; background-color&#58;rgba&#40;255,170,0,0&#46;85&#41;; "&#62; &#39;+ 
+
+
+&#39; &#60;ul style&#61;"border&#58;solid 0&#46;25rem indigo !important; &#39;+
+&#39; height&#58;11&#46;5rem !important; &#39;+
+&#39; overflow&#58;auto !important; border-radius&#58;0&#46;2rem !important; "&#62;&#39;+
+
+
+&#39; &#60;a class&#61;"btn-warning rounded" &#39;+ 
+&#39; href&#61;"index&#46;html"&#62; &#39;+ 
+&#39; &#60;span class&#61;"rounded p-1 fw-bold" style&#61;"background-color&#58;indigo;color&#58;oldlace;border&#58;solid 0&#46;1rem indigo;"&#62;&#39;+
+&#39; home_page&#60;&#47;span&#62;&#60;&#47;a&#62; &#39;+
+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+
+
+&#39; &#39;+ 
+&#39; &#39;+ 
+&#39; &#60;&#47;ul&#62; &#39;+
+
+&#39; &#60;span class&#61;"p-0" style&#61;"font-size&#58;small !important; background-color&#58;indigo;color&#58;oldlace;"&#62; &#39;+ 
+&#39; versione bs5 con aggiunte alfabeta 20201227_2200 &#39;+
+&#39; &#60;&#47;span&#62; &#39;+
+
+
+&#39; &#60;a class&#61;"ml-2 btn-warning rounded" &#39;+ 
+&#39; href&#61;"index&#46;html"&#62; &#39;+ 
+&#39; &#60;span class&#61;"rounded p-1 fw-bold" style&#61;"background-color&#58;oldlace;color&#58;indigo;border&#58;solid 0&#46;1rem indigo;box-shadow&#58;0&#46;2rem 0&#46;2rem 0&#46;4rem black !important;"&#62;&#39;+
+&#39; home_page&#60;&#47;span&#62;&#60;&#47;a&#62; &#39;+ 
+
+&#39; &#60;&#47;div&#62; &#39;+
+&#39; &#39;+
+&#39; &#60;&#47;section&#62; &#39;+
+
+&#39;&#39;;
+
+
+ 
+document&#46;getElementById&#40;"show_hide_postcards"&#41;&#46;innerHTML&#61;
+&#39;&#60;span class&#61;"position-fixed bottom-0 right-0 m-1 versionedelprogramma" &#39;+
+&#39; style&#61;"border&#58;solid 1rem transparent;"&#62; &#39;+
+&#39;&#60;span onclick&#61;"hideElement&#40;&#41;" class&#61;"nascondi" style&#61;"color&#58;transparent !important;" &#62;X&#60;&#47;span&#62; &#39;+
+&#39;&#60;span onclick&#61;"showElement&#40;&#41;" class&#61;"vedi" style&#61;"color&#58;transparent !important;" &#62;Y&#60;&#47;span&#62; &#39;+
+&#39;&#60;&#47;span&#62; &#39;+
+
+&#39; &#39;
+;
+
+ 
+ function showElement&#40;&#41; &#123; 
+ element &#61; document&#46;querySelector&#40;&#39;&#46;versionedelprogramma&#39;&#41;; 
+ element&#46;style&#46;visibility &#61; &#39;visible&#39;; 
+ &#125; 
+ 
+ function hideElement&#40;&#41; &#123; 
+ element &#61; document&#46;querySelector&#40;&#39;&#46;versionedelprogramma&#39;&#41;; 
+ element&#46;style&#46;visibility &#61; &#39;hidden&#39;; 
+ &#125; 
+ 
+
+
+&#60;&#47;script&#62;
+
+
+&#60;div id&#61;"divpausa" style&#61;"position&#58;fixed;
+top&#58;2&#46;5rem;left&#58;0;
+top&#58;50%;left&#58;50%;
+background-color&#58;var&#40;--bs-white&#41; !important;
+margin-left&#58;-8&#46;5rem !important; margin-top&#58;-2rem !important; 
+border-radius&#58;0&#46;2rem !important; visibility&#58;visible !important;"&#62;
+&#60;span id&#61;"pausa" class&#61;"spinner-border text-warning"&#62;&#60;&#47;span&#62;
+
+&#60;span style&#61;"background-color&#58;transparent !important;"&#62;
+&#60;span id&#61;"Loading"
+style&#61;"color&#58;var&#40;--bs-indigo&#41; !important; font-size&#58;2rem !important;"&#62;
+Loading&#46;&#46;&#46;&#60;&#47;span&#62;
+&#60;span id&#61;"percento" 
+style&#61;"color&#58;var&#40;--bs-indigo&#41; !important;
+font-size&#58;2rem !important;font-variant&#58;small-caps !important;"&#62;
+&#60;&#47;span&#62;
+&#60;&#47;span&#62;
+&#60;&#47;div&#62; 
+
+
+
+ &#60;script&#62;
+ 
+function pausa&#40;&#41;&#123;
+if &#40;document&#46;all&#41;&#123;&#125; 
+else if 
+&#40;document&#46;getElementById&#41;
+ &#123; 
+ document&#46;getElementById&#40;"pausa"&#41;&#46;style&#46;visibility&#61;"hidden";
+ document&#46;getElementById&#40;"percento"&#41;&#46;style&#46;visibility&#61;"hidden";
+ document&#46;getElementById&#40;"Loading"&#41;&#46;style&#46;visibility&#61;"hidden";
+ document&#46;getElementById&#40;"divpausa"&#41;&#46;style&#46;visibility&#61;"hidden";
+
+ document&#46;getElementById&#40;"body"&#41;&#46;style&#46;visibility&#61;"visible";
+ document&#46;getElementById&#40;"body"&#41;&#46;style&#46;backgroundColor &#61; &#39;default&#39;;
+ document&#46;getElementById&#40;"html"&#41;&#46;style&#46;backgroundColor &#61; &#39;transparent&#39;;
+
+ &#125;
+
+&#125;
+
+var percento&#61;document&#46;getElementById&#40;"percento"&#41;;
+var contatore&#61;1; 
+var intervallo&#61;setInterval&#40; function&#40;&#41; &#123; percento&#46;innerHTML&#61;contatore+"%"; 
+contatore++; if &#40;contatore&#61;&#61;&#61;101&#41; &#123;clearInterval&#40;intervallo&#41;;&#125; 
+&#125; , 9000&#41; 
+
+ &#60;&#47;script&#62;
+
+&#60;&#47;body&#62;
+
+&#60;&#47;html&#62;
+
+
+</pre>
+</span>
+</aside>
+
+
+<aside id="argomento-0065" class="argomento bg-warning"><span class="id">0065</span>
+<span class="articolo">
+
+Il codice del programma attualmente in esecuzione
+
+</span>
+</aside>
+
+
+<aside id="argomento-0066" class="argomento"><span class="id">0066</span>
+<span class="articolo">
+
+
+<pre>
+
+
+&#60;!DOCTYPE html&#62;
+&#60;html id&#61;"html" lang&#61;"it" xmlns&#61;"http&#58;&#47;&#47;www&#46;w3&#46;org&#47;1999&#47;xhtml"&#62;
+&#60;head&#62;
+
+&#60;meta charset&#61;"utf-8"&#62;
+&#60;meta name&#61;"generator" content&#61;"AlterVista - Editor HTML"&#47;&#62;
+&#60;meta name&#61;"viewport" content&#61;"width&#61;device-width, initial-scale&#61;1, shrink-to-fit&#61;no"&#62;
+
+&#60;title&#62; 0930 loremipsum TOGMenu 20210104 &#60;&#47;title&#62;
+
+
+&#60;&#47;head&#62;
+&#60;body id&#61;"body" onload&#61;"pausa&#40;&#41;" style&#61;"visibility&#58;hidden !important;"&#62;
+
+&#60;main id&#61;"main" class&#61;"mx-5"&#62;
+
+&#60;table id&#61;"tablone" class&#61;"table"&#62; 
+&#60;tbody&#62; 
+&#60;tr&#62; 
+
+&#60;td id&#61;"tablone-td-sinistra" class&#61;"p-0"&#62; &#60;&#47;td&#62;
+
+&#60;td id&#61;"tablone-td-destra" &#62;
+
+&#60;table id&#61;"tablette" class&#61;"table"&#62; 
+&#60;tr&#62; 
+&#60;td&#62; 
+
+
+
+
+
+
+&#60;aside id&#61;"argomento-0000" class&#61;"argomento bg-warning"&#62;&#60;span class&#61;"id"&#62;0000&#60;&#47;span&#62;
+&#60;span class&#61;"articolo"&#62;
+
+&#60;&#47;span&#62;
+&#60;&#47;aside&#62;
+
+
+&#60;&#47;td&#62; 
+&#60;&#47;tr&#62; 
+&#60;&#47;table&#62; 
+
+&#60;&#47;td&#62; 
+&#60;&#47;tr&#62; 
+&#60;&#47;tbody&#62; 
+&#60;&#47;table&#62; 
+
+
+&#60;&#47;main&#62;
+
+&#60;span id&#61;"bsnr_kickstart_test"&#62;bug bsnr_kickstart_test&#60;&#47;span&#62;
+
+&#60;script src&#61;"http&#58;&#47;&#47;beatsupernovarasa&#46;altervista&#46;org&#47;alfabeta&#47;bs&#47;default&#46;js"&#62;&#60;&#47;script&#62;
+
+
+
+&#60;div id&#61;"menu" class&#61;"vediXoY"&#62;&#60;&#47;div&#62;
+&#60;script&#62;
+&#47;* menu &#40;da togglare&#41; class vediXoY *&#47;
+&#47;* 20210102_1245 *&#47;
+&#47;*
+
+per funzionare come menu collapse
+necessita di bootstrap alfabeta-bs
+html asterisk pt mono
+
+*&#47;
+document&#46;getElementById&#40;"menu"&#41;&#46;innerHTML&#61;
+&#39; &#60;link href&#61;"https&#58;&#47;&#47;fonts&#46;googleapis&#46;com&#47;css2?family&#61;PT+Mono&display&#61;swap" rel&#61;"stylesheet"&#62; &#39;+
+
+
+&#39; &#60;div style&#61;" &#39;+
+&#39; position&#58;fixed !important; &#39;+
+&#39; bottom&#58;0rem !important; &#39;+
+&#39; left&#58;0rem !important; &#39;+
+
+&#39; margin-left&#58;0&#46;5% !important; &#39;+
+&#39; margin-right&#58;0&#46;5% !important; &#39;+
+
+&#39; background-color&#58;oldlace !important; &#39;+
+&#39; background-color&#58;rgba&#40;253,245,230,0&#46;95&#41; !important; &#39;+
+
+
+&#39; width&#58;99% !important; &#39;+
+&#39; height&#58;auto !important; &#39;+
+&#39; font-size&#58;1&#46;1rem !important; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; text-align&#58;left !important; &#39;+
+&#39; &#39;+
+&#39; border&#58;solid 0&#46;2rem transparent !important; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; "&#62; &#39;+
+
+
+
+&#39; &#60;button type&#61;"button" &#39;+
+&#39; class&#61;"btn shadow-none &#39;+
+&#39; bg-warning rounded" &#39;+ 
+&#39; data-toggle&#61;"collapse" &#39;+
+&#39; data-target&#61;"#COLLAPSE_MENU" &#39;+ 
+&#39; aria-expanded&#61;"false" &#39;+ 
+&#39; style&#61;"position&#58;fixed !important; &#39;+
+&#39; top&#58;2&#46;5rem !important; right&#58;0 !important; &#39;+
+&#39; top&#58;5rem !important; right&#58;0 !important; &#39;+
+&#39; font-size&#58;1rem !important; &#39;+
+&#39; "&#62; &#39;+ 
+
+&#39; &#39;+ 
+&#39; &#60;svg width&#61;"1rem" height&#61;"1rem" &#39;+
+&#39; viewBox&#61;"0 0 16 16" &#39;+
+&#39; class&#61;"bi bi-back" &#39;+
+&#39; fill&#61;"currentColor" xmlns&#61;"http&#58;&#47;&#47;www&#46;w3&#46;org&#47;2000&#47;svg"&#62;&#60;path fill-rule&#61;"evenodd" d&#61;"M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"&#47;&#62; &#39;+ 
+&#39; &#60;&#47;svg&#62; &#39;+ &#39; &#39;+ 
+&#39; &#60;&#47;button&#62; &#39;+
+
+
+
+&#39; &#60;span style&#61;" &#39;+
+&#39; margin-left&#58;2&#46;55rem !important; &#39;+
+
+&#39; padding&#58;0&#46;2rem !important;&#39;+
+
+&#39; background-color&#58;oldlace !important; &#39;+
+&#39; background-color&#58;rgba&#40;253,245,230,1&#41; !important; &#39;+
+
+&#39; font-size&#58;1&#46;1rem !important; &#39;+
+
+&#39; border-radius&#58;0&#46;4rem !important;&#39;+
+&#39; border&#58;solid 0&#46;05rem navy !important;"&#62; &#39;+ 
+
+&#39; &#60;a href&#61;"#fine"&#62; &#39;+ 
+&#39; &#60;svg xmlns&#61;"http&#58;&#47;&#47;www&#46;w3&#46;org&#47;2000&#47;svg" height&#61;"24" viewBox&#61;"0 0 24 24" width&#61;"24"&#62;&#60;path d&#61;"M0 0h24v24H0V0z" fill&#61;"none" &#47;&#62; &#60;path fill&#61;"maroon" d&#61;"M20 12l-1&#46;41-1&#46;41L13 16&#46;17V4h-2v12&#46;17l-5&#46;58-5&#46;59L4 12l8 8 8-8z"&#47;&#62; &#39;+ 
+&#39; &#60;&#47;svg&#62;&#60;&#47;a&#62; &#39;+ 
+
+
+
+&#39; &#60;span style&#61;"&#39;+
+&#39; visibility&#58;hidden !important; &#39;+
+&#39; display&#58;inline!important; &#39;+
+&#39; font-size&#58;0&#46;45rem !important; &#39;+
+&#39; border&#58;solid 0&#46;2rem transparent !important; &#39;+
+&#39; "&#62;menu&#60;&#47;span&#62; &#39;+ 
+&#39; &#39;+ 
+
+
+
+&#39; &#60;a href&#61;"#"&#62; &#39;+ 
+&#39; &#60;svg xmlns&#61;"http&#58;&#47;&#47;www&#46;w3&#46;org&#47;2000&#47;svg" height&#61;"24" viewBox&#61;"0 0 24 24" width&#61;"24"&#62; &#60;path d&#61;"M0 0h24v24H0V0z" fill&#61;"none"&#47;&#62; &#60;path fill&#61;"maroon" d&#61;"M4 12l1&#46;41 1&#46;41L11 7&#46;83V20h2V7&#46;83l5&#46;58 5&#46;59L20 12l-8-8-8 8z"&#47;&#62; &#39;+ 
+&#39; &#60;&#47;svg&#62;&#60;&#47;a&#62; &#39;+ 
+&#39; &#39;+ 
+&#39; &#60;&#47;span&#62; &#39;+ 
+
+&#39; &#39;+
+
+
+
+
+
+
+
+
+
+&#39; &#60;div &#39;+
+&#39; id&#61;"COLLAPSE_MENU" &#39;+
+&#39; class&#61;"collapse dropdown-menuY border-0" &#39;+
+&#39; style&#61;" &#39;+
+&#39; margin-left&#58;2&#46;41rem !important; &#39;+
+&#39; margin-right&#58;2&#46;41rem !important; &#39;+
+&#39; margin-bottom&#58;2rem !important; &#39;+
+&#39; border&#58;solid 0&#46;2rem transparent !important;" &#62; &#39;+
+
+&#39; &#39;+
+
+&#39; &#60;ul style&#61;"&#39;+
+&#39; border&#58;solid 0&#46;25rem indigo !important; &#39;+
+&#39; border&#58;solid 0&#46;10rem rgba&#40;75,0,130,1&#41; !important; &#39;+
+&#39; height&#58;11&#46;5rem !important; &#39;+
+&#39; overflow&#58;auto !important; &#39;+
+&#39; border-radius&#58;0&#46;2rem !important; "&#62;&#39;+
+
+
+
+&#39; &#60;div id&#61;"menu_argomento"&#62;&#60;&#47;div&#62; &#39;+
+
+
+
+&#39; &#60;p class&#61;"my-1"&#62;&#60;hr&#47;&#62;&#60;&#47;p&#62; &#39;+
+
+
+
+&#39; &#60;div id&#61;"menu_note"&#62;&#60;&#47;div&#62; &#39;+
+
+
+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+
+
+&#39; &#39;+ &#39; &#39;+ 
+&#39; &#60;&#47;ul&#62; &#39;+
+
+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#60;div id&#61;"menu_copyright"&#62;&#60;&#47;div&#62; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#60;&#47;div&#62; &#39;+
+&#39; &#60;&#47;div&#62; &#39;+
+&#39; &#39;+
+
+&#39; &#39;
+;
+
+
+&#60;&#47;script&#62;
+
+
+
+
+&#60;script&#62;
+document&#46;getElementById&#40;"menu_argomento"&#41;&#46;innerHTML&#61;
+&#39; &#39;+
+&#39; &#39;+
+
+&#39; &#60;a class&#61;"btn rounded" &#39;+ 
+&#39; href&#61;"#argomento-0001"&#62; &#39;+ 
+&#39; &#60;span class&#61;"rounded p-1 fw-bold" &#39;+
+&#39; style&#61;" &#39;+
+&#39; background-color&#58;indigo !important; &#39;+
+&#39; color&#58;oldlace !important; &#39;+
+&#39; font-size&#58;small !important;&#39;+
+&#39; border&#58;solid 0&#46;1rem indigo !important; "&#62;&#39;+
+&#39; argomento-&#60;&#47;span&#62;&#60;&#47;a&#62; &#39;+
+
+
+
+
+
+
+&#39; &#39;+
+&#39; &#39;;
+&#60;&#47;script&#62;
+
+
+
+
+
+&#60;script&#62;
+document&#46;getElementById&#40;"menu_note"&#41;&#46;innerHTML&#61;
+&#39; &#60;span style&#61;" &#39;+
+&#39; background-color&#58;oldlace !important; &#39;+
+&#39; color&#58;indigo !important; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; font-size&#58;small !important;&#39;+
+&#39; font-weight&#58;bold !important; &#39;+
+&#39;"&#62;&#39;+
+&#39; note&#58; &#60;&#47;span&#62; &#39;+
+&#39; &#39;+
+&#39; &#60;a href&#61;"#nota_" class&#61;"note-cerchietto mr-1"&#62; &#39;+
+&#39; nota_ &#60;&#47;a&#62; &#39;+
+&#39; &#39;+
+&#39; &#39;;
+&#60;&#47;script&#62;
+
+
+
+
+
+&#60;script&#62;
+document&#46;getElementById&#40;"menu_copyright"&#41;&#46;innerHTML&#61;
+&#39; &#39;+
+&#39; &#60;div style&#61;"font-size&#58;small !important;"&#62; &#39;+
+&#39; &copy;2021 alfabeta 20210103_1100 &#39;+
+&#39; &#60;&#47;div&#62; &#39;+
+&#39; &#39;+
+&#39; &#39;+
+&#39; &#39;;
+&#60;&#47;script&#62;
+
+
+
+
+
+
+&#60;span id&#61;"togglato"&#62;&#60;&#47;span&#62;
+&#60;script&#62;
+&#47;*
+
+id togglato class vediXoY
+
+20210102_1245
+
+posizionato in linea con
+la nuova versione
+
+*&#47;
+
+
+document&#46;getElementById&#40;"togglato"&#41;&#46;innerHTML&#61;
+&#39; &#60;style&#62; &#39; + 
+&#39; &#46;togXbordo,&#46;togYbordo &#123; &#39; + 
+&#39; position&#58;fixed !important; &#39; + 
+&#39; bottom&#58;0rem !important; &#39; + 
+&#39; right&#58;0rem !important; &#39; + 
+&#39; margin&#58;0&#46;5rem; &#39; +
+&#39; margin-bottom&#58;0&#46;15rem; &#39; + 
+&#39; margin-right&#58;0rem; &#39; + 
+&#39; cursor&#58;pointer !important; &#39; + 
+&#39; font-size&#58;1rem !important; &#39; + 
+&#39; font-family&#58;monospace !important; &#39; + 
+&#39; border-radius&#58;0&#46;20rem !important; &#39; + 
+&#39; &#39; + 
+&#39; &#125; &#39; + 
+&#39; &#39; + 
+&#39; &#46;togXbordo&#123; &#39; + 
+&#39; border&#58;solid 0&#46;2rem indigo !important; &#39; + 
+&#39; border&#58;solid 0&#46;10rem rgba&#40;75,0,130,0&#46;75&#41; !important; &#39; + 
+&#39; background-color&#58;orange !important; &#39; + 
+&#39; background-color&#58;rgba&#40;255,165,0,1&#41; !important; &#39; + 
+&#39; &#125; &#39; + 
+&#39; &#39; + 
+&#39; &#46;togYbordo&#123; &#39; + 
+&#39; border&#58;solid 0&#46;10rem rgba&#40;255,165,0,0&#46;75&#41; !important; &#39; + 
+&#39; background-color&#58;rgba&#40;75,0,130,1&#41; !important; &#39; + 
+&#39; &#125; &#39; + 
+&#39; &#39; + 
+&#39; &#60;&#47;style&#62; &#39; + 
+&#39; &#39; + 
+&#39; &#39; + 
+&#39; &#39; + 
+&#39; &#60;span onclick&#61;"vedi&#40;&#41;" class&#61;"togYbordo nascondiY vediY"&#62; &#39; + 
+&#39; &nbsp; &#39; + 
+&#39; &#60;&#47;span&#62; &#39; + 
+&#39; &#60;span onclick&#61;"nascondi&#40;&#41;" class&#61;"togXbordo nascondiX vediX"&#62; &#39; + 
+&#39; &nbsp; &#39; + 
+&#39; &#60;&#47;span&#62; &#39; + 
+&#39; &#39; + 
+&#39; &#39;
+;
+
+function nascondi&#40;&#41;&#123;
+elemento&#61;document&#46;querySelector&#40;"&#46;vediXoY"&#41;;
+elemento&#46;style&#46;visibility&#61;"hidden";
+elemento&#61;document&#46;querySelector&#40;"&#46;nascondiX"&#41;;
+elemento&#46;style&#46;visibility&#61;"hidden";
+elemento&#61;document&#46;querySelector&#40;"&#46;vediY"&#41;;
+elemento&#46;style&#46;visibility&#61;"visible";
+
+&#125;
+
+function vedi&#40;&#41;&#123;
+elemento&#61;document&#46;querySelector&#40;"&#46;vediXoY"&#41;;
+elemento&#46;style&#46;visibility&#61;"visible";
+elemento&#61;document&#46;querySelector&#40;"&#46;nascondiY"&#41;;
+elemento&#46;style&#46;visibility&#61;"hidden";
+elemento&#61;document&#46;querySelector&#40;"&#46;vediX"&#41;;
+elemento&#46;style&#46;visibility&#61;"visible";
+
+&#125;
+
+
+
+&#60;&#47;script&#62;
+
+
+
+
+
+
+
+&#60;div id&#61;"divpausa" style&#61;"position&#58;fixed;
+top&#58;2&#46;5rem;left&#58;0;
+top&#58;50%;left&#58;50%;
+background-color&#58;var&#40;--bs-white&#41; !important;
+margin-left&#58;-8&#46;5rem !important; margin-top&#58;-2rem !important; 
+border-radius&#58;0&#46;2rem !important; visibility&#58;visible !important;"&#62;
+&#60;span id&#61;"pausa" class&#61;"spinner-border text-warning"&#62;&#60;&#47;span&#62;
+
+&#60;span style&#61;"background-color&#58;transparent !important;"&#62;
+&#60;span id&#61;"Loading"
+style&#61;"color&#58;var&#40;--bs-indigo&#41; !important; font-size&#58;2rem !important;"&#62;
+Loading&#46;&#46;&#46;&#60;&#47;span&#62;
+&#60;span id&#61;"percento" 
+style&#61;"color&#58;var&#40;--bs-indigo&#41; !important;
+font-size&#58;2rem !important;font-variant&#58;small-caps !important;"&#62;
+&#60;&#47;span&#62;
+&#60;&#47;span&#62;
+&#60;&#47;div&#62; 
+
+
+
+
+
+
+
+&#60;style&#62;
+&#47;* tablone stile *&#47;
+&#47;* 
+20210102 1845
+
+*&#47;
+
+
+&#58;root &#123;
+--bsnr-giallo&#58; rgba&#40;255, 170, 0, 0&#46;035&#41;;
+--bsnr-html&#58; rgba&#40;255, 170, 0, 0&#46;035&#41;;
+--bsnr-oldlace&#58; rgba&#40;253,245,230,0&#46;5&#41;;
+--bsnr-oldlace&#58; rgba&#40;253,245,230,0&#46;275&#41;;
+
+background-color&#58;rgba&#40;255,170,0,0&#46;5&#41;;
+
+&#125;
+
+
+html * &#123;
+color&#58;black !important;
+font-size&#58;1&#46;2rem !important;
+font-family&#58; &#39;PT Mono&#39;, monospace !important;
+text-align&#58;left !important;
+&#125; 
+
+body&#123;
+background-color&#58;default; 
+background-color&#58;oldlace;
+background-color&#58;rgba&#40;253,245,230,0&#46;5&#41;;
+
+&#125;
+
+main&#123;
+margin-top&#58;2&#46;5rem !important;
+margin-bottom&#58;18&#46;5rem !important;
+border&#58;solid 0&#46;1rem rgba&#40;255,0,0,0&#46;15&#41; !important;
+&#47;* overflow&#58;auto !important; *&#47;
+
+&#125;
+
+
+table#tablone, table#tablette&#123; 
+table-layout&#58;fixed !important;
+width&#58;100% !important;
+border&#58;solid 0&#46;0rem green !important;
+&#125;
+
+td#tablone-td-sinistra&#123;
+width&#58;0&#46;5rem !important;
+border&#58;solid 0&#46;0rem grey !important;
+&#125;
+
+td#tablone-td-destra&#123;
+border&#58;solid 0&#46;0rem lawngreen !important;
+&#125;
+
+
+
+aside&#123;overflow&#58;auto !important;&#125;
+aside a&#123;
+padding-left&#58;0&#46;2rem !important;
+padding-right&#58;0&#46;2rem !important;
+background-color&#58;var&#40;--bs-blue&#41; !important;
+color&#58;var&#40;--bs-white&#41; !important;
+font-size&#58;1rem !important;
+box-shadow&#58;0&#46;1rem 0&#46;1rem 0&#46;2rem black !important;
+border-radius&#58;0&#46;2rem !important;
+&#125;
+aside&#46;argomento &#123;
+margin-top&#58;1&#46;25rem !important;
+margin-bottom&#58;1&#46;25rem !important;
+font-size&#58;1rem !important;
+text-align&#58; justify !important;
+text-justify&#58; inter-word !important;
+overflow&#58;auto !important;
+display&#58;block !important;
+&#125;
+
+aside&#46;argomento#argomento-0000 &#123;
+&#47;* TITOLO *&#47;
+font-size&#58;1&#46;75rem !important;
+font-weight&#58; bold !important;
+&#125;
+aside&#46;argomento#argomento-0005,
+aside&#46;argomento#argomento-0011,
+aside&#46;argomento#argomento-0023,
+aside&#46;argomento#argomento-0035,
+aside&#46;argomento#argomento-0038,
+aside&#46;argomento#argomento-0041,
+aside&#46;argomento#argomento-0046,
+aside&#46;argomento#argomento-0059,
+aside&#46;argomento#argomento-0063
+&#123;
+&#47;* TITOLETTO *&#47;
+font-size&#58;1&#46;45rem !important;
+font-weight&#58; bold !important;
+&#125;
+aside&#46;argomento#argomento-0006, 
+aside&#46;argomento#argomento-0008
+&#123;
+&#47;* CODICE HTML TESTO *&#47;
+background-color&#58; bisque !important;
+color&#58;black !important;
+font-size&#58;1&#46;0rem !important;
+font-weight&#58; bold !important;
+&#125;
+aside&#46;argomento pre&#123;
+&#47;* CODICE HTML PRE *&#47;
+background-color&#58;oldlace !important;
+color&#58;black !important;
+font-size&#58;0&#46;85rem !important;
+&#125;
+span&#46;id&#123;
+background-color&#58; beige !important;
+color&#58;gray !important;
+font-size&#58;0&#46;5rem !important;
+display&#58;inline !important;
+&#125;
+
+&#46;span-block&#123;display&#58;block !important;&#125;
+&#46;span-block-fine&#123;display&#58;inline !important;&#125;
+&#60;&#47;style&#62;
+
+
+
+
+&#60;script&#62;
+
+function pausa&#40;&#41;&#123;
+if &#40;document&#46;all&#41;&#123;&#125; 
+else if 
+&#40;document&#46;getElementById&#41;
+&#123; 
+document&#46;getElementById&#40;"pausa"&#41;&#46;style&#46;visibility&#61;"hidden";
+document&#46;getElementById&#40;"percento"&#41;&#46;style&#46;visibility&#61;"hidden";
+document&#46;getElementById&#40;"Loading"&#41;&#46;style&#46;visibility&#61;"hidden";
+document&#46;getElementById&#40;"divpausa"&#41;&#46;style&#46;visibility&#61;"hidden";
+
+document&#46;getElementById&#40;"body"&#41;&#46;style&#46;visibility&#61;"visible";
+document&#46;getElementById&#40;"body"&#41;&#46;style&#46;backgroundColor &#61; &#39;default&#39;;
+document&#46;getElementById&#40;"html"&#41;&#46;style&#46;backgroundColor &#61; &#39;transparent&#39;;
+
+&#125;
+
+&#125;
+
+var percento&#61;document&#46;getElementById&#40;"percento"&#41;;
+var contatore&#61;1; 
+var intervallo&#61;setInterval&#40; function&#40;&#41; &#123; percento&#46;innerHTML&#61;contatore+"%"; 
+contatore++; if &#40;contatore&#61;&#61;&#61;101&#41; &#123;clearInterval&#40;intervallo&#41;;&#125; 
+&#125; , 9000&#41; 
+
+&#60;&#47;script&#62;
+
+
+
+
+
+&#60;div id&#61;"fine"&#62;&#60;&#47;div&#62;
+&#60;&#47;body&#62;
+&#60;&#47;html&#62;
+
+</pre>
+
+</span>
+</aside>
+
+
+<aside id="argomento-0067" class="argomento bg-warning"><span class="id">0067</span>
+<span class="articolo" style="color:firebrick !important;">
+
+annotazioni
+
+</span>
+</aside>
+
+
+
+<aside id="argomento-0068" class="argomento"><span class="id">0068</span>
+<span class="articolo">
+
+<span class="span-block">copia testo in appunti</span><span class="span-block-fine"></span>
+
+<button onclick="copyToClipboard('#copia_copia_appunti')">
+	<i>copy</i>
+</button>
+
+<pre id="copia_copia_appunti">
+
+
+&#60;button onclick&#61;"copyToClipboard&#40;'#copia'&#41;"&#62;
+&#60;i&#62;copy&#60;&#47;i&#62;
+&#60;&#47;button&#62;
+&#60;p id&#61;"copia"&#62;
+testo da copiare
+&#60;&#47;p&#62;
+&#60;script src&#61;"https:&#47;&#47;ajax.googleapis.com&#47;ajax&#47;libs&#47;jquery&#47;1.11.1&#47;jquery.min.js"&#62;&#60;&#47;script&#62;
+&#60;script&#62;
+&#47;*
+How to copy TEXT to Clipboard on Button-Click
+A Pen By Shaik Maqsood
+
+https:&#47;&#47;codepen.io&#47;shaikmaqsood&#47;pen&#47;XmydxJ
+*&#47;
+
+function copyToClipboard&#40;element&#41; {
+var $temp &#61; $&#40;"&#60;input&#62;"&#41;;
+$&#40;"body"&#41;.append&#40;$temp&#41;;
+$temp.val&#40;$&#40;element&#41;.text&#40;&#41;&#41;.select&#40;&#41;;
+document.execCommand&#40;"copy"&#41;;
+$temp.remove&#40;&#41;;
+}
+&#60;&#47;script&#62; 
+
+	
+</pre>
+
+</span>
+</aside>
+
+
+<aside id="argomento-0069" class="argomento"><span class="id">0069</span>
+<span class="articolo">
+
+[.....]
+
+</span>
+</aside>
+
+
+
+<aside id="argomento-0070" class="argomento"><span class="id">0070</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+
+<aside id="argomento-0071" class="argomento"><span class="id">0071</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+<aside id="argomento-0072" class="argomento"><span class="id">0072</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+<aside id="argomento-0073" class="argomento"><span class="id">0073</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+
+<aside id="argomento-0074" class="argomento"><span class="id">0074</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+<aside id="argomento-0075" class="argomento"><span class="id">0075</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+<aside id="argomento-0076" class="argomento"><span class="id">0076</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+<aside id="argomento-0077" class="argomento"><span class="id">0077</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+
+<aside id="argomento-0078" class="argomento"><span class="id">0078</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+<aside id="argomento-0079" class="argomento"><span class="id">0079</span>
+	<span class="articolo">
+	
+	 [.....]
+	 
+	</span>
+	</aside>
+
+
+
+
+
+
+</td> 
+</tr> 
+</table> 
+
+</td> 
+</tr> 
+</tbody> 
+</table> 
+
+
+</main>
+
+<span id="bsnr_kickstart_test">bug bsnr_kickstart_test</span>
+
+<script src="http://beatsupernovarasa.altervista.org/alfabeta/bs/default.js"></script>
+
+
+
+<div id="menu" class="vediXoY"></div>
+<script>
+/* menu (da togglare) class vediXoY */
+/* 20210102_1245 */
+/*
+
+per funzionare come menu collapse
+necessita di bootstrap alfabeta-bs
+html asterisk pt mono
+
+*/
+document.getElementById("menu").innerHTML=
+' <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet"> '+
+
+
+' <div style=" '+
+' position:fixed !important; '+
+' bottom:0rem !important; '+
+' left:0rem !important; '+
+
+' margin-left:0.5% !important; '+
+' margin-right:0.5% !important; '+
+
+' background-color:oldlace !important; '+
+' background-color:rgba(253,245,230,0.95) !important; '+
+
+
+' width:99% !important; '+
+' height:auto !important; '+
+' font-size:1.1rem !important; '+
+' '+
+' '+
+' text-align:left !important; '+
+' '+
+' border:solid 0.2rem transparent !important; '+
+' '+
+' '+
+' "> '+
+
+
+
+' <button type="button" '+
+' class="btn shadow-none '+
+' bg-warning rounded" '+ 
+' data-toggle="collapse" '+
+' data-target="#COLLAPSE_MENU" '+ 
+' aria-expanded="false" '+ 
+' style="position:fixed !important; '+
+' top:2.5rem !important; right:0 !important; '+
+' top:5rem !important; right:0 !important; '+
+' font-size:1rem !important; '+
+' "> '+ 
+
+' '+ 
+' <svg width="1rem" height="1rem" '+
+' viewBox="0 0 16 16" '+
+' class="bi bi-back" '+
+' fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/> '+ 
+' </svg> '+ ' '+ 
+' </button> '+
+
+
+
+' <span style=" '+
+' margin-left:2.55rem !important; '+
+
+' padding:0.2rem !important;'+
+
+' background-color:oldlace !important; '+
+' background-color:rgba(253,245,230,1) !important; '+
+
+' font-size:1.1rem !important; '+
+
+' border-radius:0.4rem !important;'+
+' border:solid 0.05rem navy !important;"> '+ 
+
+' <a href="#fine"> '+ 
+' <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none" /> <path fill="maroon" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/> '+ 
+' </svg></a> '+ 
+
+
+
+' <span style="'+
+' visibility:hidden !important; '+
+' display:inline!important; '+
+' font-size:0.45rem !important; '+
+' border:solid 0.2rem transparent !important; '+
+' ">menu</span> '+ 
+' '+ 
+
+
+
+' <a href="#"> '+ 
+' <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"> <path d="M0 0h24v24H0V0z" fill="none"/> <path fill="maroon" d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/> '+ 
+' </svg></a> '+ 
+' '+ 
+' </span> '+ 
+
+' '+
+
+
+
+
+
+
+
+
+
+' <div '+
+' id="COLLAPSE_MENU" '+
+' class="collapse dropdown-menuY border-0" '+
+' style=" '+
+' margin-left:2.41rem !important; '+
+' margin-right:2.41rem !important; '+
+' margin-bottom:2rem !important; '+
+' border:solid 0.2rem transparent !important;" > '+
+
+' '+
+
+' <ul style="'+
+' border:solid 0.25rem indigo !important; '+
+' border:solid 0.10rem rgba(75,0,130,1) !important; '+
+' height:11.5rem !important; '+
+' overflow:auto !important; '+
+' border-radius:0.2rem !important; ">'+
+
+
+
+' <div id="menu_argomento"></div> '+
+
+
+
+' <p class="my-1"><hr/></p> '+
+
+
+
+' <div id="menu_note"></div> '+
+
+
+
+' '+
+' '+
+' '+
+
+
+' '+ ' '+ 
+' </ul> '+
+
+
+' '+
+' '+
+' '+
+' <div id="menu_copyright"></div> '+
+' '+
+' '+
+' '+
+' '+
+' '+
+' </div> '+
+' </div> '+
+' '+
+
+' '
+;
+
+
+</script>
+
+
+
+
+<script>
+document.getElementById("menu_argomento").innerHTML=
+' '+
+' '+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0005"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' utilizzo_generico_del_DGEBI</span></a> '+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0011"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' spinner</span></a> '+
+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0023"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' caricamenti_asincroni</span></a> '+
+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0035"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' font</span></a> '+
+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0038"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' collapse</span></a> '+
+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0041"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' sign-in</span></a> '+
+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0046"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' struttura</span></a> '+
+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0053"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' composizione_struttura</span></a> '+
+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0060"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' linee_guida_main</span></a> '+
+
+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0063"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' framework_magic-patches</span></a> '+
+
+
+' <a class="btn rounded" '+ 
+' href="#argomento-0065"> '+ 
+' <span class="rounded p-1 fw-bold" '+
+' style=" '+
+' background-color:indigo !important; '+
+' color:oldlace !important; '+
+' font-size:small !important;'+
+' border:solid 0.1rem indigo !important; ">'+
+' codice attualmente in uso</span></a> '+
+
+
+
+' '+
+' ';
+</script>
+
+
+
+
+
+<script>
+document.getElementById("menu_note").innerHTML=
+' <span style=" '+
+' background-color:oldlace !important; '+
+' color:indigo !important; '+
+' '+
+' '+
+' font-size:small !important;'+
+' font-weight:bold !important; '+
+'">'+
+' note: </span> '+
+' '+
+
+' <a href="#argomento-0068" class="note mr-2"> '+
+' copy_to_clipboard </a> '+
+
+
+' <a href="#argomento-0037" class="note mr-2"> '+
+' ascii </a> '+
+
+
+' '+
+' ';
+</script>
+
+
+
+
+
+<script>
+document.getElementById("menu_copyright").innerHTML=
+' '+
+' <div style="font-size:small !important; '+
+' border:solid 0.2rem transparent !important; '+
+' "> '+
+' &copy;2021 alfabeta 20210105_1830 '+
+' </div> '+
+' '+
+' '+
+' ';
+</script>
+
+
+
+
+
+
+<span id="togglato"></span>
+<script>
+/*
+
+id togglato class vediXoY
+
+20210102_1245
+
+posizionato in linea con
+la nuova versione
+
+*/
+
+
+document.getElementById("togglato").innerHTML=
+' <style> ' + 
+' .togXbordo,.togYbordo { ' + 
+' position:fixed !important; ' + 
+' bottom:0rem !important; ' + 
+' right:1.0rem !important; ' + 
+' margin:0.5rem; ' +
+' margin-bottom:0.15rem; ' + 
+' margin-right:0rem; ' + 
+' cursor:pointer !important; ' + 
+' font-size:1rem !important; ' + 
+' font-family:monospace !important; ' + 
+' border-radius:0.20rem !important; ' + 
+' ' + 
+' } ' + 
+' ' + 
+' .togXbordo{ ' + 
+' border:solid 0.2rem indigo !important; ' + 
+' border:solid 0.10rem rgba(75,0,130,0.75) !important; ' + 
+' background-color:orange !important; ' + 
+' background-color:rgba(255,165,0,1) !important; ' + 
+' } ' + 
+' ' + 
+' .togYbordo{ ' + 
+' border:solid 0.10rem rgba(255,165,0,0.75) !important; ' + 
+' background-color:rgba(75,0,130,1) !important; ' + 
+' } ' + 
+' ' + 
+' </style> ' + 
+' ' + 
+' ' + 
+' ' + 
+' <span onclick="vedi()" class="togYbordo nascondiY vediY"> ' + 
+' &nbsp; ' + 
+' </span> ' + 
+' <span onclick="nascondi()" class="togXbordo nascondiX vediX"> ' + 
+' &nbsp; ' + 
+' </span> ' + 
+' ' + 
+' '
+;
+
+function nascondi(){
+elemento=document.querySelector(".vediXoY");
+elemento.style.visibility="hidden";
+elemento=document.querySelector(".nascondiX");
+elemento.style.visibility="hidden";
+elemento=document.querySelector(".vediY");
+elemento.style.visibility="visible";
+
+}
+
+function vedi(){
+elemento=document.querySelector(".vediXoY");
+elemento.style.visibility="visible";
+elemento=document.querySelector(".nascondiY");
+elemento.style.visibility="hidden";
+elemento=document.querySelector(".vediX");
+elemento.style.visibility="visible";
+
+}
+
+
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+/*
+How to copy TEXT to Clipboard on Button-Click
+A Pen By Shaik Maqsood
+
+https://codepen.io/shaikmaqsood/pen/XmydxJ
+*/
+
+function copyToClipboard(element) {
+var $temp = $("<input>");
+$("body").append($temp);
+$temp.val($(element).text()).select();
+document.execCommand("copy");
+$temp.remove();
+}
+</script> 
+
+
+
+
+<div id="divpausa" style="position:fixed;
+top:2.5rem;left:0;
+top:50%;left:50%;
+background-color:var(--bs-white) !important;
+margin-left:-8.5rem !important; margin-top:-2rem !important; 
+border-radius:0.2rem !important; visibility:visible !important;">
+<span id="pausa" class="spinner-border text-warning"></span>
+
+<span style="background-color:transparent !important;">
+<span id="Loading"
+style="color:var(--bs-indigo) !important; font-size:2rem !important;">
+Loading...</span>
+<span id="percento" 
+style="color:var(--bs-indigo) !important;
+font-size:2rem !important;font-variant:small-caps !important;">
+</span>
+</span>
+</div> 
+
+
+
+
+
+
+
+<style>
+/* tablone stile */
+/* 
+20210102 1845
+
+*/
+
+
+:root {
+--bsnr-giallo: rgba(255, 170, 0, 0.035);
+--bsnr-html: rgba(255, 170, 0, 0.035);
+--bsnr-oldlace: rgba(253,245,230,0.5);
+--bsnr-oldlace: rgba(253,245,230,0.275);
+
+background-color:rgba(255,170,0,0.5);
+
+}
+
+
+html * {
+color:black !important;
+font-size:1.2rem !important;
+font-family: 'PT Mono', monospace !important;
+text-align:left !important;
+} 
+
+body{
+background-color:default; 
+background-color:oldlace;
+background-color:rgba(253,245,230,0.5);
+
+}
+
+main{
+margin-top:2.5rem !important;
+margin-bottom:18.5rem !important;
+border:solid 0.1rem rgba(255,0,0,0.15) !important;
+/* overflow:auto !important; */
+
+}
+
+
+table#tablone, table#tablette{ 
+table-layout:fixed !important;
+width:100% !important;
+border:solid 0.0rem green !important;
+}
+
+td#tablone-td-sinistra{
+width:0.5rem !important;
+border:solid 0.0rem grey !important;
+}
+
+td#tablone-td-destra{
+border:solid 0.0rem lawngreen !important;
+}
+
+
+
+aside{overflow:auto !important;}
+aside a{
+padding-left:0.2rem !important;
+padding-right:0.2rem !important;
+background-color:var(--bs-blue) !important;
+color:var(--bs-white) !important;
+font-size:1rem !important;
+box-shadow:0.1rem 0.1rem 0.2rem black !important;
+border-radius:0.2rem !important;
+}
+aside.argomento {
+margin-top:1.25rem !important;
+margin-bottom:1.25rem !important;
+font-size:1rem !important;
+text-align: justify !important;
+text-justify: inter-word !important;
+overflow:auto !important;
+display:block !important;
+}
+
+aside.argomento#argomento-0000 {
+/* TITOLO */
+font-size:1.75rem !important;
+font-weight: bold !important;
+}
+aside.argomento#argomento-0005,
+aside.argomento#argomento-0011,
+aside.argomento#argomento-0023,
+aside.argomento#argomento-0035,
+aside.argomento#argomento-0038,
+aside.argomento#argomento-0041,
+aside.argomento#argomento-0046,
+aside.argomento#argomento-0059,
+aside.argomento#argomento-0063
+{
+/* TITOLETTO */
+font-size:1.45rem !important;
+font-weight: bold !important;
+}
+aside.argomento#argomento-0006, 
+aside.argomento#argomento-0008
+{
+/* CODICE HTML TESTO */
+background-color: bisque !important;
+color:black !important;
+font-size:1.0rem !important;
+font-weight: bold !important;
+}
+aside.argomento pre{
+/* CODICE HTML PRE */
+background-color:oldlace !important;
+color:black !important;
+font-size:0.85rem !important;
+}
+span.id{
+background-color: beige !important;
+color:gray !important;
+font-size:0.5rem !important;
+display:inline !important;
+}
+
+
+
+.note{
+padding-left:0.2rem !important;
+padding-right:0.2rem !important;
+background-color: beige !important;
+color:black !important;
+font-size:0.95rem !important;
+border-radius:0.2rem !important;
+border:solid 0.1rem var(--bs-indigo) !important;
+}
+.span-block{display:block !important;
+}
+.span-block-fine{display:inline !important;
+}
+</style>
+
+
+
+
+<script>
+
+function pausa(){
+if (document.all){} 
+else if 
+(document.getElementById)
+{ 
+document.getElementById("pausa").style.visibility="hidden";
+document.getElementById("percento").style.visibility="hidden";
+document.getElementById("Loading").style.visibility="hidden";
+document.getElementById("divpausa").style.visibility="hidden";
+
+document.getElementById("body").style.visibility="visible";
+document.getElementById("body").style.backgroundColor = 'default';
+document.getElementById("html").style.backgroundColor = 'transparent';
+
+}
+
+}
+
+var percento=document.getElementById("percento");
+var contatore=1; 
+var intervallo=setInterval( function() { percento.innerHTML=contatore+"%"; 
+contatore++; if (contatore===101) {clearInterval(intervallo);} 
+} , 9000) 
+
+</script>
+
+
+
+
+
+<div id="fine"></div>
+</body>
+</html>
