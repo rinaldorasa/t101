@@ -1,0 +1,133 @@
+
+
+</td> 
+</tr> 
+</table> 
+
+</td> 
+</tr> 
+</tbody> 
+</table> 
+
+
+</main>
+
+
+
+<span id="alfabeta_bs_standard">bug alfabeta_bs_standard</span>
+<script src="./alfabeta/bs/standard/default.js"></script>
+
+
+<span id="alfabeta_milestone-citta-metropolitana_dgebiext">bug alfabeta_milestone-citta-metropolitana_dgebiext</span>
+<script src="./alfabeta/milestone-citta-metropolitana/dgebiext/default.js"></script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+/*
+How to copy TEXT to Clipboard on Button-Click
+A Pen By Shaik Maqsood
+https://codepen.io/shaikmaqsood/pen/XmydxJ
+*/
+
+function copyToClipboard(element) {
+var $temp = $("<input>");
+$("body").append($temp);
+$temp.val($(element).text()).select();
+document.execCommand("copy");
+$temp.remove();
+}
+</script> 
+
+
+
+
+<div class="vedoBODY" id="SPINNERpausa" style="position:fixed;
+top:50%;left:50%;
+background-color:var(--bs-white) !important;
+margin-left:-6.25rem !important; margin-top:-4.65rem !important; 
+border-radius:0.2rem !important; visibility:visible !important;">
+
+<span id="pausa" class="spinner-border text-warning"></span>
+
+<blockquote>
+<span style="background-color:transparent !important;">
+<span id="Loading"
+style="color:var(--bs-indigo) !important; font-size:2rem !important;">
+Loading...</span>
+<span id="percento" 
+style="color:var(--bs-indigo) !important;
+font-size:2rem !important;font-variant:small-caps !important;">
+</span>
+</span>
+</blockquote>
+
+<blockquote>
+<style>
+.vedoTOGGLE, .TOGGLEicona{cursor:pointer !important;
+ background-color:rgba(255,165,0,0) !important;
+ background-color:oldlace!important;
+ border:solid 0.12rem rgba(75,0,130,0) !important;}
+ 
+ 
+</style>
+
+<span onclick="vedoBODY()" 
+class="TOGGLEicona rounded">
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="teal" class="bi bi-toggle-on" viewBox="0 0 16 16">
+<path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+</svg>
+</span>
+</blockquote>
+
+<script>
+function vedoBODY() { 
+ element = document.querySelector(".vedoBODY"); 
+ element.style.visibility = "hidden"; 
+ body.style.visibility = "visible";
+ html.style.backgroundColor = "rgba(253,245,230,0.5)";
+ 
+ }
+</script>
+
+
+</div> 
+
+
+
+
+
+<script>
+
+function ATTESA(){
+if (document.all){} 
+else if 
+(document.getElementById)
+{ 
+document.getElementById("pausa").style.visibility="hidden";
+document.getElementById("percento").style.visibility="hidden";
+document.getElementById("Loading").style.visibility="hidden";
+document.getElementById("SPINNERpausa").style.visibility="hidden";
+
+document.getElementById("body").style.visibility="visible";
+document.getElementById("body").style.backgroundColor = 'default';
+document.getElementById("html").style.backgroundColor = 'transparent';
+
+}
+
+}
+
+var percento=document.getElementById("percento");
+var contatore=1; 
+var intervallo=setInterval( function() { percento.innerHTML=contatore+"%"; 
+contatore++; if (contatore===101) {clearInterval(intervallo);} 
+} , 9000) 
+
+</script>
+<div id="fine"></div>
+</body>
+</html>
+
