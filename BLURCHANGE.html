@@ -1,0 +1,39 @@
+
+
+<div id="schedaON">bug</div>
+<div id="schedaOFF">bug</div>
+
+
+<script>
+"use strict";
+
+
+
+
+document.addEventListener("visibilitychange", event => {
+  if (document.visibilityState == "visible") {
+//    console.log("tab is active")
+let temporaneo="attivo";
+document.getElementById("schedaON").innerHTML=
+'  '+temporaneo+
+
+'';
+
+  } else {
+//    console.log("tab is inactive")
+let inattivo="inattivo";
+document.getElementById("schedaOFF").innerHTML=
+'  '+inattivo+
+
+'';
+
+  }
+})
+
+
+
+
+</script>
+
+
+
