@@ -1,0 +1,125 @@
+<!DOCTYPE html><html>
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="AlterVista - Editor HTML"/>
+<title> kone.0.0.0 </title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+
+<style>
+html * {background-color:oldlace;font-size:1.25rem;font-family:"PT Mono",monospace; }
+</style>
+
+</head>
+<body>
+<!-- KRIPTO -->
+<div style="background-color:rgba(252,78,5,0.75);font-variant:small-caps;">KONE </div>
+<input id="val_CHIARO" type="text" value="" > <br/>
+<input id="val_KRIPTO" type="number" value="" ><br/>
+<button onclick="funzione()" style="background-color:lightgreen;border-radius:0.25rem;">DECODING</button>
+
+<div id="CODICILLO">?debugging</div>
+<!-- DEKRIPTO -->
+<div style="background-color:rgba(252,78,5,0.5);font-variant:small-caps;">conversione da KRIPTO a CHIARO</div>
+<div id="KCHIARO">?KCHIARO</div>
+
+<script>
+"use strict";
+/* */
+
+let CHIARO; /* string da decriptare */
+let CHIARO_L; /* lunghezza string da decriptare */
+let val_KRIPTO; /* codice di decriptazione */
+let tipo;/* debugging sul tipo di variabile */
+let contatore; /* dei caratteri carattere.charAt(0); */
+let KCHIARO; /* string finale decrittata */
+let CARATCHIARO;/* il carattere da decrittare */
+let CARATCHIARO_code; /* codice del carattere da decrittare */
+let CARATCHIARO_code_deK; /* codice decrittato */
+let CARATCHIARO_UNICODE_deK;/* carattere decrittato in chiaro */
+
+
+function funzione(){
+ /*  valori presi dagli input html */
+CHIARO=document.getElementById("val_CHIARO").value;
+CHIARO_L=CHIARO.length;
+
+val_KRIPTO=document.getElementById("val_KRIPTO").value;
+val_KRIPTO=parseInt(val_KRIPTO);/* da string a number */
+
+
+//tipo=typeof(val_KRIPTO);
+
+KCHIARO="";/* inizializzazione di string decrittata */
+/* ciclo di display dei caratteri */
+for (contatore=0;contatore<CHIARO_L;contatore++){
+CARATCHIARO=CHIARO.charAt(contatore);/* vedi carattere */
+CARATCHIARO_code=CARATCHIARO.charCodeAt(0);/* vedi unicode typeof number */
+CARATCHIARO_code_deK=CARATCHIARO_code-val_KRIPTO;
+CARATCHIARO_UNICODE_deK=String.fromCharCode(CARATCHIARO_code_deK);
+
+KCHIARO=KCHIARO+CARATCHIARO_UNICODE_deK;/* costruisce string decrittato */
+
+}
+
+document.getElementById("CODICILLO").innerHTML=''+
+/*
+'<br>'+''+''+''+''+''+'<br>'+
+'<br>'+''+''+''+''+''+'<br>'+
+
+*/
+
+'';
+
+document.getElementById("KCHIARO").innerHTML=''+
+''+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+KCHIARO+
+''+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+
+
+'';
+
+}
+
+
+</script>
+
+
+
+<style></style>
+<div></div>
+<hr>
+<div style="text-align:right;">
+<button style="background-color:peru;border-radius:0.25rem;">  <a style="background-color:peru;" href="http://venexiatre.altervista.org/WORKOU/OGGI/20191119/20191119f_1-CREEK.html">home</a></button> 
+</div>
+</body>
+</html>
+
+<!--
+reference
+https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+
+charAt() 	Returns the character at the specified index (position)
+var res = str.charAt(0);
+
+charCodeAt() 	Returns the Unicode of the character at the specified index
+var str = "HELLO WORLD";
+var n = str.charCodeAt(0);
+
+fromCharCode() 	Converts Unicode values to characters
+ var res = String.fromCharCode(65);
+
+How to remove red underlines from words in Notepad++?
+you could press Alt + A
+
+-->
+
+
+
+

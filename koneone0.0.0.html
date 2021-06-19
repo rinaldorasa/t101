@@ -1,0 +1,173 @@
+<!DOCTYPE html><html>
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="AlterVista - Editor HTML"/>
+<title>koneone v.0.0.0</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+
+<style>
+html * {background-color:oldlace;font-size:1.5rem;font-family:"PT Mono",monospace; }
+</style>
+
+</head>
+<body>
+<!-- KRIPTO -->
+<div style="background-color:rgba(252,78,5,0.75);font-variant:small-caps;">CODICILLO è conversione da  da CHIARO a KRIPTO</div>
+<section style="margin-top:1rem;margin-bottom:1rem;background-color:pink;">
+<input style="width:100%;" id="val_CHIARO" type="text" value="scrivere" ><br>
+<input id="val_KRIPTO" type="number" value=""><br>
+<button onclick="funzione()" style="border-radius:0.25rem;background-color:lightgreen;">CODING</button>
+</section>
+
+<div id="CODICILLO">?CODICILLO</div>
+<!-- DEKRIPTO -->
+<div style="background-color:rgba(252,78,5,0.5);font-variant:small-caps;">DECODING è conversione da KRIPTO a CHIARO</div>
+<div id="KCHIARO">?KCHIARO</div>
+<!-- HAKER KRIPTO 
+<div style="background-color:rgba(252,78,5,0.25);font-variant:small-caps;">HAKER è scoprire il valore del codice kripto</div>
+<div id="HAKER">?HAKER</div>
+-->
+<script>
+"use strict";
+let KRIPTO; /* testo da criptare */
+let val_KRIPTO;  /* codice di criptazione */
+
+function funzione(){
+/* codice 9000063925 */
+/* string da convertire   */
+
+let CHIARO; let CHIAROL;
+let noKRIPTO;
+ 
+let contatoreDAkripto; let quellooriginario;
+let val_numero_KRIPTO;
+let quellooriginarioNUMERO;
+let quellokriptatoNUMERO;
+let quellokriptato;
+
+
+CHIARO="questo è  un programma di conversione";
+CHIARO=document.getElementById("val_CHIARO").value;
+
+CHIAROL=CHIARO.length; 
+KRIPTO=""; noKRIPTO="";
+val_KRIPTO=document.getElementById("val_KRIPTO").value;
+val_numero_KRIPTO=parseInt(val_KRIPTO); /* numero */
+
+for (contatoreDAkripto=0;contatoreDAkripto<CHIAROL;contatoreDAkripto++){
+quellooriginario=CHIARO.charAt(contatoreDAkripto);
+quellooriginarioNUMERO=quellooriginario.charCodeAt(0);
+quellokriptatoNUMERO=quellooriginarioNUMERO+val_numero_KRIPTO;
+quellokriptato=String.fromCharCode(quellokriptatoNUMERO);
+
+noKRIPTO=noKRIPTO+quellooriginario;
+
+KRIPTO=KRIPTO+quellokriptato;
+
+}
+
+
+document.getElementById("CODICILLO").innerHTML=''+
+''+''+''+''+''+''+'<br>'+KRIPTO+
+''+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+
+
+'';
+
+
+/*
+Nella parte superiore del programma si procede
+con la kriptazione la quale dato un codice kripto
+genera una string kriptata la quale è passata
+al decriptatore insieme al codice kripto.
+
+*/
+
+let stringa; let codicedekripto;  /* string kripto da analizzare */
+stringa=KRIPTO; codicedekripto=val_KRIPTO;
+
+
+let stringa_L=stringa.length; /* lunghezza string */
+
+let contatoreDEK; let CHIARETTO; let UNICODE,old,nuovo;
+
+CHIARETTO="";
+
+for(contatoreDEK=0;contatoreDEK<stringa_L;contatoreDEK++){
+
+
+old=stringa.charAt(contatoreDEK).charCodeAt(0);
+nuovo=old-codicedekripto;
+
+UNICODE=String.fromCharCode(old); /* kriptato */
+UNICODE=String.fromCharCode(nuovo); /* in chiaro */
+
+// CHIARETTO=CHIARETTO+stringa.charAt(contatore);
+CHIARETTO=CHIARETTO+UNICODE;
+
+}
+
+
+
+document.getElementById("KCHIARO").innerHTML='<div style="font-size:0.5rem;">koneone.0.0.0 release 202106-19-09-00</div>'+
+//''+''+''+''+''+''+'<br>'+
+//''+''+''+''+''+''+'<br><span>stringa criptata='+KRIPTO+'</span>'+
+//''+''+''+''+''+''+'<br><span style="font-size:0.75rem;">codice cripto='+val_KRIPTO+'</span>'+
+''+''+''+''+''+''+'<br><span style="display:none;">stringa decriptata=</span><br><span style="background-color:orange;">'+CHIARETTO+'</span>'+
+
+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+
+''+''+''+''+''+''+'<br>'+
+
+
+
+'';
+
+
+
+
+} /* fin funzione */
+
+
+
+</script>
+
+<style></style>
+<div></div>
+
+<hr>
+<div style="text-align:right;">
+<button style="background-color:peru;border-radius:0.25rem;">  <a style="background-color:peru;" href="http://venexiatre.altervista.org/WORKOU/OGGI/20191119/20191119f_1-CREEK.html">home</a></button> 
+</div>
+
+</body>
+</html>
+
+<!--
+reference
+https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+
+charAt() 	Returns the character at the specified index (position)
+var res = str.charAt(0);
+
+charCodeAt() 	Returns the Unicode of the character at the specified index
+var str = "HELLO WORLD";
+var n = str.charCodeAt(0);
+
+fromCharCode() 	Converts Unicode values to characters
+ var res = String.fromCharCode(65);
+
+How to remove red underlines from words in Notepad++?
+you could press Alt + A
+-->
+
+
+
+
+
