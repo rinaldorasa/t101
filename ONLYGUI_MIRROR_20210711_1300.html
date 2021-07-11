@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html id="HTML" lang="it">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="AlterVista - Editor HTML"/>
+
+<title> &#265; * ONLYGUI_MIRROR↩  &#9776; 202107-11-13:00</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+<!--
+/* 
+controlla se il file esterno      
+è loaded con onload event si setta
+a true la variabile loaded se il
+file esterno è presente nella directory
+*/
+-->
+<script> var loaded = false;  </script>
+<script src="esterno.js?test0123456789ABCD" onload="loaded=true;" ></script>
+
+<script>
+/**********************************/
+/*     definizione                */
+"use strict";
+let vers_acapopagina=" mirror vers.2021:07:11:13:03 ";
+let codiceK;
+let wFinestra = window.innerWidth; 
+let hFinestra = window.innerHeight; 
+let dimMainRem,dimMain,dimmainRem,dimmain ;
+
+let altezza_acapopagina_rem;
+let larghezza_acapopagina_rem;
+let altezza_intestazione_acapopagina_rem; /* NEW */
+
+let fontsize;
+let fontsize_px_svg;
+let fontsizepxsvg;
+let fontsizecar;
+let fontsizecarrem;
+let fontsize_px_svgcaret;
+
+let widthCARD;
+let heightCARD;
+
+let CHEVRON_UP_acapopagina;
+let CHEVRON_DOWN_acapopagina;
+let HOUSE_acapopagina;
+let MENU_acapopagina;
+let CARET_DOWN_acapopagina;
+let EYE_acapopagina;
+let EYE_SLASH_acapopagina;
+
+let linkSnipet=[""];
+let linkSnipetARRAYLUNGH;
+
+let info0,info1,info2,info3,info4,info5,info6;
+let info0contenuto,info1contenuto,info2contenuto,info3contenuto,info4contenuto,info5contenuto,info6contenuto;
+
+let val_numero_KRIPTO;
+let KRIPTO;  /* testo criptato */
+/*----(+)----*/
+/*----\_/----*/
+let DEKRIPTO;   /* testo decriptato */
+let lunghezza_KRIPTO;
+let contachiaro;
+let unicode_DEKRIPTO;
+
+
+
+/*********accanto al badge*********/
+/*
+[BADGE][INFO_BADGE] per la semantica
+*/
+let info_badge=[""];
+info_badge[0]="";
+info_badge[1]="<span style='font-variant:small-caps;'>"+"rinaldo"+"</span>";
+info_badge[2]="<span style='font-variant:small-caps;'>"+"base64"+"</span>";
+info_badge[3]="XMP";
+info_badge[4]="";
+info_badge[5]="commenti al programma";
+info_badge[6]="";
+
+
+</script>
+
+
+
+<style>
+/* ONLYGUI_MIRROR fogli di stile */
+
+html#HTML * {
+BACKGROUND-COLOR:OLDLACE;
+FONT-SIZE:1.50REM;
+FONT-FAMILY:"PT Mono",MONOSPACE;
+
+}
+ 
+body#BODY{BORDER:SOLID 0.15REM TRANSPARENT;}
+main#MAIN{MARGIN:0 AUTO;BORDER:SOLID 0.15REM MAGENTA;}
+
+
+/* previene overflow */
+.OVERFLOWTESTO{OVERFLOW:AUTO;}
+</style>
+
+<style></style>
+<script></script>
+</head>
+
+<body id="BODY" onload="funzione()">
+<!--qui id per inserire il codiceK-->
+<input class="border border-warning" style="color:transparent;"  type="password" id="codiceK" value="0">
+<button class="btn btn-warning mx-2" onclick="funzione()">Entra</button>
+
+
+
+<div id="acapopagina"></div>
+<script> 
+
+
+function funzione(){
+codiceK=document.getElementById("codiceK").value; /* cattura input */
+codiceK=parseInt(codiceK); /* converte string a number */
+
+dimMainRem=(wFinestra/16)*0.95;dimmainRem=dimMainRem;dimmain=dimmainRem;dimMain=dimmain;
+larghezza_acapopagina_rem=dimmain*0.95;
+altezza_acapopagina_rem=(((hFinestra*1)/16)*0.257)*2; 
+
+/* testo correzione fontsize   */
+fontsize=(dimmain/16)*1.0;  /* con fattore correzione  */
+fontsize_px_svg=fontsize*16;
+altezza_intestazione_acapopagina_rem=(fontsize_px_svg/16)*1.2;
+
+fontsizecar=(fontsize)*(10/20);
+if (fontsizecar>=3){alert("[WARNING: FONTSIZE >= 3  [CORREZIONE AUTOMATICA FONTSIZE=1.9]" );fontsizecar=2.99;}
+fontsizecarrem="font-size:"+fontsizecar.toString()+"rem;";
+
+fontsize_px_svgcaret=fontsize_px_svg*0.85;
+widthCARD=dimmain*0.65; /* fattore di correzione   */
+heightCARD=(hFinestra/16)*0.5; /* fattore di correzione   */
+
+
+/**************/
+/* icone svg  */
+
+CHEVRON_UP_acapopagina='<svg xmlns="http://www.w3.org/2000/svg" width="'+fontsize_px_svg+'" height="'+fontsize_px_svg+'" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">'+
+'<path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>'+
+'</svg>';
+
+CHEVRON_DOWN_acapopagina='<svg xmlns="http://www.w3.org/2000/svg" width="'+fontsize_px_svg+'" height="'+fontsize_px_svg+'" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">'+
+'<path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>'+
+'</svg>';
+
+HOUSE_acapopagina='<svg xmlns="http://www.w3.org/2000/svg" width="'+fontsize_px_svg+'" height="'+fontsize_px_svg+'" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">'+
+'<path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>'+
+'<path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>'+
+'</svg>';
+
+MENU_acapopagina='<svg xmlns="http://www.w3.org/2000/svg" width="'+fontsize_px_svg+'" height="'+fontsize_px_svg+'" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>';
+
+CARET_DOWN_acapopagina='<svg xmlns="http://www.w3.org/2000/svg" width="'+fontsize_px_svgcaret+'" height="'+fontsize_px_svgcaret+'" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/></svg>';
+
+EYE_acapopagina='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>';
+
+EYE_SLASH_acapopagina='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16"><path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/><path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/><path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"/></svg>';
+
+
+
+/* testo nel menu collapse con info badge per indice semantico */
+/************************/
+/* [indice][info_badge]                                         */
+
+linkSnipet[0]="collegamento_0";
+linkSnipet[1]="<span style="+fontsizecarrem+"><span style='border-right:solid 0rem red;' class='btn-sm badge bg-warning'>1</span><span style='font-size:1rem;border:solid 0.25rem transparent;'>"+info_badge[1]+"</span>"; 
+linkSnipet[2]="<span style="+fontsizecarrem+"><span style='border-right:solid 0rem red;' class='btn-sm badge bg-warning'>2</span><span style='font-size:1rem;border:solid 0.25rem transparent;'>"+info_badge[2]+"</span>";
+linkSnipet[3]="<span style="+fontsizecarrem+"><span style='border-right:solid 0rem red;' class='btn-sm badge bg-warning'>3</span><span style='font-size:1rem;border:solid 0.25rem transparent;'>"+info_badge[3]+"</span>";
+linkSnipet[4]="<span style="+fontsizecarrem+"><span style='border-right:solid 0rem red;' class='btn-sm badge bg-warning'>4</span><span style='font-size:1rem;border:solid 0.25rem transparent;'>"+info_badge[4]+"</span>";
+linkSnipet[5]="<span style="+fontsizecarrem+"><span style='border-right:solid 0rem red;' class='btn-sm badge bg-warning'>5</span><span style='font-size:1rem;border:solid 0.25rem transparent;'>"+info_badge[5]+"</span>";
+linkSnipet[6]="<span style="+fontsizecarrem+"><span style='border-right:solid 0rem red;' class='btn-sm badge bg-warning'>6</span><span style='font-size:1rem;border:solid 0.25rem transparent;'>"+info_badge[6]+"</span>";
+
+linkSnipetARRAYLUNGH=linkSnipet.length;
+
+
+if (loaded===true){
+/* questo snipet va attentamente considerato */
+info0contenuto="";
+info1contenuto=""; /* attenzione! non viene considerato */
+info2contenuto="";
+info3contenuto="";
+info4contenuto="";
+info5contenuto=
+"<div style='padding:1.50rem;font-size:1.50rem;'>Aggiungere lettore  "+
+"che esegue la scansione  "+
+"con l\'aggiunta del valKRIPTO e poi la "+
+"string diventa adatta per la visualizzazione. <br>"+
+" <br>"+
+"Controllare se il file esterno js "+
+" è loaded altrimenti con un alert il programma"+
+" è terminato. Problema da risolvere:  "+
+"nel caso del boolean false non viene intercettata la  "+
+"soluzione di default :   <br>"+
+"Considerare un file esterno come creatore di una "+
+"variabile  <br>"+
+"  <a href='https://www.geeksforgeeks.org/how-to-tell-if-a-script-tag-failed-to-load/'>rif:</a>  <br>"+
+"   <br>"+
+"Considerare di cambiare nome alla funzione function codice()   <br>"+
+"   <br>"+
+"   <br>"+
+"   <br>"+
+"   <br>"+
+
+
+" <br>"+
+"</div> <br>";
+info6contenuto="";
+} 
+
+if (loaded===false){ alert("ERRORE FATALE: file==> [esterno.js]  mancante. Il programma termina!");}
+
+
+
+/***********************************/
+/*  INFORMAZIONI DAL FILE ESTERNO !!!                                                 */
+/* le informazioni di default sono sostituite dalle effettive informazioni aggiornate */
+/* se le informazioni sono crittate occorre decrittarle                               */
+
+/* info1contenutotest proviuene dal file esterno */
+
+info1contenuto=info1contenutotest;
+info2contenuto=info2contenutotest;
+info3contenuto="<xmp><span style='color:red;'>rosso<span></xmp>";
+info4contenuto=info4contenutotest;
+
+
+
+/* qui ci stanno le informazioni da eventualmente decrittare */
+KRIPTO=info1contenuto;
+lunghezza_KRIPTO=KRIPTO.length;
+DEKRIPTO="";
+for(contachiaro=0;contachiaro<lunghezza_KRIPTO;contachiaro++)
+{
+  unicode_DEKRIPTO=KRIPTO.charCodeAt(contachiaro)-codiceK;
+  DEKRIPTO=DEKRIPTO+String.fromCharCode(unicode_DEKRIPTO);
+}
+info1contenuto=DEKRIPTO;
+DEKRIPTO="";
+
+/* in questo snipet ->>>>>>-----------------------------------------------------------------------------------|||hacking|||**/
+info0='<div class="border border-3 border-danger" style="OVERFLOW:AUTO;position:fixed;top:12%;left:12%;width:'+dimmain*0.85+'rem;height:50%;;text-align:left;">'+'<span class="badge bg-secondary rounded-pill">0</span>'+'<div>'+info0contenuto+'</div>'+ '</div>';
+info1='<div class="border border-3 border-danger" style="OVERFLOW:AUTO;position:fixed;top:12%;left:12%;width:'+dimmain*0.85+'rem;height:50%;;text-align:left;">'+'<span class="badge bg-secondary rounded-pill">1</span>'+'<div>'+info1contenuto+'</div>'+ '</div>';
+info2='<div class="border border-3 border-danger" style="OVERFLOW:AUTO;position:fixed;top:12%;left:12%;width:'+dimmain*0.85+'rem;height:50%;;text-align:left;">'+'<span class="badge bg-secondary rounded-pill">2</span>'+'<div>'+info2contenuto+'</div>'+ '</div>';
+info3='<div class="border border-3 border-danger" style="OVERFLOW:AUTO;position:fixed;top:12%;left:12%;width:'+dimmain*0.85+'rem;height:50%;;text-align:left;">'+'<span class="badge bg-secondary rounded-pill">3</span>'+'<div>'+info3contenuto+'</div>'+ '</div>';
+info4='<div class="border border-3 border-danger" style="OVERFLOW:AUTO;position:fixed;top:12%;left:12%;width:'+dimmain*0.85+'rem;height:50%;;text-align:left;">'+'<span class="badge bg-secondary rounded-pill">4</span>'+'<div>'+info4contenuto+'</div>'+ '</div>';
+info5='<div class="border border-3 border-danger" style="OVERFLOW:AUTO;position:fixed;top:12%;left:12%;width:'+dimmain*0.85+'rem;height:50%;;text-align:left;">'+'<span class="badge bg-secondary rounded-pill">5</span>'+'<div>'+info5contenuto+'</div>'+ '</div>';
+info6='<div class="border border-3 border-danger" style="OVERFLOW:AUTO;position:fixed;top:12%;left:12%;width:'+dimmain*0.85+'rem;height:50%;;text-align:left;">'+'<span class="badge bg-secondary rounded-pill">6</span>'+'<div>'+info6contenuto+'</div>'+ '</div>';
+
+
+
+/*********/
+/* DGEBI */
+/* viene fissata la intestazione */
+
+document.getElementById("acapopagina").innerHTML=
+' <style>body#BODY{margin-top:'+altezza_intestazione_acapopagina_rem +'rem;}</style> '+
+'<section class="border border-3  border-primary" style="position:fixed;top:0;left:0;width:100%;height:'+altezza_intestazione_acapopagina_rem+'rem;">'+
+'<article style="position:relative;">'+
+'<span style="font-size:x-small;"></span>'+
+'<a href="#" style="margin-left:1rem;margin-right:1rem;font-variant:small-caps;font-weight:bold;">'+CHEVRON_UP_acapopagina+'</a>'+
+'<a href="#fine" style="margin-left:1rem;margin-right:1rem;font-variant:small-caps;font-weight:bold;">'+CHEVRON_DOWN_acapopagina+'</a>'+
+'<a href="http://venexiatre.altervista.org/WORKOU/OGGI/20191119/20191119f_1-CREEK.html" style="DISPLAY:NONE;position:absolute;top:0;right:0;margin-left:1rem;margin-right:1rem;font-variant:small-caps;font-weight:bold;">'+HOUSE_acapopagina+'</a>'+
+'</article>'+
+'</section>'+
+
+/******************************/
+/* qui il corpo del programma */
+
+/* segnala inizio del corpo programma */
+'<section class="border border-1 border-danger" style="margin-top:0rem;">'+
+/* inserisce un dashboard per attivare il collapse principale */
+'<a href="#collapseMenu0" data-bs-toggle="collapse" style="margin-left:1rem;margin-right:1rem;font-variant:small-caps;font-weight:bold;">'+MENU_acapopagina+'</a>'+
+/* attiva il collapse menu principale */
+'<blockquote id="collapseMenu0" class="collapse border border-0 border-info" style="position:static;top:0;left:0;OVERFLOW:AUTO;">'+
+/* predispone lo spazio per i collapse secondari  */
+'<div style="margin:0 auto;width:'+larghezza_acapopagina_rem+'rem;height:'+altezza_acapopagina_rem*1+'rem!important;BORDER:DOTTED 0.000025REM LIME;">'+
+/* una interlinea per linkSnip0 display none */
+'<div style="DISPLAY:NONE;"> href="#cpse0"'+linkSnipet[0]+'id="cpse0" </div>'+
+/* confine della finestrella dei collapse secondari */
+'<article  style="OVERFLOW:AUTO;MARGIN-BOTTOM:5REM;BORDER:DASHED 0.00025rem RED;">'+
+
+/* il contenuto effettivo */
+'<div class="border-top border-bottom  border-3 border-success"><a data-bs-toggle="collapse" href="#cpse1">'+linkSnipet[1]+'</a><div class="collapse" style="overflow:auto;" id="cpse1"><div style="display:inline-block;">'+info1+'</div>'+'</div></div>'+
+'<div class="border-top border-bottom  border-3 border-success"><a data-bs-toggle="collapse" href="#cpse2">'+linkSnipet[2]+'</a><div class="collapse" style="overflow:auto;" id="cpse2"><div style="display:inline-block;">'+info2+'</div>'+'</div></div>'+
+'<div class="border-top border-bottom  border-3 border-success"><a data-bs-toggle="collapse" href="#cpse3">'+linkSnipet[3]+'</a><div class="collapse" style="overflow:auto;" id="cpse3"><div style="display:inline-block;">'+info3+'</div>'+'</div></div>'+
+'<div class="border-top border-bottom  border-3 border-success"><a data-bs-toggle="collapse" href="#cpse4">'+linkSnipet[4]+'</a><div class="collapse" style="overflow:auto;" id="cpse4"><div style="display:inline-block;">'+info4+'</div>'+'</div></div>'+
+'<div class="border-top border-bottom  border-3 border-success"><a data-bs-toggle="collapse" href="#cpse5">'+linkSnipet[5]+'</a><div class="collapse" style="overflow:auto;" id="cpse5"><div style="display:inline-block;">'+info5+'</div>'+'</div></div>'+
+
+/* interline linkSnip6  visibility hidden */
+'<div style="visibility:hidden;" class="border-top border-bottom  border-3 border-success"><a data-bs-toggle="collapse" href="#cpse6">'+linkSnipet[6]+'</a><div class="collapse" style="overflow:auto;" id="cpse6"><div style="display:inline-block;">'+info1+'</div>'+'</div></div>'+
+/*
+Attenzione le due interlinee con snipet vuoti fanno
+parte di un aggiustamento visuale per migliorare la
+comprensione dell\'indice attivato.
+*/
+
+'</article>'+
+'</div>'+
+'</blockquote>'+
+'</section>'+
+
+''+
+''+
+
+'<article style="padding:0.75rem;text-align:left;">'+
+
+'<span style="font-size:small;">'+vers_acapopagina+'</span><br>'+
+
+'<span style="font-size:small;">loaded ==>'+loaded+' '+typeof(loaded)+'</span><br>'+
+'<span style="font-size:small;">codiceK ==>'+codiceK+' '+typeof(codiceK)+'</span><br>'+
+
+'<span style="font-size:small;">wFinestra ==>'+wFinestra+' '+typeof(wFinestra)+'</span><br>'+
+'<span style="font-size:small;">hFinestra ==>'+hFinestra+' '+typeof(hFinestra)+'</span><br>'+
+'<span style="font-size:small;">dimmainRem ==>'+dimmainRem+' '+typeof(dimmainRem)+'</span><br>'+
+'<span style="font-size:small;">dimMainRem ==>'+dimMainRem+' '+typeof(dimMainRem)+'</span><br>'+
+'<span style="font-size:small;">dimmain ==>'+dimmain+' '+typeof(dimmain)+'</span><br>'+
+'<span style="font-size:small;">dimMain ==>'+dimMain+' '+typeof(dimMain)+'</span><br>'+
+
+'<span style="font-size:small;">larghezza_acapopagina_rem ==>'+larghezza_acapopagina_rem+' '+typeof(larghezza_acapopagina_rem)+'</span><br>'+
+'<span style="font-size:small;">altezza_acapopagina_rem ==>'+altezza_acapopagina_rem+' '+typeof(altezza_acapopagina_rem)+'</span><br>'+
+
+'<span style="font-size:small;">fontsize ==>'+fontsize+' '+typeof(fontsize)+'</span><br>'+
+'<span style="font-size:small;">fontsize_px_svg ==>'+fontsize_px_svg+' '+typeof(fontsize_px_svg)+'</span><br>'+
+
+'<span style="font-size:small;">fontsizecar ==>'+fontsizecar+' '+typeof(fontsizecar)+'</span><br>'+
+'<span style="font-size:small;">fontsizecarrem ==>'+fontsizecarrem+' '+typeof(fontsizecarrem)+'</span><br>'+
+
+'<span style="font-size:small;">fontsize_px_svgcaret ==>'+fontsize_px_svgcaret+' '+typeof(fontsize_px_svgcaret)+'</span><br>'+
+'<span style="font-size:small;">widthCARD ==>'+widthCARD+' '+typeof(widthCARD)+'</span><br>'+
+'<span style="font-size:small;">heightCARD ==>'+heightCARD+' '+typeof(heightCARD)+'</span><br>'+
+
+
+
+'<span style="font-size:small;">CHEVRON_UP_acapopagina ==>'+CHEVRON_UP_acapopagina+' '+typeof(CHEVRON_UP_acapopagina)+'</span><br>'+
+'<span style="font-size:small;">CHEVRON_DOWN_acapopagina ==>'+CHEVRON_DOWN_acapopagina+' '+typeof(CHEVRON_DOWN_acapopagina)+'</span><br>'+
+'<span style="font-size:small;">HOUSE_acapopagina ==>'+HOUSE_acapopagina+' '+typeof(HOUSE_acapopagina)+'</span><br>'+
+'<span style="font-size:small;">MENU_acapopagina ==>'+MENU_acapopagina+' '+typeof(MENU_acapopagina)+'</span><br>'+
+'<span style="font-size:small;">CARET_DOWN_acapopagina ==>'+CARET_DOWN_acapopagina+' '+typeof(CARET_DOWN_acapopagina)+'</span><br>'+
+'<span style="font-size:small;">EYE_acapopagina ==>'+EYE_acapopagina+' '+typeof(EYE_acapopagina)+'</span><br>'+
+'<span style="font-size:small;">EYE_SLASH_acapopagina ==>'+EYE_SLASH_acapopagina+' '+typeof(EYE_SLASH_acapopagina)+'</span><br>'+
+
+
+'<span style="font-size:small;">KRIPTO ==>'+KRIPTO+' '+typeof(KRIPTO)+'</span><br>'+
+'<span style="font-size:small;">lunghezza_KRIPTO ==>'+lunghezza_KRIPTO+' '+typeof(lunghezza_KRIPTO)+'</span><br>'+
+'<span style="font-size:small;">contachiaro ==>'+contachiaro+' '+typeof(contachiaro)+'</span><br>'+
+'<span style="font-size:small;">unicode_DEKRIPTO ==>'+unicode_DEKRIPTO+' '+typeof(unicode_DEKRIPTO)+'</span><br>'+
+'<span style="font-size:small;">DEKRIPTO ==>'+DEKRIPTO+' '+typeof(DEKRIPTO)+'</span><br>'+
+'<span style="font-size:small;">info1contenuto ==>'+info1contenuto+' '+typeof(info1contenuto)+'</span><br>'+
+
+
+'<span style="font-size:small;">info0contenutotest ==>'+info0contenutotest+' '+typeof(info0contenutotest)+'</span><br>'+
+'<span style="font-size:small;">info1contenutotest ==>'+info1contenutotest+' '+typeof(info1contenutotest)+'</span><br>'+
+'<span style="font-size:small;">info2contenutotest ==>'+info2contenutotest+' '+typeof(info2contenutotest)+'</span><br>'+
+'<span style="font-size:small;">info3contenutotest ==>'+info3contenutotest+' '+typeof(info3contenutotest)+'</span><br>'+
+'<span style="font-size:small;">info4contenutotest ==>'+info4contenutotest+' '+typeof(info4contenutotest)+'</span><br>'+
+'<span style="font-size:small;">info5contenutotest ==>'+info5contenutotest+' '+typeof(info5contenutotest)+'</span><br>'+
+'<span style="font-size:small;">info6contenutotest ==>'+info6contenutotest+' '+typeof(info6contenutotest)+'</span><br>'+
+
+
+
+'</article>'+
+
+'';
+
+}
+
+</script> 
+
+
+
+
+<!--titoli di coda-->
+<article style="text-align:center;">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.5/platform.min.js"></script> 
+ <script> console.log(platform); document.write("<div style='font-size:1rem;font-variant:small-caps;color:gray;'>you are using " + platform.name + " v" + platform.version + " on " + platform.os); +"</div>" </script> 
+ <script> if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){/* true for mobile device */ document.write("mobile device"); }else{/* false for not mobile device */ document.write("not mobile device"); } </script>
+ <span id="result"></span> 
+ <script>"use strict"; function displayWindowSize(){ var w = document.documentElement.clientWidth;var h = document.documentElement.clientHeight;var wFinestraWIDTH = document.documentElement.clientWidth;var hFinestraHEIGHT = document.documentElement.clientHeight;document.getElementById("result").innerHTML = "<span style='font-size:1rem;font-variant:small-caps;'> " + wFinestraWIDTH + "x" + hFinestraHEIGHT +" ";}window.addEventListener("resize", displayWindowSize);displayWindowSize();</script> 
+</article>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<div id="fine"></div> 
+</body>
+</html>
+
+
+
+
+
