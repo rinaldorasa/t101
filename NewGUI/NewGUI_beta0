@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html id="HTML" lang="it">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="AlterVista - Editor HTML"/>
+<title> &#362; ) NEWGUI &#9776; 202107-18-11:00</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+
+
+<script>
+"use strict"; 
+let versNEWGUI="vers.202107-18-11:14";
+/*--1234567890123456--*/
+let LOADED______FILE = false;
+let LOADED____iconee = false;
+let LOADED_ContCarta = false;
+
+
+/* 1234567890123456 */
+let wFinestra____Rem = window.innerWidth/16; 
+let hFinestra____Rem = window.innerHeight/16; 
+
+let fFinestra____Rem = hFinestra____Rem/45;
+
+let dimeXMain____Rem = wFinestra____Rem*0.95;
+let dimeYMain____Rem = hFinestra____Rem*0.95;
+
+let intestazX____Rem = dimeXMain____Rem;
+let intestazY____Rem = fFinestra____Rem*3.5;
+
+let dim___ico_svg_Px = intestazY____Rem*16;
+let dim__ico_svg_Rem = dim___ico_svg_Px/16;
+let offsetLBadge_Rem = dim__ico_svg_Rem*2;
+
+
+let dimensio_ico_Rem = (dim___ico_svg_Px/16)*0.5;
+
+
+let dashboardX___Rem = intestazX____Rem;
+let dashboardY_perce = 0.80;
+let dashboardY___Rem = dimeYMain____Rem*dashboardY_perce;
+let dashbd_Badge_Rem;
+
+let cerchiett_BADGE0;
+let cerchiett_BADGE1;
+let cerchiett_BADGE2;
+let cerchiett_BADGE3;
+let cerchiett_BADGE4;
+let cerchiett_BADGE5;
+let cerchiett_BADGE6;
+let cerchiett_BADGE7;
+let cerchiett_BADGE8;
+let cerchiett_BADGE9;
+
+cerchiett_BADGE0 = '<span id="cerchietto0" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+cerchiett_BADGE1 = '<span id="cerchietto1" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+cerchiett_BADGE2 = '<span id="cerchietto2" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+cerchiett_BADGE3 = '<span id="cerchietto3" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+cerchiett_BADGE4 = '<span id="cerchietto4" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+cerchiett_BADGE5 = '<span id="cerchietto5" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+cerchiett_BADGE6 = '<span id="cerchietto6" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+cerchiett_BADGE7 = '<span id="cerchietto7" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+cerchiett_BADGE8 = '<span id="cerchietto8" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+cerchiett_BADGE9 = '<span id="cerchietto9" style="width:0.5rem;height:0.5rem;border:solid 0.25rem red;border-radius:0.25rem;display:inline-block;"></span>';
+
+
+
+
+
+
+let cartaX_______Rem = dimeXMain____Rem-(offsetLBadge_Rem*1.50);
+let cartaY_______Rem = dimeYMain____Rem*0.80;
+let cardX________Rem = cartaX_______Rem;
+let cardY________Rem = dimeYMain____Rem;
+
+
+let LINK________SNIP = [""];
+let LINK_lunghe_SNIP;
+let LINK________INFO = [""];
+let LINK_lunghe_INFO;
+let LINK___SNIP_INFO = [""];
+let LINKlunSNIP_INFO;
+
+let infoContentCarta = [""];
+let lungContentCarta;
+let INFO________LINK = [""];
+let lung_INFO___LINK;
+
+let clCOLLAPSE_CARTA = ' class="collapse border border-3 border-info rounded" style="box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, .1);" ';
+//let BLOKQ_PILL_CARTA = ' <blockquote style="position:absolute;top:0;right:0;z-index:1!important;" class="border border-3 badge bg-success rounded-pill"> ';
+//let BLOKQ_PILL_CARTA = ' <blockquote style="position:absolute;top:0;right:0;z-index:1!important;MARGIN-TOP:-0REM;" class="border border-3 badge bg-dark rounded-pill"> ';
+//let BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:0;LEFT:80%;z-index:1!important;MARGIN-TOP:-0REM;" class="border border-3 badge bg-dark rounded-pill"> ';
+
+let BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:'+intestazY____Rem*0+'REM;LEFT:'+dim__ico_svg_Rem*2.5+'REM;z-index:1!important;MARGIN-TOP:-0REM;" class="border border-3 badge bg-dark rounded-pill"> ';
+
+
+
+let ARTICLE____CARTA = ' <article class="border border-3 border-danger" style="overflow:auto; ';
+let BLOCKQUOTE_CARTA = ' <blockquote class="badge bg-success"> ';
+let clBORDER___CARTA = ' class="border border-3 border-primary card px-2" ';
+
+let TR_TD_INTERLINEA = ' <tr><td style="visibility:hidden;">'+'-'+'</td></tr> ';
+
+</script>
+
+
+
+<!--DEBUGGING
+<script src="iconee.js?0123456" onload="LOADED____iconee=true"></script>
+<script>if (LOADED____iconee === false){alert("ATTENZIONE:mancato loading file ==> [iconee.js]");}</script>
+<script src="infoContentCartaTest.js?012345678" onload="LOADED_ContCarta=true"></script>
+<script>if (LOADED_ContCarta === false){alert("ATTENZIONE:mancato loading file ==> [infoContentCartaTest.js]");}</script>
+-->
+
+
+<script> 
+var script1 = document.createElement('script');
+script1.onload = function () {
+}; script1.src = "iconee.js"; 
+document.head.appendChild(script1);
+
+var script2 = document.createElement('script');
+script2.onload = function () {
+}; script2.src = "infoContentCartaTest.js"; 
+document.head.appendChild(script2);
+
+</script> 
+
+
+
+
+<style>
+html#HTML * {
+BACKGROUND-COLOR:OLDLACE;
+FONT-SIZE:1.50REM;
+FONT-FAMILY:"PT Mono",MONOSPACE;
+
+}
+body#BODY{MARGIN:0 AUTO;BORDER:SOLID 0.15REM GREEN;}
+main#MAIN{MARGIN:0 AUTO;OVERFLOW:AUTO;BORDER:SOLID 0.15REM MAGENTA;}
+
+</style>
+
+
+<style></style>
+
+<script></script>
+
+</head>
+
+<body id="BODY" onload="funzione()">
+<main></main>
+
+<div id="NEWGUI"></div>
+
+<script>
+"use strict";
+
+let COLLAPSE0Badge11="<a id='toggle01' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse0'> <div id='ATTDIS_01' onclick='COLLAPSE0BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>0 informazioni_sul_link0</span> </div> </a>";
+let COLLAPSE1Badge11="<a id='toggle11' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse1'> <div id='ATTDIS_11' onclick='COLLAPSE1BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>1 informazioni_sul_link1</span> </div> </a>";
+let COLLAPSE2Badge11="<a id='toggle21' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse2'> <div id='ATTDIS_21' onclick='COLLAPSE2BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>2 informazioni_sul_link2</span> </div> </a>";
+let COLLAPSE3Badge11="<a id='toggle31' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse3'> <div id='ATTDIS_31' onclick='COLLAPSE3BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>3 informazioni_sul_link3</span> </div> </a>";
+let COLLAPSE4Badge11="<a id='toggle41' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse4'> <div id='ATTDIS_41' onclick='COLLAPSE4BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>4 informazioni_sul_link4</span> </div> </a>";
+let COLLAPSE5Badge11="<a id='toggle51' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse5'> <div id='ATTDIS_51' onclick='COLLAPSE5BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>5 informazioni_sul_link5</span> </div> </a>";
+let COLLAPSE6Badge11="<a id='toggle61' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse6'> <div id='ATTDIS_61' onclick='COLLAPSE6BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>6 informazioni_sul_link6</span> </div> </a>";
+let COLLAPSE7Badge11="<a id='toggle71' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse7'> <div id='ATTDIS_71' onclick='COLLAPSE7BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>7 informazioni_sul_link7</span> </div> </a>";
+let COLLAPSE8Badge11="<a id='toggle81' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse8'> <div id='ATTDIS_81' onclick='COLLAPSE8BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>8 informazioni_sul_link8</span> </div> </a>";
+let COLLAPSE9Badge11="<a id='toggle91' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse9'> <div id='ATTDIS_91' onclick='COLLAPSE9BadgeF11()' style='display:inline-block;'><span class='badge bg-warning'>9 informazioni_sul_link9</span> </div> </a>";
+
+
+let COLLAPSE0Badge21="<a id='toggle02' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse0'> <div id='ATTDIS_02' onclick='COLLAPSE0BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >0 informazioni_sul_link0</span> </div> </a>";
+let COLLAPSE1Badge21="<a id='toggle12' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse1'> <div id='ATTDIS_12' onclick='COLLAPSE1BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >1 informazioni_sul_link1</span> </div> </a>";
+let COLLAPSE2Badge21="<a id='toggle22' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse2'> <div id='ATTDIS_22' onclick='COLLAPSE2BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >2 informazioni_sul_link2</span> </div> </a>";
+let COLLAPSE3Badge21="<a id='toggle32' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse3'> <div id='ATTDIS_32' onclick='COLLAPSE3BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >3 informazioni_sul_link3</span> </div> </a>";
+let COLLAPSE4Badge21="<a id='toggle42' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse4'> <div id='ATTDIS_42' onclick='COLLAPSE4BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >4 informazioni_sul_link4</span> </div> </a>";
+let COLLAPSE5Badge21="<a id='toggle52' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse5'> <div id='ATTDIS_52' onclick='COLLAPSE5BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >5 informazioni_sul_link5</span> </div> </a>";
+let COLLAPSE6Badge21="<a id='toggle62' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse6'> <div id='ATTDIS_62' onclick='COLLAPSE6BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >6 informazioni_sul_link6</span> </div> </a>";
+let COLLAPSE7Badge21="<a id='toggle72' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse7'> <div id='ATTDIS_72' onclick='COLLAPSE7BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >7 informazioni_sul_link7</span> </div> </a>";
+let COLLAPSE8Badge21="<a id='toggle82' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse8'> <div id='ATTDIS_82' onclick='COLLAPSE8BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >8 informazioni_sul_link8</span> </div> </a>";
+let COLLAPSE9Badge21="<a id='toggle92' style='position:absolute;LEFT:0;' data-bs-toggle='collapse' href='#cpse9'> <div id='ATTDIS_92' onclick='COLLAPSE9BadgeF21()' style='display:inline-block;'><span class='badge bg-danger' >9 informazioni_sul_link9</span> </div> </a>";
+
+
+LINK________SNIP[0]="<blockquote style='position:relative;'>"+COLLAPSE0Badge21+COLLAPSE0Badge11+"</blockquote>";
+LINK________SNIP[1]="<blockquote style='position:relative;'>"+COLLAPSE1Badge21+COLLAPSE1Badge11+"</blockquote>";
+LINK________SNIP[2]="<blockquote style='position:relative;'>"+COLLAPSE2Badge21+COLLAPSE2Badge11+"</blockquote>";
+LINK________SNIP[3]="<blockquote style='position:relative;'>"+COLLAPSE3Badge21+COLLAPSE3Badge11+"</blockquote>";
+LINK________SNIP[4]="<blockquote style='position:relative;'>"+COLLAPSE4Badge21+COLLAPSE4Badge11+"</blockquote>";
+LINK________SNIP[5]="<blockquote style='position:relative;'>"+COLLAPSE5Badge21+COLLAPSE5Badge11+"</blockquote>";
+LINK________SNIP[6]="<blockquote style='position:relative;'>"+COLLAPSE6Badge21+COLLAPSE6Badge11+"</blockquote>";
+LINK________SNIP[7]="<blockquote style='position:relative;'>"+COLLAPSE7Badge21+COLLAPSE7Badge11+"</blockquote>";
+
+LINK________SNIP[8]="<blockquote style='position:relative;'>"+COLLAPSE8Badge21+COLLAPSE8Badge11+"</blockquote>";
+LINK________SNIP[9]="<blockquote style='position:relative;'>"+COLLAPSE9Badge21+COLLAPSE9Badge11+"</blockquote>";
+
+
+
+/* il toggle ADATTATO ma... perfetto! */
+
+
+function COLLAPSE0BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_01"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle01"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_02"); elemento12.style.visibility="visible";}
+function COLLAPSE1BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_11"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle11"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_12"); elemento12.style.visibility="visible";}
+function COLLAPSE2BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_21"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle21"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_22"); elemento12.style.visibility="visible";}
+function COLLAPSE3BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_31"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle31"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_32"); elemento12.style.visibility="visible";}
+function COLLAPSE4BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_41"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle41"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_42"); elemento12.style.visibility="visible";}
+function COLLAPSE5BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_51"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle51"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_52"); elemento12.style.visibility="visible";}
+function COLLAPSE6BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_61"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle61"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_62"); elemento12.style.visibility="visible";}
+function COLLAPSE7BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_71"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle71"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_72"); elemento12.style.visibility="visible";}
+function COLLAPSE8BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_81"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle81"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_82"); elemento12.style.visibility="visible";}
+function COLLAPSE9BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_91"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle91"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_92"); elemento12.style.visibility="visible";}
+
+
+function COLLAPSE0BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_02"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle02"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_01"); elemento22.style.visibility="visible";}
+function COLLAPSE1BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_12"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle12"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_11"); elemento22.style.visibility="visible";}
+function COLLAPSE2BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_22"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle22"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_21"); elemento22.style.visibility="visible";}
+function COLLAPSE3BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_32"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle32"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_31"); elemento22.style.visibility="visible";}
+function COLLAPSE4BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_42"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle42"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_41"); elemento22.style.visibility="visible";}
+function COLLAPSE5BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_52"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle52"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_51"); elemento22.style.visibility="visible";}
+function COLLAPSE6BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_62"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle62"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_61"); elemento22.style.visibility="visible";}
+function COLLAPSE7BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_72"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle72"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_71"); elemento22.style.visibility="visible";}
+function COLLAPSE8BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_82"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle82"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_81"); elemento22.style.visibility="visible";}
+function COLLAPSE9BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_92"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle92"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_91"); elemento22.style.visibility="visible";}
+
+
+
+
+
+
+
+
+/* il toggle perfetto per rif */
+ function toggle1(){ var elemento1; elemento1=document.querySelector("#attdis"); elemento1.style.visibility="visible"; var elemento11; elemento11=document.querySelector("#toggle1"); elemento11.style.visibility="hidden"; var elemento12; elemento12=document.querySelector("#toggle2"); elemento12.style.visibility="visible";   }  function toggle2(){ var elemento2; elemento2=document.querySelector("#attdis"); elemento2.style.visibility="hidden"; var elemento21; elemento21=document.querySelector("#toggle2"); elemento21.style.visibility="hidden"; var elemento22; elemento22=document.querySelector("#toggle1"); elemento22.style.visibility="visible";  } 
+
+
+LINK_lunghe_SNIP = LINK________SNIP.length;
+LINK_lunghe_INFO = LINK________INFO.length;
+
+
+
+
+/* integrati i due array ne risulta solo uno */
+
+LINK___SNIP_INFO[0]= LINK________SNIP[0];
+LINK___SNIP_INFO[1]= LINK________SNIP[1];
+LINK___SNIP_INFO[2]= LINK________SNIP[2];
+LINK___SNIP_INFO[3]= LINK________SNIP[3];
+LINK___SNIP_INFO[4]= LINK________SNIP[4];
+LINK___SNIP_INFO[5]= LINK________SNIP[5];
+LINK___SNIP_INFO[6]= LINK________SNIP[6];
+LINK___SNIP_INFO[7]= LINK________SNIP[7];
+LINK___SNIP_INFO[8]= LINK________SNIP[8];
+LINK___SNIP_INFO[9]= LINK________SNIP[9];
+
+LINKlunSNIP_INFO = LINK___SNIP_INFO.length;
+
+lungContentCarta = infoContentCarta.length;
+lung_INFO___LINK = INFO________LINK.length;
+
+
+//BLOKQ_PILL_CARTA = '<blockquote style="position:absolute;top:0;right:0;z-index:1!important;" class="border border-3 badge bg-success rounded-pill">';
+
+
+
+function funzione(){
+
+document.getElementById("NEWGUI").innerHTML=
+'<style>html#HTML * {font-size:'+fFinestra____Rem+'rem;}</style> '+
+'<style>body#BODY {padding-top:'+intestazY____Rem+'rem;}</style> '+
+
+'<style>main#MAIN {width:'+dimeXMain____Rem+'rem;}</style> '+
+'<style>main#MAIN {height:'+dimeYMain____Rem+'rem;}</style> '+
+'<style>main#MAIN {padding-top:'+0+'rem;}</style> '+
+
+'<style> div#DASHBOARD{margin:0 auto;width:'+dashboardX___Rem/1+'rem; height:'+dashboardY___Rem/1+'rem; overflow:auto; border:solid 0.25rem lime;}</style> '+
+'<style>section#cpse0 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse1 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse2 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse3 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse4 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse5 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse6 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse7 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse8 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse9 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*1+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+
+
+
+
+
+
+/* intestazione */
+'<section class="border border-1 border-info" style="position:fixed;top:0%;left:0;width:'+100+'%;height:'+intestazY____Rem+'rem;"> '+
+'<article class="mx-2" style="position:relative;">'+
+'<a href="#">'+CHEVRON_UP+'</a>'+
+'<a href="#fine">'+CHEVRON_DOWN+'</a>'+
+'</article>'+
+'</section> '+
+
+'<section class="border border-1 border-secondary" style="margin-top:'+0+'rem;"> '+' interlinea '+'</section> '+
+
+/* Menu0 */
+'<section class="border border-1 border-secondary" style="margin-top:'+0+'rem;"> '+
+
+'<a href="#collapseMenu0" data-bs-toggle="collapse" class="mx-2">'+MENU+'</a>'+
+'<div id="collapseMenu0" class="collapse">'+
+/* dashboard */
+'<div id="DASHBOARD">'+
+
+/* 
+si inserisce la composizione del dashboard 
+cliccando su uno dei link si apre un collapse 
+secondario che attiva la card collegata
+*/
+/**/
+
+
+'<table>'+
+'<tr><td>'+LINK___SNIP_INFO[0]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr><td>'+LINK___SNIP_INFO[1]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr><td>'+LINK___SNIP_INFO[2]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr><td>'+LINK___SNIP_INFO[3]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr><td>'+LINK___SNIP_INFO[4]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr><td>'+LINK___SNIP_INFO[5]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr><td>'+LINK___SNIP_INFO[6]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr><td>'+LINK___SNIP_INFO[7]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr><td>'+LINK___SNIP_INFO[8]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr><td>'+LINK___SNIP_INFO[9]+'</td></tr>'+TR_TD_INTERLINEA+
+'</table>'+
+
+''+
+'</div>'+
+'</div>'+
+'</section> '+
+
+
+
+/**********************************/
+/* questa è la SEZIONE CARTA CARD */
+
+/*----------BLOKQ_PILL_CARTA--*/
+'<section '+clCOLLAPSE_CARTA+' id="cpse0"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'0'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[0]+'</div></article>'+'</section> '+ 
+'<section '+clCOLLAPSE_CARTA+' id="cpse1"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'1'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[1]+'</div></article>'+'</section> '+ 
+'<section '+clCOLLAPSE_CARTA+' id="cpse2"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'2'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[2]+'</div></article>'+'</section> '+ 
+'<section '+clCOLLAPSE_CARTA+' id="cpse3"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'3'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[3]+'</div></article>'+'</section> '+ 
+'<section '+clCOLLAPSE_CARTA+' id="cpse4"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'4'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[4]+'</div></article>'+'</section> '+ 
+'<section '+clCOLLAPSE_CARTA+' id="cpse5"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'5'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[5]+'</div></article>'+'</section> '+ 
+'<section '+clCOLLAPSE_CARTA+' id="cpse6"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'6'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[6]+'</div></article>'+'</section> '+ 
+'<section '+clCOLLAPSE_CARTA+' id="cpse7"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'7'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[7]+'</div></article>'+'</section> '+ 
+'<section '+clCOLLAPSE_CARTA+' id="cpse8"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'8'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[8]+'</div></article>'+'</section> '+ 
+'<section '+clCOLLAPSE_CARTA+' id="cpse9"> '+ARTICLE____CARTA+'height:'+cartaY_______Rem+'rem;">'+BLOKQ_PILL_CARTA+'9'+'</blockquote>'+'<div style="margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[9]+'</div></article>'+'</section> '+ 
+
+
+
+
+
+
+'<section class="p-2 border border-1 border-warning" style="margin-top:'+cartaY_______Rem+'rem;"> '+
+'<span id="attdis" class="p-1 bg-light rounded" style="position:fixed;top:0;left:50%;background-color:pink!important;">versNEWGUI ==>'+versNEWGUI+' '+typeof(versNEWGUI)+'</span><br>'+
+/*
+-1234567890123456
+-----------------
+*/
+'wFinestra____Rem ==>'+wFinestra____Rem+' '+typeof(wFinestra____Rem)+'<br>'+
+'hFinestra____Rem ==>'+hFinestra____Rem+' '+typeof(hFinestra____Rem)+'<br>'+
+'fFinestra____Rem ==>'+fFinestra____Rem+' '+typeof(fFinestra____Rem)+'<br>'+
+'dimeXMain____Rem ==>'+dimeXMain____Rem+' '+typeof(dimeXMain____Rem)+'<br>'+
+'dimeYMain____Rem ==>'+dimeYMain____Rem+' '+typeof(dimeYMain____Rem)+'<br>'+
+
+
+
+
+'intestazX____Rem ==>'+intestazX____Rem+' '+typeof(intestazX____Rem)+'<br>'+
+'intestazY____Rem ==>'+intestazY____Rem+' '+typeof(intestazY____Rem)+'<br>'+
+'dim___ico_svg_Px ==>'+dim___ico_svg_Px+' '+typeof(dim___ico_svg_Px)+'<br>'+
+'dim__ico_svg_Rem ==>'+dim__ico_svg_Rem+' '+typeof(dim__ico_svg_Rem)+'<br>'+
+'dimensio_ico_Rem ==>'+dimensio_ico_Rem+' '+typeof(dimensio_ico_Rem)+'<br>'+
+
+
+'dashboardX___Rem ==>'+dashboardX___Rem+' '+typeof(dashboardX___Rem)+'<br>'+
+'dashboardY___Rem ==>'+dashboardY___Rem+' '+typeof(dashboardY___Rem)+'<br>'+
+'dashboardY_perce ==>'+dashboardY_perce+' '+typeof(dashboardY_perce)+'<br>'+
+'dashbd_Badge_Rem ==>'+dashbd_Badge_Rem+' '+typeof(dashbd_Badge_Rem)+'<br>'+
+'offsetLBadge_Rem ==>'+offsetLBadge_Rem+' '+typeof(offsetLBadge_Rem)+'<br>'+
+
+//'cerchietto_BADGE ==>'+cerchietto_BADGE+' '+typeof(cerchietto_BADGE)+'<br>'+
+
+
+
+'cartaX_______Rem ==>'+cartaX_______Rem+' '+typeof(cartaX_______Rem)+'<br>'+
+'cartaY_______Rem ==>'+cartaY_______Rem+' '+typeof(cartaY_______Rem)+'<br>'+
+'cardX________Rem ==>'+cardX________Rem+' '+typeof(cardX________Rem)+'<br>'+
+'cardY________Rem ==>'+cardY________Rem+' '+typeof(cardY________Rem)+'<br>'+
+
+
+
+'LINK________SNIP ==>'+LINK________SNIP+' '+typeof(LINK________SNIP)+'<br>'+
+'LINK________INFO ==>'+LINK________INFO+' '+typeof(LINK________INFO)+'<br>'+
+
+'LINK_lunghe_SNIP ==>'+LINK_lunghe_SNIP+' '+typeof(LINK_lunghe_SNIP)+'<br>'+
+'LINK_lunghe_INFO ==>'+LINK_lunghe_INFO+' '+typeof(LINK_lunghe_INFO)+'<br>'+
+
+'LINK___SNIP_INFO ==>'+LINK___SNIP_INFO+' '+typeof(LINK___SNIP_INFO)+'<br>'+
+'LINKlunSNIP_INFO ==>'+LINKlunSNIP_INFO+' '+typeof(LINKlunSNIP_INFO)+'<br>'+
+
+
+
+
+'LOADED______FILE ==>'+LOADED______FILE+' '+typeof(LOADED______FILE)+'<br>'+
+'LOADED____iconee ==>'+LOADED____iconee+' '+typeof(LOADED____iconee)+'<br>'+
+'LOADED_ContCarta ==>'+LOADED_ContCarta+' '+typeof(LOADED_ContCarta)+'<br>'+
+
+
+
+'<br/>'+
+
+'LINK________SNIP[0] ==>'+LINK________SNIP[0]+' '+typeof(LINK________SNIP[0])+'<br>'+
+'LINK________INFO[0] ==>'+LINK________INFO[0]+' '+typeof(LINK________INFO[0])+'<br>'+
+
+'LINK___SNIP_INFO[0] ==>'+LINK___SNIP_INFO[0]+' '+typeof(LINK___SNIP_INFO[0])+'<br>'+
+
+'infoContentCarta[0] ==>'+LINK___SNIP_INFO[0]+' '+typeof(LINK___SNIP_INFO[0])+'<br>'+
+'lungContentCarta ==>'+lungContentCarta+' '+typeof(lungContentCarta)+'<br>'+
+
+
+
+'INFO________LINK[0] ==>'+INFO________LINK[0]+' '+typeof(INFO________LINK[0])+'<br>'+
+
+'lung_INFO___LINK ==>'+lung_INFO___LINK+' '+typeof(lung_INFO___LINK)+'<br>'+
+
+'<br/>'+
+
+'clCOLLAPSE_CARTA ==>'+clCOLLAPSE_CARTA+' '+typeof(clCOLLAPSE_CARTA)+'<br>'+
+
+
+
+'<br/>'+
+
+'CHEVRON_UP__ICO ==>'+CHEVRON_UP__ICO+' '+typeof(CHEVRON_UP__ICO)+'<br>'+
+'CHEVRON_DWN_ICO ==>'+CHEVRON_DWN_ICO+' '+typeof(CHEVRON_DWN_ICO)+'<br>'+
+'MENU________ICO ==>'+MENU________ICO+' '+typeof(MENU________ICO)+'<br>'+
+'CHEVRON_UP ==>'+CHEVRON_UP+' '+typeof(CHEVRON_UP)+'<br>'+
+'CHEVRON_DOWN ==>'+CHEVRON_DOWN+' '+typeof(CHEVRON_DOWN)+'<br>'+
+'MENU ==>'+MENU+' '+typeof(MENU)+'<br>'+
+
+
+'<br/>'+
+
+
+
+'</section> '+
+
+' <div class="m-5 p-5 border border-3 border-info " id="attdisX">attdis</div>'+
+' <div style="position:fixed;bottom:0;left:0;" class=" bg-success rounded" id="toggle1" onclick="toggle1()">&nbsp;</div>'+
+' <div style="position:fixed;bottom:0;left:0;" class=" bg-danger rounded" id="toggle2" onclick="toggle2()">&nbsp;</div>'+
+
+
+
+
+
+' '+
+'';
+
+
+
+
+
+}
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<div id="fine"></div> 
+</body>
+</html>
+
+
+<!-- riferimenti
+
+
+
+<div>
+toggle:1)oggetto del toggle e 2)il toggle strumento
+</div>
+
+<div class="m-5 p-5 border border-3 border-info " id="attdis">attdis</div>
+
+<div style="position:fixed;bottom:0;left:0;" class="btn btn-success bg-success" id="toggle1" onclick="toggle1()">toggle1</div>
+<div style="position:fixed;bottom:0;left:0;" class="btn btn-danger bg-danger" id="toggle2" onclick="toggle2()">toggle2</div>
+
+
+
+<script>
+function toggle1(){
+var elemento1; elemento1=document.querySelector("#attdis");
+elemento1.style.visibility="visible";
+var elemento11; elemento11=document.querySelector("#toggle1");
+elemento11.style.visibility="hidden";
+var elemento12; elemento12=document.querySelector("#toggle2");
+elemento12.style.visibility="visible";
+
+
+}
+
+function toggle2(){
+var elemento2; elemento2=document.querySelector("#attdis");
+elemento2.style.visibility="hidden";
+var elemento21; elemento21=document.querySelector("#toggle2");
+elemento21.style.visibility="hidden";
+var elemento22; elemento22=document.querySelector("#toggle1");
+elemento22.style.visibility="visible";
+
+}
+
+</script>
+
+--> 
+
+<!-- &#9776; -->
+
