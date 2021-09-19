@@ -1,0 +1,21 @@
+<div class="thumb" id_thumb="0"  style="-moz-user-select: none; touch-action: none;"><span class="fa fa-fast-backward" style="position:fixed;bottom:2%;left:8%;color:FireBrick;"></span></div>
+<div class="thumb" id_thumb="1"  style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:11%;">1</span></div>
+<div class="thumb" id_thumb="5"  style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:14%;">5</span></div>
+<div class="thumb" id_thumb="10" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:18%;">10</span></div>
+<div class="thumb" id_thumb="15" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:22%;">15</span></div>
+<div class="thumb" id_thumb="20" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:26%;">20</span></div>
+<div class="thumb" id_thumb="25" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:30%;">25</span></div>
+<div class="thumb" id_thumb="30" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:34%;">30</span></div>
+<div class="thumb" id_thumb="35" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:38%;">35</span></div>
+<div class="thumb" id_thumb="40" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:42%;">40</span></div>
+<div class="thumb" id_thumb="45" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:46%;">45</span></div>
+<div class="thumb" id_thumb="50" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:50%;">50</span></div>
+<div class="thumb" id_thumb="55" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:54%;">55</span></div>
+<div class="thumb" id_thumb="60" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:58%;">60</span></div>
+<div class="thumb" id_thumb="65" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:62%;">65</span></div>
+<div class="thumb" id_thumb="70" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:66%;">70</span></div>
+<div class="thumb" id_thumb="75" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:70%;">75</span></div>
+<div class="thumb" id_thumb="80" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:74%;">80</span></div>
+<div class="thumb" id_thumb="85" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:78%;">85</span></div>
+<div class="thumb" id_thumb="90" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:82%;">90</span></div>
+<div class="thumb" id_thumb="95" style="-moz-user-select: none; touch-action: none;"><span class="speedyLibro" style="left:86%;">95</span></div>

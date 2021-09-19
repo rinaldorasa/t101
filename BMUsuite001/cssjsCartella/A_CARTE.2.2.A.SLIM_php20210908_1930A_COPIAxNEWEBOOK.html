@@ -1,0 +1,727 @@
+<?php session_start(); 
+if(!isset($_SESSION['UserData']['Username'])){
+header("location:http://website/folder/sign-in.php");
+exit;
+}
+?>
+
+<!DOCTYPE html>
+<html id="HTML" lang="it">
+
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="AlterVista - Editor HTML"/>
+
+<title> 
+  19:38
+  &#9776; &#10003;
+  ) (2.2.A) WEB CARTE 
+  quello che scrivo è quello che penso
+  q.*o$ 
+  no comment
+  <!--.*-->$ 
+</title>
+<!--https://regex101.com/-->
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> 
+
+<style>
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-rgb: 33, 37, 41;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
+</style>
+
+
+<style>
+html#HTML * {
+BACKGROUND-COLOR:LIGHTGRAY; COLOR:BLACK;
+BACKGROUND-COLOR:var(--bs-gray-400); COLOR:BLACK;
+
+FONT-SIZE:1.2500REM; FONT-FAMILY:"PT Mono",MONOSPACE;
+
+LETTER-SPACING:0.075REM;
+
+}
+
+body#BODY{MARGIN:0 AUTO;BORDER:SOLID 0REM GREEN;}
+body#BODY{HEIGHT:800PX;OVERFLOW:AUTO;}
+
+main#MAIN{BORDER:DASHED 0.0REM MAGENTA;}
+main#MAIN{OVERFLOW:AUTO;}
+
+</style>
+
+
+<script>
+"use strict";
+
+let reRGB; 
+let grRGB; 
+let blRGB; 
+
+let reRGBcc; 
+let grRGBcc; 
+let blRGBcc; 
+
+let triplete;
+
+// triplete 
+// selezionati
+// ==========================
+// back-ground----color
+// 
+// r---g---b--
+// ==========================
+// 220-202-155-----62--62--62
+// 152-119--18----190-190-190
+// 202-188-250-----62--62--62
+// 162-172--13----190-190-190
+// --3--83--63----190-190-190
+// -11--11--47----190-190-190
+// 130-206--84-----62--62--62
+// 234-180--70-----62--62--62
+// 107--15--37----190-190-190
+// 236-118-162-----62--62--62
+
+// un numero casuale tra 1 e 10
+let sceltaRGB = Math.floor(Math.random() * 10) + 1 ;
+
+if (sceltaRGB===1 ){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+if (sceltaRGB===2 ){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+if (sceltaRGB===3 ){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+if (sceltaRGB===4 ){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+if (sceltaRGB===5 ){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+if (sceltaRGB===6 ){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+if (sceltaRGB===7 ){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+if (sceltaRGB===8 ){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+if (sceltaRGB===9 ){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+if (sceltaRGB===10){reRGB=211; grRGB=211; blRGB=211; reRGBcc=0;  grRGBcc=0;   blRGBcc=0;}
+
+
+let VAL__KRIPTO_TEST;
+
+let I_AM_NOT_A_ROBOT; 
+
+</script>
+
+
+
+<script src="http://edoraandiamo.altervista.org/null/gog/magog/data_image400gray_me_gog.js?00" onload="//alert('LOADED: data_image400gray_me_gog.js');"></script>
+<script src="http://edoraandiamo.altervista.org/null/gog/magog/data_image400gray_nt_000.js?00" onload="//alert('LOADED: data_image400gray_nt_000.js');"></script>
+<script src="http://edoraandiamo.altervista.org/null/gog/magog/data_image410gray_nt_002.js?12" onload="//alert('LOADED: data_image410gray_nt_002.js');"></script>
+<script src="http://edoraandiamo.altervista.org/null/gog/magog/data_image10xgray_nt_003.js?00" onload="//alert('LOADED: data_image10xgray_nt_003.js');"></script>
+
+
+
+
+<style>
+ .versione{z-index:10;position:static;bottom:0%;right:0;font-size:small!important;color:initial;}
+
+/* verde rosso iniziale */
+ .startinni{position:RELATIVE;margin:0 auto;width:16rem;height:12rem;}
+ .startinni article{position:relative;height:50%;opacity:0.50;} /* legacy */
+ .startinni article{position:relative;height:50%;opacity:0.65;} /* 2.1.0 */
+
+
+
+ .btnentra{font-weight:bold;font-variant:small-caps;}
+
+ div#NEWGUI{display:NONE;} /* elimina solo la scritta */
+
+ article#ATTIVA{display:none;overflow:auto!important;}
+
+ code,blockquote,p{font-size:small!important;letter-spacing: 0.1rem;}
+
+ article#ATTIVA code{color:indigo;font-size:large;font-weight:bold;display:inline-block;}
+
+
+
+ .cursorfssmallimportant{cursor:default;font-size:small!important;}
+
+ .semaforino{display:none;background-color:transparent;width:2.5rem;margin-top:1.5rem;margin-bottom:0.5rem;overflow:auto;border:solid 0.0rem teal;}
+ article#semaforino div{margin-left:0rem;position:relative;height:2.5rem;border:solid 0.0rem orange;}
+
+ span#off, span#on {width:auto;position:absolute;top:0;left:0;display:inline-block;}
+
+</style>
+<style>
+/* auto-resize an image to fit a div  */
+            img {
+                width:100%;
+                height:100%;
+                object-fit:cover;
+            }
+</style>
+
+<script>
+// altezza di default
+let altezza_carta_articolo = 37.25; // rif rem
+
+</script>
+
+<style></style>
+<script></script>
+
+</head>
+
+<body id="BODY" class="m-3">
+
+<main id="MAIN" class="mx-1">
+
+<section id="STARTINNI" style="position:fixed;top:35%;margin-top:-8rem;left:50%;margin-left:-8rem;"  class="p-0 rounded startinni">
+  <article class="shadow-sm my-1 p-2 bg-success rounded" onclick="startNI()"></article>
+  <article class="shadow-sm my-1 p-2 bg-danger  rounded" onclick="startIN()"></article>
+
+  <div class="m-0 p-0 text-end border border-0 border-dark" style="position:fixed;top:12.25px;left:12.25px;">
+      <span data-bs-toggle="collapse" href="#collapse_respo" class="btn-sm rounded-2 bg-info text-light" style="cursor:pointer;opacity:0.25;">&#10003;</span>
+  </div>
+
+  <article id="collapse_respo" class="collapse my-2 rounded border border-0 border-info text-center">
+    <span id="RESP__CARTE_ARTI">
+     <input class="fs-6 bg-warning text-light border border-0" id="RESP_CARTE_ARTIC" type="password" value="37.250" style="WIDTH:5.5REM;">
+     <span class="badge fs-6 bg-warning text-light text-uppercase" onclick="respo_artic0()">ok</span>
+    </span>
+
+    <div class="my-1">
+        <span id="artic1" onclick="respo_artic1()" class="badge rounded" style="background-color:var(--bs-gray-800);cursor:pointer;">&nbsp;&nbsp;</span>
+        <span id="artic2" onclick="respo_artic2()" class="badge rounded" style="background-color:var(--bs-gray-700);cursor:pointer;">&nbsp;&nbsp;</span>
+        <span id="artic3" onclick="respo_artic3()" class="badge rounded" style="background-color:var(--bs-gray-600);cursor:pointer;">&nbsp;&nbsp;</span>
+        <span id="artic4" onclick="respo_artic4()" class="badge rounded" style="background-color:var(--bs-gray-500);cursor:pointer;">&nbsp;&nbsp;</span>
+    </div>
+
+
+    
+    <article class="my-5 badge bg-light versione" style="height:2.25rem;vertical-align: middle;">
+    <span class="bg-light fs-6" style="display:inline-block!important;">carte.2.2.A</span>
+      <div class="bg-light fs-6" id="versionecolorata"> 
+      v.2021:09:08:19:38
+      </div>
+    </article>
+	
+    <script>
+    	"use strict";
+// respo responsive
+		let elemento;
+        function respo_artic1(){altezza_carta_articolo = 20;elemento=document.querySelector("#RESP__CARTE_ARTI");elemento.style.visibility="hidden";}
+        function respo_artic2(){altezza_carta_articolo = 25;elemento=document.querySelector("#RESP__CARTE_ARTI");elemento.style.visibility="hidden";}
+        function respo_artic3(){altezza_carta_articolo = 35;elemento=document.querySelector("#RESP__CARTE_ARTI");elemento.style.visibility="hidden";}
+        function respo_artic4(){altezza_carta_articolo = 40;elemento=document.querySelector("#RESP__CARTE_ARTI");elemento.style.visibility="hidden";}
+        
+        function respo_artic0(){let altezza_carta_articolo_input = document.getElementById("RESP_CARTE_ARTIC").value; altezza_carta_articolo = parseInt(altezza_carta_articolo_input, 10)  }
+     
+    </script>  
+
+  </article>
+</section>
+
+<script>
+function startNI(){SNIP();let elementoNI=document.querySelector("#attdis");elementoNI.style.display="NONE";elementoNI=document.querySelector("#STARTINNI");elementoNI.style.display="NONE";elementoNI=document.querySelector("#NEWGUI");elementoNI.style.display="BLOCK";elementoNI=document.querySelector("#rilevareDevice");elementoNI.style.display="BLOCK";elementoNI=document.querySelector("#SPINNERINNI");elementoNI.style.display="NONE";elementoNI=document.querySelector("#BS5MODAL");elementoNI.style.display="NONE";}
+function startIN(){let elementoIN=document.querySelector("#attdis");elementoIN.style.display="BLOCK";elementoIN=document.querySelector("#STARTINNI");elementoIN.style.display="NONE";elementoIN=document.querySelector("#NEWGUI");elementoIN.style.display="BLOCK";elementoIN=document.querySelector("#rilevareDevice");elementoIN.style.display="BLOCK";elementoIN=document.querySelector("#SPINNERINNI");elementoIN.style.display="NONE";elementoIN=document.querySelector("#BS5MODAL");elementoIN.style.display="NONE";}
+</script>
+
+<!---->
+<section id="attdis" class="py-0 border border-0 border-primary rounded" style="display:NONE;position:fixed;top:0%;left:0%;width:100%;z-index:2;">
+  <article class="rounded border border-0 border-danger" style="margin:0 auto;text-align:center;">
+
+  <input id="VAL__KRIPTO_TEST" class="rounded border border-1 border-dark"   type="password" value="0" style="color:INITIAL;color:TRANSPARENT;">
+  <input id="I_AM_NOT_A_ROBOT" class="rounded border border-1 border-danger" type="password" value="0" style="WIDTH:1.5REM;color:INITIAL;color:TRANSPARENT;">
+
+  <BUTTON id="btnEntra" class="btn bg-light btnentra" onclick="SNIP()">Entra</BUTTON>
+
+
+  </article>
+
+</section>
+
+
+
+<div ID="NEWGUI"><span class="bg-danger rounded border border-1 border-danger invisible">&#9940;</span><span style="opacity:0;">NEWGUI---</span></div> 
+  
+
+
+
+<script>
+function SNIP(){
+"use strict";
+
+//alert("SNIP()");
+
+let elemento;
+elemento=document.querySelector("#attdis");
+elemento.style.display="none";
+
+
+
+/**/
+VAL__KRIPTO_TEST = document.getElementById("VAL__KRIPTO_TEST").value;
+// normalizza input se string vuoto
+if(VAL__KRIPTO_TEST===""){VAL__KRIPTO_TEST="0"}
+// indi passa alla conversione in number
+VAL__KRIPTO_TEST=parseInt(VAL__KRIPTO_TEST);
+////////////////////////////////////////////////
+//
+// controllo dell'utente
+//
+//
+I_AM_NOT_A_ROBOT = document.getElementById("I_AM_NOT_A_ROBOT").value;
+
+//-----------------|attenzione: QUESTO est ZERO
+let LET____idSCRIPT0;LET____idSCRIPT0 = "<div id='idSCRIPT0' class=''>LOADING???idSCRIPT0... qualcosa non funziona.</div>";
+let LET____idSCRIPT1;LET____idSCRIPT1 = "<div id='idSCRIPT1' class=''>LOADING???idSCRIPT1... qualcosa non funziona.</div>";
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Carta0
+//
+//
+var SCRIPT0 = document.createElement('script');
+var poscritto  = new Date().getTime();
+poscritto = "?"+poscritto;
+SCRIPT0.src = "carta_inni_test2.0.2_.js"+poscritto;
+
+SCRIPT0.onload=function(){
+document.getElementById("idSCRIPT0").innerHTML=
+
+idSCRIPT0___0+
+
+''; 
+};document.head.appendChild(SCRIPT0);
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Carta1
+//
+//
+
+var SCRIPT1 = document.createElement('script');
+var poscritto1  = new Date().getTime();
+poscritto1 = "?"+poscritto1;
+SCRIPT1.src = "carta_inni_test2.0.2a.js"+poscritto1;
+
+SCRIPT1.onload=function(){
+document.getElementById("idSCRIPT1").innerHTML=
+idSCRIPT1___0+
+''; 
+}; document.head.appendChild(SCRIPT1);
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+////////////////////////////////////////////////
+// Qui vengono definite le variabili per
+// realizzare la visualizzazione
+//
+let wFinestra____Rem;  // responsive def window
+let hFinestra____Rem;  // responsive def window
+let fFinestra____Rem;  // responsive def font size
+
+let height___schermo;  // valore hardware
+let heightSchermoRem;  // valore hardware
+
+let dimeXMain____Rem;  // con leggera correzione
+let dimeYMain____Rem;  // con leggera correzione
+
+let intestazX____Rem;  // parte alta (intestazione)
+let intestazY____Rem;  // parte alta (intestazione)
+
+
+////////////////////////////////////////////////
+// alcune variabili sono mantenute per
+// back compatibility
+let LINK________SNIP = [""]; // aggiornare indice
+let LINK_lunghe_SNIP;
+let LINK________INFO = [""];
+let LINK_lunghe_INFO;
+let LINK___SNIP_INFO = [""];
+let LINKlunSNIP_INFO;
+
+let infoContentCarta = [""];
+let lungContentCarta;
+let INFO________LINK = [""];
+let lung_INFO___LINK;
+
+let lung___INFO_LINK;
+
+let TR_TD_INTERLINEA;
+
+
+////////////////////////////////////////////////
+//
+// porzioni di codice per Carte Articoli Pill
+//
+//
+let clCOLLAPSE_CARTA;
+let BLOKQ_PILL_CARTA;
+let ARTICLE____CARTA;
+let BLOCKQUOTE_CARTA;
+let clBORDER___CARTA;
+//  mega legacy === mega minestrone!!!
+let dim___ico_svg_Px;
+let dim__ico_svg_Rem;
+let offsetLBadge_Rem;
+let dimensio_ico_Rem;
+let dashboardX___Rem;
+let dashboardY_perce;
+let dashboardY___Rem;
+let dashbd_Badge_Rem;
+
+//  il toggle degli items
+let COLLAPSE0Badge11;
+let COLLAPSE1Badge11;
+let COLLAPSE2Badge11;
+let COLLAPSE3Badge11;
+let COLLAPSE4Badge11;
+let COLLAPSE5Badge11;
+let COLLAPSE6Badge11;
+let COLLAPSE7Badge11;
+let COLLAPSE8Badge11;
+let COLLAPSE9Badge11;
+//
+let COLLAPSE0Badge21;
+let COLLAPSE1Badge21;
+let COLLAPSE2Badge21;
+let COLLAPSE3Badge21;
+let COLLAPSE4Badge21;
+let COLLAPSE5Badge21;
+let COLLAPSE6Badge21;
+let COLLAPSE7Badge21;
+let COLLAPSE8Badge21;
+let COLLAPSE9Badge21;
+
+
+let DIDASCALIA_BADGE = [""]; // aggiornare indice
+
+let cartaX_______Rem;
+let cartaY_______Rem;
+let cardX________Rem;
+let cardY________Rem;
+
+
+
+
+wFinestra____Rem = document.documentElement.clientWidth/16;
+hFinestra____Rem = document.documentElement.clientHeight/16;
+
+height___schermo = screen.height;
+heightSchermoRem = height___schermo/16;
+fFinestra____Rem = heightSchermoRem/45; // def font size
+
+intestazX____Rem = dimeXMain____Rem;
+intestazY____Rem = fFinestra____Rem*2.25; // funz font size
+
+
+////////////////////////////////////////////////
+// inizializzazioni degli array 
+// utilizzati nella tavolata del DASHBOARD
+LINK________SNIP = [""];
+LINK_lunghe_SNIP;               //  back compatibility ???
+LINK________INFO = [""];
+LINK_lunghe_INFO;               //  back compatibility ???
+LINK___SNIP_INFO = [""];
+LINKlunSNIP_INFO;               //  back compatibility ???
+
+infoContentCarta = [""];
+lungContentCarta;               //  back compatibility ???
+INFO________LINK = [""];
+lung_INFO___LINK;               //  back compatibility ???
+
+lung___INFO_LINK;               //  back compatibility ???
+
+TR_TD_INTERLINEA = ' <tr><td style="visibility:hidden;">'+'-'+'</td></tr> ';
+////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////
+//
+// definizione Carta Articolo Pill
+//
+// definizioni legacy
+//clCOLLAPSE_CARTA = ' class="collapse border border-0 border-info rounded" style="box-shadow: 0px 0px 0px 0.5rem rgba('+reRGB+', '+grRGB+', '+blRGB+', .51);" '; // valore momentaneamente settato per debugging
+//BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:'+intestazY____Rem*0+'REM;LEFT:'+dim__ico_svg_Rem*2.5*0.1+'REM;z-index:1!important;MARGIN-TOP:-0REM;border-radius:0.25rem;" class="border border-3 badge bg-success"> ';
+//ARTICLE____CARTA = ' <article class="border border-0 border-danger" style="overflow:auto; '; // valore momentaneamente settato per debugging
+//BLOCKQUOTE_CARTA = ' <blockquote class="badge bg-success"> ';
+//clBORDER___CARTA = ' class="border border-0 border-primary card px-2" '; // valore momentaneamente settato per debugging
+
+
+dimeXMain____Rem = wFinestra____Rem*0.95;
+dimeYMain____Rem = hFinestra____Rem*0.95;
+
+dimeXMain____Rem = wFinestra____Rem*1;
+dimeYMain____Rem = hFinestra____Rem*1;
+
+
+
+dim___ico_svg_Px = intestazY____Rem*16;
+dim__ico_svg_Rem = dim___ico_svg_Px/16;
+offsetLBadge_Rem = dim__ico_svg_Rem*2;
+
+dimensio_ico_Rem = (dim___ico_svg_Px/16)*0.5;
+
+dashboardX___Rem = intestazX____Rem;
+dashboardY_perce = 0.80; // legacy
+dashboardY___Rem = dimeYMain____Rem*dashboardY_perce;  // legacy
+
+cartaX_______Rem = dimeXMain____Rem-(offsetLBadge_Rem*1.50);
+cartaY_______Rem = dimeYMain____Rem*0.80; // legacy
+cardX________Rem = cartaX_______Rem;
+cardY________Rem = dimeYMain____Rem; // legacy
+
+
+
+
+clCOLLAPSE_CARTA = ' class="collapse border border-0 border-info rounded" style="box-shadow: 0px 0px 10px 0.5rem gray!important;" '; // valore momentaneamente settato per debugging
+BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:'+intestazY____Rem*0+'REM;LEFT:'+dim__ico_svg_Rem*2.5*0.1+'REM;z-index:1!important;MARGIN-TOP:-0REM;border-radius:0.25rem;" class="border border-3 badge bg-light text-dark fs-5 rounded"> ';
+ARTICLE____CARTA = ' <article class="border border-0 border-danger" style="overflow:auto; '; // valore momentaneamente settato per debugging
+BLOCKQUOTE_CARTA = ' <blockquote class="badge bg-success"> ';
+clBORDER___CARTA = ' class="border border-0 border-primary card px-2" '; // valore momentaneamente settato per debugging
+
+DIDASCALIA_BADGE[0] = ' presentazione leggi_il_contenuto';
+DIDASCALIA_BADGE[1] = ' argomentazione leggi_il_contenuto';
+
+//  DASHBOARD toggle degli items visitati 
+COLLAPSE0Badge11="<a id='toggle01' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse0'> <div id='ATTDIS_01' onclick='COLLAPSE0BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-warning'>0 "+DIDASCALIA_BADGE[0]+"</div> </div> </a>";
+COLLAPSE0Badge21="<a id='toggle02' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse0'> <div id='ATTDIS_02' onclick='COLLAPSE0BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-danger' >0 "+DIDASCALIA_BADGE[0]+"</div> </div> </a>";
+
+COLLAPSE1Badge11="<a id='toggle11' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse1'> <div id='ATTDIS_11' onclick='COLLAPSE1BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-warning'>1 "+DIDASCALIA_BADGE[1]+"</div> </div> </a>";
+COLLAPSE1Badge21="<a id='toggle12' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse1'> <div id='ATTDIS_12' onclick='COLLAPSE1BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-danger' >1 "+DIDASCALIA_BADGE[1]+"</div> </div> </a>";
+
+
+
+// definizione degli snap items
+LINK________SNIP[0]="<blockquote style='position:relative;'>"+COLLAPSE0Badge21+COLLAPSE0Badge11+"</blockquote>";
+LINK________SNIP[1]="<blockquote style='position:relative;'>"+COLLAPSE1Badge21+COLLAPSE1Badge11+"</blockquote>";
+// Quanti elementi ci sono nella lista item(s)
+//
+LINK_lunghe_SNIP = LINK________SNIP.length;
+LINK_lunghe_INFO = LINK________INFO.length;
+// Legacy
+LINK___SNIP_INFO[0]= LINK________SNIP[0];
+LINK___SNIP_INFO[1]= LINK________SNIP[1];
+// controllare !!!
+LINKlunSNIP_INFO = LINK___SNIP_INFO.length;
+
+lungContentCarta = infoContentCarta.length;
+lung___INFO_LINK = INFO________LINK.length;
+
+////////////////////////////////////////////////
+// Preleva dal file esterno.js la variabile
+// LET____idSCRIPTx ... e la passa all\' array
+// infoContentCarta alla posizione x
+//
+//
+infoContentCarta[0] = LET____idSCRIPT0;
+infoContentCarta[1] = LET____idSCRIPT1;
+
+
+
+
+
+////////////////////////////////////////////////
+// DGEBI 
+// trasposizione dei js in html
+
+document.getElementById("NEWGUI").innerHTML=
+///////////////////////////////
+// stili css dinamici
+// 
+//
+
+'<style>html#HTML * {font-size:'+fFinestra____Rem+'rem;}</style> '+
+'<style>body#BODY {padding-top:'+intestazY____Rem+'rem;}</style> '+
+
+'<style> .cursore { background: lime; line-height: 17px; margin-left: 3px; -webkit-animation: blink 0.8s infinite; width: 7px; width: 2.5px; width: 0px; height: 15px; height: 30px; height: 11.25px; height: 0px; opacity:0.35; } @-webkit-keyframes blink { 0% {background: #222} 50% {background: lime} 100% {background: #222} } </style> '+
+
+'<style> div#DASHBOARD{margin:0 auto;width:'+dashboardX___Rem/1+'rem; height:'+(dashboardY___Rem/1)*1+'rem; overflow:auto; border:solid 0.00rem lime;}</style> '+
+
+// !!!!!!!!   I M P O R T A N TE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// DEFINIZIONE DIMENSIONI DA AGGIORNARE QUANDO SI AUMENTANO GLI ITEMS TITOLI
+'<style>section#cpse0 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*0.7751+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse1 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*0.7751+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+
+// ^^^^^^^^^  I M P O R T A N TE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+
+///////////////////////////////
+// PROGRAMMA EFFETTIVO
+//
+
+'<section class="border border-0 border-info" style="Z-INDEX:0!IMPORTANT;position:fixed;top:0%;left:0%;width:'+100+'%;height:'+intestazY____Rem+'rem;"> '+
+ '<article class="mx-2" style="position:relative;">'+
+  '<div style="position:absolute;top:0;right:0;" >'+
+   '<a href="#">'+'<BUTTON  class="rounded">&#8963;<span style="display:none;">CHEVRON_UP  </BUTTON>'+'</span></a>'+
+   '<a href="#fine">'+'<BUTTON class="rounded">&#8964;<span style="display:none;">CHEVRON_DOWN</BUTTON>'+'</span></a>'+
+  '</div>'+
+ '</article>'+
+'</section> '+
+
+'<section class="border border-0 border-secondary" style="margin-top:'+0+'rem;"> '+
+ '<a href="#collapseMenu0" data-bs-toggle="collapse" class="mx-2">'+'<BUTTON class="rounded">&#9776;<span style="display:none;">MENU</span></BUTTON>'+'</a>'+
+ 
+ '<div id="collapseMenu0" class="collapse">'+
+  '<div id="DASHBOARD">'+
+  
+// tavolata degli snip items
+    '<table>'+
+     '<tr><td>'+LINK___SNIP_INFO[0]+'</td></tr>'+TR_TD_INTERLINEA+
+     '<tr><td>'+LINK___SNIP_INFO[1]+'</td></tr>'+TR_TD_INTERLINEA+
+     
+    '</table>'+
+  
+  '</div>'+      // DASHBOARD contenitore (dei badges)
+ '</div>'+      // Dashboard collapsed
+'</section> '+ // Dashboard (pannello di controllo)
+
+
+////////////////////////////////////////////////
+// sezioni delle Carte Articoli
+//
+// valori legacy
+//
+// '<section  '+clCOLLAPSE_CARTA+' id="cpse0"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'0'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[0]+'</div></article>'+'</section> '+ 
+// '<section  '+clCOLLAPSE_CARTA+' id="cpse1"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'1'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[1]+'</div></article>'+'</section> '+ 
+//
+
+
+ '<section  '+clCOLLAPSE_CARTA+' id="cpse0"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'0'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[0]+'</div></article>'+'</section> '+ 
+ '<section  '+clCOLLAPSE_CARTA+' id="cpse1"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'1'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[1]+'</div></article>'+'</section> '+ 
+
+
+
+
+//''+VAL__KRIPTO_TEST+
+//' '+LET____idSCRIPT0+' '+
+//' '+LET____idSCRIPT1+' '+
+//
+//
+//''+'<code class="card bg-success text-light fs-5">'+
+//' dgebi NEWGUI OK '+
+//''+'</code>'+
+
+''+
+'';
+
+
+} // SNIP()
+
+
+////////////////////////////////////////
+// TOGGLE legacy
+// il toggle... perfetto!
+function COLLAPSE0BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_01"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle01"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_02"); elemento12.style.visibility="visible";}
+function COLLAPSE0BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_02"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle02"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_01"); elemento22.style.visibility="visible";}
+function COLLAPSE1BadgeF11(){var elemento11; elemento11=document.querySelector("#ATTDIS_11"); elemento11.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle11"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_12"); elemento12.style.visibility="visible";}
+function COLLAPSE1BadgeF21(){var elemento21; elemento21=document.querySelector("#ATTDIS_12"); elemento21.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle12"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_11"); elemento22.style.visibility="visible";}
+
+
+</script>
+
+
+</main>
+
+
+
+<STYLE>
+
+.tippy-box[data-theme~="custom"] {
+  margin:0rem;
+  padding:0.25rem;
+  width:auto;
+  background-color:green!important;
+  color: black;
+  color: green;
+  font-variant:small-caps;
+  border-radius: 0.175rem;
+</STYLE>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+<SCRIPT>
+tippy('#btnEntra', 
+{ 
+theme: "custom",
+arrow: true,
+followCursor: false,
+content: 'sign-in',  
+
+});
+</SCRIPT>
+
+
+<article id="rilevareDevice" style="DISPLAY:NONE;text-align:center;margin-top:2rem;margin-bottom:5rem;font-size:small!important;font-variant:small-caps;">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.5/platform.min.js"></script> 
+ <script> console.log(platform); document.write("<div style='font-size:1.25rem;font-size:small;font-variant:small-caps;color:gray;'>you are using " + platform.name + " v" + platform.version + " on " + platform.os); +"</div>" </script> 
+ <script> if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){/* true for mobile device */ document.write("mobile device"); }else{/* false for not mobile device */ document.write("not mobile device"); } </script>
+ <span id="result"></span> 
+ <script>"use strict"; function displayWindowSize(){ var w = document.documentElement.clientWidth;var h = document.documentElement.clientHeight;var wFinestraWIDTH = document.documentElement.clientWidth;var hFinestraHEIGHT = document.documentElement.clientHeight;document.getElementById("result").innerHTML = "<span style='font-size:1.25rem;font-size:small;font-variant:small-caps;'> " + wFinestraWIDTH + "x" + hFinestraHEIGHT +" ";}window.addEventListener("resize", displayWindowSize);displayWindowSize();</script>  
+</article>
+
+<article style="POSITION:FIXED;BOTTOM:0%;LEFT:0%;WIDTH:100%;text-align:center!important;">
+<a class="badge bg-primary text-light fs-6 text-uppercase" href="http://website/folder/log-out.php">LogOut</a>
+</article>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<div id="fine"></div> 
+</body>
+</html>

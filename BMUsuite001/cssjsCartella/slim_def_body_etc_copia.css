@@ -1,0 +1,24 @@
+/*
+<!-- definizione CSS del body etc.  INI -->
+*/
+body { background: #111; }
+ .map { border:1px dotted #FD540A !important; }
+ .map_area { background-color:#FFF !important; }
+ #scroller { width:26437.0486px !important; }
+ #thumbs { height:135px !important; }
+ .thumb { width:70.8146px !important; }
+ .iscrollH > div {  background: #FD540A; }
+ .iscrollV > div { background: #FD540A; }
+
+/*
+<!-- definizione del body FIN -->
+
+*/
+
+
+
+
+
+
+
+
