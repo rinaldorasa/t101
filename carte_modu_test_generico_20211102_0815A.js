@@ -1,0 +1,1 @@
+idSCRIPT2___0 = "terzo elemento ma contando da zero";

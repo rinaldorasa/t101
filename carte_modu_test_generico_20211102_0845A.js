@@ -1,0 +1,1 @@
+idSCRIPT3___0 = "quarto elemento ma contando da zero";
