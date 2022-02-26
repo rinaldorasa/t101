@@ -1,0 +1,1910 @@
+ <?php session_start();
+if(!isset($_SESSION['UserData']['Username'])){
+header("location:sign-in.php");
+exit;
+}
+?>
+<!DOCTYPE html>
+<html id="HTML" lang="it">
+<!-- -->
+<!-- -->
+
+
+
+<!-- 600giorno_20220214_1730C.html -->
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta name="generator" content="AlterVista - Editor HTML"/>
+<meta name="description" content="framework">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="Rinaldo Rasa">
+<link rel="icon" type="image/png" href="https://it.altervista.org/images/favicon/favicon-16x16.png" sizes="16x16">
+<!-- -->
+<title> °°° giorno [{*evening*} ℜ 2022-02-14-18:09 acapopgina3820725 </title>
+<!-- 2022-02-14-18:09 -->
+<!-- &#8476; -->
+<!-- -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- -->
+<!-- bootstrap5 icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+<!-- -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+<!-- -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<!-- -->
+<!--
+<script>
+var firstScript = document.getElementsByTagName('script')[0],
+js = document.createElement('script');
+js.src = 'https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js';
+js.onload = function () {
+// do stuff with your dynamically loaded script
+snowStorm.snowColor = '#99ccff';
+};
+firstScript.parentNode.insertBefore(js, firstScript);
+</script>
+-->
+<script>
+let HOSTNOME=window.location.hostname;
+let PERCNOME=window.location.pathname;
+let PROTNOME=window.location.protocol;
+</script>
+<!-- -->
+<!-- <script type="text/javascript" src="http://acapopagina.altervista.org/d/dati/a0/users.json"></script> -->
+<!-- -->
+<style>
+:root {
+--bs-blue: #0d6efd;
+--bs-indigo: #6610f2;
+--bs-purple: #6f42c1;
+--bs-pink: #d63384;
+--bs-red: #dc3545;
+--bs-orange: #fd7e14;
+--bs-yellow: #ffc107;
+--bs-green: #198754;
+--bs-teal: #20c997;
+--bs-cyan: #0dcaf0;
+--bs-white: #fff;
+--bs-gray: #6c757d;
+--bs-gray-dark: #343a40;
+--bs-gray-100: #f8f9fa;
+--bs-gray-200: #e9ecef;
+--bs-gray-300: #dee2e6;
+--bs-gray-400: #ced4da;
+--bs-gray-500: #adb5bd;
+--bs-gray-600: #6c757d;
+--bs-gray-700: #495057;
+--bs-gray-800: #343a40;
+--bs-gray-900: #212529;
+--bs-primary: #0d6efd;
+--bs-secondary: #6c757d;
+--bs-success: #198754;
+--bs-info: #0dcaf0;
+--bs-warning: #ffc107;
+--bs-danger: #dc3545;
+--bs-light: #f8f9fa;
+--bs-dark: #212529;
+--bs-primary-rgb: 13, 110, 253;
+--bs-secondary-rgb: 108, 117, 125;
+--bs-success-rgb: 25, 135, 84;
+--bs-info-rgb: 13, 202, 240;
+--bs-warning-rgb: 255, 193, 7;
+--bs-danger-rgb: 220, 53, 69;
+--bs-light-rgb: 248, 249, 250;
+--bs-dark-rgb: 33, 37, 41;
+--bs-white-rgb: 255, 255, 255;
+--bs-black-rgb: 0, 0, 0;
+--bs-body-rgb: 33, 37, 41;
+--bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+--bs-body-font-family: var(--bs-font-sans-serif);
+--bs-body-font-size: 1rem;
+--bs-body-font-weight: 400;
+--bs-body-line-height: 1.5;
+--bs-body-color: #212529;
+--bs-body-bg: #fff;
+}
+/**********/
+</style>
+<!-- -->
+<!-- -->
+<style>
+/*****definizioni di stile con tag specifici*****/
+/*****-----------*****/
+/***** | #HTML | *****/
+/***** | #BODY | *****/
+/***** | #MAIN | *****/
+/*****-----------*****/
+html#HTML * {
+BACKGROUND-COLOR:LIGHTGRAY; COLOR:BLACK;
+BACKGROUND-COLOR:var(--bs-gray-400); COLOR:BLACK;
+BACKGROUND-COLOR:var(--bs-gray-200); COLOR:BLACK;
+/**********/
+FONT-SIZE:1.2500REM; FONT-FAMILY:"PT Mono",MONOSPACE;
+/**********/
+LETTER-SPACING:0.075REM;
+/**********/
+}
+/**********/
+body#BODY{MARGIN:0 AUTO;BORDER:SOLID 0REM GREEN;}
+body#BODY{HEIGHT:800PX;OVERFLOW:AUTO;}
+/**********/
+main#MAIN{BORDER:DASHED 0.0REM MAGENTA;}
+main#MAIN{OVERFLOW:AUTO;}
+/**********/
+</style>
+<!-- -->
+<script>
+"use strict";
+/**********/
+/* ~ ~ */
+/* ~ VAR GLOBALI ~ */
+/* ~ ~ */
+/**********/
+/**********/
+let VAL__KRIPTO_TEST; /* valore da core utilizzato nel file esterno */
+let I_AM_NOT_A_ROBOT; /* valore da core utilizzato nel file esterno */
+/**********/
+/**********/
+/*****prompt default se file non presente*****/
+let idSCRIPT0___0 = " idSCRIPT0___0 globale indefinito ";
+let idSCRIPT1___0 = " idSCRIPT1___0 globale indefinito ";
+let idSCRIPT2___0 = " idSCRIPT2___0 globale indefinito ";
+let idSCRIPT3___0 = " idSCRIPT3___0 globale indefinito ";
+let idSCRIPT4___0 = " idSCRIPT4___0 globale indefinito ";
+let idSCRIPT5___0 = " idSCRIPT5___0 globale indefinito ";
+let idSCRIPT6___0 = " idSCRIPT6___0 globale indefinito ";
+let idSCRIPT7___0 = " idSCRIPT7___0 globale indefinito ";
+let idSCRIPT8___0 = " idSCRIPT8___0 globale indefinito ";
+let idSCRIPT9___0 = " idSCRIPT9___0 globale indefinito ";
+/**********/
+/**********/
+/**********/
+/**********/
+let inserita_validazione=0;
+let unnamed = '<img src="http://acapopagina.altervista.org/d/dati/a0/unnamed.png" alt="" style="width:auto;height:auto;">';
+unnamed='autore: rinaldo rasa';
+/**********/
+/**********/
+/***** variabili con valore da file esterno *****/
+/* sezione FETCH INI */
+/* La sezione fetch comporta una ristrutturazione del carte_modu_test_generico_ax */
+/* questo assume un accesso garantito alla sezione 0 senza json */
+/* TRASPORTARE JSON NELLA SEZIONE 1 per evitare perdite di dati */
+/* let URL = 'http://acapopagina.altervista.org/d/dati/a0/leggifetch/users.json'; */
+/* alert(""+CONSEGNATO_URL[0].ruolo+" "+CONSEGNATO_URL[0].firstName+" "+CONSEGNATO_URL[0].lastName); */
+/* let url= 'http://acapopagina.altervista.org/d/dati/a0/admin_test.json'; */
+/* contenitore dei files asincroni ./f/asy/ax */
+/* http://acapopagina.altervista.org/f/asy/a1/default_a1.json */
+/* axF_yyy */
+/* GLOBALI PER GLI ASINCRONI */
+let modu = " modu indefinito ";
+let modu1_0 ='';
+let modu1_1 ='';
+let clessidra=' questa è una clessidra fuori posto ';
+let clessidraK='';
+async function ASINCRONO_a1_0() {
+/* http://acapopagina.altervista.org/f/asy/a1/default_a1.json */
+let url= 'http://acapopagina.altervista.org/f/asy/a1/default_a1.json';
+let url_aggiunto = new Date().getTime(); url_aggiunto='?'+url_aggiunto;
+url = url + url_aggiunto;
+let URL = url;
+let RISPOSTA_URL = await fetch(URL);
+let CONSEGNATO_URL = await RISPOSTA_URL.json();
+modu1_0=CONSEGNATO_URL[0].autore+" ";
+} modu1_0=ASINCRONO_a1_0();
+async function ASINCRONO_a1_1() {
+/* http://acapopagina.altervista.org/f/asy/a1/default_a1.json */
+let url= 'http://acapopagina.altervista.org/f/asy/a1/default_a1.json';
+let url_aggiunto = new Date().getTime(); url_aggiunto='?'+url_aggiunto;
+url = url + url_aggiunto;
+let URL = url;
+let RISPOSTA_URL = await fetch(URL);
+let CONSEGNATO_URL = await RISPOSTA_URL.json();
+modu1_1= CONSEGNATO_URL[0].a1F_001+" ";
+modu1_1=modu1_1+CONSEGNATO_URL[0].a1F_002+" ";
+modu1_1=modu1_1+CONSEGNATO_URL[0].a1F_003+" ";
+modu1_1=modu1_1+CONSEGNATO_URL[0].a1F_004+" ";
+} modu1_1=ASINCRONO_a1_1();
+/*
+async function ASINCRONO() {
+let url= 'http://acapopagina.altervista.org/d/dati/a0/admin_test.json';
+let url_aggiunto = new Date().getTime(); url_aggiunto='?'+url_aggiunto;
+url = url + url_aggiunto;
+let URL = url;
+let RISPOSTA_URL = await fetch(URL);
+let CONSEGNATO_URL = await RISPOSTA_URL.json();
+modu1="";
+modu1=modu1+CONSEGNATO_URL[0].ruolo+" ";
+modu1=modu1+CONSEGNATO_URL[0].firstName+" ";
+modu1=modu1+CONSEGNATO_URL[0].lastName+" ";
+modu1=modu+CONSEGNATO_URL[0].avatar+" ";
+}
+modu1=ASINCRONO();
+async function CLESSIDRA() {
+let url= 'http://acapopagina.altervista.org/d/dati/a0/admin_test.json';
+let url_aggiunto = new Date().getTime(); url_aggiunto='?'+url_aggiunto;
+url = url + url_aggiunto;
+let URL = url;
+let RISPOSTA_URL = await fetch(URL);
+let CONSEGNATO_URL = await RISPOSTA_URL.json();
+clessidra="";
+clessidra=clessidra+CONSEGNATO_URL[0].clessidra+" ";
+}
+clessidra=CLESSIDRA();
+async function CLESSIDRAK() {
+let url= 'http://acapopagina.altervista.org/d/dati/a0/admin_test.json';
+let url_aggiunto = new Date().getTime(); url_aggiunto='?'+url_aggiunto;
+url = url + url_aggiunto;
+let URL = url;
+let RISPOSTA_URL = await fetch(URL);
+let CONSEGNATO_URL = await RISPOSTA_URL.json();
+clessidraK="";
+clessidraK=clessidraK+CONSEGNATO_URL[0].clessidrak+" ";
+}
+clessidraK=CLESSIDRAK();
+*/
+/* sezione FETCH FIN */
+/**********/
+/***** | array nome file esterni | *****/
+/***** | indicizzati | *****/
+/***** | con questo set si evita | *****/
+/***** | local web | *****/
+let file_esterno=[""]; /* inizializzazione */
+/**********/
+/**********/
+/*****base dati*****/
+/*****cronologia nomi dei file esterni*****/
+/*****^^^^^^^OBBLIGATORIO^^^^^^^^^^^^^*****/
+
+
+file_esterno[0]="giorno_a0.js";
+file_esterno[0]="giorno_a0_20220212_0830A.js";
+file_esterno[0]="giorno_a0_20220212_0830B.js";
+file_esterno[0]="giorno_a0_20220212_0830C.js";
+file_esterno[0]="giorno_a0_20220213_0900A.js";
+file_esterno[0]="giorno_a0_20220213_0900C.js";
+file_esterno[1]="giorno_a1.js";
+file_esterno[1]="daily_a1.js";
+file_esterno[1]="daily_a1_20220213A.js";
+file_esterno[1]="agiorno_a1.js";
+file_esterno[2]="";
+file_esterno[3]="";
+file_esterno[4]="";
+file_esterno[5]="";
+file_esterno[6]="";
+file_esterno[7]="";
+file_esterno[8]="";
+file_esterno[9]="";
+
+/* cronologia */
+//file_esterno[0]="./../../d/dati/a0/carte_modu_test_generico_a0.js";
+//file_esterno[1]="./../../d/dati/a1/carte_modu_test_generico_a1.js";
+//file_esterno[2]="./../../d/dati/a2/carte_modu_test_generico_a2.js";
+//file_esterno[3]="./../../d/dati/a3/carte_modu_test_generico_a3.js";
+//file_esterno[4]="./../../d/dati/a4/carte_modu_test_generico_a4.js";
+//file_esterno[5]="./../../d/dati/a5/carte_modu_test_generico_a5.js";
+//file_esterno[6]="./../../d/dati/a6/carte_modu_test_generico_a6.js";
+//file_esterno[7]="./../../d/dati/a7/carte_modu_test_generico_a7.js";
+//file_esterno[8]="./../../d/dati/a8/carte_modu_test_generico_a8.js";
+//file_esterno[9]="./../../d/dati/a9/carte_modu_test_generico_a9.js";
+/* ************************************************************** */
+/* */
+/* file_esterno[0]="./../../d/dati/a0/NuovoFileX.js"; */
+/* file_esterno[0]="carte_modu_test_generico_20211005_1930A.js"; */
+/* file_esterno[1]="Test.js"; */
+/* file_esterno[1]="carte_modu_test_generico_20211029_0915A.js"; */
+/* file_esterno[2]="carte_modu_test_generico_20211102_0815A.js"; */
+/* file_esterno[3]="carte_modu_test_generico_20211102_0845A.js"; */
+/* file_esterno[4]="carte_modu_test_generico_20211105_0845A.js"; */
+/* file_esterno[5]="carte_modu_test_generico_20211108_1915A.js"; */
+/* file_esterno[5]="approvatooggi_externo_20211116_0900.js"; */
+/* approvatooggi_externo_20211116_0900.js */
+/* ************************************************************** */
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+</script>
+<!-- -->
+<style>
+.versione{z-index:10;position:static;bottom:0%;right:0;font-size:small!important;color:initial;}
+/**********/
+/***** verde rosso iniziale *****/
+.startinni{position:RELATIVE;margin:0 auto;width:16rem;height:12rem;}
+.startinni article{position:relative;height:50%;opacity:0.50;} /***** legacy *****/
+.startinni article{position:relative;height:50%;opacity:0.65;} /***** 2.1.0 *****/
+/**********/
+/**********/
+/**********/
+/**********/
+.btnentra{font-weight:bold;font-variant:small-caps;}
+/**********/
+div#NEWGUI{display:NONE;} /***** elimina solo la scritta *****/
+/**********/
+article#ATTIVA{display:none;overflow:auto!important;}
+/**********/
+code,blockquote,p{font-size:small!important;letter-spacing: 0.1rem;}
+/**********/
+article#ATTIVA code{color:indigo;font-size:large;font-weight:bold;display:inline-block;}
+/**********/
+/**********/
+/**********/
+.cursorfssmallimportant{cursor:default;font-size:small!important;}
+/**********/
+.semaforino{display:none;background-color:transparent;width:2.5rem;margin-top:1.5rem;margin-bottom:0.5rem;overflow:auto;border:solid 0.0rem teal;}
+article#semaforino div{margin-left:0rem;position:relative;height:2.5rem;border:solid 0.0rem orange;}
+/**********/
+span#off, span#on {width:auto;position:absolute;top:0;left:0;display:inline-block;}
+/**********/
+</style>
+<style>
+/***** auto-resize an image to fit a div *****/
+img {
+width:100%;
+height:100%;
+object-fit:cover;
+max-width="100%"
+}
+</style>
+<!-- -->
+<script>
+/**********/
+/*****la altezza della carta*****/
+/*****est stabilita per default*****/
+/*****oppure definita con input*****/
+let altezza_carta_articolo = 37.25; /* rif rem */
+/**********/
+</script>
+<!-- -->
+<!--not used
+<script src="https://cdn.jsdelivr.net/npm/@accusoft/pdf-viewer@3/bundle.js"></script>
+-->
+
+<!-- ................. -->
+<!-- STILE DELLE CARDs -->
+<!-- ................. -->
+<!-- ......................................... -->
+<!-- ...//===\\............................... -->
+<!-- ...||...||.||..||.||====.||===\.\..../... -->
+<!-- ...||...||.||..||.||.....||...|..\../.... -->
+<!-- ...||...||.||..||.||==...||===/...||..... -->
+<!-- ...\\.\.//.||..||.||.....||\\.....||..... -->
+<!-- ......\\....\.//..||====.||.\\....||..... -->
+<!-- .......\\................................ -->
+<!-- ......................................... -->
+<!-- ......................................... -->
+<!-- ..................INI.................... -->
+<!-- ......................................... -->
+<!--
+<style>
+.diva0{margin-top:1.5rem;letter-spacing:0.75rem;}
+/* attenzione a mettere !important */
+/* se necessario */
+.finea0{}
+</style>
+-->
+
+<style>
+/* ***********************
+gestione delle classes per 
+i file esterni della cards
+************************ */
+
+.diva0,.diva1{margin-top:1.25rem;letter-spacing:0.75rem;}
+/* attenzione a mettere !important */
+/* se necessario */
+.finea0{}
+article#t_a1{BORDER:DOTTED 0.15REM MAROON!IMPORTANT;}
+article#t_a1 > div {BORDER-BOTTOM:DASHED 0.05REM LIME!IMPORTANT;}
+
+.t_a1{} /* unused */
+</style>
+
+
+<script>
+
+function nascondiHTML(){elemento=document.querySelector("#HTML");elemento.style.backgroundColor="gray";elemento.style.display="none";}
+
+function visibiltaAumentata(){ 
+elemento=document.querySelector("#vediA"); elemento.style.setProperty('color', 'magenta', 'important'); elemento.style.setProperty('font-size', '1rem', 'important');
+elemento=document.querySelector("#a1_100");elemento.style.setProperty('color', 'maroon', 'important');elemento.style.setProperty('font-size', '1rem', 'important');
+}
+
+</script>
+<!-- ......................................... -->
+<!-- ...//===\\............................... -->
+<!-- ...||...||.||..||.||====.||===\.\..../... -->
+<!-- ...||...||.||..||.||.....||...|..\../.... -->
+<!-- ...||...||.||..||.||==...||===/...||..... -->
+<!-- ...\\.\.//.||..||.||.....||\\.....||..... -->
+<!-- ......\\....\.//..||====.||.\\....||..... -->
+<!-- .......\\................................ -->
+<!-- ......................................... -->
+<!-- ......................................... -->
+<!-- ..................FIN.................... -->
+<!-- ......................................... -->
+
+
+
+
+<style></style>
+<script></script>
+<!-- -->
+<!-- -->
+</head>
+<!-- -->
+<!-- -->
+<!-- body va com margini zero -->
+<!-- body id="BODY" class="m-3"> -->
+<body id="BODY" class="m-0">
+<!-- -->
+<!-- for mobile
+<div style="position:fixed;top:25%;left:1%;">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16"> <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/> <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/> </svg>
+</div>
+-->
+<!-- ||\...//||...=======...===............=........||......====== -->
+<!-- ||\\.//.||..||.....||..||.\\........./.\.......||......||.... -->
+<!-- ||.\//..||..||.....||..||..\\......./...\......||......||.... -->
+<!-- ||......||..||.....||..||...\\...../.....\.....||......||===. -->
+<!-- ||......||..||.....||..||...||..../=======\....||......||.... -->
+<!-- ||......||..||.....||..||...||.../.........\...||......||.... -->
+<!-- ||......||...=======...=======../...........\..======..====== -->
+<!-- ...............==..==......==....==.......................... -->
+<!-- ...............||..||.\....||....||.......................... -->
+<!-- ...............||..||..\...||....||.......................... -->
+<!-- ...............||..||...\..||....||.......................... -->
+<!-- ...............||..||....\.||....||.......................... -->
+<!-- ...............||..||.....\||....||.......................... -->
+<!-- ...............==..==......==....==.......................... -->
+<!-- -->
+<!-- M*O*D*A*L*E -->
+<!-- QUI MODALE da file esterno ini -->
+<!-- ||| -->
+<!-- ||| modal INI -->
+<!-- ||| -->
+<style>
+/*
+https://jsfiddle.net/kumarmuthaliar/GG9Sa/1/
+*/
+/**********/
+/**********/
+.modalDialog {
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0, 0, 0, 0.8);
+z-index: 99999;
+opacity:0;
+-webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+pointer-events: none;
+}
+.modalDialog:target {
+opacity:1;
+pointer-events: auto;
+}
+.modalDialog > div {
+width: 400px;
+width: 80%;
+width: 100%;
+position: relative;
+margin: 10% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 10px;
+background: #fff;
+background: -moz-linear-gradient(#fff, #999);
+background: -webkit-linear-gradient(#fff, #999);
+background: -o-linear-gradient(#fff, #999);
+}
+.close {
+background: #606061;
+color: #FFFFFF;
+line-height: 25px;
+position: absolute;
+right: -12px;
+text-align: center;
+top: -10px;
+width: 24px;
+text-decoration: none;
+font-weight: bold;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+background: #00d9ff;
+}
+/**********/
+</style>
+<style>article#OPENMODALX{display:block;}</style>
+<!-- click per il modale -->
+<!-- <article id="OPENMODALX" style="position:fixed;bottom:0;right:25%;z-index:2000;"> -->
+<article id="OPENMODALX" style="position:fixed;BOTTOM:0;LEFT:0%;z-index:2000;">
+<!-- <a href="#openModal"><span class="badge m-0 border border-0 border-dark" style="BACKGROUND-COLOR:transparent;COLOR:var(--bs-warning);"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16"> <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/> <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/> </svg></span></a> -->
+<!-- <a href="#openModal"><span class="btn m-0 p-0 bi bi-info-square border border-0 border-primary"></span></a> -->
+<!-- <a href="#openModal" STYLE=" BORDER:SOLID 0.5REM TEAL; OPACITY:0.5;"><span class="btn m-0 p-3 bi bi-info-square border border-0 border-primary"></span></a> -->
+<!-- <a href="#openModal" STYLE=" BORDER:SOLID 0REM TEAL; OPACITY:0.75;"><span class="btn m-0 p-3 border border-0 border-primary"><span style="padding:0.15rem;border:solid 0.15rem green;border-radius:0.25rem;">&#8505;</span></span></a> -->
+<a href="#openModal" STYLE=" BORDER:SOLID 0REM TEAL; OPACITY:0.75;"><span class="btn m-0 p-0 border border-0 border-primary"><span style="padding:0rem;border:solid 0.15rem green;border-radius:0.25rem;">&#8505;</span></span></a>
+
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+<!-- bottone del modale info icon posizionato piedipagina ||| -->
+<!-- bottone del modale info icon posizionato piedipagina ||| -->
+<!-- bottone del modale info icon posizionato piedipagina ^^^ -->
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+<div id="openModal" class="modalDialog" style="overflow:auto!important;">
+<div style="position:relative;overflow:auto!important;"><a style="position:fixed;top:0;right:0;background-color:teal;" href="#close" title="Close" class="close m-5 text-light">X</a>
+<!-- -->
+<!-- personalizzato per avid3820725 -->
+<!-- icon person changed currentColor -->
+<blockquote class="blockquote bg-light">
+<a class="bg-light" href="#"><svg class="bi bi-person-circle rounded" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="teal" viewBox="0 0 16 16"> <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/> <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg></a>
+<span class="rounded" style="background-color:transparent;">&nbsp;</span>
+<style> span#cdk_hover:hover{background-color:var(--bs-gray-500)!important;}</style>
+<!-- <SECTION style="opacity:1;" class="mx-3 px-0 badge fs-6" data-bs-toggle="collapse" href="#CDK_integrato"><span id="cdk_hover" class="rounded" style="cursor:pointer;background-color:var(--bs-gray-400);BORDER:SOLID 0REM ORANGE;">&nbsp;</span></SECTION> -->
+<!-- <SECTION style="position:STATIC;bottom:0%;left:15%;z-index:100000;opacity:1;" class="mx-3 px-0 badge fs-6" data-bs-toggle="collapse" href="#CDK_integrato"><span id="cdk_hover" class="border border-3 border-primary rounded" style="cursor:pointer;background-color:var(--bs-gray-400);BORDER:SOLID 0REM ORANGE;">&nbsp;</span></SECTION> -->
+<!-- <SECTION style="position:STATIC;bottom:0%;left:15%;z-index:100000;opacity:1;" class="mx-3 px-0 badge fs-6" data-bs-toggle="collapse" href="#CDK_integrato"><span id="cdk_hover" class="border border-0 border-primary rounded" style="cursor:pointer;background-color:var(--bs-gray-400);BORDER:SOLID 0REM ORANGE;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="teal" class="bi bi-file-code-fill" viewBox="0 0 16 16"> <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708z"/> </svg></span></SECTION> -->
+<SECTION style="position:STATIC;bottom:0%;left:15%;z-index:100000;opacity:1;opacity:0;" class="mx-3 px-0 badge fs-6" data-bs-toggle="collapse" href="#CDK_integrato"><span id="cdk_hover" class="bi bi-file-code border border-0 border-primary rounded" ></span></SECTION>
+<!-- botton per documentazione ckd ^^^ -->
+<!-- botton per documentazione ckd ||| -->
+<!-- botton per documentazione ckd ^^^ -->
+<ARTICLE class="border border-0 border-success" style="POSITION:static;BOTTOM:0%;LEFT:0%;WIDTH:100%; background-color:var(--bs-gray-200); text-align:center!important;"> &nbsp; </ARTICLE>
+<a class="badge fs-6 text-uppercase" href="log-out.php" style="position:fixed;bottom:0%;left:75%;BACKGROUND-COLOR:transparent;COLOR:var(--bs-light);"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-intersect" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5zm6-8V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2V6a2 2 0 0 1 2-2h5z"/></svg> <span style="display:none!important;">LogOut</span></a>
+<!-- botton per log-out compare a piedipagina solamente quando attivato il modale ^^^ -->
+<!-- botton per log-out compare a piedipagina solamente quando attivato il modale ||| -->
+<!-- botton per log-out compare a piedipagina solamente quando attivato il modale ^^^ -->
+<div style="position:fixed;bottom:0;left:85%;">
+<!-- <a onclick="RELOAD()" style="cursor:pointer;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="teal" class="bi bi-arrow-clockwise" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/> <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/></svg></a> -->
+<a onclick="RELOAD()"><span class="btn m-0 p-0 bg-light bi bi-arrow-clockwise"></span></a>
+</div>
+<script>function RELOAD(){ location.reload(true); }</script>
+<!-- botton per refresh reload schermata compare a piedipagina solamente quando attivato il modale ^^^ -->
+<!-- botton per refresh reload schermata compare a piedipagina solamente quando attivato il modale ||| -->
+<!-- botton per refresh reload schermata compare a piedipagina solamente quando attivato il modale ^^^ -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<a onclick="RELOAD()" style="cursor:pointer;display:none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/> <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/></svg></a>
+</blockquote>
+<!-- -->
+<!-- inserimento del bottone per la documentazione ckd -->
+<!-- -->
+<!-- -->
+<blockquote class="fs-6 ptmono text-center"><span style="OPACITY:1!IMPORTANT;background-color:maroon;color:white;font-size:small;">600giorno_20220214_1730C.html</span><span style="font-size:small;opacity:0.5;"> 2022-02-14-18:09 </span></blockquote>
+<blockquote class="fs-6 ptmono text-center text-uppercase invisible">file0mobiphp.php informazioni tecniche</blockquote>
+<!-- <ARTICLE class="mx-3 my-3 fs-6"><span class="badge bg-info text-light" style="opacity:0.25;">&#10003;</span> landscape 30rem </ARTICLE> -->
+<article class="mx-3 my-3 fs-6" id="wLhA">dimensioni</article>
+<script>var wLARGHEZZA = document.documentElement.clientWidth;var hALTEZZA = document.documentElement.clientHeight;document.getElementById("wLhA").innerHTML='<span class="mx-1 bg-info text-dark" style="font-size:small;opacity:0.5;">iniziali schermo rem=</span>'+'<span style="opacity:0.5;">'+(wLARGHEZZA/16)+' '+'</span>'+'</span>'+'<span class="mx-1" style="opacity:0.5;"> x </span><span class="mx-1 bg-info text-dark">'+(hALTEZZA/16)+' '+'</span>'+'';</script>
+<!-- -->
+<!-- -->
+<article class="mx-3 my-3 fs-6 "><span style="font-size:x-small!important;">&dot;&dot;&dot;</span><span style="background-color:orange;font-size:x-small!important;opacity:0.5;">Utente:21*avid3820725*</span><span style="font-size:x-small!important;">&dot;&dot;&dot;</span></article>
+<!--
+<article class="mx-3 my-3 fs-1 fw-bold rounded"> &#128292; </article>
+-->
+<!-- -->
+<!-- ................ -->
+<!-- ................ -->
+<!-- ....QUERY....... -->
+<!-- ................ -->
+<!-- ....SELECTOR.... -->
+<!-- ................ -->
+<!-- ................ -->
+<!-- ................ -->
+<!-- ................ -->
+<!-- ................ -->
+<!-- ................ -->
+<!-- ................ -->
+<!-- &#128292; --><!-- abc unicode -->
+<!-- -->
+<div class="bg-warning" style="text-align:LEFT;font-size:1.5rem;"> 
+ <button onclick="nascondiHTML()" class="bg-primary rounded" style="margin:0.5rem;font-size:1.5rem!important;"> &#9940; </button>
+ <button onclick="visibiltaAumentata()" class="bg-primary rounded" style="margin:0.5rem;font-size:1.5rem!important;"> &#128292; </button>
+</div> 
+
+<!--
+<script>
+function visibiltaAumentata(){ 
+//elemento=document.querySelector("#HTML");
+//elemento.style.backgroundColor="gray";
+//elemento.style.display="none";
+
+
+elemento=document.querySelector("#finea0");
+elemento.style.backgroundColor="orange !important";
+elemento.style.fontSize="10rem !important";
+
+
+ }
+</script>
+-->
+
+<!-- -->
+<!-- documentazione -->
+<button data-bs-toggle="collapse" href="#DOCUWORKINPROGRESS" class="btn rounded" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="var(--bs-indigo)" class="bi bi-arrows-expand" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"/></svg>documentazione&#10068;</button>
+<div class="collapse" id="DOCUWORKINPROGRESS" style="overflow:auto!important;"><span class="bg-danger spinner-grow spinner-grow-sm"></span><span>DOCUWORKINPROGRESS</span></div>
+<script>
+/* qui docu */
+docu= [""];
+docu[0 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'..'+'</td>'+'<td class="bg-success text-light">'+'....'+'</td>'+'<td class="bg-warning text-light">'+'......'+'</td>'+'<td>'+''+'</td>';
+docu[1 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'b'+'</td>'+'<td class="bg-success text-light">'+'bs'+'</td>'+'<td class="bg-warning text-light">'+'css'+ '</td>'+'<td>'+'bootstrap.min.css'+'</td>';
+docu[2 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'b'+'</td>'+'<td class="bg-success text-light">'+'bs'+ '</td>'+'<td class="bg-warning text-light">'+'js'+ '</td>'+'<td>'+ 'bootstrap.bundle.min.js'+'</td>';
+docu[3 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'d'+'</td>'+'<td class="bg-success text-light">'+'dati'+'</td>'+'<td class="bg-warning text-light">'+'a0'+'</td>'+'<td>'+ 'carte_modu_test_generico_a0.js'+'</td>';
+docu[4 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'d'+'</td>'+ '<td class="bg-success text-light">'+'dgebi'+ '</td>'+'<td class="bg-warning text-light">'+''+ '</td>'+'<td>'+ ''+'</td>';
+docu[5 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'d'+'</td>'+ '<td class="bg-success text-light">'+'text'+ '</td>'+'<td class="bg-warning text-light">'+''+ '</td>'+'<td>'+ 'CANCEL.php'+'</td>';
+docu[6 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'d'+'</td>'+ '<td class="bg-success text-light">'+'text'+ '</td>'+'<td class="bg-warning text-light">'+''+ '</td>'+'<td>'+ 'DELPHP.php'+'</td>';
+docu[7 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'d'+'</td>'+ '<td class="bg-success text-light">'+'text'+ '</td>'+'<td class="bg-warning text-light">'+''+ '</td>'+'<td>'+ 'NEWFIL.php'+'</td>';
+docu[8 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'d'+'</td>'+ '<td class="bg-success text-light">'+'ckdm'+ '</td>'+'<td class="bg-warning text-light">'+''+ '</td>'+'<td>'+ '600LIGHTfile0mobiphp.html'+'</td>';
+docu[9 ]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'d'+'</td>'+ '<td class="bg-success text-light">'+'ckdm'+ '</td>'+'<td class="bg-warning text-light">'+''+ '</td>'+'<td>'+ '600CKDMODULO_standalone.html'+'</td>';
+docu[10]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'mobi'+'</td>'+'<td class="bg-success text-light">'+''+ '</td>'+'<td class="bg-warning text-light">'+''+ '</td>'+'<td>'+ '600file0mobiphp.htm'+'</td>';
+docu[11]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'mobi'+'</td>'+'<td class="bg-success text-light">'+'php'+ '</td>'+'<td class="bg-warning text-light">'+''+ '</td>'+'<td>'+ 'file0mobiphp.php'+'</td>';
+docu[12]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'a'+'</td>'+'<td class="bg-success text-light">'+'apps'+ '</td>'+'<td class="bg-warning text-light">'+'giorno'+ '</td>'+'<td>'+ '600giorno.html<span class="bg-danger text-light">*</span>'+'</td>';
+docu[13]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'..'+'</td>'+ '<td class="bg-success text-light">'+''+ '</td>'+'<td class="bg-warning text-light">'+''+ '</td>'+'<td>'+ ''+'</td></tr>';
+docu[14]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'..'+'</td>'+'<td class="bg-success text-light">'+''+'</td>'+'<td class="bg-warning text-light">'+''+'</td>'+'<td>'+''+'</td>';
+docu[15]='<td class="bg-danger text-light">.</td><td class="bg-primary text-light">'+'..'+'</td>'+'<td class="bg-success text-light">'+''+'</td>'+'<td class="bg-warning text-light">'+''+'</td>'+'<td>'+''+'</td>';
+document.getElementById("DOCUWORKINPROGRESS").innerHTML=''+
+'<div class="bg-danger text-light text-center" style="font-size:0.75rem;">La mappatura richiede una revisione a seconda della posizione relativa del file principale</div>'+
+'<div class="badge bg-info text-dark" style="width:100%">mappatura delle cartelle</div>'+
+'<div style="font-size:0.75rem;">'+''+'</div>'+
+'<table class="table table-striped">'+
+'<tr>'+docu[0 ]+'</tr>'+
+'<tr>'+docu[1 ]+'</tr>'+
+'<tr>'+docu[2 ]+'</tr>'+
+'<tr>'+docu[3 ]+'</tr>'+
+'<tr>'+docu[4 ]+'</tr>'+
+'<tr>'+docu[5 ]+'</tr>'+
+'<tr>'+docu[6 ]+'</tr>'+
+'<tr>'+docu[7 ]+'</tr>'+
+'<tr>'+docu[8 ]+'</tr>'+
+'<tr>'+docu[9 ]+'</tr>'+
+'<tr>'+docu[10]+'</tr>'+
+'<tr>'+docu[11]+'</tr>'+
+'<tr>'+docu[12]+'</tr>'+
+'<tr>'+docu[13]+'</tr>'+
+'<tr>'+docu[14]+'</tr>'+
+'<tr>'+docu[15]+'</tr>'+
+
+'</table>'+
+'<br>'+
+'<div class="badge bg-info text-dark" style="width:100%">elenco file esterni</div>'+
+''+'<br>'+
+'<span class="fs-6">'+file_esterno[0]+'</span>'+'<br>'+
+'<span class="fs-6">'+file_esterno[1]+'</span>'+'<br>'+
+'<span class="fs-6">'+file_esterno[2]+'</span>'+'<br>'+
+'<span class="fs-6">'+file_esterno[3]+'</span>'+'<br>'+
+'<span class="fs-6">'+file_esterno[4]+'</span>'+'<br>'+
+'<span class="fs-6">'+file_esterno[5]+'</span>'+'<br>'+
+''+
+''+
+''+
+''+
+''+
+''+
+''+
+''+
+''+
+''+
+''+
+'<div class="badge bg-info text-dark" style="width:100%">&nbsp;</div>'+
+''+
+'';
+</script>
+<button data-bs-toggle="collapse" href="#EXTRAVAL" class="btn rounded" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="var(--bs-indigo)" class="bi bi-arrows-expand" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"/></svg>EXTRAVAL&#10068;Notes</button>
+<div class="collapse" id="EXTRAVAL" style="overflow:auto!important;"><span class="bg-warning spinner-grow spinner-grow-sm"></span><span STYLE="DISPLAY:NONE;">&#11088;</span><br>
+<input type="password" value="0" id="fx0_0" style="background-color:white;color:white;"><button onclick="fx0_0()">&#11093;</button>
+<div id="fx0_0_content">&#10060;</div>
+<script>
+function fx0_0(){ /* alert("fx0_0"); */
+fx0_0=document.getElementById("fx0_0").value;
+fx0_0=parseInt(fx0_0);
+inserita_validazione = fx0_0 ;
+elemento=document.querySelector("#fx0_0");
+//elemento.style.color="red";
+elemento.style.display="none";
+document.getElementById("fx0_0_content").innerHTML=
+''
++''
+//+fx0_0
++' '
++typeof(fx0_0)
++''
++''
++''
++''
++''
++''
++''
+;
+}
+</script>
+<!-- QUI UN ARTICOLO per funzione_decrit -->
+<!-- ^^^ -->
+<!-- ||| -->
+<!-- ||| -->
+<!-- note -->
+<!-- ^^^ -->
+<!-- ||| -->
+<!-- ||| -->
+<article class="my-5">
+<div style="margin:1.25rem 0rem 1.25rem 0rem; border-top:solid 0.25rem maroon; "></div>
+<div class="bg-light text-light text-center">
+<!-- chipmunk -->
+<!-- ������️ -->
+<span class="bg-warning" style="font-size:2rem;">	
+&#128063;
+</span>
+</div>
+<div class="bg-danger text-light text-center"> Attenzione : da mobi a d/text !!! </div>
+<div class="bg-danger text-light text-center fs-6"> </div>
+<blockquote style="margin:1.25rem 0rem 1.25rem 0rem; border-top:solid 0.25rem maroon; ">
+<a href="../d/text/NEWFIL.txt" style="background-color:green;color:white;border-radius:0.25rem;">VEDI</a>
+<span>NEWFIL.txt</span>
+<!-- -->
+<span style="DISPLAY:NONE;position:fixed;top:0;right:0;">
+<a href="#" style="background-color:white;color:orange;font-size:0.75rem;font-weight:bold;border-radius:0.25rem;">/\</a> <br/>
+<a href="#fine" style="background-color:white;color:orange;font-size:0.75rem;font-weight:bold;border-radius:0.25rem;">\/</a><br>
+<a href="#funzione_decrit_uno" style="background-color:white;color:orange;font-size:0.75rem;font-weight:bold;border-radius:0.25rem;">(1)</a><br>
+<a href="#funzione_decrit_uno" style="background-color:white;color:orange;OPACITY:0.25;font-size:0.75rem;font-weight:bold;border-radius:0.25rem;">(2)</a><br>
+<a href="#funzione_decrit_uno" style="background-color:white;color:orange;OPACITY:0.25;font-size:0.75rem;font-weight:bold;border-radius:0.25rem;">(3)</a><br>
+</span>
+<!--
+<a href="CANCEL.php" style="position:static; bottom:0;left:0; background-color:red;color:white;border-radius:0.25rem;">&nbsp;</a>
+-->
+</blockquote>
+<article style="margin:0.25rem; border:solid 0.15rem maroon;overflow:auto;">
+<!-- ------------------------------------------------------------------------- hand -->
+<!--
+<textarea id="TEXTO" method="get" name="data" rows="4" cols="50" placeholder="&#9997;" action="funzione_decrit_20220129_1930A.php" STYLE="BORDER-COLOR:TRANSPARENT;"></textarea>
+-->
+<textarea id="TEXTO" method="get" name="data" rows="4" cols="50" placeholder="&#9997;" STYLE="BORDER-COLOR:TRANSPARENT;"></textarea>
+<blockquote style="text-align:center;">
+<input type="text" id="INSERITO_CODICE" value="0" STYLE="BORDER-RADIUS:0.25REM;" />
+<input type="text" id="REVERSE" value="+" style="width:5rem;BORDER-RADIUS:0.25REM;" />
+</blockquote>
+</article>
+<article style="text-align:center;">
+<button onclick="eseguiDEK()" style="background-color:var(--bs-lightgreen);margin:2.5rem;border-radius:0.25rem;box-shadow: 2.5px 5px gray;" > &#8617; <!-- return uni --> </button>
+</article>
+<article id="funzione_decrit_uno" style="border:solid 0.25rem lime;">
+<div id="decrit" style="margin:5rem 0rem 5rem 0rem;overflow:auto;text-align:center;">???&#9749; </div> <!-- coffee -->
+<div STYLE="TEXT-ALIGN:CENTER; BORDER:DASHED 0REM MAGENTA; ">
+<span onclick="copyToClipboard('#decrit')" style="background-color:transparent;margin:0.25rem;border-radius:0.25rem;"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-clipboard-plus" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+<path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+</svg> <!-- copia nella clipboard --></span>
+<!-- ----------------------------------------- finger -->
+<span STYLE="MARGIN: 0REM 0REM 0REM 2.5REM;"> &#128073; </span><a HREF="../d/text/DELPHP.php" STYLE="MARGIN: 0REM 0REM 0REM 2.5REM;BACKGROUND-COLOR:TEAL;COLOR:WHITE; BORDER:SOLID 0.25REM TEAL; BORDER-RADIUS:0.25REM; TEXT-DECORATION:NONE;"> &#128441; </a>
+</div>
+</article>
+<script>
+function eseguiDEK(){
+KSTRIN="abcdefghilmnopqrstuvz";
+KSTRIN="šŢţŤťŦŧŨũŬŭŮůŰűŲųŴŵŶź";
+KSTRIN=document.getElementById("TEXTO").value;
+DKSTRIN="";
+CODICE=document.getElementById("INSERITO_CODICE").value;
+CODICE=parseInt(CODICE);
+nulla=CODICE;
+REVERSE=document.getElementById("REVERSE").value;
+/* REVERSE="+"; REVERSE="-"; */
+(function questaEstUnaFunzione(){
+// avviso=nulla;
+LKSTRIN=KSTRIN.length;
+for (CONTA=0;CONTA<LKSTRIN;CONTA++)
+{
+CARSTRI=KSTRIN.charAt(CONTA);
+if(REVERSE==="+"){
+UNISTRI=KSTRIN.charCodeAt(CONTA)+CODICE;
+}else{UNISTRI=KSTRIN.charCodeAt(CONTA)-CODICE;}
+DKSTRIN=DKSTRIN+String.fromCharCode(UNISTRI);
+}
+//alert(DKSTRIN);
+TITOLOMAIL='titolo';
+TESTUALEMAIL=' oggi è ... ';
+TESTUALEMAIL=DKSTRIN;
+document.getElementById("decrit").innerHTML=DKSTRIN
++'<div style="margin:0.5rem 0rem 0.5rem 0rem;text-align:center;">'
+// +'<a style="text-decoration:transparent;" href="mailto:rasa.rinaldo@gmail.com?subject='+TITOLOMAIL+'&body='+TESTUALEMAIL+'"><span style="background-color:orange;border-radius:0.25rem;color:black;">&#9993;</span></a>'
+// +'<a style="text-decoration:transparent;" href="mailto:rasa.rinaldo@gmail.com?subject='+TITOLOMAIL+'&body='+TESTUALEMAIL+'"><span style="background-color:orange;border-radius:0.25rem;color:black;">==></span></a>'
++'<a style="text-decoration:transparent;" href="mailto:rasa.rinaldo@gmail.com?subject='+TITOLOMAIL+'&body='+TESTUALEMAIL+'"><span style="background-color:orange; border:solid 0.15rem maroon; border-radius:0.25rem;color:black;"> &nbsp;&nbsp; </span></a>'
++'<div>'
++''
++''
++''
++'';
+})();
+} // eseguiDEK(nulla)
+</script>
+<div id="evidenzia" style="margin:5rem 0rem 0rem 2.5rem;text-align:center;"> &#10067; </div>
+<div style="text-align:center;">
+<input type="text" id="evidenziato" value="" style="width:90%;" />
+<button onclick="evidenzia()" STYLE="TEXT-ALIGN:CENTER;BORDER-RADIUS:0.25REM;FONT-VARIANT:SMALL-CAPS;"> evidenzia() </button>
+</div>
+<script>
+function evidenzia(){
+	
+valore_da_evidenziare=document.getElementById("evidenziato").value;
+document.getElementById("evidenzia").innerHTML=''
++'<div style="margin: 2.5rem 0rem 2.5rem 0rem; background-color:white!important; color:maroon!important; ">'
++valore_da_evidenziare
++'</div>'
++''
++''
++''
++'<br>'
++'';
+}
+</script>
+<!-- Wastebasket Emoji -->
+<div class="my-5">
+<a href="../d/text/CANCEL.php" style="position:static; bottom:0;left:0; background-color:red; font-size:2.25rem; color:white;text-decoration:none; border-radius:0.25rem;"> &#128465; </a>
+</div>
+</article>
+<!-- ^^^ -->
+<!-- ||| -->
+<!-- ||| -->
+<!-- note -->
+<!-- ^^^ -->
+<!-- ||| -->
+<!-- ||| -->
+<!-- avid3820725 -->
+<!--
+<a href="mailto:no-one@snai1mai1.com?subject=look&body=ok">MAIL</a>
+-->
+</div>
+<!-- -->
+<!-- mobile or desktop?
+<div style="position:static;top:2%;left:50%;">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16"> <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/> <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/> </svg>
+</div>
+-->
+<!-- ^^ -->
+<!-- || -->
+<!-- || -->
+<!-- icona segnalatrice di opzione mobile -->
+<!-- -->
+<!-- -->
+<!--
+<div style="margin:0.50rem;"><a href="./view/" style="background-color:var(--bs-light);color:black;font-size:2.5rem;border-radius:0.25rem;" class="ptmono"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16"> <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/></svg> DESKTOP </a></div>
+<div style="margin:0.50rem;"><a href="./mobi/" style="background-color:var(--bs-light);color:black;font-size:2.5rem;border-radius:0.25rem;" class="ptmono"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16"> <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/> <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/> </svg> MOBILE </a></div>
+-->
+<!-- -->
+<!-- detect browser -->
+<hr>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.5/platform.min.js"></script>
+<script> console.log(platform); document.write("<div style='font-size:x-small;text-align:center;font-variant:small-caps;'>you are using " + platform.name + " v" + platform.version + " on " + platform.os); +"</div>" </script>
+<script> if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){/* true for mobile device */ document.write('<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16"> <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/> <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/> </svg>'); document.write("mobile device"); }else{/* false for not mobile device */ document.write('<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16"> <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/></svg>'); document.write(" NOT MOBILE DEVICE "); } </script>
+<span id="result" style="font-size:x-small;font-variant:small-caps;"></span>
+<script>"use strict"; function displayWindowSize(){ var w = document.documentElement.clientWidth;var h = document.documentElement.clientHeight;var wFinestraWIDTH = document.documentElement.clientWidth;var hFinestraHEIGHT = document.documentElement.clientHeight;document.getElementById("result").innerHTML = " " + wFinestraWIDTH + "x" + hFinestraHEIGHT +" ";}window.addEventListener("resize", displayWindowSize);displayWindowSize();+" "</script>
+<!--
+<div style="margin:0.50rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16"> <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/></svg> DESKTOP </div>
+<div style="margin:0.50rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16"> <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/> <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/> </svg> MOBILE </div>
+-->
+<!-- -->
+<blockquote class="my-2 text-center text-secondary fs-6" style="font-size:x-small!important;"> ** fine ** </blockquote>
+<!-- -->
+<!-- -->
+</div>
+</div>
+<!-- </div> -->
+</article>
+<!-- -->
+<!-- -->
+<!-- modal FIN -->
+<!-- -->
+<!-- ||\...//||...=======...===............=........||......====== -->
+<!-- ||\\.//.||..||.....||..||.\\........./.\.......||......||.... -->
+<!-- ||.\//..||..||.....||..||..\\......./...\......||......||.... -->
+<!-- ||......||..||.....||..||...\\...../.....\.....||......||===. -->
+<!-- ||......||..||.....||..||...||..../=======\....||......||.... -->
+<!-- ||......||..||.....||..||...||.../.........\...||......||.... -->
+<!-- ||......||...=======...=======../...........\..======..====== -->
+<!-- QUI MODALE da file esterno fin -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<main id="MAIN" class="mx-1">
+<!-- -->
+<!-- section STARTINNI ini -->
+<!-- permette di scegliere tra due -->
+<!-- alternative con un click su -->
+<!-- evocando la funzione startNI() Non Interattiva -->
+<!-- e startIN() INterattiva -->
+<!-- -->
+<!-- -->
+<!-- -->
+<SECTION id="STARTINNI" style="position:fixed;top:35%;margin-top:-8rem;left:50%;margin-left:-8rem;" class="p-0 rounded startinni">
+<!-- -->
+<!-- Qui è stato fatto un allerigimento dei pulsanti del gruppo STARTINNI -->
+<!-- Considerare a seconda delle app questa opportunità -->
+<ARTICLE class="shadow-sm my-1 p-2 bg-success rounded" style="background-color:var(--bs-gray-600)!important;background-color:var(--bs-teal)!important;BACKGROUND-COLOR:TRANSPARENT!IMPORTANT;" onclick="startNI()"> <span class="translate-middle badge rounded-pill bg-dark text-light" style="CURSOR:POINTER;OPACITY:1!IMPORTANT;position:absolute;top:0;left:0;background-color:maroon!important;font-size:medium;font-variant:small-caps;letter-spacing:0.15rem;border:solid 0.05rem var(--bs-indigo);">giorno 0.0.<span class="bg-light text-dark" STYLE="FONT-SIZE:0.75REM;">2022-02-14-18:09</span></span> </ARTICLE>
+<!-- nella fattispecie jorna è disattivato con display none -->
+<ARTICLE class="shadow-sm my-1 p-2 bg-danger rounded" style="DISPLAY:NONE!IMPORTANT;background-color:var(--bs-gray-500)!important;background-color:var(--bs-yellow)!important;" onclick="startIN()"> <span ><!-- &nbsp; --></span> </ARTICLE>
+
+<!-- -->
+<!-- QUI RESPO ARTIC ini -->
+<!-- QUI DGEBI RESPO ARTIC ini -->
+<div id="articrespo"></div>
+<script>
+/* **************************************************** */
+/* * * */
+/* * DGEBI versione * */
+/* * * */
+/* * * */
+/* * collapsed ini * */
+/* * qui elemento importante est * */
+/* * la regolazione della altezza * */
+/* * della finestrella user responsive * */
+/* * ************************************************** */
+/* * * */
+/* * * */
+/* * importante utility * */
+/* * controllare se default altezza est settata * */
+/* * * */
+/* * fa apparire un input DINAMICO idRESP_CARTE_ARTIC * */
+/* * idRESP__CARTE_ARTI * */
+/* * ************************************************** */
+/* * valori preconfezionati * */
+/* * script per respo altezza_carta_articolo * */
+/* **************************************************** */
+/* respo responsive dimensioni della finestra carte NON richiede aumento di indice in caso di incremento item */
+/* LA FINESTRA VA SE NECESSARIO RIDIMENSIONATA IN FUNZIONE DEL DISPOSITIVO PC TABLET O TELEFONINO */
+/* ********************************************************************************************************** */
+"use strict";
+document.getElementById("articrespo").innerHTML=
+'<div class="m-0 p-0 text-end border border-0 border-dark" style="position:fixed;top:12.25px;left:12.25px;">'+
+''+
+'<a data-bs-toggle="collapse" href="#collapse_respo" class="btn-sm rounded-2 bg-info text-light border border-3 border-dark" style="cursor:pointer;opacity:0.25;">&#10003;</a>'+
+'</div>'+
+''+
+'<ARTICLE id="collapse_respo" class="collapse my-2 rounded border border-0 border-info text-center">'+
+''+
+''+
+'<span id="resultassey" style="position:fixed;top:0;left:50%;margin-left:-2rem;" class="bg-danger text-light fs-6">'+' &#9785; '+'</span>'+
+''+
+''+
+''+
+'<span id="RESP__CARTE_ARTI">'+
+''+
+''+
+'<input class="fs-6 border border-0" id="RESP_CARTE_ARTIC" type="text" value="47.25" style="BACKGROUND-COLOR:var(--bs-gray-600);COLOR:var(--bs-light);WIDTH:5.5REM;BORDER-RADIUS:0.25REM;" />'+
+''+
+' <span class="badge fs-6 text-uppercase" onclick="respo_artic0()" style="BACKGROUND-COLOR:var(--bs-gray-600);BACKGROUND-COLOR:var(--bs-green);COLOR:var(--bs-light);">ok</span>'+
+'</span>'+
+''+
+'<div class="my-1 border-top border-5 border-danger">'+
+' <span id="artic1" onclick="respo_artic1()" class="badge rounded" style="background-color:var(--bs-gray-500);cursor:pointer;">&nbsp;&nbsp;</span>'+
+' <span id="artic2" onclick="respo_artic2()" class="badge rounded" style="background-color:var(--bs-gray-600);cursor:pointer;">&nbsp;&nbsp;</span>'+
+' <div class="m-0">&nbsp;</div>'+
+' <span id="artic3" onclick="respo_artic3()" class="badge rounded bi bi-phone-fill text-light" style="background-color:var(--bs-gray-700);cursor:pointer;">&nbsp;</span>'+
+' <span id="artic4" onclick="respo_artic4()" class="badge rounded bi bi-pc-display-horizontal text-light" style="background-color:var(--bs-gray-800);cursor:pointer;">&nbsp;</span>'+
+'</div>'+
+'</ARTICLE>'+
+'';
+let elemento;
+function respo_artic1(){altezza_carta_articolo = 20;elemento=document.querySelector("#RESP__CARTE_ARTI");elemento.style.visibility="hidden";}
+function respo_artic2(){altezza_carta_articolo = 25;elemento=document.querySelector("#RESP__CARTE_ARTI");elemento.style.visibility="hidden";}
+function respo_artic3(){altezza_carta_articolo = 35;elemento=document.querySelector("#RESP__CARTE_ARTI");elemento.style.visibility="hidden";}
+function respo_artic4(){altezza_carta_articolo = 40;elemento=document.querySelector("#RESP__CARTE_ARTI");elemento.style.visibility="hidden";}
+function respo_artic4(){altezza_carta_articolo = 50;elemento=document.querySelector("#RESP__CARTE_ARTI");elemento.style.visibility="hidden";}
+/**********/
+function respo_artic0(){let altezza_carta_articolo_input = document.getElementById("RESP_CARTE_ARTIC").value; altezza_carta_articolo = parseInt(altezza_carta_articolo_input, 10) }
+/**********/
+/**********/
+/**********/
+// function displayWindowSize(){ var w = document.documentElement.clientWidth;var h= document.documentElement.clientHeight;var wFinestraWIDTH = document.documentElement.clientWidth;var hFinestraHEIGHT; hFinestraHEIGHT = document.documentElement.clientHeight;document.getElementById("resultassey").innerHTML = " " +/* wFinestraWIDTH + "x" + */ (hFinestraHEIGHT*0.0625) +" ";}window.addEventListener("resize", displayWindowSize);displayWindowSize();
+function displayWindowSize(){ var h= document.documentElement.clientHeight;var hFinestraHEIGHT;hFinestraHEIGHT = document.documentElement.clientHeight;hFinestraHEIGHT = hFinestraHEIGHT*0.0625; hFinestraHEIGHT = hFinestraHEIGHT.toFixed(2);document.getElementById("resultassey").innerHTML = (hFinestraHEIGHT);}window.addEventListener("resize", displayWindowSize);displayWindowSize();
+</script>
+<!-- QUI DGEBI RESPO ARTIC fin -->
+<!-- QUI RESPO ARTIC fin -->
+</SECTION>
+<!-- section STARTINNI fin -->
+<!-- -->
+<!-- -->
+<!-- trattamento funzioni startNI() e startIN() ini -->
+<!-- utilizzo massiccio di querySelector -->
+<!-- dipendente da tag identitari -->
+<!-- #attdis -->
+<!-- #STARTINNI -->
+<!-- #NEWGUI -->
+<!-- #rilevareDevice -->
+<!-- #SPINNERINNI -->
+<!-- #BS5MODAL -->
+<!-- #OPENMODALX -->
+<!-- -->
+<!-- (considerare possibile spostamento in head) -->
+<script>
+function startNI(){SNIP();let elementoNI=document.querySelector("#attdis");elementoNI.style.display="NONE";elementoNI=document.querySelector("#STARTINNI");elementoNI.style.display="NONE";elementoNI=document.querySelector("#NEWGUI");elementoNI.style.display="BLOCK";elementoNI=document.querySelector("#rilevareDevice");elementoNI.style.display="BLOCK";elementoNI=document.querySelector("#SPINNERINNI");elementoNI.style.display="NONE";elementoNI=document.querySelector("#BS5MODAL");elementoNI.style.display="NONE";elementoNI=document.querySelector("#OPENMODALX");elementoNI.style.display="NONE";}
+function startIN(){let elementoIN=document.querySelector("#attdis");elementoIN.style.display="BLOCK";elementoIN=document.querySelector("#STARTINNI");elementoIN.style.display="NONE";elementoIN=document.querySelector("#NEWGUI");elementoIN.style.display="BLOCK";elementoIN=document.querySelector("#rilevareDevice");elementoIN.style.display="BLOCK";elementoIN=document.querySelector("#SPINNERINNI");elementoIN.style.display="NONE"; elementoIN=document.querySelector("#BS5MODAL");elementoIN.style.display="NONE";elementoIN=document.querySelector("#OPENMODALX");elementoIN.style.display="NONE";}
+</script>
+<!-- trattamento funzioni startNI() e startIN() fin -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- sezione intercetta input ini -->
+<!-- i valori di input dipendono da id identitari -->
+<!-- idattdis -->
+<!-- idVAL__KRIPTO_TEST -->
+<!-- idI_AM_NOT_A_ROBOT -->
+<!-- idbtnEntra -->
+<!-- al click si attiva la funzione SNIP() -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<SECTION id="attdis" class="py-0 border border-0 border-primary rounded" style="display:NONE;position:fixed;top:0%;left:0%;width:100%;z-index:2;">
+<ARTICLE class="rounded border border-0 border-danger" style="margin:0 auto;text-align:center;">
+<!--
+<input id="VAL__KRIPTO_TEST" class="rounded border border-1 border-dark" type="password" value="0" style="color:INITIAL;color:TRANSPARENT;" />
+<input id="I_AM_NOT_A_ROBOT" class="rounded border border-1 border-danger" type="password" value="0" style="WIDTH:1.5REM;color:INITIAL;color:TRANSPARENT;" />
+-->
+<input id="VAL__KRIPTO_TEST" class="rounded border border-1 border-dark" type="password" value="" style="color:INITIAL;color:TRANSPARENT;" />
+<input id="I_AM_NOT_A_ROBOT" class="rounded border border-1 border-danger" type="password" value="" style="WIDTH:1.5REM;color:INITIAL;color:TRANSPARENT;" />
+<BUTTON id="btnEntra" class="btn bg-light btnentra" onclick="SNIP()">Entra</BUTTON>
+</ARTICLE>
+</SECTION>
+<!-- sezione intercetta input fin -->
+<!-- -->
+<!-- -->
+<!-- viene intercettato da tag dgebi -->
+<!-- idNEWGUI -->
+<!-- -->
+<div ID="NEWGUI"><span class="bg-danger rounded border border-1 border-danger invisible">&#9940;</span><span style="opacity:0;">NEWGUI---</span></div>
+<!--
+<div id="debuggingCARTA"><span class="spinner-grow spinner-grow-sm bg-danger" role="status">&nbsp;</span><SPAN>debuggingCARTA</SPAN></div>
+<div id="debuggingCARTArendiconto"><span class="spinner-grow spinner-grow-sm bg-danger" role="status">&nbsp;</span><SPAN>debuggingCARTAcommento</SPAN></div>
+-->
+<!-- ||| -->
+<!-- ||| -->
+<!-- ||| CONTENITORE JAVASCRIPT -->
+<!-- ||| -->
+<!-- ||| -->
+<!-- ||| -->
+<script>
+function SNIP(){
+"use strict";
+/* alert("SNIP()"); */ /* solo per debugging */
+/*****cancella i form di input*****/
+/* una volta accettato input togliere il form non necessario */
+let elemento;
+elemento=document.querySelector("#attdis");
+elemento.style.display="none";
+/*****cattura e converte input*****/
+VAL__KRIPTO_TEST = document.getElementById("VAL__KRIPTO_TEST").value;
+/* normalizza input se string vuoto */
+if(VAL__KRIPTO_TEST===""){VAL__KRIPTO_TEST="0"}
+/* indi passa alla conversione in number */
+VAL__KRIPTO_TEST=parseInt(VAL__KRIPTO_TEST);
+/*****codici di controllo controllato in esterno*****/
+I_AM_NOT_A_ROBOT = document.getElementById("I_AM_NOT_A_ROBOT").value;
+/*****dgebi catturano informazioni esterne*****/
+/*****ididSCRIPT0*****/
+/*****ididSCRIPT1*****/
+/*****ididSCRIPT2*****/
+/*****ididSCRIPT3*****/
+/* ----------------|attenzione: QUESTO est ZERO */
+let LET____idSCRIPT0;LET____idSCRIPT0 = "<div id='idSCRIPT0' class='fs-6'>LOADING???idSCRIPT0... <span class='cursore rounded'>&nbsp;</span></div>";
+let LET____idSCRIPT1;LET____idSCRIPT1 = "<div id='idSCRIPT1' class='fs-6'>LOADING???idSCRIPT1... <span class='cursore rounded'>&nbsp;</span></div>";
+let LET____idSCRIPT2;LET____idSCRIPT2 = "<div id='idSCRIPT2' class='fs-6'>LOADING???idSCRIPT2... <span class='cursore rounded'>&nbsp;</span></div>";
+let LET____idSCRIPT3;LET____idSCRIPT3 = "<div id='idSCRIPT3' class='fs-6'>LOADING???idSCRIPT3... <span class='cursore rounded'>&nbsp;</span></div>";
+let LET____idSCRIPT4;LET____idSCRIPT4 = "<div id='idSCRIPT4' class='fs-6'>LOADING???idSCRIPT4... <span class='cursore rounded'>&nbsp;</span></div>";
+let LET____idSCRIPT5;LET____idSCRIPT5 = "<div id='idSCRIPT5' class='fs-6'>LOADING???idSCRIPT5... <span class='cursore rounded'>&nbsp;</span></div>";
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/*****-----------------------------------------------------*****/
+/***** ||| COSTRUZIONE DELLA CORNICE RESPONSIVE ARTIGIANALE*****/
+/***** ||| ad ogni variazione del width height(wh) *****/
+/***** ||| corrisponde un refresh della pagina per *****/
+/***** ||| adattare le dimensioni *****/
+/*****-----------------------------------------------------*****/
+/*****----qui le cose funzionano ma possono essere---------*****/
+/*****----ottimizzate--------------------------------------*****/
+let wFinestra____Rem; /* assegnazione valori (whf) window */
+let hFinestra____Rem; /* assegnazione valori (whf) window */
+let fFinestra____Rem; /* assegnazione valori (whf) font size rem */
+let fFinestra_____Px; /* assegnazione valori (whf) font size px */
+/**********/
+let height___schermo; /* valore hardware */
+let heightSchermoRem; /* valore hardware */
+/**********/
+let dimeXMain____Rem; /* leggera correzione */
+let dimeYMain____Rem; /* leggera correzione */
+/**********/
+let intestazX____Rem; /* parte alta (intestazione) */
+let intestazY____Rem; /* parte alta (intestazione) */
+/*****alcune variabili not used ma tenute per back compatibility*****/
+let LINK________SNIP = [""]; /* aggiornare indice */
+/**********/
+let LINK_lunghe_SNIP; /* ??? not used */
+let LINK________INFO = [""]; /* ??? not used */
+let LINK_lunghe_INFO; /* ??? not used */
+let LINK___SNIP_INFO = [""]; /* ??? not used */
+let LINKlunSNIP_INFO; /* ??? not used */
+let infoContentCarta = [""]; /* ??? not used */
+let lungContentCarta; /* ??? not used */
+let INFO________LINK = [""]; /* ??? not used */
+let lung_INFO___LINK; /* ??? not used */
+let lung___INFO_LINK; /* ??? not used */
+let TR_TD_INTERLINEA; /* ??? not used */
+/**********/
+/*****PORZIONI DI CODICE PER CARTE ARTICOLI PILL*****/
+let clCOLLAPSE_CARTA;
+let BLOKQ_PILL_CARTA;
+let ARTICLE____CARTA;
+let BLOCKQUOTE_CARTA;
+let clBORDER___CARTA;
+/*****mega legacy === mega minestrone!!!*****/
+let dim___ico_svg_Px;
+let dim__ico_svg_Rem;
+let offsetLBadge_Rem;
+let dimensio_ico_Rem;
+let dashboardX___Rem;
+let dashboardY_perce;
+let dashboardY___Rem;
+let dashbd_Badge_Rem;
+/**********/
+/*****il toggle degli items *****/
+/*****NON richiede incremento*****/
+/*****!!!!!!!!!!!!!!!!!!!!!!!*****/
+let COLLAPSE0Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE1Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE2Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE3Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE4Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE5Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE6Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE7Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE8Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE9Badge11; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+/**********/ /* */
+let COLLAPSE0Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE1Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE2Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE3Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE4Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE5Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE6Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE7Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE8Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+let COLLAPSE9Badge21; /* PREDISPOSTA PER 10 ITEMS (0--9) */
+/**********/
+let DIDASCALIA_BADGE = [""]; /* array aggiorna indice */
+/**********/
+let cartaX_______Rem;
+let cartaY_______Rem;
+let cardX________Rem;
+let cardY________Rem;
+/**********/
+let zero ="0";
+let uno ="1";
+let due ="2";
+let tre ="3";
+let quattro ="4";
+let cinque ="5";
+let sei ="6";
+let sette ="7";
+let otto ="8";
+let nove ="9";
+/**********/
+let numeroitem = [""];
+let semanticabadgeitem = [""];
+let SPAZIOUNO = " ";
+SPAZIOUNO = ""; /* DEBUGGING */
+/**********/
+/**********/
+/**********/
+/**********/
+/*****--------------------------------------*****/
+/*****ASSEGNAZIONE DEI VALORI ALLE VARIABILI*****/
+/*****--------------------------------------*****/
+/*****valori base su cui lavorare convertiti da px a rem*****/
+/*****questa sezione richiede una revisione*****/
+wFinestra____Rem = document.documentElement.clientWidth/16;
+hFinestra____Rem = document.documentElement.clientHeight/16;
+/*****incertezze tra rilevazioni dello schermo*****/
+height___schermo = screen.height;
+heightSchermoRem = height___schermo/16;
+fFinestra____Rem = heightSchermoRem/45; /* definizione font size */
+fFinestra_____Px = fFinestra____Rem; /* definizione font size */
+/*****la intestazione est la parte superiore*****/
+intestazX____Rem = dimeXMain____Rem; /* ??? cosa est */
+intestazY____Rem = fFinestra____Rem*2.25; /* funz font size */
+/*****--------------------------------------*****/
+/*****INIZIALIZZAZIONE DEGLI ARRAY UTILI PER*****/
+/*****LA TAVOLATA DEL DASHBOARD-------------*****/
+/*****DASHBOARD = pannello di controllo-----*****/
+/*****--------------------------------------*****/
+/*****vedere se le sequenze nel codice sono-*****/
+/*****importanti soprattutto in strict mode-*****/
+LINK________SNIP = [""];
+LINK_lunghe_SNIP; /* back compatibility ??? */
+LINK________INFO = [""]; /* */
+LINK_lunghe_INFO; /* back compatibility ??? */
+LINK___SNIP_INFO = [""]; /* */
+LINKlunSNIP_INFO; /* back compatibility ??? */
+infoContentCarta = [""]; /* */
+lungContentCarta; /* back compatibility ??? */
+INFO________LINK = [""]; /* */
+lung_INFO___LINK; /* back compatibility ??? */
+lung___INFO_LINK; /* back compatibility ??? */
+/*****occupa spazio ma non est visibile*****/
+TR_TD_INTERLINEA = ' <tr><td style="visibility:hidden;">'+'-'+'</td></tr> ';
+/**********/
+dimeXMain____Rem = wFinestra____Rem*0.95; /* ??? not used */
+dimeYMain____Rem = hFinestra____Rem*0.95; /* ??? not used */
+/**********/
+dimeXMain____Rem = wFinestra____Rem*1; /* ricalcolo */
+dimeYMain____Rem = hFinestra____Rem*1; /* ricalcolo */
+/***** questa sezione richiede un chiarimento dato che *****/
+/***** est stata creata in progress con aggiustamenti *****/
+/***** al volo riflettendo in tal modo un programmazione *****/
+/***** accentuata dallo stilismo dando voce alla idea *****/
+/***** di self-reverse-engineering*****/
+dim___ico_svg_Px = intestazY____Rem*16;
+dim__ico_svg_Rem = dim___ico_svg_Px/16;
+offsetLBadge_Rem = dim__ico_svg_Rem*2;
+dimensio_ico_Rem = (dim___ico_svg_Px/16)*0.5;
+dashboardX___Rem = intestazX____Rem;
+dashboardY_perce = 0.80; /* legacy */
+dashboardY___Rem = dimeYMain____Rem*dashboardY_perce; /* legacy */
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+/* HACKING */
+dashboardY___Rem =35; /* hacking */
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+cartaX_______Rem = dimeXMain____Rem-(offsetLBadge_Rem*1.50);
+/* ********************************************************************************************* */
+/* ridefinizione di cartaX_______Rem per mobi */
+/* */
+/* livello primo */
+cartaX_______Rem = dimeXMain____Rem-(offsetLBadge_Rem*1.50); /* ||| legacy */
+cartaX_______Rem = dimeXMain____Rem-(offsetLBadge_Rem*0); /* ||| senza offset */
+cartaX_______Rem = (dimeXMain____Rem*0)-(offsetLBadge_Rem*0); /* ||| senza offset e dime */
+/* con il livello primo si azzera la dimensione di cartax_rem */
+/* livello secondo */
+/* scostare verso sinistra cartax_rem azzerata ATTENZIONE cartaX_______Rem AZZERATO !!! */
+/* dopo avere azzerato offset NEWGUI a sinistra riportare carta_x al valore consueto */
+cartaX_______Rem = dimeXMain____Rem-(offsetLBadge_Rem*1.50);
+/* */
+/* MODULARE IL VALORE DI OFFSET VERSO DESTRA */
+/* inserire come valore max */
+cartaX_______Rem = dimeXMain____Rem;
+/* ********************************************************************************************* */
+/**********/
+cartaY_______Rem = dimeYMain____Rem*0.80; /* legacy */
+cartaY_______Rem = 32; /* HACKING */
+cartaX_______Rem = dimeXMain____Rem-(offsetLBadge_Rem*0.65) /* aumentando valore */
+cartaX_______Rem = dimeXMain____Rem-(offsetLBadge_Rem*0.65) /* aumenta scostamento */
+cartaX_______Rem = (dimeXMain____Rem*1)-(offsetLBadge_Rem*0.65); /* ATTENZIONE IN */
+cartaX_______Rem = (dimeXMain____Rem*1)-(offsetLBadge_Rem*0.45); /* COMBINAZIONE CON */
+cartaX_______Rem = (dimeXMain____Rem*1)-(offsetLBadge_Rem*0.45); /* LIME DASHBOARD ITEMs */
+/* ****************************************^^^^^^^^^^^^^^^^^^^^^^^^***************************** */
+/* ****************************************||||||||||||||||||||||||***************************** */
+/* ****************************************||||||||||||||||||||||||***************************** */
+/* ****************************************||||||||||||||||||||||||***************************** */
+/* ****************************************scostamento a destra se****************************** */
+/* ****************************************aumenta ********************************************* */
+/* ********************************************************************************************* */
+/* ********************************************************************************************* */
+cardX________Rem = cartaX_______Rem; /* */
+cardY________Rem = dimeYMain____Rem; /* legacy */
+/*****---------------------------*****/
+/***** || qui codice MOLTO IMPORTANTE*****/
+/***** || dato che codice necessita di aggiornamento*****/
+/***** || quando si aumenta il numero degli item*****/
+/**********/
+/*****valori costanti anche se si aggiornano items*****/
+clCOLLAPSE_CARTA = ' class="collapse border border-0 border-info rounded" style="box-shadow: 0px 0px 10px 0.5rem gray!important;" '; /* valore momentaneamente settato per debugging */
+/* revisione per mobi versione */
+/* bordo esternissimo di articolo effettivo */
+clCOLLAPSE_CARTA = ' class="collapse border border-5 border-info rounded" style="box-shadow: 0px 0px 10px 0.5rem gray!important;" '; /* valore momentaneamente settato per debugging */
+/* revisione mobi di secondo livello */
+clCOLLAPSE_CARTA = ' class="collapse border border-0 border-info rounded" style="border-style:dotted!important;box-shadow: 0px 0px 10px 0.5rem gray!important;" '; /* valore momentaneamente settato per debugging */
+/**********/ /*--------------------^^^^^^^^----------------------------------------------------------*/
+clCOLLAPSE_CARTA = ' class="collapse border border-5 border-info rounded" style=" border-style:dotted!important;box-shadow: 0px 0px 10px 0.5rem gray!important;" '; /* valore momentaneamente settato per debugging */
+clCOLLAPSE_CARTA = ' class="collapse border border-1 border-light rounded" style=" border-style:solid!important;box-shadow: 0px 0px 10px 0.5rem gray!important;" '; /* valore momentaneamente settato per debugging */
+/**********/ /*--------------------^^^^^^^^----------------------------------------------------------*/
+/**********/ /*--------------------||||||||----------------------------------------------------------*/
+BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:' +intestazY____Rem*0+'REM;LEFT:'+dim__ico_svg_Rem*2.5*0.1+'REM;z-index:1!important;MARGIN-TOP:-0REM;border-radius:0.25rem;" class="border border-3 badge bg-light text-dark fs-5 rounded"> ';
+/* revisione della posizione nella schermata del blinking item attivo */
+/* in funzione della versione mobile che richiede particolare attenzione */
+/* nelle posizioni relative degli elementi nella schermata */
+BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:'+intestazY____Rem*0+'REM;LEFT:'+dim__ico_svg_Rem*2.5*0.1+'REM;LEFT:65%;z-index:1!important;MARGIN-TOP:-0REM;border-radius:0.25rem;" class="border border-3 badge bg-light text-dark fs-6 rounded"> ';
+BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:'+intestazY____Rem*0+'REM;LEFT:'+dim__ico_svg_Rem*2.5*0.1+'REM;LEFT:0%;z-index:1!important;MARGIN-TOP:-0REM;border-radius:0.25rem;" class="border border-3 badge bg-light text-dark fs-6 rounded"> ';
+BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:'+intestazY____Rem*0+'REM;LEFT:'+dim__ico_svg_Rem*2.5*0.1+'REM;LEFT:65%;z-index:1!important;MARGIN-TOP:-0REM;border-radius:0.25rem;" class="border border-3 badge bg-light text-dark fs-6 rounded"> ';
+BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:'+intestazY____Rem*0+'REM;LEFT:'+dim__ico_svg_Rem*2.5*0.1+'REM;LEFT:75%;z-index:1!important;MARGIN-TOP:-0REM;MARGIN-LEFT:-2.25rem;border-radius:0.25rem;" class="border border-3 badge bg-light text-dark fs-6 rounded"> ';
+BLOKQ_PILL_CARTA = ' <blockquote style="position:FIXED;top:'+intestazY____Rem*0+'REM;LEFT:'+dim__ico_svg_Rem*2.5*0.1+'REM;LEFT:75%;z-index:1!important;MARGIN-TOP:-0REM;MARGIN-LEFT:-2.25rem;border-radius:0.25rem;" class="border border-3 badge bg-light text-dark fs-6 rounded"> ';
+/**********/
+ARTICLE____CARTA = ' <ARTICLE class="border border-0 border-danger" style="overflow:auto; '; /* valore momentaneamente settato per debugging */
+/* revisione per mobi versione */
+/* qui concreto contenuto */
+ARTICLE____CARTA = ' <ARTICLE class="border border-3 border-danger" style="overflow:auto; '; /* valore momentaneamente settato per debugging */
+/* revisione mobi di secondo livello */
+ARTICLE____CARTA = ' <ARTICLE class="border border-0 border-danger" style="overflow:auto; '; /* valore momentaneamente settato per debugging */
+/* revisione mobi */
+ARTICLE____CARTA = ' <ARTICLE class="border border-0 border-danger" style="overflow:auto; border-style:dashed!important; '; /* valore momentaneamente settato per debugging */
+BLOCKQUOTE_CARTA = ' <blockquote class="badge bg-success"> ';
+/* revisione mobi */
+BLOCKQUOTE_CARTA = ' <blockquote class="badge bg-success"> ';
+clBORDER___CARTA = ' class="border border-0 border-primary card px-2" '; /* valore momentaneamente settato per debugging */
+/**********/
+/*****!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*****/
+/*****AGGIORNARE QUANDO SI INCREMENTA ITEMS*****/
+/*****qui una eccezione allo stile del commento*****/
+/*****dato la importanza in quanto parte variabile*****/
+/*****in caso di aumento degli items*****/
+/*****!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*****/
+/**********/
+/*****gli indici della caption badgeitem sono sostituiti da variabili*****/
+/*****inoltre est utile mettere una icona definita come variabile*****/
+/*****per dare semantica ad badgeitem*****/
+/**********/
+/**********/
+/**********/
+/**********/
+/****INCREMENTARE INDICE CON INCREMENTO ITEM NEL DASHBOARD******/
+DIDASCALIA_BADGE[0] = '<span style="background-color:transparent;opacity:0.25;">&#62;</span>'+'<span style="background-color:transparent;color:var(--bs-pink);font-size:small;"> argomentazione leggi_il_contenuto </span>';
+DIDASCALIA_BADGE[1] = '<span style="background-color:transparent;opacity:0.25;">&#62;</span>'+'<span style="background-color:transparent;color:var(--bs-pink);font-size:small;"> argomentazione leggi_il_contenuto </span>';
+DIDASCALIA_BADGE[2] = '<span style="background-color:transparent;opacity:0.25;">&#62;</span>'+'<span style="background-color:transparent;color:var(--bs-pink);font-size:small;"> argomentazione leggi_il_contenuto </span>';
+DIDASCALIA_BADGE[3] = '<span style="background-color:transparent;opacity:0.25;">&#62;</span>'+'<span style="background-color:transparent;color:var(--bs-pink);font-size:small;"> argomentazione leggi_il_contenuto </span>';
+DIDASCALIA_BADGE[4] = '<span style="background-color:transparent;opacity:0.25;">&#62;</span>'+'<span style="background-color:transparent;color:var(--bs-pink);font-size:small;"> argomentazione leggi_il_contenuto </span>';
+DIDASCALIA_BADGE[5] = '<span style="background-color:transparent;opacity:0.25;">&#62;</span>'+'<span style="background-color:transparent;color:var(--bs-pink);font-size:small;"> argomentazione leggi_il_contenuto </span>';
+/**********/
+/**********/
+/**********/
+semanticabadgeitem[0]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+semanticabadgeitem[1]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+semanticabadgeitem[2]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+semanticabadgeitem[3]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+semanticabadgeitem[4]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+semanticabadgeitem[5]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+semanticabadgeitem[6]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+semanticabadgeitem[7]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+semanticabadgeitem[8]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+semanticabadgeitem[9]='<svg style="background-color:transparent;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--bs-light)" class="bi bi-info-square-fill" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>';
+/**********/
+/**********/
+numeroitem[0]='0';
+numeroitem[1]='1';
+numeroitem[2]='2';
+numeroitem[3]='3';
+numeroitem[4]='4';
+numeroitem[5]='5';
+numeroitem[6]='6';
+numeroitem[7]='7';
+numeroitem[8]='8';
+numeroitem[9]='9';
+/**********/
+/**********/
+/* DASHBOARD toggle degli items visitati che si DEVONO!!! AGGIORNARE!!! quando incremento items------------||||||--------------------------------*/
+COLLAPSE0Badge11="<a id='toggle01' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse0'> <div id='ATTDIS_01' onclick='COLLAPSE0BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-warning'>"+semanticabadgeitem[0]+SPAZIOUNO+numeroitem[0]+" "+DIDASCALIA_BADGE[0]+"</div> </div> </a>";
+COLLAPSE0Badge21="<a id='toggle02' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse0'> <div id='ATTDIS_02' onclick='COLLAPSE0BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-danger' >"+semanticabadgeitem[0]+SPAZIOUNO+numeroitem[0]+" "+DIDASCALIA_BADGE[0]+"</div> </div> </a>";
+/**********/
+COLLAPSE1Badge11="<a id='toggle11' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse1'> <div id='ATTDIS_11' onclick='COLLAPSE1BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-warning'>"+semanticabadgeitem[1]+SPAZIOUNO+numeroitem[1]+" "+DIDASCALIA_BADGE[1]+"</div> </div> </a>";
+COLLAPSE1Badge21="<a id='toggle12' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse1'> <div id='ATTDIS_12' onclick='COLLAPSE1BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-danger' >"+semanticabadgeitem[1]+SPAZIOUNO+numeroitem[1]+" "+DIDASCALIA_BADGE[1]+"</div> </div> </a>";
+/**********/
+/* al 2021 09 25 terzo item (0 1 2) quando si fa aggiornamento non dimenticare che numerazione inizia da zero ------------------------------------*/
+COLLAPSE2Badge11="<a id='toggle21' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse2'> <div id='ATTDIS_21' onclick='COLLAPSE2BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-warning'>"+semanticabadgeitem[2]+SPAZIOUNO+numeroitem[2]+" "+DIDASCALIA_BADGE[2]+"</div> </div> </a>";
+COLLAPSE2Badge21="<a id='toggle22' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse2'> <div id='ATTDIS_22' onclick='COLLAPSE2BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-danger' >"+semanticabadgeitem[2]+SPAZIOUNO+numeroitem[2]+" "+DIDASCALIA_BADGE[2]+"</div> </div> </a>";
+/**********/
+COLLAPSE3Badge11="<a id='toggle31' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse3'> <div id='ATTDIS_31' onclick='COLLAPSE3BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-warning'>"+semanticabadgeitem[3]+SPAZIOUNO+numeroitem[3]+" "+DIDASCALIA_BADGE[3]+"</div> </div> </a>";
+COLLAPSE3Badge21="<a id='toggle32' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse3'> <div id='ATTDIS_32' onclick='COLLAPSE3BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-danger' >"+semanticabadgeitem[3]+SPAZIOUNO+numeroitem[3]+" "+DIDASCALIA_BADGE[3]+"</div> </div> </a>";
+/**********/
+COLLAPSE4Badge11="<a id='toggle41' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse4'> <div id='ATTDIS_41' onclick='COLLAPSE4BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-warning'>"+semanticabadgeitem[4]+SPAZIOUNO+numeroitem[4]+" "+DIDASCALIA_BADGE[4]+"</div> </div> </a>";
+COLLAPSE4Badge21="<a id='toggle42' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse4'> <div id='ATTDIS_42' onclick='COLLAPSE4BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-danger' >"+semanticabadgeitem[4]+SPAZIOUNO+numeroitem[4]+" "+DIDASCALIA_BADGE[4]+"</div> </div> </a>";
+/**********/
+COLLAPSE5Badge11="<a id='toggle51' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse5'> <div id='ATTDIS_51' onclick='COLLAPSE5BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-warning'>"+semanticabadgeitem[5]+SPAZIOUNO+numeroitem[5]+" "+DIDASCALIA_BADGE[5]+"</div> </div> </a>";
+COLLAPSE5Badge21="<a id='toggle52' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse5'> <div id='ATTDIS_52' onclick='COLLAPSE5BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-danger' >"+semanticabadgeitem[5]+SPAZIOUNO+numeroitem[5]+" "+DIDASCALIA_BADGE[5]+"</div> </div> </a>";
+/* DASHBOARD normalizzazione colori sfondo items variazione mobi */
+COLLAPSE0Badge11="<a id='toggle01' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse0'> <div id='ATTDIS_01' onclick='COLLAPSE0BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-light text-dark'>" +semanticabadgeitem[0]+SPAZIOUNO+numeroitem[0]+" "+DIDASCALIA_BADGE[0]+"</div> </div> </a>";
+COLLAPSE0Badge21="<a id='toggle02' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse0'> <div id='ATTDIS_02' onclick='COLLAPSE0BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-secondary text-light'>"+semanticabadgeitem[0]+SPAZIOUNO+numeroitem[0]+" "+DIDASCALIA_BADGE[0]+"</div> </div> </a>";
+COLLAPSE1Badge11="<a id='toggle11' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse1'> <div id='ATTDIS_11' onclick='COLLAPSE1BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-light text-dark'>" +semanticabadgeitem[1]+SPAZIOUNO+numeroitem[1]+" "+DIDASCALIA_BADGE[1]+"</div> </div> </a>";
+COLLAPSE1Badge21="<a id='toggle12' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse1'> <div id='ATTDIS_12' onclick='COLLAPSE1BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-secondary text-light'>"+semanticabadgeitem[1]+SPAZIOUNO+numeroitem[1]+" "+DIDASCALIA_BADGE[1]+"</div> </div> </a>";
+COLLAPSE2Badge11="<a id='toggle21' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse2'> <div id='ATTDIS_21' onclick='COLLAPSE2BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-light text-dark'>" +semanticabadgeitem[2]+SPAZIOUNO+numeroitem[2]+" "+DIDASCALIA_BADGE[2]+"</div> </div> </a>";
+COLLAPSE2Badge21="<a id='toggle22' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse2'> <div id='ATTDIS_22' onclick='COLLAPSE2BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-secondary text-light'>"+semanticabadgeitem[2]+SPAZIOUNO+numeroitem[2]+" "+DIDASCALIA_BADGE[2]+"</div> </div> </a>";
+COLLAPSE3Badge11="<a id='toggle31' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse3'> <div id='ATTDIS_31' onclick='COLLAPSE3BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-light text-dark'>" +semanticabadgeitem[3]+SPAZIOUNO+numeroitem[3]+" "+DIDASCALIA_BADGE[3]+"</div> </div> </a>";
+COLLAPSE3Badge21="<a id='toggle32' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse3'> <div id='ATTDIS_32' onclick='COLLAPSE3BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-secondary text-light'>"+semanticabadgeitem[3]+SPAZIOUNO+numeroitem[3]+" "+DIDASCALIA_BADGE[3]+"</div> </div> </a>";
+COLLAPSE4Badge11="<a id='toggle41' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse4'> <div id='ATTDIS_41' onclick='COLLAPSE4BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-light text-dark'>" +semanticabadgeitem[4]+SPAZIOUNO+numeroitem[4]+" "+DIDASCALIA_BADGE[4]+"</div> </div> </a>";
+COLLAPSE4Badge21="<a id='toggle42' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse4'> <div id='ATTDIS_42' onclick='COLLAPSE4BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-secondary text-light'>"+semanticabadgeitem[4]+SPAZIOUNO+numeroitem[4]+" "+DIDASCALIA_BADGE[4]+"</div> </div> </a>";
+COLLAPSE5Badge11="<a id='toggle51' style='position:absolute;left:0; ' data-bs-toggle='collapse' href='#cpse5'> <div id='ATTDIS_51' onclick='COLLAPSE5BadgeF11()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-light text-dark'>" +semanticabadgeitem[5]+SPAZIOUNO+numeroitem[5]+" "+DIDASCALIA_BADGE[5]+"</div> </div> </a>";
+COLLAPSE5Badge21="<a id='toggle52' style='position:absolute;LEFT:0; ' data-bs-toggle='collapse' href='#cpse5'> <div id='ATTDIS_52' onclick='COLLAPSE5BadgeF21()' style='display:inline-block;'><div style='width:"+dimeXMain____Rem*0.5+"rem;max-width:"+dimeXMain____Rem*0.5+"rem;text-align:left;' class=' text-truncate badge bg-secondary text-light'>"+semanticabadgeitem[5]+SPAZIOUNO+numeroitem[5]+" "+DIDASCALIA_BADGE[5]+"</div> </div> </a>";
+/* definizione degli snap items che SI DEVONO AGGIORNARE!!! aggiornare quando incremento items (relative importante per far funzionare z-index) */
+/* *** */
+/* *** */
+/* *** */
+/* *** */
+/* *** */
+/* *** */
+/* revisione per mobi */
+LINK________SNIP[0]="<blockquote style='position:relative;'>"+COLLAPSE0Badge21+COLLAPSE0Badge11+"</blockquote>";
+LINK________SNIP[1]="<blockquote style='position:relative;'>"+COLLAPSE1Badge21+COLLAPSE1Badge11+"</blockquote>";
+LINK________SNIP[2]="<blockquote style='position:relative;'>"+COLLAPSE2Badge21+COLLAPSE2Badge11+"</blockquote>";
+LINK________SNIP[3]="<blockquote style='position:relative;'>"+COLLAPSE3Badge21+COLLAPSE3Badge11+"</blockquote>";
+LINK________SNIP[4]="<blockquote style='position:relative;'>"+COLLAPSE4Badge21+COLLAPSE4Badge11+"</blockquote>";
+LINK________SNIP[5]="<blockquote style='position:relative;'>"+COLLAPSE5Badge21+COLLAPSE5Badge11+"</blockquote>";
+/*****Quanti elementi ci sono nella lista item(s)*****/
+LINK_lunghe_SNIP = LINK________SNIP.length;
+LINK_lunghe_INFO = LINK________INFO.length;
+/*****Legacy*****/
+LINK___SNIP_INFO[0]= LINK________SNIP[0]; /* riduzione */
+LINK___SNIP_INFO[1]= LINK________SNIP[1]; /* riduzione */
+LINK___SNIP_INFO[2]= LINK________SNIP[2]; /* riduzione */
+LINK___SNIP_INFO[3]= LINK________SNIP[3]; /* riduzione */
+LINK___SNIP_INFO[4]= LINK________SNIP[4]; /* riduzione */
+LINK___SNIP_INFO[5]= LINK________SNIP[5]; /* riduzione */
+/*****controllare !!!*****/
+LINKlunSNIP_INFO = LINK___SNIP_INFO.length;
+lungContentCarta = infoContentCarta.length;
+lung___INFO_LINK = INFO________LINK.length;
+/*****AGGIORNARE!!! QUANDO INCREMENTO ITEM contenuto dei file esterni*****/
+infoContentCarta[0] = LET____idSCRIPT0;
+infoContentCarta[1] = LET____idSCRIPT1;
+infoContentCarta[2] = LET____idSCRIPT2;
+infoContentCarta[3] = LET____idSCRIPT3;
+infoContentCarta[4] = LET____idSCRIPT4;
+infoContentCarta[5] = LET____idSCRIPT5;
+/*****-------------------------------------------*****/
+/*****DGEBI TRASPOSIZIONE JS ESTERNI IN CORE HTML*****/
+/**********/
+document.getElementById("NEWGUI").innerHTML=
+/*****stili css dinamici*****/
+'<style> html#HTML * {font-size:'+fFinestra____Rem+'rem;}</style> '+
+'<style> body#BODY {padding-top:'+intestazY____Rem+'rem;}</style> '+
+'<style> .cursore { background: lime; line-height: 17px; margin-left: 3px; -webkit-animation: blink 0.8s infinite; width: 7px; width: 2.5px; width: 0px; height: 15px; height: 30px; height: 11.25px; height: 0px; opacity:0.35; } @-webkit-keyframes blink { 0% {background: #222} 50% {background: lime} 100% {background: #222} } </style> '+
+/* revisione mobi */
+'<style> .cursore { background: lime; line-height: 17px; margin-left: 1.5px; -webkit-animation: blink 0.8s infinite; width: 7px; width: 2.5px; width: 0px; height: 15px; height: 30px; height: 11.25px; height: 0px; opacity:0.35; } @-webkit-keyframes blink { 0% {background: #222} 50% {background: lime} 100% {background: #222} } </style> '+
+'<style> .cursore { background: magenta; line-height: 17px; margin-left: 1.5px; -webkit-animation: blink 0.8s infinite; width: 7px; width: 2.5px; width: 0px; height: 15px; height: 30px; height: 11.25px; height: 0px; opacity:0.35; } @-webkit-keyframes blink { 0% {background: #222} 50% {background: magenta} 100% {background: #222} } </style> '+
+'<style> .cursore { background: lime; line-height: 17px; margin-left: 1.5px; -webkit-animation: blink 0.8s infinite; width: 7px; width: 2.5px; width: 0px; height: 15px; height: 30px; height: 11.25px; height: 0px; opacity:0.35; } @-webkit-keyframes blink { 0% {background: #222} 50% {background: lime} 100% {background: #222} } </style> '+
+/* LIME */
+'<style> div#DASHBOARD{margin:0 auto;width:'+((dashboardX___Rem/1)*0)+'rem; height:'+(dashboardY___Rem/1)*1+'rem; overflow:auto; border:solid 0.0rem lime;}</style> '+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* I M P O R T A N T E !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!! I M P O R T A N TE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* DEFINIZIONE DIMENSIONI DA AGGIORNARE QUANDO SI AUMENTANO GLI ITEMS TITOLI */
+/* --------------------------------------------------------------------------------------------------------|||||| */
+/* --------------------------------------------------------------------------------------------------------|||||| */
+/* ----------------------- ----------------------------- ^ ------------|||||| */
+/* ----------------------- ------------------------------- --------- IN COMBINAZIONE---- ^ ------------|||||| */
+/* ----------------------- ------------------------------- --------- CON---------------- ^ ------------|||||| */
+/* ----------------------- ------------------------------- --------- cartaX_______Rem -- ^ ------------|||||| */
+/* ----------------------- ---scostamento a sinistra------ --------------------------------------------|||||| */
+/* ----------------------- ---parte sinistra di articolo-- --------------------------------------------|||||| */
+/* ----------------------- ------------------------------- --------------------------------------------|||||| */
+/* ----------------------- ------------------------------- --------------------------------------------|||||| */
+/* ----------------------- ------------------------------- --------------------------------------------|||||| */
+/* ----------------------- --------------------------------------------|||||| */
+/* --------------------------------------------------------------------------------------------------------|||||| */
+/* revisione mobi AZZERATO offset sinistro aumentando il valore si aumenta lo scostamento */
+'<style>section#cpse0 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*0.0000+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse1 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*0.0000+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse2 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*0.0000+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse3 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*0.0000+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse4 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*0.0000+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse5 {OVERFLOW:AUTO;position:fixed;top:'+intestazY____Rem+'rem;left:'+offsetLBadge_Rem*0.0000+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+/* revisione mobi */ /* azzerato offset sinistro -----------------------------------------^^^^^^^^^^^^^^^^^^ */
+/* revisione mobi */ /* azzerato offset sinistro -----------------------------------------^^^^^^^^^^^^^^^^^^ */
+/* revisione mobi AZZERATO offset sinistro aumentando il valore si aumenta lo scostamento */
+'<style>section#cpse0 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse1 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse2 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse3 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse4 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse5 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+/* revisione mobi */ /* azzerato offset sinistro -----------------------------------------^^^^^^^^^^^^^^^^^^ */
+/* revisione mobi */ /* azzerato offset sinistro -----------------------------------------^^^^^^^^^^^^^^^^^^ */
+/* revisione mobi AZZERATO offset sinistro aumentando il valore si aumenta lo scostamento */
+'<style>section#cpse0 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse1 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse2 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse3 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse4 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+'<style>section#cpse5 {OVERFLOW:AUTO;position:fixed;top:'+(intestazY____Rem*1)+'rem;left:'+offsetLBadge_Rem*0.3500+'rem;width:'+cartaX_______Rem*1+'rem;height:auto;}</style> '+
+/* revisione mobi */ /* azzerato offset sinistro -----------------------------------------^^^^^^^^^^^^^^^^^^ */
+/* revisione mobi */ /* azzerato offset sinistro -----------------------------------------^^^^^^^^^^^^^^^^^^ */
+/* DEFINIZIONE DIMENSIONI DA AGGIORNARE QUANDO SI AUMENTANO GLI ITEMS TITOLI */
+/* ^^^^^^^^^ I M P O R T A N TE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* ^^^^^^^^^ I M P O R T A N TE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* ^^^^^^^^^ I M P O R T A N TE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/*****-------------------*****/
+/*****PROGRAMMA EFFETTIVO*****/
+/*****-------------------*****/
+/* # fine */
+/* up down */
+'<SECTION class="border border-0 border-info" style="Z-INDEX:0!IMPORTANT;position:fixed;top:0%;left:0%;width:'+100+'%;height:'+intestazY____Rem+'rem;"> '+
+'<ARTICLE class="mx-2" style="position:relative;">'+
+'<div class="border border-0 border-danger" style="position:absolute;top:0;right:0;" >'+
+'<a href="#">'+'<BUTTON class="rounded">&#8963;<span style="display:none;">CHEVRON_UP </BUTTON>'+'</span></a>'+
+'<a href="#fine">'+'<BUTTON class="rounded">&#8964;<span style="display:none;">CHEVRON_DOWN</BUTTON>'+'</span></a>'+
+'</div>'+
+' <a style="position:fixed;top:0%;LEFT:51%;z-index:100000;" href="#collapseMenu0" data-bs-toggle="collapse" class="mx-0"><BUTTON class="mx-0 px-0 border border-2 border-secondary rounded"><span class="btn m-0 p-0 bi bi-list rounded"></span></BUTTON></a> '+
+'</ARTICLE>'+
+'</SECTION> '+
+/**********/ /* ||| */
+/***menu***/ /* ||| */
+/**&#9776;*/ /* ||| */
+/**unicode*/ /* ||| */
+/**********/ /* ||| */
+/**********/ /* ||| */
+/**********/ /* ||| */
+/**********/ /* ^^^ */
+/* '<SECTION class="border border-0 border-secondary" style="margin-top:'+(0)+'rem;margin-left:'+(-offsetLBadge_Rem*0.00)+'rem;"> '+ */
+// '<SECTION class="border border-5 border-secondary" style="position:static:top:0; width:'+'auto'+'; margin-top:'+(0)+'rem;margin-left:'+(-offsetLBadge_Rem*0.00)+'rem;border-style:dashed!important;"> '+
+'<SECTION class="border border-0 border-secondary" style="position:static:top:0; width:'+'100%'+'; margin-top:'+(0)+'rem;margin-left:'+(-offsetLBadge_Rem*0.00)+'rem;border-style:dashed!important;"> '+
+/* '<a href="#collapseMenu0" data-bs-toggle="collapse" class="mx-2">'+'<BUTTON class="border border-3 border-danger rounded">&#9776;<span style="display:none;">MENU</span></BUTTON>'+'</a>'+ */
+/* MENU */
+/* TEST PER MOBI */
+/* '<a style="position:fixed;top:0;left:85%;" href="#collapseMenu0" data-bs-toggle="collapse" class="mx-2">'+'<BUTTON class="border border-3 border-danger rounded">&#9776;<span style="display:none;">MENU</span></BUTTON>'+'</a>'+ */
+/* '<a style="position:fixed;bottom:5%;left:85%;" href="#collapseMenu0" data-bs-toggle="collapse" class="mx-2">'+'<BUTTON class="border border-3 border-danger rounded">&#9776;<span style="display:none;">MENU</span></BUTTON>'+'</a>'+ */
+/* LEGACY */
+/* '<div id="collapseMenu0" class="collapse">'+ */
+/* */
+/* revisione per mobi */
+/* controlla anche le dimensioni del contenitore degli items */
+/* soprattutto per quanto riguarda la occupazione del top */
+'<div id="collapseMenu0" style="position:static;top:0;width:55%;margin-left:'+(-offsetLBadge_Rem*0.0)+'rem;border-style:dotted!important;" class="collapse border border-0 border-warning">'+
+'<div id="DASHBOARD">'+
+/* tavolata degli snip items */
+'<table>'+
+'<tr style="visibility:visible;"><td>'+LINK___SNIP_INFO[0]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr style="visibility:visible;"><td>'+LINK___SNIP_INFO[1]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr style="visibility:visible;"><td>'+LINK___SNIP_INFO[2]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr style="visibility:visible;"><td>'+LINK___SNIP_INFO[3]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr style="visibility:visible;"><td>'+LINK___SNIP_INFO[4]+'</td></tr>'+TR_TD_INTERLINEA+
+'<tr style="visibility:visible;"><td>'+LINK___SNIP_INFO[5]+'</td></tr>'+TR_TD_INTERLINEA+
+/* ^^^^^^^^^^^^^^^^^^^AGGIORNARE^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/*****qui quando aggiungi item*****/
+'</table>'+
+'</div>'+ /* DASHBOARD contenitore (dei badges) */
+'</div>'+ /* Dashboard collapsed */
+'</SECTION> '+ /* Dashboard (pannello di controllo) */
+/*****da aggiornare quando si fa un incremento degli items*****/
+/*****!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*****/
+/*****!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*****/
+'<section>'+
+'<SECTION '+clCOLLAPSE_CARTA+' id="cpse0"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'0'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[0]+'</div></ARTICLE>'+'</SECTION> '+
+'<SECTION '+clCOLLAPSE_CARTA+' id="cpse1"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'1'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[1]+'</div></ARTICLE>'+'</SECTION> '+
+'<SECTION '+clCOLLAPSE_CARTA+' id="cpse2"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'2'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[2]+'</div></ARTICLE>'+'</SECTION> '+
+'<SECTION '+clCOLLAPSE_CARTA+' id="cpse3"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'3'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[3]+'</div></ARTICLE>'+'</SECTION> '+
+'<SECTION '+clCOLLAPSE_CARTA+' id="cpse4"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'4'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[4]+'</div></ARTICLE>'+'</SECTION> '+
+'<SECTION '+clCOLLAPSE_CARTA+' id="cpse5"> '+ARTICLE____CARTA+' height:'+altezza_carta_articolo+'rem;">'+BLOKQ_PILL_CARTA+'5'+'<span class="cursore rounded">&nbsp;</span></blockquote>'+'<div style="z-index:3;margin-top:'+dim__ico_svg_Rem+'rem;margin-left:'+dim__ico_svg_Rem*0.0015+'rem;" '+clBORDER___CARTA+'>'+infoContentCarta[5]+'</div></ARTICLE>'+'</SECTION> '+
+'</section>'+
+'<section id="controllaINTERLINEA" class="mx-0 my-0 bg-primary">'+
+/* '<div style="margin:'+((fFinestra____Rem)*5)+'rem;">INTERLINEA</div>'+ */ /* non funziona su mobile */
+'<div class="bg-primary border border-0 border-success" style="margin-top:'+(cardY________Rem)+'rem;">&nbsp;</div>'+
+'</section>'+
+/*****!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*****/
+/*****!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*****/
+''+
+/**********/
+/**********/
+''+
+'';
+/**********/
+/**********/
+/**********/
+/*****file esterni dinamici*****/
+/**********/
+/**********/
+/*****DINAMICO INI*****/
+/**********/
+/**********/
+var SCRIPT0 = document.createElement('script');
+var poscritto0 = new Date().getTime();
+poscritto0 = "?"+poscritto0;
+SCRIPT0.src = file_esterno[0] + poscritto0;
+/**********/
+SCRIPT0.onload=function(){
+/* alert("variabile caricata: idSCRIPT0___0"); */
+document.getElementById("idSCRIPT0").innerHTML = idSCRIPT0___0;
+};document.body.appendChild(SCRIPT0);
+/**********/
+/**********/
+var SCRIPT1 = document.createElement('script');
+var poscritto1 = new Date().getTime();
+poscritto1 = "?"+poscritto1;
+SCRIPT1.src = file_esterno[1] + poscritto1;
+/**********/
+SCRIPT1.onload=function(){
+/* alert("variabile caricata: idSCRIPT1___0"); */
+document.getElementById("idSCRIPT1").innerHTML = idSCRIPT1___0;
+};document.body.appendChild(SCRIPT1);
+/**********/
+/**********/
+var SCRIPT2 = document.createElement('script');
+var poscritto2 = new Date().getTime();
+poscritto2 = "?"+poscritto2;
+SCRIPT2.src = file_esterno[2] + poscritto2;
+/**********/
+/**********/
+SCRIPT2.onload=function(){
+/* alert("variabile caricata: idSCRIPT2___0"); */
+document.getElementById("idSCRIPT2").innerHTML = idSCRIPT2___0;
+};document.body.appendChild(SCRIPT2);
+/**********/
+/**********/
+var SCRIPT3 = document.createElement('script');
+var poscritto3 = new Date().getTime();
+poscritto3 = "?"+poscritto3;
+SCRIPT3.src = file_esterno[3] + poscritto3;
+/**********/
+/**********/
+SCRIPT3.onload=function(){
+/* alert("variabile caricata: idSCRIPT3___0"); */
+document.getElementById("idSCRIPT3").innerHTML = idSCRIPT3___0;
+};document.body.appendChild(SCRIPT3);
+/**********/
+/**********/
+var SCRIPT4 = document.createElement('script');
+var poscritto4 = new Date().getTime();
+poscritto4 = "?"+poscritto4;
+SCRIPT4.src = file_esterno[4] + poscritto4;
+/**********/
+/**********/
+SCRIPT4.onload=function(){
+/* alert("variabile caricata: idSCRIPT4___0"); */
+document.getElementById("idSCRIPT4").innerHTML = idSCRIPT4___0;
+};document.body.appendChild(SCRIPT4);
+/**********/
+/**********/
+var SCRIPT5 = document.createElement('script');
+var poscritto5 = new Date().getTime();
+poscritto5 = "?"+poscritto5;
+SCRIPT5.src = file_esterno[5] + poscritto5;
+/**********/
+/**********/
+SCRIPT5.onload=function(){
+/* alert("variabile caricata: idSCRIPT5___0"); */
+document.getElementById("idSCRIPT5").innerHTML = idSCRIPT5___0;
+};document.body.appendChild(SCRIPT5);
+/**********/
+/**********/
+/*****ultimo elemento aggiornato *****/
+/*****in head presenta un file *****/
+/*****dal nome precedentemente *****/
+/*****aggiornato *****/
+/*****DINAMICO FIN*****/
+/**********/
+/**********/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+// if (I_AM_NOT_A_ROBOT==="0"){alert("I_AM_NOT_A_ROBOT dice: CARTA funziona!");}
+// if (I_AM_NOT_A_ROBOT!=="0"){alert("I_AM_NOT_A_ROBOT dice: CARTA ci sono problemi!");}
+// if (VAL__KRIPTO_TEST===0){alert("VAL__KRIPTO_TEST dice: CARTA funziona!");}
+// if (VAL__KRIPTO_TEST!==0){alert("VAL__KRIPTO_TEST dice: CARTA ci sono problemi!");}
+//var zeretto="0";
+//
+//if (("0"===I_AM_NOT_A_ROBOT)&&(VAL__KRIPTO_TEST===0)){document.getElementById("debuggingCARTA").innerHTML= '<span class="bg-success fs-2 text-light">CONTROLLO dice: CARTA funziona!</span>';}
+//else
+//{document.getElementById("debuggingCARTA").innerHTML= '<span class="bg-danger fs-2 text-light">CONTROLLO dice: CARTA ci sono problemi!</span>'; }
+//
+//
+//
+//
+//document.getElementById("debuggingCARTArendiconto").innerHTML= ''+'<br>'+
+//'rendiconto:'+'<br>'+
+//'I_AM_NOT_A_ROBOT==><span class="bg-warning">'+I_AM_NOT_A_ROBOT+'</span><== tipo '+typeof(I_AM_NOT_A_ROBOT)+'<br>'+
+//'VAL__KRIPTO_TEST==><span class="bg-warning">'+VAL__KRIPTO_TEST+'</span><== tipo '+typeof(VAL__KRIPTO_TEST)+'<br>'+
+//
+//
+//'dimeXMain____Rem==><span class="bg-warning">'+dimeXMain____Rem+'</span><== tipo '+typeof(dimeXMain____Rem)+'<br>'+
+//'dimeYMain____Rem==><span class="bg-warning">'+dimeYMain____Rem+'</span><== tipo '+typeof(dimeYMain____Rem)+'<br>'+
+//
+//
+//
+//'cartaX_______Rem==><span class="bg-warning">'+cartaX_______Rem+'</span><== tipo '+typeof(cartaX_______Rem)+'<br>'+
+//'cartaY_______Rem==><span class="bg-warning">'+cartaY_______Rem+'</span><== tipo '+typeof(cartaY_______Rem)+'<br>'+
+//
+//
+//
+//
+//
+////''+'<br>'+
+////''+'<br>'+
+////''+'<br>'+
+//''+'<br>'+
+//''+'<br>'+
+//'';
+//
+//} else {
+//document.getElementById("debuggingCARTA").innerHTML= '';
+//}
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/*****debugging*****/
+/**********/
+/**********/
+/**********/
+} /* SNIP() */
+/**********/
+/**********/
+/**********/
+/* ************************************** */
+/* TOGGLE legacy evidenzia item attivo */
+/* il toggle... perfetto! */
+/* ma da aggiornare quando si incrementa */
+/* il numero di items */
+/* quando si fa questo aggiornamento */
+/* si segue la traccia dei valori */
+/* precedenti tra costanti e variabili */
+/* piuttosto che seguire una logica */
+/* */
+/* ************************************** */
+function COLLAPSE0BadgeF11(){var elemento10; elemento10=document.querySelector("#ATTDIS_01"); elemento10.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle01"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_02"); elemento12.style.visibility="visible";}
+function COLLAPSE0BadgeF21(){var elemento20; elemento20=document.querySelector("#ATTDIS_02"); elemento20.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle02"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_01"); elemento22.style.visibility="visible";}
+function COLLAPSE1BadgeF11(){var elemento11; elemento11=document.querySelector("#ATTDIS_11"); elemento11.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle11"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_12"); elemento12.style.visibility="visible";}
+function COLLAPSE1BadgeF21(){var elemento21; elemento21=document.querySelector("#ATTDIS_12"); elemento21.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle12"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_11"); elemento22.style.visibility="visible";}
+/* -------------------------------trouble durante aggiornamento incremento items-----------------------||----INCONGRUENZA!!!!! */
+function COLLAPSE2BadgeF11(){var elemento12; elemento12=document.querySelector("#ATTDIS_21"); elemento12.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle21"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_22"); elemento12.style.visibility="visible";}
+function COLLAPSE2BadgeF21(){var elemento22; elemento22=document.querySelector("#ATTDIS_22"); elemento22.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle22"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_21"); elemento22.style.visibility="visible";}
+/**********/
+function COLLAPSE3BadgeF11(){var elemento12; elemento12=document.querySelector("#ATTDIS_31"); elemento12.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle31"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_32"); elemento12.style.visibility="visible";}
+function COLLAPSE3BadgeF21(){var elemento22; elemento22=document.querySelector("#ATTDIS_32"); elemento22.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle32"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_31"); elemento22.style.visibility="visible";}
+/**********/
+function COLLAPSE4BadgeF11(){var elemento12; elemento12=document.querySelector("#ATTDIS_41"); elemento12.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle41"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_42"); elemento12.style.visibility="visible";}
+function COLLAPSE4BadgeF21(){var elemento22; elemento22=document.querySelector("#ATTDIS_42"); elemento22.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle42"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_41"); elemento22.style.visibility="visible";}
+/**********/
+function COLLAPSE5BadgeF11(){var elemento12; elemento12=document.querySelector("#ATTDIS_51"); elemento12.style.visibility="hidden";var elemento11; elemento11=document.querySelector("#toggle51"); elemento11.style.visibility="hidden";var elemento12; elemento12=document.querySelector("#ATTDIS_52"); elemento12.style.visibility="visible";}
+function COLLAPSE5BadgeF21(){var elemento22; elemento22=document.querySelector("#ATTDIS_52"); elemento22.style.visibility="hidden";var elemento21; elemento21=document.querySelector("#toggle52"); elemento21.style.visibility="hidden";var elemento22; elemento22=document.querySelector("#ATTDIS_51"); elemento22.style.visibility="visible";}
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+/**********/
+</script>
+<!-- DGEBI fin -->
+<!-- -->
+</main>
+<!-- tippy ini -->
+<STYLE>
+.tippy-box[data-theme~="custom"] {
+margin:0rem;
+padding:0.25rem;
+width:auto;
+background-color:green!important;
+color: black;
+color: green;
+font-variant:small-caps;
+border-radius: 0.175rem;
+</STYLE>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<!-- -->
+<SCRIPT>
+tippy('#btnEntra',
+{
+theme: "custom",
+arrow: true,
+followCursor: false,
+content: 'sign-in',
+/**********/
+});
+</SCRIPT>
+<!-- -->
+<!-- tippy fin -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- !!!!!!!! -->
+<!-- article id="cdknone" ini -->
+
+<!-- article id="cdknone" fin -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- interlinea per distanziare il footer -->
+<div style="margin-top:10rem;opacity:0;">&nbsp;</div>
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<div id="fine"></div>
+</body>
+</html>
