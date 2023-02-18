@@ -1,0 +1,207 @@
+Microsoft Windows [Version 10.0.19045.2546]
+(c) Microsoft Corporation. All rights reserved.
+
+
+F:\>dir
+  
+  
+
+ Directory of F:\
+
+09/02/2023  19:18           110.298 emsdk-main.zip
+
+F:\>cd emsdk-main
+
+F:\emsdk-main>dir
+  
+  
+
+ Directory of F:\emsdk-main
+
+09/02/2023  19:20    <DIR>          .
+09/02/2023  19:20    <DIR>          ..
+30/01/2023  15:46    <DIR>          emsdk-main
+               0 File(s)              0 bytes
+               3 Dir(s)  39.311.802.368 bytes free
+
+F:\emsdk-main>cd emsdk-main
+
+F:\emsdk-main\emsdk-main>dir
+  
+  
+
+ Directory of F:\emsdk-main\emsdk-main
+
+09/02/2023  19:20    <DIR>          .
+09/02/2023  19:20    <DIR>          ..
+30/01/2023  15:46               405 .dockerignore
+30/01/2023  15:46               418 .flake8
+30/01/2023  15:46               470 .gitignore
+30/01/2023  15:46             1.326 LICENSE
+30/01/2023  15:46            12.373 README.md
+30/01/2023  15:46                26 emcmdprompt.bat
+30/01/2023  15:46             9.375 emscripten-releases-tags.json
+30/01/2023  15:46             1.642 emsdk
+30/01/2023  15:46             1.564 emsdk.bat
+30/01/2023  15:46             1.393 emsdk.ps1
+30/01/2023  15:46           115.073 emsdk.py
+30/01/2023  15:46                33 emsdk_env.bat
+30/01/2023  15:46               566 emsdk_env.csh
+30/01/2023  15:46               304 emsdk_env.fish
+30/01/2023  15:46                98 emsdk_env.ps1
+30/01/2023  15:46             1.977 emsdk_env.sh
+30/01/2023  15:46            21.675 emsdk_manifest.json
+30/01/2023  15:46               659 legacy-binaryen-tags.txt
+30/01/2023  15:46             1.190 legacy-emscripten-tags.txt
+30/01/2023  15:46             2.380 llvm-tags-64bit.txt
+30/01/2023  15:46    <DIR>          .circleci
+30/01/2023  15:46    <DIR>          .github
+30/01/2023  15:46    <DIR>          bazel
+30/01/2023  15:46    <DIR>          docker
+30/01/2023  15:46    <DIR>          scripts
+30/01/2023  15:46    <DIR>          test
+              20 File(s)        172.947 bytes
+               8 Dir(s)  39.311.802.368 bytes free
+
+F:\emsdk-main\emsdk-main>emsdk
+Missing command; Type 'emsdk help' to get a list of commands.
+
+F:\emsdk-main\emsdk-main>emsdk help
+ emsdk: Available commands:
+
+   emsdk list [--old] [--uses]  - Lists all available SDKs and tools and their
+                                  current installation status. With the --old
+                                  parameter, also historical versions are
+                                  shown. If --uses is passed, displays the
+                                  composition of different SDK packages and
+                                  dependencies.
+
+   emsdk update                 - Updates emsdk to the newest version. If you have
+                                  bootstrapped emsdk via cloning directly from
+                                  GitHub, call "git pull" instead to update emsdk.
+
+   emsdk install [options] <tool 1> <tool 2> <tool 3> ...
+                                - Downloads and installs given tools or SDKs.
+                                  Options can contain:
+
+                         -j<num>: Specifies the number of cores to use when
+                                  building the tool. Default: use one less
+                                  than the # of detected cores.
+
+                  --build=<type>: Controls what kind of build of LLVM to
+                                  perform. Pass either 'Debug', 'Release',
+                                  'MinSizeRel' or 'RelWithDebInfo'. Default:
+                                  'Release'.
+
+              --generator=<type>: Specifies the CMake Generator to be used
+                                  during the build. Possible values are the
+                                  same as what your CMake supports and whether
+                                  the generator is valid depends on the tools
+                                  you have installed. Defaults to 'Unix Makefiles'
+                                  on *nix systems. If generator name is multiple
+                                  words, enclose with single or double quotes.
+
+                       --shallow: When installing tools from one of the git
+                                  development branches, this parameter can be
+                                  passed to perform a shallow git clone instead
+                                  of a full one.  This reduces the amount of
+                                  network transfer that is needed. This option
+                                  should only be used when you are interested in
+                                  downloading one of the development branches,
+                                  but are not looking to develop Emscripten
+                                  yourself.  Default: disabled, i.e. do a full
+                                  clone.
+
+                   --build-tests: If enabled, LLVM is built with internal tests
+                                  included. Pass this to enable running test
+                                  other.test_llvm_lit in the Emscripten test
+                                  suite. Default: disabled.
+             --enable-assertions: If specified, LLVM is built with assert()
+                                  checks enabled. Useful for development
+                                  purposes. Default: Enabled
+            --disable-assertions: Forces assertions off during the build.
+
+               --vs2019/--vs2022: If building from source, overrides to build
+                                  using the specified compiler. When installing
+                                  precompiled packages, this has no effect.
+                                  Note: The same compiler specifier must be
+                                  passed to the emsdk activate command to
+                                  activate the desired version.
+
+                                  Notes on building from source:
+
+                                  To pass custom CMake directives when configuring
+                                  LLVM build, specify the environment variable
+                                  LLVM_CMAKE_ARGS="param1=value1,param2=value2"
+                                  in the environment where the build is invoked.
+                                  See README.md for details.
+
+           --override-repository: Specifies the git URL to use for a given Tool. E.g.
+                                  --override-repository emscripten-main@https://github.com/<fork>/emscripten/tree/<refspec>
+
+
+   emsdk uninstall <tool/sdk>   - Removes the given tool or SDK from disk.
+
+   emsdk activate [--permanent] [--system] [--build=type] [--vs2019/--vs2022] <tool/sdk>
+
+                                - Activates the given tool or SDK in the
+                                  environment of the current shell.
+
+                                - If the `--permanent` option is passed, then the environment
+                                  variables are set permanently for the current user.
+
+                                - If the `--system` option is passed, the registration
+                                  is done for all users of the system.
+                                  This needs admin privileges
+                                  (uses Machine environment variables).
+
+                                - If a custom compiler version was used to override
+                                  the compiler to use, pass the same --vs2019/--vs2022
+                                  parameter here to choose which version to activate.
+
+   emcmdprompt.bat              - Spawns a new command prompt window with the
+                                  Emscripten environment active.
+
+       Both commands 'install' and 'activate' accept an optional parameter
+       '--build=type', which can be used to override what kind of installation
+       or activation to perform. Possible values for type are Debug, Release,
+       MinSizeRel or RelWithDebInfo. Note: When overriding a custom build type,
+       be sure to match the same --build= option to both 'install' and
+       'activate' commands and the invocation of 'emsdk_env', or otherwise
+       these commands will default to operating on the default build type
+       which is RelWithDebInfo.
+
+
+   Environment:
+      EMSDK_KEEP_DOWNLOADS=1     - if you want to keep the downloaded archives.
+      EMSDK_NOTTY=1              - override isatty() result (mainly to log progress).
+      EMSDK_NUM_CORES=n          - limit parallelism to n cores.
+      EMSDK_VERBOSE=1            - very verbose output, useful for debugging.
+
+F:\emsdk-main\emsdk-main>emsdk install
+Missing parameter. Type 'emsdk install <tool name>' to install a tool or an SDK. Type 'emsdk list' to obtain a list of available tools. Type 'emsdk install latest' to automatically install the newest version of the SDK.
+
+F:\emsdk-main\emsdk-main>emsdk install latest
+Resolving SDK alias 'latest' to '3.1.31'
+Resolving SDK version '3.1.31' to 'sdk-releases-1eec24930cb2f56f6d9cd10ffcb031e27ea4157a-64bit'
+Installing SDK 'sdk-releases-1eec24930cb2f56f6d9cd10ffcb031e27ea4157a-64bit'..
+Installing tool 'node-14.18.2-64bit'..
+Downloading: F:/emsdk-main/emsdk-main/zips/node-v14.18.2-win-x64.zip from https://storage.googleapis.com/webassembly/emscripten-releases-builds/deps/node-v14.18.2-win-x64.zip, 30570907 Bytes
+Unpacking 'F:/emsdk-main/emsdk-main/zips/node-v14.18.2-win-x64.zip' to 'F:/emsdk-main/emsdk-main/node/14.18.2_64bit'
+Done installing tool 'node-14.18.2-64bit'.
+Installing tool 'python-3.9.2-nuget-64bit'..
+Downloading: F:/emsdk-main/emsdk-main/zips/python-3.9.2-4-amd64+pywin32.zip from https://storage.googleapis.com/webassembly/emscripten-releases-builds/deps/python-3.9.2-4-amd64+pywin32.zip, 14413267 Bytes
+Unpacking 'F:/emsdk-main/emsdk-main/zips/python-3.9.2-4-amd64+pywin32.zip' to 'F:/emsdk-main/emsdk-main/python/3.9.2-nuget_64bit'
+Done installing tool 'python-3.9.2-nuget-64bit'.
+Installing tool 'java-8.152-64bit'..
+Downloading: F:/emsdk-main/emsdk-main/zips/portable_jre_8_update_152_64bit.zip from https://storage.googleapis.com/webassembly/emscripten-releases-builds/deps/portable_jre_8_update_152_64bit.zip, 69241499 Bytes
+Unpacking 'F:/emsdk-main/emsdk-main/zips/portable_jre_8_update_152_64bit.zip' to 'F:/emsdk-main/emsdk-main/java/8.152_64bit'
+Done installing tool 'java-8.152-64bit'.
+Installing tool 'releases-1eec24930cb2f56f6d9cd10ffcb031e27ea4157a-64bit'..
+Downloading: F:/emsdk-main/emsdk-main/zips/1eec24930cb2f56f6d9cd10ffcb031e27ea4157a-wasm-binaries.zip from https://storage.googleapis.com/webassembly/emscripten-releases-builds/win/1eec24930cb2f56f6d9cd10ffcb031e27ea4157a/wasm-binaries.zip, 423418107 Bytes
+Unpacking 'F:/emsdk-main/emsdk-main/zips/1eec24930cb2f56f6d9cd10ffcb031e27ea4157a-wasm-binaries.zip' to 'F:/emsdk-main/emsdk-main/upstream'
+Done installing tool 'releases-1eec24930cb2f56f6d9cd10ffcb031e27ea4157a-64bit'.
+Done installing SDK 'sdk-releases-1eec24930cb2f56f6d9cd10ffcb031e27ea4157a-64bit'.
+
+F:\emsdk-main\emsdk-main>
+F:\emsdk-main\emsdk-main>

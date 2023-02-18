@@ -1,0 +1,622 @@
+<main id="MAIN" class="da_mo" lang="it">
+<div id="VERSIONE_TEST"> 
+
+<div id="VERSIONE_TEST_NESTED">
+ 
+ 
+ 
+half0a0 prototype00... versione:2023:02:16::08:46 <br><br>
+
+</div>
+
+<pre style="color:green;font-size:1rem;">
+
++----------------+---------------------
+|                | BUONGIORNO_0101
+|                | POMERIGGIO_0202
+|APPLICAZIONE    | CONTINUA
+|                |
+|                |
++----------------+--------------------
+|                |
+| VERSIONE_TEST  |VERSIONE_TEST_NESTED
++----------------+--------------------
+
+</pre>
+<pre style="color:green;font-size:1rem;">
+
+Creare una sezione <q>nested</q> recettiva
+del font size responsive dato che ci sta una
+grande differenza tra desktop e mobile
+
+</pre>
+
+<br>
+
+Nella cartella 214a i file dal 44 al 53 <br>
+hanno il problema di sovrapposizione testo  <br>
+tra <q> piano terra e primo piano</q>  <br>
+
+ <br>
+ Il file qui presente diventa quindi una prosecuzione  <br>
+ dal 54 (ok) in poi  <br>
+<br><br>
+
+Dal confronto risulta che elemento applicazione <br>
+necessita della class da_mo
+
+
+
+
+
+<hr>
+
+<br>
+<span>fin versione:2023:02:16::08:46  </span>
+<span style="margin:0;padding:0;display:inline-block!important;" class="cursores"></span>
+
+</div>
+
+
+<div id="APPLICAZIONE" style="display:none;" class="da_mo"></div>
+
+
+<div id="TEST_0101">... TEST_0101</div>
+
+
+
+<div id="TOG_NO" onclick="Tog_No()">NO</div>
+<div id="TOG_SI" onclick="Tog_Si()">SI</div>
+<!-- da qui parallelo -->
+
+
+
+
+
+<!--
+
+CONTENITORE_INPUT_0101 svolge funzione di scatola INI (1)
+INI(2)
+INPUT_SCELTO_0101 ha type list step min max
+FIN(2)
+FIN (1)
+
+-->
+
+
+<article id="CONTENITORE_INPUT_0101"  style="display:none;display:block;">
+
+
+ <div>
+
+  <input id="INPUT_SCELTO_0101" type="range" list="LISTA_0101" step="0.10" min="0.00" max="6.00" /> 
+  
+ </div>
+
+
+</article> 
+
+ <datalist id="LISTA_0101">
+
+
+ <option id="OPZ_00" value="0.00"> </option> 
+ <option id="OPZ_01" value="0.11"> </option> 
+ <option id="OPZ_02" value="0.22"> </option> 
+ <option id="OPZ_03" value="0.33"> </option> 
+ <option id="OPZ_04" value="0.44"> </option> 
+ <option id="OPZ_05" value="0.55"> </option> 
+ <option id="OPZ_06" value="0.66"> </option> 
+ <option id="OPZ_07" value="0.77"> </option> 
+ <option id="OPZ_08" value="0.88"> </option> 
+ <option id="OPZ_09" value="0.99"> </option> 
+ <option id="OPZ_10" value="2.00"> </option> 
+ <option id="OPZ_11" value="2.11"> </option> 
+ <option id="OPZ_12" value="2.22"> </option> 
+ <option id="OPZ_13" value="2.33"> </option> 
+ <option id="OPZ_14" value="2.44"> </option> 
+ <option id="OPZ_15" value="2.55"> </option> 
+ <option id="OPZ_16" value="2.66"> </option> 
+ <option id="OPZ_17" value="2.77"> </option> 
+ <option id="OPZ_18" value="2.88"> </option> 
+ <option id="OPZ_19" value="2.99"> </option> 
+ <option id="OPZ_20" value="3.00"> </option> 
+ <option id="OPZ_21" value="3.11"> </option> 
+ <option id="OPZ_22" value="3.22"> </option> 
+ <option id="OPZ_23" value="3.33"> </option> 
+ <option id="OPZ_24" value="3.44"> </option> 
+ <option id="OPZ_25" value="3.55"> </option> 
+ <option id="OPZ_26" value="3.66"> </option> 
+ <option id="OPZ_27" value="3.77"> </option> 
+ <option id="OPZ_28" value="3.88"> </option> 
+ <option id="OPZ_29" value="3.99"> </option> 
+ <option id="OPZ_30" value="4.00"> </option> 
+ <option id="OPZ_31" value="4.11"> </option> 
+ <option id="OPZ_32" value="4.22"> </option> 
+ <option id="OPZ_33" value="4.33"> </option> 
+ <option id="OPZ_34" value="4.44"> </option> 
+ <option id="OPZ_35" value="4.55"> </option> 
+ <option id="OPZ_36" value="4.66"> </option> 
+ <option id="OPZ_37" value="4.77"> </option> 
+ <option id="OPZ_38" value="4.88"> </option> 
+ <option id="OPZ_39" value="4.99"> </option> 
+ <option id="OPZ_40" value="5.00"> </option> 
+ <option id="OPZ_41" value="5.00"> </option> 
+ <option id="OPZ_42" value="5.11"> </option> 
+ <option id="OPZ_43" value="5.22"> </option> 
+ <option id="OPZ_44" value="5.33"> </option> 
+ <option id="OPZ_45" value="5.44"> </option> 
+ <option id="OPZ_46" value="5.55"> </option> 
+ <option id="OPZ_47" value="5.66"> </option> 
+ <option id="OPZ_48" value="5.77"> </option> 
+ <option id="OPZ_49" value="5.88"> </option> 
+ <option id="OPZ_50" value="5.99"> </option>
+ <option id="OPZ_51" value="6.00"> </option> 
+
+
+ </datalist> 
+
+
+
+
+
+
+
+
+
+
+<script>
+let    DESKTOP_0303 = 1 ;
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+    { DESKTOP_0303 = 0 ; } else { DESKTOP_0303 = 1 ; }
+
+// alert("DESKTOP_0303= "+DESKTOP_0303);
+
+let LarghezzaBodyRem_0303 = window.innerWidth   /16;
+let AltezzaBodyRem_0303   = window.innerHeight  /16;
+let CompensazioneEventualiBordi=0.5;
+
+// alert(CompensazioneEventualiBordi);
+
+LarghezzaBodyRem_0303 = LarghezzaBodyRem_0303 - CompensazioneEventualiBordi;
+AltezzaBodyRem_0303   = AltezzaBodyRem_0303 - CompensazioneEventualiBordi;
+// alert(LarghezzaBodyRem_0303);
+// alert(AltezzaBodyRem_0303);
+
+
+let MargineSinistraRem_0303 = 5 ;
+ if (DESKTOP_0303==0){MargineSinistraRem_0303 = 5.0 ;}
+ if (DESKTOP_0303==1){MargineSinistraRem_0303 = 2.5 ;}
+//alert(MargineSinistraRem_0303);
+
+
+let BordoToggleDeviceRem_0303;
+BordoToggleDeviceRem_0303 = MargineSinistraRem_0303 * 0.50;
+
+
+let CorrezioneLarghezzaApplicazione = 0;
+let CorrezioneAltezzaApplicazione = MargineSinistraRem_0303;
+
+let LarghezzaApplicazione = LarghezzaBodyRem_0303 + CorrezioneLarghezzaApplicazione;
+let AltezzaApplicazione   = AltezzaBodyRem_0303 - CorrezioneAltezzaApplicazione;
+
+// alert(LarghezzaApplicazione);
+// alert(AltezzaApplicazione);
+
+
+let PosizioneLeftContenitoreInput = MargineSinistraRem_0303;
+let LarghezzaContenitoreInput     = LarghezzaApplicazione - MargineSinistraRem_0303;
+let AltezzaContenitoreInput       = MargineSinistraRem_0303;
+
+// alert(PosizioneLeftContenitoreInput );
+// alert(LarghezzaContenitoreInput     );
+// alert(AltezzaContenitoreInput       );
+
+
+
+
+
+
+
+
+
+
+//
+// La parte APPLICAZIONE viene visualizzata o nascosta
+// mediante il toggle
+//
+// Elementi coinvolti:
+// input[type="range"] ( !!! leggi caveat !!! )
+//  
+// 
+// Id coinvolti:
+// APPLICAZIONE
+// CONTENITORE_INPUT_0101 (
+// caveat contiene un possibile duplicato
+// input[type="range"]
+// )
+// 
+// 
+// 
+
+
+document.getElementById("APPLICAZIONE").innerHTML=
+`
+<style>
+
+#MAIN{
+position:fixed;
+top:0rem;left:0rem;
+
+width:`+LarghezzaBodyRem_0303+`rem;
+height:`+AltezzaApplicazione+`rem;
+
+font-family:"PT Mono", monospace;
+
+overflow:auto;
+z-index:10000000;
+}
+
+
+
+#APPLICAZIONE{
+position:fixed;
+top:0rem;left:0rem;
+
+width:`+LarghezzaBodyRem_0303+`rem;
+height:`+AltezzaApplicazione+`rem;
+
+border:solid 0.15rem green;
+overflow:auto;
+z-index:10000000;
+}
+
+
+#CONTENITORE_INPUT_0101{
+
+position:fixed;
+bottom:0rem;left:`+PosizioneLeftContenitoreInput+`rem;
+
+width:`+LarghezzaContenitoreInput+`rem;
+height:`+AltezzaContenitoreInput+`rem;
+
+background-color:gray;
+background-color:rgb(102,152,105);
+
+
+border:solid 0.15rem red;
+    z-index:10000000;
+}
+
+
+input[type="range"]{
+-webkit-appearance:none;
+
+background-color:rgba(25,225,37,0.25);
+background-color:rgb(102,152,105);
+
+width:100%;
+
+z-index:1000000!important;
+
+}
+    
+</style>
+
+
+
+
+<article style="text-align:center;">
+<div style="display:inline-block;">
+<img id="WOO_000" src="https://www.rinaldo-rasa.it/WORKOU/OGGI/20191119/immagini/Woodstoc.png" alt="Woodstoc.png" >
+</div>
+</article>
+
+
+
+<article id="BUONGIORNO_0101">
+...BUONGIORNO_0101
+</article>
+
+
+
+<article id="POMERIGGIO_0202">
+...POMERIGGIO_0202
+</article>
+
+
+
+<article id="CONTINUA">
+...CONTINUA
+</article>
+
+
+
+`;
+
+
+
+//
+// Detect dimensioni originarie immagine
+//
+
+function dimolarem(){
+let Immagine = document.querySelector("#WOO_000");
+let ImmagineWidth     = Immagine.naturalWidth;
+let ImmagineHeight    = Immagine.naturalHeight;
+let ImmagineWidthRem  = Immagine.naturalWidth/16;
+let ImmagineHeightRem = Immagine.naturalHeight/16;
+
+alert("#WOO_000 Width originale=" + ImmagineWidthRem + "rem , " + "#WOO_000 Height originale=" + ImmagineHeightRem+"rem");
+
+}; //dimolarem();
+
+
+
+
+//
+// FUNZIONE di
+// Lettura input[range]
+// 
+// 
+// 
+// 
+
+let TIPO_DISPOSITIVO=DESKTOP_0303  ;
+// alert(TIPO_DISPOSITIVO);
+// ||
+// ||
+// \/
+function sonda_Input_0101(arg0){
+let TipoDiDispositivo=arg0;
+// alert(TipoDiDispositivo);
+
+
+
+
+let CorrezioneFontPerDispositivo;
+// Valore di default
+CorrezioneFontPerDispositivo=0.75;
+// Detect il dispositivo effettivo
+if(TipoDiDispositivo===0){ CorrezioneFontPerDispositivo=1.00; }
+if(TipoDiDispositivo===1){ CorrezioneFontPerDispositivo=0.50; }
+// alert(CorrezioneFontPerDispositivo);
+
+
+
+
+// Leggere il valore di input[range]
+let   VALORE_DI_INPUT_0101=document.getElementById("INPUT_SCELTO_0101").value; 
+// alert(VALORE_DI_INPUT_0101);
+
+
+let   DIM_INPUT_0101 = VALORE_DI_INPUT_0101;
+// alert("DIM_INPUT_0101= "+DIM_INPUT_0101);
+// 
+// Qui DIM_INPUT_0101 viene corretto
+// 
+DIM_INPUT_0101= DIM_INPUT_0101 * CorrezioneFontPerDispositivo;
+// alert("DIM_INPUT_0101= "+DIM_INPUT_0101);
+
+
+
+
+let   DIM_IMAGE_0101 = DIM_INPUT_0101 * 10; 
+// Quanto + - img ?
+DIM_IMAGE_0101 = DIM_INPUT_0101 * 20; 
+// alert("DIM_IMAGE_0101 = "+DIM_IMAGE_0101);
+
+
+
+
+
+document.getElementById("TEST_0101").innerHTML=`
+
+<style>
+#APPLICAZIONE{font-size:`+DIM_INPUT_0101+`rem!important;}
+#BUONGIORNO_0101{font-size:`+DIM_INPUT_0101+`rem!important;}
+#POMERIGGIO_0202{font-size:`+DIM_INPUT_0101+`rem!important;}
+
+
+img{ width:`+DIM_IMAGE_0101+`rem!important;max-width:100%!important;max-height:100%;!important}
+
+#BUONGIORNO_0101{font-family:monospace;text-align:left;}
+
+#APPLICAZIONE, #BUONGIORNO_0101, #POMERIGGIO_0202{text-align:left;overflow:auto;}
+
+
+#VERSIONE_TEST_NESTED{color:white;}
+#VERSIONE_TEST_NESTED{font-size:0.75rem;}
+
+
+
+</style>
+
+
+    
+`;
+
+
+
+};
+setInterval(sonda_Input_0101, 1, TIPO_DISPOSITIVO) ;
+
+
+
+
+
+
+
+
+
+
+
+//
+// DGEBI dedicato al toggle
+// e relative funzioni.
+//
+// Id coinvolti:
+// APPLICAZIONE
+// CONTENITORE_INPUT_0101
+// TOG_NO
+// TOG_SI
+// 
+// 
+
+
+document.getElementById("TOG_SI").innerHTML=
+`
+<style>
+#TOG_SI{position:fixed;bottom:0rem;left:0rem;
+
+    border-top:solid     `+BordoToggleDeviceRem_0303+`rem rgb(102,152,105);
+    border-right:solid   `+BordoToggleDeviceRem_0303+`rem rgb(102,152,105);
+    border-bottom:solid  `+BordoToggleDeviceRem_0303+`rem green;
+    border-left:solid    `+BordoToggleDeviceRem_0303+`rem green;
+    border-radius:0.5rem;
+    display:inline-block; 
+    cursor:pointer;
+    z-index:10000000;
+}
+</style>
+`;
+
+
+document.getElementById("TOG_NO").innerHTML=
+`
+<style>
+#TOG_NO{position:fixed;bottom:0rem;left:0rem;
+
+    border-top:solid     `+BordoToggleDeviceRem_0303+`rem orange;
+    border-right:solid   `+BordoToggleDeviceRem_0303+`rem orange;
+    border-bottom:solid  `+BordoToggleDeviceRem_0303+`rem orange;
+    border-left:solid    `+BordoToggleDeviceRem_0303+`rem orange;
+    border-radius:0.5rem;
+    display:inline-block; 
+    cursor:pointer;
+    z-index:10000000;
+
+
+} 
+</style>
+
+`;
+
+
+
+function Tog_No(){
+document.querySelector("#APPLICAZIONE").style.display="none";
+document.querySelector("#CONTENITORE_INPUT_0101").style.display="none";
+document.querySelector("#TOG_NO").style.display="none";
+document.querySelector("#TOG_SI").style.display="block";
+
+}
+
+
+function Tog_Si(){
+document.querySelector("#APPLICAZIONE").style.display="block";
+document.querySelector("#CONTENITORE_INPUT_0101").style.display="block";
+document.querySelector("#TOG_NO").style.display="block";
+document.querySelector("#TOG_SI").style.display="none";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap" rel="stylesheet">
+
+
+
+<!--
+http://avid3820725.altervista.org/WORKOU/OGGI/20191119/immagini/Woodstoc.png
+
+-->
+</main>
+
+
+
+<style>
+ 
+ main{
+
+ font-family:"PT Mono", monospace;
+ 
+ }
+
+    img{  
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    width: 50%;
+    height: auto;
+    text-align:center!important;
+    }
+
+#VERSIONE_TEST{
+position:fixed;top:0rem;left:0rem;
+width:85%; height:75%;
+
+margin:5.00rem; margin-top:0.50rem;
+padding:0.50rem;
+background-color:inherit;color:lime;
+
+font-size:1.25rem;font-family:"PT Mono", monospace;
+text-align:left;
+text-align: justify;text-justify: inter-word;
+
+
+overflow:auto;
+}
+
+
+.da_mo{background-color:black!important;color:orange!important;}
+
+.da_mo{background-color:black!important;color:lime!important;}
+ 
+ 
+ 
+.cursore {
+ background: lime;
+ line-height: 17px;
+ margin-left: 3px;
+ -webkit-animation: blink 0.8s infinite;
+ width: 7px;
+ height: 15px;
+}
+.cursores {
+ background: lime;
+ line-height: 17px;
+ margin-left: 3px;
+ -webkit-animation: blink 0.8s infinite;
+ width: 7px;   width:  16px;
+ height: 15px; height: 32px;
+}
+
+@-webkit-keyframes blink {
+ 0% {background: #222}
+ 50% {background: lime}
+ 100% {background: #222}
+}
+ 
+</style>
+
+
+
+
