@@ -1,0 +1,46 @@
+
+
+
+
+<main  lang="it">
+test... versione:2023:02:10::19:02
+
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+</main>
+
+
+
+<style>
+ 
+ main{
+ font-family:"PT Mono", monospace;
+ 
+ 
+ }
+
+    img{  
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    width: 50%;
+    height: auto;
+    text-align:center;
+    }
+
+
+ 
+ 
+ 
+</style>
+
+
+
+

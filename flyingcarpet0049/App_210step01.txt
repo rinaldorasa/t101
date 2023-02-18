@@ -1,0 +1,47 @@
+
+
+
+
+<main  lang="it">
+<div id="VERS_TEST">test... versione:2023:02:10::19:02</div>
+
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap" rel="stylesheet">
+</main>
+
+
+
+<style>
+ 
+ main{
+ font-family:"PT Mono", monospace;
+ 
+ 
+ }
+
+    img{  
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    width: 50%;
+    height: auto;
+    text-align:center;
+    }
+
+#VERS_TEST{font-family:"Rasa","PT Mono", monospace;}
+ 
+ 
+ 
+</style>
+
+
+
+

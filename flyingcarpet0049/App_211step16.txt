@@ -1,0 +1,398 @@
+
+
+
+
+<main  lang="it">
+<div id="VERS_TEST">test... versione:2023:02:11::17:49</div>
+
+<!--
+Una volta inserito ide APPLICAZIONE e
+sistemato anche la parte toggle si
+aggiunge lo style display none ad
+APPLICAZIONE dato che il block viene
+utile solamente in fase di debugging
+
+-->
+<div id="APPLICAZIONE" style="display:none;"></div>
+
+<div id="TOG_NO" onclick="Tog_No()">NO</div>
+<div id="TOG_SI" onclick="Tog_Si()">SI</div>
+
+
+
+
+
+
+<!--
+
+CONTENITORE_INPUT_0101 svolge funzione di scatola INI (1)
+INI(2)
+INPUT_SCELTO_0101 ha type list step min max
+FIN(2)
+FIN (1)
+
+-->
+
+
+<article id="CONTENITORE_INPUT_0101"  style="display:none;display:block;">
+
+ <div>
+  <input id="INPUT_SCELTO_0101" type="range" list="LISTA_0101" step="0.10" min="0.00" max="6.00" /> 
+ </div>
+
+</article> 
+
+ <datalist id="LISTA_0101"> 
+
+ <option id="OPZ_00" value="0.00"> </option> 
+ <option id="OPZ_01" value="0.11"> </option> 
+ <option id="OPZ_02" value="0.22"> </option> 
+ <option id="OPZ_03" value="0.33"> </option> 
+ <option id="OPZ_04" value="0.44"> </option> 
+ <option id="OPZ_05" value="0.55"> </option> 
+ <option id="OPZ_06" value="0.66"> </option> 
+ <option id="OPZ_07" value="0.77"> </option> 
+ <option id="OPZ_08" value="0.88"> </option> 
+ <option id="OPZ_09" value="0.99"> </option> 
+ <option id="OPZ_10" value="2.00"> </option> 
+ <option id="OPZ_11" value="2.11"> </option> 
+ <option id="OPZ_12" value="2.22"> </option> 
+ <option id="OPZ_13" value="2.33"> </option> 
+ <option id="OPZ_14" value="2.44"> </option> 
+ <option id="OPZ_15" value="2.55"> </option> 
+ <option id="OPZ_16" value="2.66"> </option> 
+ <option id="OPZ_17" value="2.77"> </option> 
+ <option id="OPZ_18" value="2.88"> </option> 
+ <option id="OPZ_19" value="2.99"> </option> 
+ <option id="OPZ_20" value="3.00"> </option> 
+ <option id="OPZ_21" value="3.11"> </option> 
+ <option id="OPZ_22" value="3.22"> </option> 
+ <option id="OPZ_23" value="3.33"> </option> 
+ <option id="OPZ_24" value="3.44"> </option> 
+ <option id="OPZ_25" value="3.55"> </option> 
+ <option id="OPZ_26" value="3.66"> </option> 
+ <option id="OPZ_27" value="3.77"> </option> 
+ <option id="OPZ_28" value="3.88"> </option> 
+ <option id="OPZ_29" value="3.99"> </option> 
+ <option id="OPZ_30" value="4.00"> </option> 
+ <option id="OPZ_31" value="4.11"> </option> 
+ <option id="OPZ_32" value="4.22"> </option> 
+ <option id="OPZ_33" value="4.33"> </option> 
+ <option id="OPZ_34" value="4.44"> </option> 
+ <option id="OPZ_35" value="4.55"> </option> 
+ <option id="OPZ_36" value="4.66"> </option> 
+ <option id="OPZ_37" value="4.77"> </option> 
+ <option id="OPZ_38" value="4.88"> </option> 
+ <option id="OPZ_39" value="4.99"> </option> 
+ <option id="OPZ_40" value="5.00"> </option> 
+ <option id="OPZ_41" value="5.00"> </option> 
+ <option id="OPZ_42" value="5.11"> </option> 
+ <option id="OPZ_43" value="5.22"> </option> 
+ <option id="OPZ_44" value="5.33"> </option> 
+ <option id="OPZ_45" value="5.44"> </option> 
+ <option id="OPZ_46" value="5.55"> </option> 
+ <option id="OPZ_47" value="5.66"> </option> 
+ <option id="OPZ_48" value="5.77"> </option> 
+ <option id="OPZ_49" value="5.88"> </option> 
+ <option id="OPZ_50" value="5.99"> </option>
+ <option id="OPZ_51" value="6.00"> </option> 
+
+ </datalist> 
+
+<!--
+ Considerando id INPUT_SCELTO_0101 
+ e come esportare il valore nella
+ funzione sonda_Input_0101(argomento)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+-->
+
+
+
+
+
+
+<script>
+let    DESKTOP_0303 = 1 ;
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+    { DESKTOP_0303 = 0 ; } else { DESKTOP_0303 = 1 ; }
+
+// alert("DESKTOP_0303= "+DESKTOP_0303);
+
+let LarghezzaBodyRem_0303 = window.innerWidth   /16;
+let AltezzaBodyRem_0303   = window.innerHeight  /16;
+let CompensazioneEventualiBordi=0.5;
+
+// alert(CompensazioneEventualiBordi);
+
+LarghezzaBodyRem_0303 = LarghezzaBodyRem_0303 - CompensazioneEventualiBordi;
+AltezzaBodyRem_0303   = AltezzaBodyRem_0303 - CompensazioneEventualiBordi;
+// alert(LarghezzaBodyRem_0303);
+// alert(AltezzaBodyRem_0303);
+
+
+let MargineSinistraRem_0303 = 5 ;
+ if (DESKTOP_0303==0){MargineSinistraRem_0303 = 5.0 ;}
+ if (DESKTOP_0303==1){MargineSinistraRem_0303 = 2.5 ;}
+//alert(MargineSinistraRem_0303);
+
+
+let BordoToggleDeviceRem_0303;
+BordoToggleDeviceRem_0303 = MargineSinistraRem_0303 * 0.50;
+
+
+let CorrezioneLarghezzaApplicazione = 0;
+let CorrezioneAltezzaApplicazione = MargineSinistraRem_0303;
+
+let LarghezzaApplicazione = LarghezzaBodyRem_0303 + CorrezioneLarghezzaApplicazione;
+let AltezzaApplicazione   = AltezzaBodyRem_0303 - CorrezioneAltezzaApplicazione;
+
+// alert(LarghezzaApplicazione);
+// alert(AltezzaApplicazione);
+
+
+let PosizioneLeftContenitoreInput = MargineSinistraRem_0303;
+let LarghezzaContenitoreInput     = LarghezzaApplicazione - MargineSinistraRem_0303;
+let AltezzaContenitoreInput       = MargineSinistraRem_0303;
+
+// alert(PosizioneLeftContenitoreInput );
+// alert(LarghezzaContenitoreInput     );
+// alert(AltezzaContenitoreInput       );
+
+
+
+
+
+
+//
+// La parte APPLICAZIONE viene visualizzata o nascosta
+// mediante il toggle
+//
+// Elementi coinvolti:
+// input[type="range"]
+//  
+// 
+// Id coinvolti:
+// APPLICAZIONE
+// CONTENITORE_INPUT_0101 (
+// caveat contiene un possibile duplicato
+// input[type="range"]
+// )
+// 
+// 
+// 
+
+
+document.getElementById("APPLICAZIONE").innerHTML=
+`
+<style>
+
+#APPLICAZIONE{
+position:fixed;
+top:0rem;left:0rem;
+
+width:`+LarghezzaBodyRem_0303+`rem;
+height:`+AltezzaApplicazione+`rem;
+
+background-color:white;
+
+border:solid 0.15rem green;
+overflow:auto;
+z-index:10000000;
+}
+
+
+#CONTENITORE_INPUT_0101{
+
+position:fixed;
+bottom:0rem;left:`+PosizioneLeftContenitoreInput+`rem;
+
+width:`+LarghezzaContenitoreInput+`rem;
+height:`+AltezzaContenitoreInput+`rem;
+
+background-color:gray;
+background-color:rgb(102,152,105);
+
+
+border:solid 0.15rem red;
+    z-index:10000000;
+}
+
+
+input[type="range"]{
+-webkit-appearance:none;
+
+background-color:rgba(25,225,37,0.25);
+background-color:rgb(102,152,105);
+
+width:100%;
+
+z-index:1000000!important;
+
+}
+    
+</style>
+
+<article id="BUONGIORNO_0101">
+... BUONGIORNO_0101
+</article>
+
+
+
+<article id="POMERIGGIO_0202">
+... POMERIGGIO_0202
+</article>
+
+
+
+
+`;
+
+
+// 
+// Lettura di input[range]
+// 
+// 
+// 
+// 
+
+let TIPO_DISPOSITIVO=DESKTOP_0303  ;
+//
+alert(TIPO_DISPOSITIVO);
+
+
+
+
+
+
+//
+// DGEBI dedicato al toggle
+// e relative funzioni.
+//
+// Id coinvolti:
+// APPLICAZIONE
+// CONTENITORE_INPUT_0101
+// TOG_NO
+// TOG_SI
+// 
+// 
+
+
+document.getElementById("TOG_SI").innerHTML=
+`
+<style>
+#TOG_SI{position:fixed;bottom:0rem;left:0rem;
+
+    border-top:solid     `+BordoToggleDeviceRem_0303+`rem rgb(102,152,105);
+    border-right:solid   `+BordoToggleDeviceRem_0303+`rem rgb(102,152,105);
+    border-bottom:solid  `+BordoToggleDeviceRem_0303+`rem green;
+    border-left:solid    `+BordoToggleDeviceRem_0303+`rem green;
+    border-radius:0.5rem;
+    display:inline-block; 
+    cursor:pointer;
+    z-index:10000000;
+}
+</style>
+`;
+
+
+document.getElementById("TOG_NO").innerHTML=
+`
+<style>
+#TOG_NO{position:fixed;bottom:0rem;left:0rem;
+
+    border-top:solid     `+BordoToggleDeviceRem_0303+`rem orange;
+    border-right:solid   `+BordoToggleDeviceRem_0303+`rem orange;
+    border-bottom:solid  `+BordoToggleDeviceRem_0303+`rem orange;
+    border-left:solid    `+BordoToggleDeviceRem_0303+`rem orange;
+    border-radius:0.5rem;
+    display:inline-block; 
+    cursor:pointer;
+    z-index:10000000;
+
+
+} 
+</style>
+
+`;
+
+
+
+function Tog_No(){
+document.querySelector("#APPLICAZIONE").style.display="none";
+document.querySelector("#CONTENITORE_INPUT_0101").style.display="none";
+document.querySelector("#TOG_NO").style.display="none";
+document.querySelector("#TOG_SI").style.display="block";
+
+}
+
+
+function Tog_Si(){
+document.querySelector("#APPLICAZIONE").style.display="block";
+document.querySelector("#CONTENITORE_INPUT_0101").style.display="block";
+document.querySelector("#TOG_NO").style.display="block";
+document.querySelector("#TOG_SI").style.display="none";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap" rel="stylesheet">
+</main>
+
+
+
+<style>
+ 
+ main{
+ font-family:"PT Mono", monospace;
+ 
+ 
+ }
+
+    img{  
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    width: 50%;
+    height: auto;
+    text-align:center;
+    }
+
+#VERS_TEST{font-family:"Rasa","PT Mono", monospace;}
+ 
+ 
+ 
+</style>
+
+
+
+

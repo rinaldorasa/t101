@@ -1,0 +1,140 @@
+
+
+
+
+<main  lang="it">
+<div id="VERS_TEST">test... versione:2023:02:10::19:28</div>
+
+<!--
+
+CONTENITORE_INPUT_0101 svolge funzione di scatola INI (1)
+INI(2)
+INPUT_SCELTO_0101 ha type list step min max
+FIN(2)
+FIN (1)
+
+
+
+
+
+-->
+
+
+<article id="CONTENITORE_INPUT_0101"  style="display:none;display:block;">
+
+ <div>
+  <input id="INPUT_SCELTO_0101" type="range" list="LISTA_0101" step="0.10" min="0.00" max="6.00" /> 
+ </div>
+
+</article> 
+
+ <datalist id="LISTA_0101"> 
+
+ <option id="OPZ_00" value="0.00"> </option> 
+ <option id="OPZ_01" value="0.11"> </option> 
+ <option id="OPZ_02" value="0.22"> </option> 
+ <option id="OPZ_03" value="0.33"> </option> 
+ <option id="OPZ_04" value="0.44"> </option> 
+ <option id="OPZ_05" value="0.55"> </option> 
+ <option id="OPZ_06" value="0.66"> </option> 
+ <option id="OPZ_07" value="0.77"> </option> 
+ <option id="OPZ_08" value="0.88"> </option> 
+ <option id="OPZ_09" value="0.99"> </option> 
+ <option id="OPZ_10" value="2.00"> </option> 
+ <option id="OPZ_11" value="2.11"> </option> 
+ <option id="OPZ_12" value="2.22"> </option> 
+ <option id="OPZ_13" value="2.33"> </option> 
+ <option id="OPZ_14" value="2.44"> </option> 
+ <option id="OPZ_15" value="2.55"> </option> 
+ <option id="OPZ_16" value="2.66"> </option> 
+ <option id="OPZ_17" value="2.77"> </option> 
+ <option id="OPZ_18" value="2.88"> </option> 
+ <option id="OPZ_19" value="2.99"> </option> 
+ <option id="OPZ_20" value="3.00"> </option> 
+ <option id="OPZ_21" value="3.11"> </option> 
+ <option id="OPZ_22" value="3.22"> </option> 
+ <option id="OPZ_23" value="3.33"> </option> 
+ <option id="OPZ_24" value="3.44"> </option> 
+ <option id="OPZ_25" value="3.55"> </option> 
+ <option id="OPZ_26" value="3.66"> </option> 
+ <option id="OPZ_27" value="3.77"> </option> 
+ <option id="OPZ_28" value="3.88"> </option> 
+ <option id="OPZ_29" value="3.99"> </option> 
+ <option id="OPZ_30" value="4.00"> </option> 
+ <option id="OPZ_31" value="4.11"> </option> 
+ <option id="OPZ_32" value="4.22"> </option> 
+ <option id="OPZ_33" value="4.33"> </option> 
+ <option id="OPZ_34" value="4.44"> </option> 
+ <option id="OPZ_35" value="4.55"> </option> 
+ <option id="OPZ_36" value="4.66"> </option> 
+ <option id="OPZ_37" value="4.77"> </option> 
+ <option id="OPZ_38" value="4.88"> </option> 
+ <option id="OPZ_39" value="4.99"> </option> 
+ <option id="OPZ_40" value="5.00"> </option> 
+ <option id="OPZ_41" value="5.00"> </option> 
+ <option id="OPZ_42" value="5.11"> </option> 
+ <option id="OPZ_43" value="5.22"> </option> 
+ <option id="OPZ_44" value="5.33"> </option> 
+ <option id="OPZ_45" value="5.44"> </option> 
+ <option id="OPZ_46" value="5.55"> </option> 
+ <option id="OPZ_47" value="5.66"> </option> 
+ <option id="OPZ_48" value="5.77"> </option> 
+ <option id="OPZ_49" value="5.88"> </option> 
+ <option id="OPZ_50" value="5.99"> </option>
+ <option id="OPZ_51" value="6.00"> </option> 
+
+ </datalist> 
+
+
+
+
+
+
+
+
+<script>
+let    DESKTOP_0303 = 1 ;
+alert("DESKTOP_0303= "+DESKTOP_0303);
+
+
+
+
+</script>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap" rel="stylesheet">
+</main>
+
+
+
+<style>
+ 
+ main{
+ font-family:"PT Mono", monospace;
+ 
+ 
+ }
+
+    img{  
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    width: 50%;
+    height: auto;
+    text-align:center;
+    }
+
+#VERS_TEST{font-family:"Rasa","PT Mono", monospace;}
+ 
+ 
+ 
+</style>
+
+
+
+
