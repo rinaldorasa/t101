@@ -1,0 +1,1471 @@
+<section>
+
+<style>
+a{box-shadow:12px 12px 12px green;}
+aside{font-size:150%;}
+q{background-color:oldlace;color:green;font-weight:bold;border:dashed 0.05rem indigo;}
+</style>
+
+<div style="background-color:green;color:white;">
+Ultimi aggiornamenti 09:37 23/03/2023
+</div>
+
+<div>
+Si risolve il problema del <q>padding</q>
+
+<pre>
+.-----------
+|  .-------- margin
+|  |  .----- padding
+|  |  |
+|  |  | TEXT (lorem ipsum)
+|  |  |
+
+&#187;&#187;&#187;&#187;&#187;&#187;&#187;&#187;&#187; sia per pianoterra che primopiano
+
+
+<a href="https://www.rinaldo-rasa.it/00/e/extra/docu/unicode.html"><q>unicode</q></a>
+</pre>
+
+<aside>
+Il padding era un problema serio per la versione tablet (smart)
+del framework in quanto lo <q>scroll verticale</q>  portava ad 
+un reset (non desiderato) della pagina e la soluzione (nel vecchio
+framework v00) di introdurre un padding generava una perdita di
+informazioni con un overflow indesiderato.
+</aside>
+
+<aside>
+La prima versione v10 come ESP introduceva il <q>padding</q>
+solamente per <q>buongiorno</q> occorre quindi introdurre il padding
+in entrambi i <q>popup</q>
+</aside>
+
+<aside>
+Occorre quindi agire cambiando le istruzioni nel sorgente <q>App.svelte</q>
+</aside>
+
+<aside>
+
+</aside>
+</div>
+
+<hr>
+
+
+<blockquote style="width:75%;background-color:rgba(0,255,0,0.15);color:black;letter-spacing: .2rem;border:solid 0.15rem red;display:block;overflow:auto;">
+Inserire un <q>question mark</q> per aggiornare.
+<pre>
+(new Date().getTime())
+
+</pre>
+<pre>
+(Math.random())
+
+</pre>
+
+Fare attenzione che questo file text riceve dei <q>tag</q>
+html <code>ma non tutti sono accettati</code>
+
+</blockquote>
+
+
+
+<div style="border-left:solid 0.15rem maroon;">
+Le due parti del programma sono:
+<ol>
+<li>POMERIGGIO pianoterra</li>
+<li>BUONGIORNO primopiano</li>
+
+
+<li>
+<pre style="overflow:auto;">
+  
+  &#60;script>
+  
+  let NodoTextTest = "??? NodoTextTest";  
+
+/* 
+  
+  let File="TextToDo317.txt"
+  
+  let Richiedo = new XMLHttpRequest();
+  
+		Richiedo.open("GET",File,false);
+		Richiedo.onreadystatechange = function()&#123;
+		let Trovato = Richiedo.responseText;
+		alert(Trovato);
+		
+		// 
+		NodoTextTest =	Trovato;
+		
+		&#125;
+		Richiedo.send();
+
+*/
+
+
+
+ let File_01="TextToDo317.txt"
+  
+  let Richiedo_01 = new XMLHttpRequest();
+  
+		Richiedo_01.open("GET",File_01,false);
+		Richiedo_01.onreadystatechange = function()&#123;
+		let Trovato_01 = Richiedo_01.responseText;
+		//	alert(Trovato_01);
+		
+		// 		
+		NodoTextTest =	Trovato_01;
+		
+		&#125;
+		Richiedo_01.send();
+
+
+/*	*/
+
+ let File_02="TextAggiuntivo.txt"
+  
+  let Richiedo_02 = new XMLHttpRequest();
+  
+		Richiedo_02.open("GET",File_02,false);
+		Richiedo_02.onreadystatechange = function()&#123;
+		let Trovato_02 = Richiedo_02.responseText;
+
+		alert("NodoTextTest= "+NodoTextTest);
+
+		alert("Trovato_02= "+Trovato_02);
+		
+		// 		
+		
+		
+		NodoTextTest =	NodoTextTest + Trovato_02;
+		
+		
+		
+		&#125;
+		Richiedo_02.send();
+
+
+
+
+
+
+
+  &#60;/script>
+ 
+  
+
+</pre>
+<article>
+Questo frammento di codice permette di <q>includere</q>
+un file esterno nel framework a livello <q>pianoterra</q>.
+</article>
+</li>
+<li style="background-color:yellow;color:indigo;font-weight:bold;">
+Un successivo <q>step</q> consiste nel <q>porting</q> degli
+stessi files in <q>primopiano</q> vale a dire nella sezione
+<q>riservata</q> alle immagini e triggerata da <q>toggle</q>.
+Questo aggiustamento richiede un aggiustamento della tipologia 
+<q>NodoTextTest</q> .
+</li>
+<li>
+La variabile <q>NodoTextTest</q>  utilizzata per pianoterra
+viene ridenominata <q>TextTestNodo</q> per essere utilizzata
+al primo piano.
+<pre>
+// INIZIALIZZAZIONE  
+  let NodoTextTest &#61; "??? NodoTextTest";  
+  let TextTestNodo &#61; "??? TextTestNodo";  
+
+
+// PIANOTERRA
+  let File_01&#61;"TextToDo317.txt"
+  
+  let Richiedo_01 &#61; new XMLHttpRequest();
+  
+		Richiedo_01.open("GET",File_01,false);
+		Richiedo_01.onreadystatechange &#61; function()&#123;
+		let Trovato_01 &#61; Richiedo_01.responseText;
+		//	alert(Trovato_01);
+		
+		// 		
+		NodoTextTest &#61;	Trovato_01;
+		
+		&#125;
+		Richiedo_01.send();
+
+
+/*	*/
+
+ let File_02&#61;"TextAggiuntivo.txt"
+  
+  let Richiedo_02 &#61; new XMLHttpRequest();
+  
+		Richiedo_02.open("GET",File_02,false);
+		Richiedo_02.onreadystatechange &#61; function()&#123;
+		let Trovato_02 &#61; Richiedo_02.responseText;
+
+		//	alert("NodoTextTest&#61; "+NodoTextTest);
+		//	
+		//	alert("Trovato_02&#61; "+Trovato_02);
+		
+		// 		
+		
+		
+		NodoTextTest &#61;	NodoTextTest + Trovato_02;
+		
+		
+		
+		&#125;
+		Richiedo_02.send();
+
+
+
+
+
+// PRIMOPIANO
+  let File_98&#61;"TextToDo317.txt"
+  
+  let Richiedo_98 &#61; new XMLHttpRequest();
+  
+		Richiedo_98.open("GET",File_98,false);
+		Richiedo_98.onreadystatechange &#61; function()&#123;
+		let Trovato_98 &#61; Richiedo_98.responseText;
+		//	alert(Trovato_98);
+		
+		// 		
+		TextTestNodo &#61;	Trovato_98;
+		
+		&#125;
+		Richiedo_98.send();
+
+
+  let File_99&#61;"TextAggiuntivo.txt"
+  
+  let Richiedo_99 &#61; new XMLHttpRequest();
+  
+		Richiedo_99.open("GET",File_99,false);
+		Richiedo_99.onreadystatechange &#61; function()&#123;
+		let Trovato_99 &#61; Richiedo_99.responseText;
+
+		//	
+		alert("TextTestNodo&#61; "+TextTestNodo);
+		//	
+		//	
+		alert("Trovato_99&#61; "+Trovato_99);
+		
+		// 		
+		
+		
+		TextTestNodo &#61;	TextTestNodo + Trovato_99;
+		
+		
+		
+		&#125;
+		Richiedo_99.send();
+
+
+
+</pre>
+</li>
+
+
+
+
+
+<li style="background-color:oldlace;color: magenta;font-weight:bold;">
+Lo step successivo consiste nel modificare il sorgente svelte e poi
+ricompilare.
+</li>
+
+
+
+
+
+<li>
+<article style="background-color:yellow;color:indigo;font-size:115%;font-weight:bold;">
+Qui il <q>sorgente</q> da (ri)compilare:
+</article>
+<pre style="overflow:auto;">
+
+	
+	&#60;!-- parte compiled ini -->
+	&#60;main id="MAIN">
+	
+	&#60;div style="position:fixed;bottom:0rem;left:25%;background-color:red;color:white;font-size:75%;"> 
+
+
+
+App320v03_s004 20:23:03:20:08:33
+	&#60;/div>
+	
+	&#60;div  id="APPLIC_AZIONE" > ??? APPLIC_AZIONE&#60;/div>
+	
+&#60;!--	&#60;div id="test" style="display:none;">??? test&#60;/div> -->
+	&#60;!-- script ini -->
+	
+	
+	&#60;script>
+	let NodoText = "NodoText App320v03_s004 20:23:03:20:08:33";
+	let TextNodo = "TextNodo App320v03_s004 20:23:03:20:08:33";
+
+// alert(NodoText);
+// alert(TextNodo);
+
+
+	
+	NodoText = NodoTextTest;
+	TextNodo = TextTestNodo;
+
+// alert(NodoText);
+// alert(TextNodo);
+
+	
+	function TESTAPP(NodoText,TextNodo)&#123;
+		// 
+		// verdescuro rgb(  3, 55, 73);
+		// 
+		// verdemedio rgb( 33, 78, 94);
+		// 
+		// verdelight rgb(128,153,163);
+		// 
+		// clementina rgb(252, 78,  5);
+		// 
+		// alert("RILEVATO INTERNO text da file esterno: "+NodoText);
+
+
+
+
+// PIANOTERRA
+		let TextoContentToDo = 
+		&#96;
+		$&#123;NodoText&#125;
+		
+		&#96; ; 
+
+
+
+// PRIMOPIANO
+		let TextoToDoContent = 
+		&#96;
+		$&#123;TextNodo&#125;
+		
+		&#96; ; 
+
+
+// alert(TextoContentToDo);
+// alert(TextoToDoContent);
+
+
+
+
+
+
+
+   let    DESKTOP_CHECK = 1 ;
+   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+    &#123; DESKTOP_CHECK = 0 ; &#125; else &#123; DESKTOP_CHECK = 1 ; &#125;
+   
+   let LarghezzaBody_Rem = window.innerWidth   /16;
+   let AltezzaBody_Rem   = window.innerHeight  /16;  
+	
+
+
+		let BordoBODY = 0.05; 
+		let BordoMAIN = 0.05;
+		let BordoBUON = 0.05;
+		let BordoPOMM = 0.05;
+		let BordoRANG = 0.05;
+		
+		let PaddingBODY = 0.00; 
+		let PaddingMAIN = 0.00;
+		let PaddingBUON = 0.00;
+		let PaddingPOMM = 0.00;
+		let PaddingRANG = 0.00;
+
+		let CompensazioneEventualiBordi = BordoBODY;
+		LarghezzaBody_Rem  =  LarghezzaBody_Rem - CompensazioneEventualiBordi;
+		AltezzaBody_Rem    =  AltezzaBody_Rem   - CompensazioneEventualiBordi;
+
+
+
+
+   let MargineSinistra_Rem = 5 ;
+   if (DESKTOP_CHECK == 0)&#123;MargineSinistra_Rem = 5.0 ;&#125;
+   if (DESKTOP_CHECK == 1)&#123;MargineSinistra_Rem = 2.5 ;&#125;
+   
+   let BordoToggleDevice_Rem;
+   BordoToggleDevice_Rem = MargineSinistra_Rem * 0.50;
+   
+   let LarghezzaApplicazione_Rem = LarghezzaBody_Rem - (MargineSinistra_Rem*2.00);
+   let AltezzaApplicazione_Rem   = AltezzaBody_Rem   - (MargineSinistra_Rem*1.25);
+   AltezzaApplicazione_Rem   = AltezzaApplicazione_Rem  -  PaddingPOMM;  
+   
+   let LarghezzaPianoTerra = LarghezzaApplicazione_Rem;
+   let AltezzaPianoTerra   = AltezzaApplicazione_Rem;
+   
+   let LarghezzaPrimoPiano = LarghezzaApplicazione_Rem;
+   let AltezzaPrimoPiano   = AltezzaApplicazione_Rem;
+
+
+
+
+
+
+		let PianoTerraPrimoPiano=
+		&#96;
+		&#60;div id="PIANO_TERRA">âš PIANO_TERRA&#60;/div>
+		&#60;div id="PRIMO_PIANO">âš PRIMO_PIANO&#60;/div>
+		
+		&#96;;
+		
+		
+		let Test_0101=
+		&#96;
+		&#60;div id="TEST_0101"> âš TEST_0101&#60;/div>
+		&#96;;
+		
+		let TogSiTogNo=
+		&#96;
+		&#60;div id="TOG_NO" onclick="Tog_No()" style="display:none;">NO&#60;/div>
+		&#60;div id="TOG_SI" onclick="Tog_Si()" style="display:block;">SI&#60;/div>
+		
+		&#96;;
+
+
+
+
+
+
+
+	let Pomeriggio=
+	&#96;
+	&#60;div id="POMERIGGIO" style="padding-top:0.50rem;  display:block;">
+	
+	
+		&#60;button id="DARKMODO" onclick="DarkModo()"  style="position:static;top:0rem;left:0.00rem;margin:0rem;padding:0rem;color:maroon;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> dark mode  &#60;/button>
+		&#60;button id="LIGHTMOD" onclick="LightModo()" style="position:static;top:0rem;left:1.25rem;margin:0rem;padding:0rem;color:orange;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> light mode &#60;/button>
+		
+		&#60;button id="SLIDERSI" onclick="SliderSi()" style="position:static;top:0rem;left:0.00rem;margin:0rem;padding:0rem;color:blue;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> vedi slider    &#60;/button>
+		&#60;button id="SLIDERNO" onclick="SliderNo()" style="position:static;top:0rem;left:1.25rem;margin:0rem;padding:0rem;color:magenta;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> nascondi slider &#60;/button>
+		
+		&#60;button id="BORDERSI" onclick="BorderSi()" style="position:static;top:0rem;left:0.00rem;margin:0rem;padding:0rem;color:blue;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> BorderSi()    &#60;/button>
+		&#60;button id="BORDERNO" onclick="BorderNo()" style="position:static;top:0rem;left:1.25rem;margin:0rem;padding:0rem;color:magenta;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> BorderNo() &#60;/button>
+		
+		
+		&#60;button onclick="BottoneTest()">BottoneTest()&#60;/button>
+	
+	
+	
+		&#60;div id="OGGI">
+			&#60;div style="border:solid 0.075rem rgba(252,78,5,0.5);">
+			
+			&#96;+TextoContentToDo +&#96;
+			
+			&#60;/div>
+		&#60;/div>
+	
+	&#60;/div>
+	&#96;;
+
+
+
+
+	let Immagini=
+	&#96;
+	&#60;article id="IMMAGINI">
+	
+	&#60;!--
+	&#60;img src="https://scrivi.altervista.org/testsvelte/lib221a/svelte_code_1.jpg" alt="case_study_codice_1">&#60;br>
+	&#60;img src="https://scrivi.altervista.org/testsvelte/lib221a/svelte_code_2.jpg" alt="case_study_codice_2">&#60;br>
+	-->
+	
+	
+	&#60;/article>
+	
+	&#96;;
+
+
+
+	let Buongiorno=
+	&#96;
+	&#60;div id="BUONGIORNO" style="font-family:'Rasa';display:none;">
+	
+	305aphp 2023:03:05:10:10
+	
+	$&#123;Immagini&#125;
+	
+	(--immagini--)
+	
+	$&#123;TextoToDoContent&#125;
+	
+	&#60;/div>
+	&#96;;
+
+
+
+	let ContenitoreInputRangeDatalist=
+	&#96;
+	&#60;article id="CONTENITORE_INPUT_0101"  style="display:block;">
+	&#60;div>
+	&#60;input id="INPUT_SCELTO_0101" type="range" list="LISTA_0101" step="0.10" min="0.00" max="6.00" /> 
+	&#60;/div>
+	&#60;/article> 
+	&#60;datalist id="LISTA_0101">
+	&#60;option id="OPZ_00" value="0.00"> &#60;/option> 
+	&#60;option id="OPZ_01" value="0.11"> &#60;/option> 
+	&#60;option id="OPZ_02" value="0.22"> &#60;/option> 
+	&#60;option id="OPZ_03" value="0.33"> &#60;/option> 
+	&#60;option id="OPZ_04" value="0.44"> &#60;/option> 
+	&#60;option id="OPZ_05" value="0.55"> &#60;/option> 
+	&#60;option id="OPZ_06" value="0.66"> &#60;/option> 
+	&#60;option id="OPZ_07" value="0.77"> &#60;/option> 
+	&#60;option id="OPZ_08" value="0.88"> &#60;/option> 
+	&#60;option id="OPZ_09" value="0.99"> &#60;/option> 
+	&#60;option id="OPZ_10" value="1.00"> &#60;/option> 
+	&#60;option id="OPZ_11" value="1.11"> &#60;/option> 
+	&#60;option id="OPZ_12" value="1.22"> &#60;/option> 
+	&#60;option id="OPZ_13" value="1.33"> &#60;/option> 
+	&#60;option id="OPZ_14" value="1.44"> &#60;/option> 
+	&#60;option id="OPZ_15" value="1.55"> &#60;/option> 
+	&#60;option id="OPZ_16" value="1.66"> &#60;/option> 
+	&#60;option id="OPZ_17" value="1.77"> &#60;/option> 
+	&#60;option id="OPZ_18" value="1.88"> &#60;/option> 
+	&#60;option id="OPZ_19" value="1.99"> &#60;/option> 
+	&#60;option id="OPZ_20" value="2.00"> &#60;/option> 
+	&#60;option id="OPZ_21" value="2.11"> &#60;/option> 
+	&#60;option id="OPZ_22" value="2.22"> &#60;/option> 
+	&#60;option id="OPZ_23" value="2.33"> &#60;/option> 
+	&#60;option id="OPZ_24" value="2.44"> &#60;/option> 
+	&#60;option id="OPZ_25" value="2.55"> &#60;/option> 
+	&#60;option id="OPZ_26" value="2.66"> &#60;/option> 
+	&#60;option id="OPZ_27" value="2.77"> &#60;/option> 
+	&#60;option id="OPZ_28" value="2.88"> &#60;/option> 
+	&#60;option id="OPZ_29" value="2.99"> &#60;/option> 
+	&#60;option id="OPZ_30" value="3.00"> &#60;/option> 
+	&#60;option id="OPZ_31" value="3.11"> &#60;/option> 
+	&#60;option id="OPZ_32" value="3.22"> &#60;/option> 
+	&#60;option id="OPZ_33" value="3.33"> &#60;/option> 
+	&#60;option id="OPZ_34" value="3.44"> &#60;/option> 
+	&#60;option id="OPZ_35" value="3.55"> &#60;/option> 
+	&#60;option id="OPZ_36" value="3.66"> &#60;/option> 
+	&#60;option id="OPZ_37" value="3.77"> &#60;/option> 
+	&#60;option id="OPZ_38" value="3.88"> &#60;/option> 
+	&#60;option id="OPZ_39" value="3.99"> &#60;/option> 
+	&#60;option id="OPZ_40" value="4.00"> &#60;/option> 
+	&#60;option id="OPZ_41" value="4.11"> &#60;/option> 
+	&#60;option id="OPZ_42" value="4.22"> &#60;/option> 
+	&#60;option id="OPZ_43" value="4.33"> &#60;/option> 
+	&#60;option id="OPZ_44" value="4.44"> &#60;/option> 
+	&#60;option id="OPZ_45" value="4.55"> &#60;/option> 
+	&#60;option id="OPZ_46" value="4.66"> &#60;/option> 
+	&#60;option id="OPZ_47" value="4.77"> &#60;/option> 
+	&#60;option id="OPZ_48" value="4.88"> &#60;/option> 
+	&#60;option id="OPZ_49" value="4.99"> &#60;/option> 
+	&#60;option id="OPZ_50" value="5.00"> &#60;/option> 
+	&#60;option id="OPZ_51" value="5.11"> &#60;/option> 
+	&#60;option id="OPZ_52" value="5.22"> &#60;/option> 
+	&#60;option id="OPZ_53" value="5.33"> &#60;/option> 
+	&#60;option id="OPZ_54" value="5.44"> &#60;/option> 
+	&#60;option id="OPZ_55" value="5.55"> &#60;/option> 
+	&#60;option id="OPZ_56" value="5.66"> &#60;/option> 
+	&#60;option id="OPZ_57" value="5.77"> &#60;/option> 
+	&#60;option id="OPZ_58" value="5.88"> &#60;/option> 
+	&#60;option id="OPZ_59" value="5.99"> &#60;/option>
+	&#60;option id="OPZ_60" value="6.00"> &#60;/option> 
+	&#60;/datalist> 
+	
+	&#96;;
+	
+	
+	
+
+	let dgebiPianoTerra =
+	&#96;
+	&#60;style>
+	#MAIN&#123;
+	position:fixed;top:0rem;left:0rem;
+	width: &#96;+LarghezzaBody_Rem+&#96;rem;
+	height:&#96;+AltezzaBody_Rem+&#96;rem;
+	
+	&#125;
+	
+	
+	#PIANO_TERRA&#123;
+	position:fixed;top:0rem;left:&#96;+MargineSinistra_Rem+&#96;rem;
+	width: &#96;+LarghezzaPianoTerra+&#96;rem;
+	height:&#96;+AltezzaPianoTerra+&#96;rem;
+	
+	
+	
+	&#125;
+	
+	&#60;/style>
+	
+	
+	&#96;;
+	
+	
+	
+	
+	let dgebiPrimoPiano =
+	&#96;
+	&#60;style>
+	
+	
+	
+	#PRIMO_PIANO&#123;
+	position:fixed;top:0rem;left:&#96;+MargineSinistra_Rem+&#96;rem;
+	width: &#96;+LarghezzaPrimoPiano+&#96;rem;
+	height:&#96;+AltezzaPrimoPiano+&#96;rem;
+	
+	
+	&#125;
+
+	
+	
+	#BUONGIORNO,#POMERIGGIO&#123;
+	position:fixed;top:0rem;left:&#96;+MargineSinistra_Rem+&#96;rem;
+	width: &#96;+LarghezzaPrimoPiano+&#96;rem;
+	height:&#96;+AltezzaPrimoPiano+&#96;rem;
+	text-align:left;
+	overflow:auto;
+	&#125;
+	
+	#BUONGIORNO&#123;
+	padding:&#96;+PaddingBUON+&#96;rem;
+	z-index:10000000;
+	&#125;
+	
+	
+	
+	#POMERIGGIO&#123;
+	padding:&#96;+PaddingPOMM+&#96;rem;
+	z-index:initial;
+	&#125;
+	
+	
+	
+	&#60;/style>
+	
+	
+	&#96;;
+	
+	
+	
+	
+	
+	let dgebiTogSi=
+	&#96;
+	&#60;style>
+	#TOG_SI&#123;position:fixed;bottom:0rem;left:0rem;
+	
+		border-top:solid     &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-right:solid   &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-bottom:solid  &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-left:solid    &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-radius:0.5rem;
+		border-radius:0.0rem;
+		display:inline-block; 
+		cursor:pointer;
+		z-index:10000000;
+	&#125;
+	&#60;/style>
+	
+	&#96;;
+	
+	
+	
+	let dgebiTogNo=
+	&#96;
+	&#60;style>
+	#TOG_NO&#123;position:fixed;bottom:0rem;left:0rem;
+	
+		border-top:solid     &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-right:solid   &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-bottom:solid  &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-left:solid    &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-radius:0.5rem;
+		border-radius:0.0rem;
+		display:inline-block; 
+		cursor:pointer;
+		z-index:10000000;
+	
+	
+	&#125; 
+	&#60;/style>
+	
+	
+	&#96;;
+	
+
+
+
+	
+	document.getElementById("APPLIC_AZIONE").innerHTML=
+	&#96;
+	$&#123;PianoTerraPrimoPiano&#125;
+	
+	$&#123;Test_0101&#125;
+	
+	$&#123; TogSiTogNo &#125;
+	
+	
+	$&#123;Pomeriggio&#125;
+	
+	$&#123;Buongiorno&#125;
+	
+	$&#123;ContenitoreInputRangeDatalist&#125;
+	
+	
+	&#96;;
+	
+		
+	
+	document.getElementById("PIANO_TERRA").innerHTML=
+	&#96;
+	$&#123;dgebiPianoTerra&#125;
+	
+	&#96;;
+	
+	
+	document.getElementById("PRIMO_PIANO").innerHTML=
+	&#96;
+	
+	$&#123;dgebiPrimoPiano&#125;
+	
+	&#96;;
+	
+	
+	
+	document.getElementById("TOG_SI").innerHTML=
+	&#96;
+	$&#123;dgebiTogSi&#125;
+	
+	&#96;;
+	
+	
+	document.getElementById("TOG_NO").innerHTML=
+	&#96;
+	$&#123;dgebiTogNo&#125;
+	
+	&#96;;
+	
+	
+
+
+
+	let TIPO_DISPOSITIVO=DESKTOP_CHECK  ;
+	let LARGHEZZA_PIANOTERRA = LarghezzaPianoTerra;
+	let ALTEZZA_PRIMOPIANO = AltezzaPrimoPiano;
+	let MARGINE_SINISTRA = MargineSinistra_Rem;
+
+
+
+
+	//
+	// 0=mobile 1=desktop
+	//
+	// alert(TIPO_DISPOSITIVO);
+	//
+	// || 
+	// || internamente a questa funzione
+	// || viene passato TIPO_DISPOSITIVO importante
+	// || riconoscimento del tipo dispositivo
+	// || che rende possibile responsive
+	// || tramite variabili javascrit
+	// || 
+	// || 
+	// \/
+	function sonda_Input_0101(arg0,arg1,arg2,arg3)&#123;
+	
+	let TipoDiDispositivo=arg0;
+	let LarghezzaPianoterra=arg1;
+	let AltezzaPrimopiano=arg2;
+	let MargineSinistra =arg3;
+	
+	
+	//alert("MargineSinistra= " + MargineSinistra );
+	
+	let   VALORE_DI_INPUT_0101=document.getElementById("INPUT_SCELTO_0101").value; 
+	let   DIM_INPUT_0101 = VALORE_DI_INPUT_0101;
+	
+	
+	if (TipoDiDispositivo===0)&#123;
+	DIM_INPUT_0101 = DIM_INPUT_0101 * 0.5;
+	&#125;
+	
+	if (TipoDiDispositivo===1)&#123;
+	DIM_INPUT_0101 = DIM_INPUT_0101 * 0.325;
+	&#125;
+	
+	
+	
+	document.getElementById("TEST_0101").innerHTML=
+	&#96;
+	&#60;style>
+	#CONTENITORE_INPUT_0101&#123;
+	position:fixed;
+	bottom:0rem;left:&#96;+MargineSinistra+&#96;rem;
+	
+	
+	width:&#96;+ LarghezzaPianoterra +&#96;rem;
+	width:&#96;+ (LarghezzaPianoterra * 1) +&#96;rem;
+	
+	
+	height:&#96;+MargineSinistra+&#96;rem;
+	
+	
+	&#125;
+	
+	input[type="range"]&#123;
+	-webkit-appearance:none;
+	
+	background-color:transparent;
+	
+	width:100%;
+	width:99.0%;
+	
+	
+	z-index:1000000!important;
+	
+	&#125;
+	
+	
+	
+	#APPLICAZIONE&#123;font-size:&#96;+DIM_INPUT_0101+&#96;rem!important;&#125;
+	#BUONGIORNO&#123;font-size:&#96;+DIM_INPUT_0101+&#96;rem!important;&#125;
+	#POMERIGGIO&#123;font-size:&#96;+DIM_INPUT_0101+&#96;rem!important;&#125;
+	
+	
+	
+	img&#123;width:&#96;+ (DIM_INPUT_0101 * 20) +&#96;rem!important;&#125;
+	
+	
+	
+	
+	#DARKMODO:hover&#123;background-color:teal!important;color:white!important;&#125;
+	#LIGHTMOD:hover&#123;background-color:teal!important;color:white!important;&#125;
+	
+	#SLIDERSI:hover&#123;background-color:maroon!important;color:white!important;&#125;
+	#SLIDERNO:hover&#123;background-color:maroon!important;color:white!important;&#125;
+	
+	
+	
+	&#60;/style>
+	
+	&#96;;
+	
+	
+	
+	&#125; ;
+	setInterval(sonda_Input_0101, 1, TIPO_DISPOSITIVO,LARGHEZZA_PIANOTERRA ,ALTEZZA_PRIMOPIANO,MARGINE_SINISTRA ) ;
+	
+	
+	
+
+
+
+	
+	
+	// 		alert("App320v03_s004 20:23:03:20:08:33 debug TESTAPP ok!");
+	&#125;; // TESTAPP
+	TESTAPP(NodoText,TextNodo);
+	
+	
+
+
+
+
+
+	// toggle harlequin mode ini 
+	
+	function Tog_No()&#123;
+	document.querySelector("#BUONGIORNO").style.display="none";
+	document.querySelector("#POMERIGGIO").style.display="block";
+	document.querySelector("#TOG_NO").style.display="none";
+	document.querySelector("#TOG_SI").style.display="block";
+	&#125;
+	
+	
+	function Tog_Si()&#123;
+	document.querySelector("#BUONGIORNO").style.display="block";
+	document.querySelector("#POMERIGGIO").style.display="none";
+	document.querySelector("#TOG_NO").style.display="block";
+	document.querySelector("#TOG_SI").style.display="none";
+	&#125;
+	
+	// toggle harlequin mode fin 
+
+
+
+
+	// toggle dark light ini 
+	
+	function DarkModo() &#123; 
+	
+	
+	// ElementoMain = document.querySelector("#MAIN");
+	// ElementoMain.style.color="orange";
+	// ElementoMain.style.backgroundColor="black"; 
+	// 
+	// ElementoPomeriggio = document.querySelector("#POMERIGGIO");
+	// ElementoPomeriggio.style.color="orange";
+	// ElementoPomeriggio.style.backgroundColor="black";
+	// 
+	// ElementoBuongiorno = document.querySelector("#BUONGIORNO");
+	// ElementoBuongiorno.style.color="orange";
+	// ElementoBuongiorno.style.backgroundColor="black";
+	// 
+	// ElementoContenitoreInput_0101 = document.querySelector("#INPUT_SCELTO_0101");
+	// ElementoContenitoreInput_0101.style.color="orange";
+	// ElementoContenitoreInput_0101.style.backgroundColor="black";
+	
+	
+	
+	// eco sistema 
+	ElementoMain = document.querySelector("#MAIN");
+	ElementoMain.style.backgroundColor="rgb(  3, 55, 73)"; 
+	ElementoMain.style.color="rgb(252, 78,  5)";
+	
+	ElementoPomeriggio = document.querySelector("#POMERIGGIO");
+	ElementoPomeriggio.style.backgroundColor="rgb(  3, 55, 73)";
+	ElementoPomeriggio.style.color="rgb(252, 78,  5)";
+	
+	
+	ElementoBuongiorno = document.querySelector("#BUONGIORNO");
+	ElementoBuongiorno.style.backgroundColor="rgb(  3, 55, 73)";
+	ElementoBuongiorno.style.color="rgb(252, 78,  5)";
+	
+	
+	ElementoContenitoreInput_0101 = document.querySelector("#INPUT_SCELTO_0101");
+	ElementoContenitoreInput_0101.style.backgroundColor="rgb(  3, 55, 73)";
+	ElementoContenitoreInput_0101.style.color="rgb(252, 78,  5)";
+	
+	
+	&#125;
+	
+	
+	
+	function LightModo() &#123;
+	
+	ElementoMain = document.querySelector("#MAIN");
+	ElementoMain.style.color="initial";
+	ElementoMain.style.backgroundColor="initial";
+	
+	ElementoPomeriggio = document.querySelector("#POMERIGGIO");
+	ElementoPomeriggio.style.color="initial";
+	ElementoPomeriggio.style.backgroundColor="initial";
+	
+	ElementoBuongiorno = document.querySelector("#BUONGIORNO");
+	ElementoBuongiorno.style.color="initial";
+	ElementoBuongiorno.style.backgroundColor="initial";
+	
+	ElementoContenitoreInput_0101 = document.querySelector("#INPUT_SCELTO_0101");
+	ElementoContenitoreInput_0101.style.color="initial";
+	ElementoContenitoreInput_0101.style.backgroundColor="initial";
+	
+	
+	&#125;
+	
+	// toggle dark light fin 
+	
+	
+	
+	
+	
+	// toggle slider ini 
+	
+	function SliderNo() &#123;
+	ElementoSlider = document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoSlider.style.display="none";
+	
+	&#125;
+	
+	
+	function SliderSi() &#123;
+	ElementoSlider = document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoSlider.style.display="block";
+	
+	&#125;
+	
+	// toggle slider fin 
+	
+	
+	
+	//  border debugging ini 
+	
+	function BorderSi()&#123;
+	ElementoBorder_CONTENITORE_INPUT_0101 = document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoBorder_CONTENITORE_INPUT_0101.style.border="solid "+BordoRANG+"rem magenta";
+	ElementoBorder_MAIN = document.querySelector("#MAIN");
+	ElementoBorder_MAIN.style.border="solid "+BordoMAIN+"rem olive";
+	ElementoBorder_BUONGIORNO = document.querySelector("#BUONGIORNO");
+	ElementoBorder_BUONGIORNO.style.border="solid "+BordoBUON+"rem maroon";
+	ElementoBorder_POMERIGGIO = document.querySelector("#POMERIGGIO");
+	ElementoBorder_POMERIGGIO.style.border="solid "+BordoPOMM+"rem lime";
+	
+	
+	&#125;
+	
+	function BorderNo()&#123;
+	ElementoBorder_CONTENITORE_INPUT_0101 = document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoBorder_CONTENITORE_INPUT_0101.style.border="solid 0.00rem magenta";
+	ElementoBorder_MAIN = document.querySelector("#MAIN");
+	ElementoBorder_MAIN.style.border="solid 0.00rem olive";
+	ElementoBorder_BUONGIORNO = document.querySelector("#BUONGIORNO");
+	ElementoBorder_BUONGIORNO.style.border="solid 0.00rem maroon";
+	ElementoBorder_POMERIGGIO = document.querySelector("#POMERIGGIO");
+	ElementoBorder_POMERIGGIO.style.border="solid 0.00rem lime";
+	
+	
+	&#125;
+	
+	
+	
+	//  border debugging fin 
+	
+	
+	
+	
+	function BottoneTest()&#123;alert("OK BottoneTest()")&#125;;
+	
+	
+
+
+
+
+
+
+
+	
+	
+	// 	alert("2023:03:16:09:35 svelte compiled ok!");
+	
+	&#60;/script>
+	
+	&#60;!-- script fin -->
+
+
+
+
+
+
+
+	&#60;style>
+	
+	main&#123;
+	
+	background-color:inherit;color:inherit;
+	font-family:"PT Mono", monospace;
+	
+	&#125;
+	
+	
+	img&#123;  
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width:100%;
+	max-height:100%;
+	width: auto;
+	width: 50%;
+	height: auto;
+	text-align:center!important;
+	&#125;
+	
+	
+	
+	.darkmode &#123;
+	background-color: black;
+	color: orange;
+	&#125;
+	
+	
+	.cursore &#123;
+	background: lime;
+	line-height: 17px;
+	margin-left: 3px;
+	-webkit-animation: blink 0.8s infinite;
+	width: 7px;
+	height: 15px;
+	&#125;
+	
+	.cursores &#123;
+	background: lime;
+	line-height: 17px;
+	margin-left: 3px;
+	-webkit-animation: blink 0.8s infinite;
+	width: 7px;   width:  16px;
+	height: 15px; height: 32px;
+	&#125;
+	
+	@-webkit-keyframes blink &#123;
+	0% &#123;background: #222&#125;
+	50% &#123;background: lime&#125;
+	100% &#123;background: #222&#125;
+	&#125;
+	
+	.hack_script&#123;display:none;&#125;
+	
+	&#60;/style>
+	
+	
+	
+	&#60;div class="hack_script">&#60;input type="range" step="1" min="1" max="2">&#60;datalist>&#60;option value="1">&#60;/option>&#60;option value="2">&#60;/option>&#60;/datalist>&#60;/div>
+	&#60;link rel="preconnect" href="https://fonts.gstatic.com">
+	&#60;link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+	&#60;link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet">
+	&#60;link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	
+	&#60;/main>
+	
+	&#60;!-- parte compiled fin -->
+	
+	
+</pre>
+
+<article>
+	Come sappiamo la parte compilata del programma viene
+	inclusa tramite modo <q>dgebi</q> con <q>id app</q>
+	qui di seguito la parte <q>html</q>
+</article>
+</li>
+<li>
+Qui <q>html</q> 
+
+<pre style="overflow:auto;">
+
+&#60;!DOCTYPE html>
+&#60;html lang="en">
+  &#60;head>
+    &#60;meta charset="UTF-8" />
+    &#60;link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    &#60;meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    &#60;title>
+	
+am00 09:14 20/03/2023
+	
+	Vite + Svelte&#60;/title>
+	
+&#60;!-- cronologia degli aggiornamenti javascript -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-b83f2ac8.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-2755f64a.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-86edb3e9.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-bdb23652.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-c5b5e5de.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-8bb33480.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-d0f728ee.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-0ed7b9e8.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-807937bb.js">&#60;/script> -->
+
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-9deb2893.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-952ef36c.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-67bf41c5.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-50cf380d.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-20da25fa.js">&#60;/script> -->
+&#60;!-- &#60;script type="module" crossorigin src="./assets/index-69fc32d1.js">&#60;/script> -->
+&#60;script type="module" crossorigin src="./assets/index-af96cf7a.js">&#60;/script>
+
+
+	
+    &#60;link rel="stylesheet" href="./assets/index-3a88ba9f.css">
+
+  &#60;/head>
+  &#60;body>
+ 
+ 
+&#60;!--  --> 
+  &#60;script>
+
+// INIZIALIZZAZIONE  
+  let NodoTextTest = "??? NodoTextTest";  
+  let TextTestNodo = "??? TextTestNodo";  
+
+
+/* 
+  
+  let File="TextToDo317.txt"
+  
+  let Richiedo = new XMLHttpRequest();
+  
+		Richiedo.open("GET",File,false);
+		Richiedo.onreadystatechange = function()&#123;
+		let Trovato = Richiedo.responseText;
+		//	alert(Trovato);
+		
+		// 
+		NodoTextTest =	Trovato;
+		
+		&#125;
+		Richiedo.send();
+
+*/
+
+
+
+// PIANOTERRA
+  let File_01="TextToDo317.txt"
+  
+  let Richiedo_01 = new XMLHttpRequest();
+  
+		Richiedo_01.open("GET",File_01,false);
+		Richiedo_01.onreadystatechange = function()&#123;
+		let Trovato_01 = Richiedo_01.responseText;
+		//	alert(Trovato_01);
+		
+		// 		
+		NodoTextTest =	Trovato_01;
+		
+		&#125;
+		Richiedo_01.send();
+
+
+/*	*/
+
+ let File_02="TextAggiuntivo.txt"
+  
+  let Richiedo_02 = new XMLHttpRequest();
+  
+		Richiedo_02.open("GET",File_02,false);
+		Richiedo_02.onreadystatechange = function()&#123;
+		let Trovato_02 = Richiedo_02.responseText;
+
+		//	alert("NodoTextTest= "+NodoTextTest);
+		//	
+		//	alert("Trovato_02= "+Trovato_02);
+		
+		// 		
+		
+		// VARIAZIONE PER PIANOTERRA
+		// NodoTextTest =	NodoTextTest + Trovato_02;
+		
+		NodoTextTest =	Trovato_01;
+		
+		&#125;
+		Richiedo_02.send();
+
+
+
+
+
+// PRIMOPIANO
+  let File_98="TextToDo317.txt"
+  
+  let Richiedo_98 = new XMLHttpRequest();
+  
+		Richiedo_98.open("GET",File_98,false);
+		Richiedo_98.onreadystatechange = function()&#123;
+		let Trovato_98 = Richiedo_98.responseText;
+		//	alert(Trovato_98);
+		
+		// 		
+		TextTestNodo =	Trovato_98;
+		
+		&#125;
+		Richiedo_98.send();
+
+
+  let File_99="TextAggiuntivo.txt"
+  
+  let Richiedo_99 = new XMLHttpRequest();
+  
+		Richiedo_99.open("GET",File_99,false);
+		Richiedo_99.onreadystatechange = function()&#123;
+		let Trovato_99 = Richiedo_99.responseText;
+
+		//			alert("TextTestNodo= "+TextTestNodo);
+		//	
+		//			alert("Trovato_99= "+Trovato_99);
+		
+		// 		
+		
+		
+		// TextTestNodo =	TextTestNodo + Trovato_99;
+		// 
+		// VARIAZIONE PER PRIMOPIANO
+		
+		TextTestNodo =	Trovato_99;
+		
+		&#125;
+		Richiedo_99.send();
+
+
+
+
+
+  &#60;/script>  
+
+ 
+  
+  
+  
+  
+  
+  
+    &#60;div id="app">&#60;/div>
+    
+  &#60;/body>
+&#60;/html>
+
+
+</pre>
+
+</li>
+<li>
+
+Per assicurasi un aggiornamento dei file <q>esterni</q>
+
+<pre style="overflow:auto;">
+
+
+/*
+	
+	
+File da cercare 2023:03:21 08:39
+
+
+(new Date().getTime()) 
+
+ (Math.random())
+
+
+*/
+
+// Elenco dei file
+
+
+
+
+
+// PIANOTERRA
+  let File_01&#61;"TextToDo317.txt";
+  File_01 &#61; File_01 + "?"+(new Date().getTime()) + (Math.random()) ; 
+  
+  let Richiedo_01 &#61; new XMLHttpRequest();
+  
+		Richiedo_01.open("GET",File_01,false);
+		Richiedo_01.onreadystatechange &#61; function()&#123;
+		let Trovato_01 &#61; Richiedo_01.responseText;
+		//	alert(Trovato_01);
+		
+		// 		
+		NodoTextTest &#61;	Trovato_01;
+		
+		&#125;
+		Richiedo_01.send();
+
+
+
+ let File_02&#61;"TextAggiuntivo.txt";
+ File_02 &#61; File_02  + "?"+(new Date().getTime()) + (Math.random()) ;
+ 
+  
+  let Richiedo_02 &#61; new XMLHttpRequest();
+  
+		Richiedo_02.open("GET",File_02,false);
+		Richiedo_02.onreadystatechange &#61; function()&#123;
+		let Trovato_02 &#61; Richiedo_02.responseText;
+
+		//	alert("NodoTextTest&#61; "+NodoTextTest);
+		//	
+		//	alert("Trovato_02&#61; "+Trovato_02);
+		
+		// 		
+		
+		// VARIAZIONE PER PIANOTERRA
+		// NodoTextTest &#61;	NodoTextTest + Trovato_02;
+		
+		NodoTextTest &#61;	Trovato_01;
+		
+		&#125;
+		Richiedo_02.send();
+
+
+
+
+
+
+
+
+
+
+
+
+// PRIMOPIANO
+  let File_98&#61;"TextToDo317.txt";
+  File_98 &#61; File_98 + "?"+(new Date().getTime()) + (Math.random()) ;
+
+ 
+  let Richiedo_98 &#61; new XMLHttpRequest();
+  
+		Richiedo_98.open("GET",File_98,false);
+		Richiedo_98.onreadystatechange &#61; function()&#123;
+		let Trovato_98 &#61; Richiedo_98.responseText;
+		//	alert(Trovato_98);
+		
+		// 		
+		TextTestNodo &#61;	Trovato_98;
+		
+		&#125;
+		Richiedo_98.send();
+
+
+  let File_99&#61;"TextAggiuntivo.txt";
+  File_99 &#61; File_99 + "?"+(new Date().getTime()) + (Math.random()) ;
+  
+  let Richiedo_99 &#61; new XMLHttpRequest();
+  
+		Richiedo_99.open("GET",File_99,false);
+		Richiedo_99.onreadystatechange &#61; function()&#123;
+		let Trovato_99 &#61; Richiedo_99.responseText;
+
+		//			alert("TextTestNodo&#61; "+TextTestNodo);
+		//	
+		//			alert("Trovato_99&#61; "+Trovato_99);
+		
+		// 		
+		
+		
+		// TextTestNodo &#61;	TextTestNodo + Trovato_99;
+		// 
+		// VARIAZIONE PER PRIMOPIANO
+		
+		TextTestNodo &#61;	Trovato_99;
+		
+		&#125;
+		Richiedo_99.send();
+
+
+
+</pre>
+
+Inserendo il <q>timestamp</q> e <q>il numero random</q>
+si ottiene una richiesta <q>dinamica</q> del loading 
+<b>il riferimento riguarda come codice il file <i>Text01029899.js</i></b>
+
+
+
+
+</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+
+</ol>
+
+</div>
+
+
+</section>

@@ -1,0 +1,2201 @@
+
+<div style="color:rgb(  3, 55, 73);border:solid 0.07rem  rgb(252, 78,  5);text-align:center;"> 317_step133g 20:23:03:17:09:53 </div>
+
+<ol>
+  <li>Tutto codice <q>welcome everybody</q> viene 
+wrapped con la funzione TESTAPP() la quale permette
+di isolare le variabili con lo stesso nome nel 
+caso ci fosse un conflitto tra due variabili con lo
+stesso nome. </li>
+  <li>
+dark mode light mode vedi slider nascondi slider 
+BorderSi() BorderNo() BottoneTest()
+sono attivate solo se gli script sono posizionate 
+al di fuori della funzione TESTAPP()
+  
+  </li>
+  <li>
+  Aggiungere una serie di css e di link per le
+  font di sistema tenendo conto che una volta passate
+  al compilatore svelte possono essere fatte sparire
+  e poi recuperate con reverse engineering.
+  </li>
+  <li>
+  Inserire anche hack per compilatore build 
+  </li>
+  <li>
+  Aggiungere la lettura di file esterni mediante 
+  XMLHtttpRequest
+  </li>
+  <li style="background-color:orange;color:indigo;">
+  &#9888;
+  Se questo programma viene eseguito in local 
+  apparentemente non funziona dato che quello
+  qui presente si rivolge al lato <q>server side</q>
+  
+  </li>
+  <li style="background-color:inherit;color:  rgb(252, 78,  5);">
+  Il lato server necessita di una visione della
+  programmazione orientata verso uno stile <q>php</q> 
+   nella maniera di testare i progetti. In particolare 
+   se si usa il compilatore <q>svelte</q> apparentemente non 
+   funziona come un sever virtuale 
+   e alcune cose appaiono non funzionare dato che
+   non si riscontra una comunicazione dinamica tra
+   progetto ed esecuzione.
+  
+  
+  </li>
+  <li>
+  HTML definito come contenitore assoluto (anche se 
+  poi si usa estensione .php)
+  
+  </li>
+  <li>
+  SCRIPT esterno alla compilazione svelte in gran
+  parte riferito come <q>contenuto</q>
+  </li>
+  <li>
+  SVELTE codice compilato (tenere a lato sempre 
+  la versione <q>sorgente</q>) il quale in sostanza
+  propone la <q>impalcatura</q> o ambiente (<q>ecologia</q>) 
+  nel quale sono poi inserite le informazioni
+  dinamiche. <span style="color:#66CDAA;">La sezione <q>svelte</q> assume una
+  rilevanza in quanto tramite input range riesce a
+  gestire in modo ottimale la responsive della pagina
+  in particolare con smart phone.</span>
+  </li>
+  <li style="color:#FFB6C1;">
+  La tripartizione combina una vicinanza tra html e
+  php come linguaggi intercambiabili (da tenere presente
+  che si assimila txt ad eseguibile tipo <q>include</q> 
+  un file con estensione txt assume un senso molto 
+  prossimo a <q>pre</q> in quanto non sono <q>escapati</q> 
+  i tag usati in html (i quali dunque vengono letti 
+  come <q>eseguibili</q>.
+  </li>
+  <li>
+  La parte SCRIPT SVELTE risulta interscambiabile
+  soprattuttto dato che TESTAPP() accetta un input
+  da XMLHtttpRequest <q>e la intersezione tra client
+  e server complica il tutto</q>.
+  </li>
+  <li>
+  <a href="https://www.rinaldo-rasa.it/00/e/extra/docu/emoji/emoji_conv.html" style="color:#DAA520;">char code (dal carattere al codice numerico)</a>
+  </li>
+  <li>
+  <a href="https://www.rinaldo-rasa.it/WORKOU/OGGI/20191119/00/e/extra/coloris/hexacolors.html" style="background-color:;color:#DAA520;">colori esadecimali</a>  
+  </li>
+  <li>
+  SCRIPT SVELTE necessita di un <q>piccolo</q> hacking
+  <pre style="overflow:auto;">
+	&#60;div class="hack_script">
+	&#60;input type="range" step="1" min="1" max="2">
+	&#60;datalist>&#60;option value="1">
+	&#60;/option>
+	&#60;option value="2">
+	&#60;/option>
+	&#60;/datalist>
+	&#60;/div>
+  </pre>
+  Questo hacking permette il funzionamento della compilazione
+  svelte. Occorre come <q>magic number</q> ma, con il tempo,
+  bisogna anche scoprirne il motivo. Inserendo il magic number
+  si possono effettuare dei transpiler codice html con risultati
+  efficaci.
+  
+  </li>
+  <li>
+  Un altro memento importante sono i link alle font google
+  <pre style="overflow:auto;">
+	&#60;link rel="preconnect" href="https://fonts.gstatic.com">
+	&#60;link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+	&#60;link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet">
+	&#60;link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  </pre>
+  
+  </li>
+  <li>
+  Dopo <q>main</q> occorre sistemare una sequenza di style
+	<pre style="overflow:auto;">
+
+	main&#123;
+	
+	background-color:inherit;color:inherit;
+	font-family:"PT Mono", monospace;
+	
+	
+	border:solid 0.15rem olive;
+	&#125;
+	
+	
+	img&#123;  
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width:100%;
+	max-height:100%;
+	width: auto;
+	width: 50%;
+	height: auto;
+	text-align:center!important;
+	&#125;
+	
+	
+	
+	.darkmode &#123;
+	background-color: black;
+	color: orange;
+	&#125;
+	
+	
+	.cursore &#123;
+	background: lime;
+	line-height: 17px;
+	margin-left: 3px;
+	-webkit-animation: blink 0.8s infinite;
+	width: 7px;
+	height: 15px;
+	&#125;
+	
+	.cursores &#123;
+	background: lime;
+	line-height: 17px;
+	margin-left: 3px;
+	-webkit-animation: blink 0.8s infinite;
+	width: 7px;   width:  16px;
+	height: 15px; height: 32px;
+	&#125;
+	
+	@-webkit-keyframes blink &#123;
+	0% &#123;background: #222&#125;
+	50% &#123;background: lime&#125;
+	100% &#123;background: #222&#125;
+	&#125;
+	
+	.hack_script&#123;display:none;&#125;
+	
+			
+	</pre> 
+	Anche questo per rispettare il <q>canone</q> svelte
+	il maggiormente possibile.
+  </li>
+  <li>
+  Il compilatore svelte esegue un transpiler del codice
+  principalmente SCRIPT
+  
+  </li>
+  <li>
+  Il contenitore dei contenitori <q>jumbo</q> inizia con
+  html body (apertura e chiusura).
+  <pre style="overflow:auto;">
+  
+	&#60;!DOCTYPE html&#62;
+	&#60;html lang="en"&#62;
+	&#60;head&#62;
+		&#60;meta charset="UTF-8" /&#62;
+		&#60;link rel="icon" type="image/svg+xml" href="./vite.svg" /&#62;
+		&#60;meta name="viewport" content="width=device-width, initial-scale=1.0" /&#62;
+		&#60;title&#62;
+	
+		&#60;/title&#62;
+	
+	&#60;/head&#62;
+	&#60;body&#62;
+	
+	
+	&#60;/body&#62;
+	&#60;/html&#62;
+
+  </pre>
+  
+  </li>
+  <li>
+  Qui inizia la parte <q>main</q>che viene passata
+  alla compilazione (transpiler) svelte formata da 
+  una parte <q>html</q>
+  
+    <pre style="overflow:auto;">
+	
+	&#60;!-- parte compiled ini --&#62;
+	&#60;main id="MAIN"&#62;
+	
+	&#60;div style="position:fixed;bottom:0rem;left:25%;font-size:75%;"&#62; 
+	program version 313_step130h 20:23:03:13:18:13
+	&#60;/div&#62;
+	
+	&#60;div  id="APPLIC_AZIONE" &#62; err APPLIC_AZIONE&#60;/div&#62;
+	
+	&#60;div id="test" style="display:none;"&#62;&#9888;test&#60;/div&#62;
+	&#60;!-- script ini --&#62;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	&#60;!-- script fin --&#62;
+	&#60;style&#62;
+	
+	main&#123;
+	
+	background-color:inherit;color:inherit;
+	font-family:"PT Mono", monospace;
+	
+	&#125;
+	
+	
+	img&#123;  
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width:100%;
+	max-height:100%;
+	width: auto;
+	width: 50%;
+	height: auto;
+	text-align:center!important;
+	&#125;
+	
+	
+	
+	.darkmode &#123;
+	background-color: black;
+	color: orange;
+	&#125;
+	
+	
+	.cursore &#123;
+	background: lime;
+	line-height: 17px;
+	margin-left: 3px;
+	-webkit-animation: blink 0.8s infinite;
+	width: 7px;
+	height: 15px;
+	&#125;
+	
+	.cursores &#123;
+	background: lime;
+	line-height: 17px;
+	margin-left: 3px;
+	-webkit-animation: blink 0.8s infinite;
+	width: 7px;   width:  16px;
+	height: 15px; height: 32px;
+	&#125;
+	
+	@-webkit-keyframes blink &#123;
+	0% &#123;background: #222&#125;
+	50% &#123;background: lime&#125;
+	100% &#123;background: #222&#125;
+	&#125;
+	
+	.hack_script&#123;display:none;&#125;
+	
+	&#60;/style&#62;
+	
+	
+	
+	&#60;div class="hack_script"&#62;&#60;input type="range" step="1" min="1" max="2"&#62;&#60;datalist&#62;&#60;option value="1"&#62;&#60;/option&#62;&#60;option value="2"&#62;&#60;/option&#62;&#60;/datalist&#62;&#60;/div&#62;
+	&#60;link rel="preconnect" href="https://fonts.gstatic.com"&#62;
+	&#60;link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet"&#62;
+	&#60;link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet"&#62;
+	&#60;link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"&#62;
+	
+	&#60;/main&#62;
+	
+	&#60;!-- parte compiled fin --&#62;
+	
+  </pre>
+	Internamente alla parte 
+	&#60;!-- parte compiled ini --&#62; 
+	&#60;!-- parte compiled fin --&#62; 
+	si scrive il codice <q>ecmascript</q> 
+	il quale subisce successivmente il processo di 
+	transpiler svelte.
+
+  
+  </li>
+  <li>
+  Una annotazione importante risulta essere che da ecmascript
+  occorre escludere la funzione callback text XMLRequest (presente 
+  invece nella versione html)
+  
+    <pre style="overflow:auto;">
+	
+	function CheckIfExists&#40;&#41;&#123;
+	
+	let FileDaCercare="textoX.txt";
+	let EsisteFileDaCercare = new XMLHttpRequest&#40;&#41;;
+	
+	EsisteFileDaCercare.open&#40;"GET", FileDaCercare, false&#41;;
+	
+	EsisteFileDaCercare.onload = function&#40;&#41; &#123;
+	
+	let Il_File_Esiste = 0;
+	if &#40;EsisteFileDaCercare.status != 200&#41; &#123; 
+		alert&#40;&#96;Error $&#123;EsisteFileDaCercare.status&#125;: $&#123;EsisteFileDaCercare.statusText&#125;&#96;&#41;; 
+		&#47;&#47; alert&#40;FileDaCercare+" = "+Il_File_Esiste&#41;;
+		
+	&#125; else &#123; 
+		Il_File_Esiste = 1;
+		&#47;&#47; alert&#40;&#96;File: $&#123;EsisteFileDaCercare.response.length&#125; bytes&#96;&#41;; 
+		&#47;&#47; alert&#40;FileDaCercare+" = "+Il_File_Esiste&#41;;
+	&#125;
+	
+	
+	if&#40;Il_File_Esiste===1&#41;&#123;
+	
+	&#47;&#47;   alert&#40;"Eseguito call back!"&#41;;
+	
+			function LeggiFileText&#40;FileDaCercare&#41;&#123;
+			
+			let File=FileDaCercare;
+			
+			let RichiedoFileText = new XMLHttpRequest&#40;&#41;;
+			
+			RichiedoFileText.open&#40;"GET", File, false&#41;;
+				RichiedoFileText.onreadystatechange = function &#40;&#41;
+				&#123; let TrovatoFileText = RichiedoFileText.responseText;
+				document.getElementById&#40;"test"&#41;.innerHTML=TrovatoFileText;
+				&#125; ;
+			
+				RichiedoFileText.send&#40;&#41;; 
+			&#125; ;
+			LeggiFileText&#40;FileDaCercare&#41;;
+	&#125;
+	else
+	&#123;
+		&#47;&#47; 	alert&#40;"Impossibile eseguire call back!"&#41;;
+	&#125;
+	
+	
+	&#125;;  EsisteFileDaCercare.send&#40;&#41;;
+	
+	
+	&#125; ;
+	
+	&#47;&#47; 
+	CheckIfExists&#40;&#41;;
+	
+	
+	
+	&#47;&#47;  ini 
+	
+	let Nodo_Text_O_Html = document.getElementById&#40;'test'&#41;;
+	let NodoText = Nodo_Text_O_Html.textContent;
+	let NodoHtml = Nodo_Text_O_Html.innerHtml;
+	&#47;&#47; alert&#40;"NodoText= "+NodoText +""&#41;;
+	
+	&#47;&#47; fin 
+	
+  </pre>
+  La parte <q>XMLRequest</q> fa parte della sezione HTML
+  e non va compilata
+  
+  </li>
+  <li>
+  Qui si tratta dello script ecmascript suddiviso in pezzi di
+  codice. Siccome in modo debugging la variabile <q>NodoText</q>
+  assume in valore di comodo dato che deriverebbe da XMLRequest.
+  Lo stesso valore <q>NodoText</q> viene poi inviato alla funzione
+  javascript apposita per essere inserito nella parte del transpiler.
+  
+  <pre style="overflow:auto;">
+
+	let NodoText &#61; "NodoText debugging for App313_step130h.svelte";
+
+  </pre>
+  
+  </li>
+  <li>
+  La sezione da transpilare si compone delle seguenti funzioni
+		<ol>
+		<li>function TESTAPP(NodoText)
+		<ol>
+		<li>(<i> interna a TESTAPP </i>) function sonda_Input_0101(arg0,arg1,arg2,arg3)</li>
+		</ol>
+		</li>
+		<li>(<i> esterna a TESTAPP </i>) function Tog_No()</li>
+		<li>(<i> esterna a TESTAPP </i>) function Tog_Si()</li>
+		<li>(<i> esterna a TESTAPP </i>) function DarkModo()</li>
+		<li>(<i> esterna a TESTAPP </i>) function LightModo()</li>
+		<li>(<i> esterna a TESTAPP </i>) function SliderNo()</li>
+		<li>(<i> esterna a TESTAPP </i>) function SliderSi()</li>
+		<li>(<i> esterna a TESTAPP </i>) function BorderSi()</li>
+		<li>(<i> esterna a TESTAPP </i>) function BorderNo()</li>
+		<li>(<i> esterna a TESTAPP </i>) function BottoneTest()</li>
+		</ol>
+  
+  
+  </li>
+  <li>
+  <q>function TESTAPP(NodoText)</q> risulta molto importante
+  <pre style="overflow:auto;">
+		&#47;&#47; 
+		&#47;&#47; verdescuro rgb(  3, 55, 73);
+		&#47;&#47; 
+		&#47;&#47; verdemedio rgb( 33, 78, 94);
+		&#47;&#47; 
+		&#47;&#47; verdelight rgb(128,153,163);
+		&#47;&#47; 
+		&#47;&#47; clementina rgb(252, 78,  5);
+		&#47;&#47; 
+  </pre>
+   ^^^ colori di default
+	<pre style="overflow:auto;">
+		&#47;&#47; alert("RILEVATO INTERNO text da file esterno: "+NodoText);
+		let TextoContentToDo = 
+		&#96;
+		$&#123;NodoText&#125;
+		
+		&#96; ;
+	</pre>
+  ^^^ visualizzazione del contenuto del callback XMLRequest
+    
+  </li>
+  <li>
+	Qui facciamo un check del dispositivo usato (Desk o Mobile)
+	in modo da costruire una impalcatura con margini sufficenti per
+	i bottoni di controllo essenziali del framework.
+  	<pre style="overflow:auto;">
+   let    DESKTOP_CHECK = 1 ;
+   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+    &#123; DESKTOP_CHECK = 0 ; } else &#123; DESKTOP_CHECK = 1 ; }
+   
+   let LarghezzaBody_Rem = window.innerWidth   /16;
+   let AltezzaBody_Rem   = window.innerHeight  /16;  
+	</pre>
+	Da questo punto in poi tutte le dimensioni lineari
+	sono in rem.
+  
+  </li>
+  <li>
+  Bordi e padding utili in fase di debugging
+  e miglioramenti soprattutto estetici
+    <pre style="overflow:auto;">
+		let BordoBODY &#61; 0.05; 
+		let BordoMAIN &#61; 0.05;
+		let BordoBUON &#61; 0.05;
+		let BordoPOMM &#61; 0.05;
+		let BordoRANG &#61; 0.05;
+		
+		let PaddingBODY &#61; 0.00; 
+		let PaddingMAIN &#61; 0.00;
+		let PaddingBUON &#61; 0.00;
+		let PaddingPOMM &#61; 0.00;
+		let PaddingRANG &#61; 0.00;
+
+		let CompensazioneEventualiBordi &#61; BordoBODY;
+		LarghezzaBody_Rem  &#61;  LarghezzaBody_Rem - CompensazioneEventualiBordi;
+		AltezzaBody_Rem    &#61;  AltezzaBody_Rem   - CompensazioneEventualiBordi;
+
+ 
+	</pre>
+  
+  </li>
+  <li>
+  Definizioni personalizzate a seconda del dispositivo intercettato
+    <pre style="overflow:auto;">
+   
+   let MargineSinistra_Rem &#61; 5 ;
+   if (DESKTOP_CHECK &#61;&#61; 0){MargineSinistra_Rem &#61; 5.0 ;}
+   if (DESKTOP_CHECK &#61;&#61; 1){MargineSinistra_Rem &#61; 2.5 ;}
+   
+   let BordoToggleDevice_Rem;
+   BordoToggleDevice_Rem &#61; MargineSinistra_Rem * 0.50;
+   
+   let LarghezzaApplicazione_Rem &#61; LarghezzaBody_Rem - (MargineSinistra_Rem*2.00);
+   let AltezzaApplicazione_Rem   &#61; AltezzaBody_Rem   - (MargineSinistra_Rem*1.25);
+   AltezzaApplicazione_Rem   &#61; AltezzaApplicazione_Rem  -  PaddingPOMM;  
+   
+   let LarghezzaPianoTerra &#61; LarghezzaApplicazione_Rem;
+   let AltezzaPianoTerra   &#61; AltezzaApplicazione_Rem;
+   
+   let LarghezzaPrimoPiano &#61; LarghezzaApplicazione_Rem;
+   let AltezzaPrimoPiano   &#61; AltezzaApplicazione_Rem;
+
+	</pre>
+
+  
+  </li>
+  <li>
+  Qui ci sono degli alias (in fase di progettazione) e
+  due onclik per attivare il toggle 
+  IMPORTANTISSIMO Test_0101 che raccoglie i dati da <q>input range</q>
+     <pre style="overflow:auto;">
+		let PianoTerraPrimoPiano=
+		&#96;
+		&#60;div id="PIANO_TERRA">&#9888;PIANO_TERRA&#60;/div>
+		&#60;div id="PRIMO_PIANO">&#9888;PRIMO_PIANO&#60;/div>
+		
+		&#96;;
+		
+		
+		let Test_0101=
+		&#96;
+		&#60;div id="TEST_0101"> &#9888;TEST_0101&#60;/div>
+		&#96;;
+		
+		let TogSiTogNo=
+		&#96;
+		&#60;div id="TOG_NO" onclick="Tog_No()" style="display:none;">NO&#60;/div>
+		&#60;div id="TOG_SI" onclick="Tog_Si()" style="display:block;">SI&#60;/div>
+		
+		&#96;;
+
+	</pre>
+ 
+  </li>
+  <li>
+  Qui abbiamo un alias di <q>piano terra</q>
+       <pre style="overflow:auto;">
+	
+	let Pomeriggio=
+	&#96;
+	&#60;div id="POMERIGGIO" style="padding-top:0.50rem;  display:block;">
+	
+	
+		&#60;button id="DARKMODO" onclick="DarkModo()"  style="position:static;top:0rem;left:0.00rem;margin:0rem;padding:0rem;color:maroon;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> dark mode  &#60;/button>
+		&#60;button id="LIGHTMOD" onclick="LightModo()" style="position:static;top:0rem;left:1.25rem;margin:0rem;padding:0rem;color:orange;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> light mode &#60;/button>
+		
+		&#60;button id="SLIDERSI" onclick="SliderSi()" style="position:static;top:0rem;left:0.00rem;margin:0rem;padding:0rem;color:blue;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> vedi slider    &#60;/button>
+		&#60;button id="SLIDERNO" onclick="SliderNo()" style="position:static;top:0rem;left:1.25rem;margin:0rem;padding:0rem;color:magenta;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> nascondi slider &#60;/button>
+		
+		&#60;button id="BORDERSI" onclick="BorderSi()" style="position:static;top:0rem;left:0.00rem;margin:0rem;padding:0rem;color:blue;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> BorderSi()    &#60;/button>
+		&#60;button id="BORDERNO" onclick="BorderNo()" style="position:static;top:0rem;left:1.25rem;margin:0rem;padding:0rem;color:magenta;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> BorderNo() &#60;/button>
+		
+		
+		&#60;button onclick="BottoneTest()">BottoneTest()&#60;/button>
+	
+	
+	
+		&#60;div id="OGGI">
+		&#60;pre style="overflow:auto;">
+		! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &#60; = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \\ ] ^ _ \&#96; a b c d e f g h i j k l m n o p q r s t u v w x y z &#123; | &#125; ~ € ‚ ƒ „ … † ‡ ˆ ‰ Š ‹ Œ Ž ‘ ’ “ ” • – — ˜ ™ š › œ ž Ÿ ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿ À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ð Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ
+		&#60;/pre>
+			&#60;div style="border:solid 0.075rem rgba(252,78,5,0.5);">
+			
+			&#96;+TextoContentToDo +&#96;
+			
+			&#60;/div>
+		&#60;/div>
+	
+	&#60;/div>
+	&#96;;
+	
+	</pre>
+  
+  </li>
+  <li>
+	Qui un test per immagini <q>alias primo piano</q> 
+    <pre style="overflow:auto;">
+
+	let Immagini=
+	&#96;
+	&#60;article id="IMMAGINI">
+	
+	&#60;!--
+	&#60;img src="https://scrivi.altervista.org/testsvelte/lib221a/svelte_code_1.jpg" alt="case_study_codice_1">&#60;br>
+	&#60;img src="https://scrivi.altervista.org/testsvelte/lib221a/svelte_code_2.jpg" alt="case_study_codice_2">&#60;br>
+	-->
+	
+	
+	&#60;/article>
+	
+	&#96;;
+
+	</pre>
+		La variabile <q>Immagini</q> con un esercizio di stile
+		viene inserita in una nuova variabile <q>Buongiorno</q>
+	<pre style="overflow:auto;">
+	
+	let Buongiorno=
+	&#96;
+	&#60;div id="BUONGIORNO" style="font-family:'Dancing Script';display:none;">
+	
+	305aphp 2023:03:05:10:10
+	
+	$&#123;Immagini&#125;
+	
+	(--immagini--)
+	
+	
+	&#60;/div>
+	&#96;;
+	
+	</pre>
+
+  
+  </li>
+  <li>
+  <div style="background-color:orange;color:black;">
+  Qui un aspetto molto importante in quanto fornisce 
+  un input regolatore della responsivity (e anche per
+  quanto riguarda il transpiler una corretta conversione
+  svelte del codice)
+  </div>
+	<pre style="overflow:auto;">
+	
+	
+	let ContenitoreInputRangeDatalist=
+	&#96;
+	&#60;article id="CONTENITORE_INPUT_0101"  style="display:block;">
+	&#60;div>
+	&#60;input id="INPUT_SCELTO_0101" type="range" list="LISTA_0101" step="0.10" min="0.00" max="6.00" /> 
+	&#60;/div>
+	&#60;/article> 
+	&#60;datalist id="LISTA_0101">
+	&#60;option id="OPZ_00" value="0.00"> &#60;/option> 
+	&#60;option id="OPZ_01" value="0.11"> &#60;/option> 
+	&#60;option id="OPZ_02" value="0.22"> &#60;/option> 
+	&#60;option id="OPZ_03" value="0.33"> &#60;/option> 
+	&#60;option id="OPZ_04" value="0.44"> &#60;/option> 
+	&#60;option id="OPZ_05" value="0.55"> &#60;/option> 
+	&#60;option id="OPZ_06" value="0.66"> &#60;/option> 
+	&#60;option id="OPZ_07" value="0.77"> &#60;/option> 
+	&#60;option id="OPZ_08" value="0.88"> &#60;/option> 
+	&#60;option id="OPZ_09" value="0.99"> &#60;/option> 
+	&#60;option id="OPZ_10" value="1.00"> &#60;/option> 
+	&#60;option id="OPZ_11" value="1.11"> &#60;/option> 
+	&#60;option id="OPZ_12" value="1.22"> &#60;/option> 
+	&#60;option id="OPZ_13" value="1.33"> &#60;/option> 
+	&#60;option id="OPZ_14" value="1.44"> &#60;/option> 
+	&#60;option id="OPZ_15" value="1.55"> &#60;/option> 
+	&#60;option id="OPZ_16" value="1.66"> &#60;/option> 
+	&#60;option id="OPZ_17" value="1.77"> &#60;/option> 
+	&#60;option id="OPZ_18" value="1.88"> &#60;/option> 
+	&#60;option id="OPZ_19" value="1.99"> &#60;/option> 
+	&#60;option id="OPZ_20" value="2.00"> &#60;/option> 
+	&#60;option id="OPZ_21" value="2.11"> &#60;/option> 
+	&#60;option id="OPZ_22" value="2.22"> &#60;/option> 
+	&#60;option id="OPZ_23" value="2.33"> &#60;/option> 
+	&#60;option id="OPZ_24" value="2.44"> &#60;/option> 
+	&#60;option id="OPZ_25" value="2.55"> &#60;/option> 
+	&#60;option id="OPZ_26" value="2.66"> &#60;/option> 
+	&#60;option id="OPZ_27" value="2.77"> &#60;/option> 
+	&#60;option id="OPZ_28" value="2.88"> &#60;/option> 
+	&#60;option id="OPZ_29" value="2.99"> &#60;/option> 
+	&#60;option id="OPZ_30" value="3.00"> &#60;/option> 
+	&#60;option id="OPZ_31" value="3.11"> &#60;/option> 
+	&#60;option id="OPZ_32" value="3.22"> &#60;/option> 
+	&#60;option id="OPZ_33" value="3.33"> &#60;/option> 
+	&#60;option id="OPZ_34" value="3.44"> &#60;/option> 
+	&#60;option id="OPZ_35" value="3.55"> &#60;/option> 
+	&#60;option id="OPZ_36" value="3.66"> &#60;/option> 
+	&#60;option id="OPZ_37" value="3.77"> &#60;/option> 
+	&#60;option id="OPZ_38" value="3.88"> &#60;/option> 
+	&#60;option id="OPZ_39" value="3.99"> &#60;/option> 
+	&#60;option id="OPZ_40" value="4.00"> &#60;/option> 
+	&#60;option id="OPZ_41" value="4.11"> &#60;/option> 
+	&#60;option id="OPZ_42" value="4.22"> &#60;/option> 
+	&#60;option id="OPZ_43" value="4.33"> &#60;/option> 
+	&#60;option id="OPZ_44" value="4.44"> &#60;/option> 
+	&#60;option id="OPZ_45" value="4.55"> &#60;/option> 
+	&#60;option id="OPZ_46" value="4.66"> &#60;/option> 
+	&#60;option id="OPZ_47" value="4.77"> &#60;/option> 
+	&#60;option id="OPZ_48" value="4.88"> &#60;/option> 
+	&#60;option id="OPZ_49" value="4.99"> &#60;/option> 
+	&#60;option id="OPZ_50" value="5.00"> &#60;/option> 
+	&#60;option id="OPZ_51" value="5.11"> &#60;/option> 
+	&#60;option id="OPZ_52" value="5.22"> &#60;/option> 
+	&#60;option id="OPZ_53" value="5.33"> &#60;/option> 
+	&#60;option id="OPZ_54" value="5.44"> &#60;/option> 
+	&#60;option id="OPZ_55" value="5.55"> &#60;/option> 
+	&#60;option id="OPZ_56" value="5.66"> &#60;/option> 
+	&#60;option id="OPZ_57" value="5.77"> &#60;/option> 
+	&#60;option id="OPZ_58" value="5.88"> &#60;/option> 
+	&#60;option id="OPZ_59" value="5.99"> &#60;/option>
+	&#60;option id="OPZ_60" value="6.00"> &#60;/option> 
+	&#60;/datalist> 
+	
+	&#96;;
+	
+	
+	</pre>
+  
+  </li>
+  <li>
+  <div style="background-color:lightgreen;color:black;">
+  Qui un utilizzo delle variabili javascript per definire
+  solamente degli stili css
+	</div>
+	
+	<pre style="overflow:auto;">
+	
+	
+	let dgebiPianoTerra =
+	&#96;
+	&#60;style>
+	#MAIN&#123;
+	position:fixed;top:0rem;left:0rem;
+	width: &#96;+LarghezzaBody_Rem+&#96;rem;
+	height:&#96;+AltezzaBody_Rem+&#96;rem;
+	
+	&#125;
+	
+	
+	#PIANO_TERRA&#123;
+	position:fixed;top:0rem;left:&#96;+MargineSinistra_Rem+&#96;rem;
+	width: &#96;+LarghezzaPianoTerra+&#96;rem;
+	height:&#96;+AltezzaPianoTerra+&#96;rem;
+	
+	
+	
+	&#125;
+	
+	&#60;/style>
+	
+	
+	&#96;;
+	
+	
+	
+	
+	let dgebiPrimoPiano =
+	&#96;
+	&#60;style>
+	
+	
+	
+	#PRIMO_PIANO&#123;
+	position:fixed;top:0rem;left:&#96;+MargineSinistra_Rem+&#96;rem;
+	width: &#96;+LarghezzaPrimoPiano+&#96;rem;
+	height:&#96;+AltezzaPrimoPiano+&#96;rem;
+	
+	
+	&#125;
+
+	
+	
+	#BUONGIORNO,#POMERIGGIO&#123;
+	position:fixed;top:0rem;left:&#96;+MargineSinistra_Rem+&#96;rem;
+	width: &#96;+LarghezzaPrimoPiano+&#96;rem;
+	height:&#96;+AltezzaPrimoPiano+&#96;rem;
+	text-align:left;
+	overflow:auto;
+	&#125;
+	
+	#BUONGIORNO&#123;
+	padding:&#96;+PaddingBUON+&#96;rem;
+	z-index:10000000;
+	&#125;
+	
+	
+	
+	#POMERIGGIO&#123;
+	padding:&#96;+PaddingPOMM+&#96;rem;
+	z-index:initial;
+	&#125;
+	
+	
+	
+	&#60;/style>
+	
+	
+	&#96;;
+	
+	
+	
+	
+	
+	let dgebiTogSi=
+	&#96;
+	&#60;style>
+	#TOG_SI&#123;position:fixed;bottom:0rem;left:0rem;
+	
+		border-top:solid     &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-right:solid   &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-bottom:solid  &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-left:solid    &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-radius:0.5rem;
+		border-radius:0.0rem;
+		display:inline-block; 
+		cursor:pointer;
+		z-index:10000000;
+	&#125;
+	&#60;/style>
+	
+	&#96;;
+	
+	
+	
+	let dgebiTogNo=
+	&#96;
+	&#60;style>
+	#TOG_NO&#123;position:fixed;bottom:0rem;left:0rem;
+	
+		border-top:solid     &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-right:solid   &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-bottom:solid  &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-left:solid    &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-radius:0.5rem;
+		border-radius:0.0rem;
+		display:inline-block; 
+		cursor:pointer;
+		z-index:10000000;
+	
+	
+	&#125; 
+	&#60;/style>
+	
+	
+	&#96;;
+	
+	
+	
+		
+	</pre>
+	
+  
+  </li>
+  <li>
+	<div style="background-color:lightgreen;color:black;">
+	Qui <q>APPLIC_AZIONE</q> sono compilati gli stili e un esecutivo di input 
+	range utilizzando le variabili letterali
+	</div>
+	<pre style="overflow:auto;">
+	
+	document.getElementById("APPLIC_AZIONE").innerHTML=
+	&#96;
+	$&#123;PianoTerraPrimoPiano&#125;
+	
+	$&#123;Test_0101&#125;
+	
+	$&#123; TogSiTogNo &#125;
+	
+	
+	$&#123;Pomeriggio&#125;
+	
+	$&#123;Buongiorno&#125;
+	
+	$&#123;ContenitoreInputRangeDatalist&#125;
+	
+	
+	&#96;;
+	
+	</pre>
+
+
+
+  
+  </li>
+  <li>
+  Qui altri <q>id</q> ausiliari per gli stili
+	<pre style="overflow:auto;">
+	
+	document.getElementById("PIANO_TERRA").innerHTML=
+	&#96;
+	$&#123;dgebiPianoTerra&#125;
+	
+	&#96;;
+	
+	
+	document.getElementById("PRIMO_PIANO").innerHTML=
+	&#96;
+	
+	$&#123;dgebiPrimoPiano&#125;
+	
+	&#96;;
+	
+	
+	
+	document.getElementById("TOG_SI").innerHTML=
+	&#96;
+	$&#123;dgebiTogSi&#125;
+	
+	&#96;;
+	
+	
+	document.getElementById("TOG_NO").innerHTML=
+	&#96;
+	$&#123;dgebiTogNo&#125;
+	
+	&#96;;
+	
+	
+	</pre>
+
+  
+  
+  </li>
+  <li>
+  <div style="background-color:orange;color:black;">
+  Qui sono definite alcune variabili utilizzate come
+  argomenti per la funzione <q>function sonda_Input_0101(arg0,arg1,arg2,arg3)</q>
+  </div>
+	<pre style="overflow:auto;">
+
+
+	let TIPO_DISPOSITIVO&#61;DESKTOP_CHECK  ;
+	let LARGHEZZA_PIANOTERRA &#61; LarghezzaPianoTerra;
+	let ALTEZZA_PRIMOPIANO &#61; AltezzaPrimoPiano;
+	let MARGINE_SINISTRA &#61; MargineSinistra_Rem;
+
+
+	</pre>
+  
+  </li>
+  <li>
+  <div style="background-color:orange;color:black;">
+  Qui la funzione <q>sonda_Input_0101</q>con il codice 
+  </div>
+	<pre style="overflow:auto;">
+	
+	//
+	// 0&#61;mobile 1&#61;desktop
+	//
+	// alert(TIPO_DISPOSITIVO);
+	//
+	// || 
+	// || internamente a questa funzione
+	// || viene passato TIPO_DISPOSITIVO importante
+	// || riconoscimento del tipo dispositivo
+	// || che rende possibile responsive
+	// || tramite variabili javascrit
+	// || 
+	// || 
+	// \\/
+	function sonda_Input_0101(arg0,arg1,arg2,arg3)&#123;
+	
+	let TipoDiDispositivo&#61;arg0;
+	let LarghezzaPianoterra&#61;arg1;
+	let AltezzaPrimopiano&#61;arg2;
+	let MargineSinistra &#61;arg3;
+	
+	
+	//alert("MargineSinistra&#61; " + MargineSinistra );
+	
+	let   VALORE_DI_INPUT_0101&#61;document.getElementById("INPUT_SCELTO_0101").value; 
+	let   DIM_INPUT_0101 &#61; VALORE_DI_INPUT_0101;
+	
+	
+	if (TipoDiDispositivo&#61;&#61;&#61;0)&#123;
+	DIM_INPUT_0101 &#61; DIM_INPUT_0101 * 0.5;
+	&#125;
+	
+	if (TipoDiDispositivo&#61;&#61;&#61;1)&#123;
+	DIM_INPUT_0101 &#61; DIM_INPUT_0101 * 0.325;
+	&#125;
+	
+	
+	
+	document.getElementById("TEST_0101").innerHTML&#61;
+	&#96;
+	&#60;style>
+	#CONTENITORE_INPUT_0101&#123;
+	position:fixed;
+	bottom:0rem;left:&#96;+MargineSinistra+&#96;rem;
+	
+	
+	width:&#96;+ LarghezzaPianoterra +&#96;rem;
+	width:&#96;+ (LarghezzaPianoterra * 1) +&#96;rem;
+	
+	
+	height:&#96;+MargineSinistra+&#96;rem;
+	
+	
+	&#125;
+	
+	input[type&#61;"range"]&#123;
+	-webkit-appearance:none;
+	
+	background-color:transparent;
+	
+	width:100%;
+	width:99.0%;
+	
+	
+	z-index:1000000!important;
+	
+	&#125;
+	
+	
+	
+	#APPLICAZIONE&#123;font-size:&#96;+DIM_INPUT_0101+&#96;rem!important;&#125;
+	#BUONGIORNO&#123;font-size:&#96;+DIM_INPUT_0101+&#96;rem!important;&#125;
+	#POMERIGGIO&#123;font-size:&#96;+DIM_INPUT_0101+&#96;rem!important;&#125;
+	
+	
+	
+	img&#123;width:&#96;+ (DIM_INPUT_0101 * 20) +&#96;rem!important;&#125;
+	
+	
+	
+	
+	#DARKMODO:hover&#123;background-color:teal!important;color:white!important;&#125;
+	#LIGHTMOD:hover&#123;background-color:teal!important;color:white!important;&#125;
+	
+	#SLIDERSI:hover&#123;background-color:maroon!important;color:white!important;&#125;
+	#SLIDERNO:hover&#123;background-color:maroon!important;color:white!important;&#125;
+	
+	
+	
+	&#60;/style>
+	
+	&#96;;
+	
+	
+	
+	&#125; ;
+	setInterval(sonda_Input_0101, 1, TIPO_DISPOSITIVO,LARGHEZZA_PIANOTERRA ,ALTEZZA_PRIMOPIANO,MARGINE_SINISTRA ) ;
+	
+	
+	</pre>
+ 
+  
+  
+  </li>
+  <li>
+  <div style="background-color:yellow;color:red;font-weight:bold;border-bottom:dotted 0.15rem red;">
+  &#9888; Qui la chiusura (con argomento) della
+  funzione <q>avvolgente</q> TESTAPP(NodoText);
+  </div>
+	<pre style="overflow:auto;">
+
+
+	&#125;; // TESTAPP
+	
+	TESTAPP(NodoText);
+	
+	</pre>
+  
+  </li>
+  <li>
+  Fuori da <q>TESTAPP</q> si trova la funzione
+  che gestisce il <q>toggle</q>
+	
+	<pre style="overflow:auto;">
+	
+	
+	// toggle harlequin mode ini 
+	
+	function Tog_No()&#123;
+	document.querySelector("#BUONGIORNO").style.display="none";
+	document.querySelector("#POMERIGGIO").style.display="block";
+	document.querySelector("#TOG_NO").style.display="none";
+	document.querySelector("#TOG_SI").style.display="block";
+	&#125;
+	
+	
+	function Tog_Si()&#123;
+	document.querySelector("#BUONGIORNO").style.display="block";
+	document.querySelector("#POMERIGGIO").style.display="none";
+	document.querySelector("#TOG_NO").style.display="block";
+	document.querySelector("#TOG_SI").style.display="none";
+	&#125;
+	
+	// toggle harlequin mode fin 
+	
+	
+	</pre>
+ 
+  </li>
+  <li>
+  <div style="background-color:lightgreen;color:black;">Qui le utilities supplementari</div>
+	
+	<pre style="overflow:auto;">
+	
+	
+	// toggle dark light ini 
+	
+	function DarkModo() &#123; 
+	
+	
+	// ElementoMain &#61; document.querySelector("#MAIN");
+	// ElementoMain.style.color&#61;"orange";
+	// ElementoMain.style.backgroundColor&#61;"black"; 
+	// 
+	// ElementoPomeriggio &#61; document.querySelector("#POMERIGGIO");
+	// ElementoPomeriggio.style.color&#61;"orange";
+	// ElementoPomeriggio.style.backgroundColor&#61;"black";
+	// 
+	// ElementoBuongiorno &#61; document.querySelector("#BUONGIORNO");
+	// ElementoBuongiorno.style.color&#61;"orange";
+	// ElementoBuongiorno.style.backgroundColor&#61;"black";
+	// 
+	// ElementoContenitoreInput_0101 &#61; document.querySelector("#INPUT_SCELTO_0101");
+	// ElementoContenitoreInput_0101.style.color&#61;"orange";
+	// ElementoContenitoreInput_0101.style.backgroundColor&#61;"black";
+	
+	
+	
+	// eco sistema 
+	ElementoMain &#61; document.querySelector("#MAIN");
+	ElementoMain.style.backgroundColor&#61;"rgb(  3, 55, 73)"; 
+	ElementoMain.style.color&#61;"rgb(252, 78,  5)";
+	
+	ElementoPomeriggio &#61; document.querySelector("#POMERIGGIO");
+	ElementoPomeriggio.style.backgroundColor&#61;"rgb(  3, 55, 73)";
+	ElementoPomeriggio.style.color&#61;"rgb(252, 78,  5)";
+	
+	
+	ElementoBuongiorno &#61; document.querySelector("#BUONGIORNO");
+	ElementoBuongiorno.style.backgroundColor&#61;"rgb(  3, 55, 73)";
+	ElementoBuongiorno.style.color&#61;"rgb(252, 78,  5)";
+	
+	
+	ElementoContenitoreInput_0101 &#61; document.querySelector("#INPUT_SCELTO_0101");
+	ElementoContenitoreInput_0101.style.backgroundColor&#61;"rgb(  3, 55, 73)";
+	ElementoContenitoreInput_0101.style.color&#61;"rgb(252, 78,  5)";
+	
+	
+	&#125;
+	
+	
+	
+	function LightModo() &#123;
+	
+	ElementoMain &#61; document.querySelector("#MAIN");
+	ElementoMain.style.color&#61;"initial";
+	ElementoMain.style.backgroundColor&#61;"initial";
+	
+	ElementoPomeriggio &#61; document.querySelector("#POMERIGGIO");
+	ElementoPomeriggio.style.color&#61;"initial";
+	ElementoPomeriggio.style.backgroundColor&#61;"initial";
+	
+	ElementoBuongiorno &#61; document.querySelector("#BUONGIORNO");
+	ElementoBuongiorno.style.color&#61;"initial";
+	ElementoBuongiorno.style.backgroundColor&#61;"initial";
+	
+	ElementoContenitoreInput_0101 &#61; document.querySelector("#INPUT_SCELTO_0101");
+	ElementoContenitoreInput_0101.style.color&#61;"initial";
+	ElementoContenitoreInput_0101.style.backgroundColor&#61;"initial";
+	
+	
+	&#125;
+	
+	// toggle dark light fin 
+	
+	
+	
+	
+	
+	// toggle slider ini 
+	
+	function SliderNo() &#123;
+	ElementoSlider &#61; document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoSlider.style.display&#61;"none";
+	
+	&#125;
+	
+	
+	function SliderSi() &#123;
+	ElementoSlider &#61; document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoSlider.style.display&#61;"block";
+	
+	&#125;
+	
+	// toggle slider fin 
+	
+	
+	
+	//  border debugging ini 
+	
+	function BorderSi()&#123;
+	ElementoBorder_CONTENITORE_INPUT_0101 &#61; document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoBorder_CONTENITORE_INPUT_0101.style.border&#61;"solid "+BordoRANG+"rem magenta";
+	ElementoBorder_MAIN &#61; document.querySelector("#MAIN");
+	ElementoBorder_MAIN.style.border&#61;"solid "+BordoMAIN+"rem olive";
+	ElementoBorder_BUONGIORNO &#61; document.querySelector("#BUONGIORNO");
+	ElementoBorder_BUONGIORNO.style.border&#61;"solid "+BordoBUON+"rem maroon";
+	ElementoBorder_POMERIGGIO &#61; document.querySelector("#POMERIGGIO");
+	ElementoBorder_POMERIGGIO.style.border&#61;"solid "+BordoPOMM+"rem lime";
+	
+	
+	&#125;
+	
+	function BorderNo()&#123;
+	ElementoBorder_CONTENITORE_INPUT_0101 &#61; document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoBorder_CONTENITORE_INPUT_0101.style.border&#61;"solid 0.00rem magenta";
+	ElementoBorder_MAIN &#61; document.querySelector("#MAIN");
+	ElementoBorder_MAIN.style.border&#61;"solid 0.00rem olive";
+	ElementoBorder_BUONGIORNO &#61; document.querySelector("#BUONGIORNO");
+	ElementoBorder_BUONGIORNO.style.border&#61;"solid 0.00rem maroon";
+	ElementoBorder_POMERIGGIO &#61; document.querySelector("#POMERIGGIO");
+	ElementoBorder_POMERIGGIO.style.border&#61;"solid 0.00rem lime";
+	
+	
+	&#125;
+	
+	
+	
+	//  border debugging fin 
+	
+	
+	
+	
+	function BottoneTest()&#123;alert("OK BottoneTest()")&#125;;
+	
+	</pre>
+	
+	
+  
+  </li>
+  <li>
+	<article style="background-color:lightyellow;color:red;">
+	Qui termina la raccolta dei <q>pezzi di codice</q> in modo
+	bottom-up. Occorre assemblare i vari <q>frammenti</q>
+	o moduli per formare un programma funzionante con articolazione
+	di moduli. Sostanzialmente occorre eseguire un test e poi
+	decidere se la scrittura di questo <q>tutorial</q> funzioni.
+	Una volta fatto il test usare questo feedback per migliorare il
+	tutorial.
+	
+	</article>
+  </li>
+  <li>
+  Per eseguire occorre avere installato node 
+  <a href="https://nodejs.org/en/">https://nodejs.org/en/</a>
+  <br><br>
+  <span>Your environment has been set up for using Node.js 19.7.0 (x64) and npm.</span>
+  <br><br>
+
+	<pre style="overflow:auto;">
+	X:\&#62;npm create vite@latest buildsvelte -- --template svelte && cd buildsvelte && npm install && npm run build && npm run preview
+	
+	Scaffolding project in X:\buildsvelte...
+	
+	Done. Now run:
+	
+	cd buildsvelte
+	npm install
+	npm run dev
+	
+	
+	added 24 packages, and audited 25 packages in 46s
+	
+	4 packages are looking for funding
+	run &#96;npm fund&#96; for details
+	
+	found 0 vulnerabilities
+	
+	&#62; buildsvelte@0.0.0 build
+	&#62; vite build
+	
+	vite v4.1.4 building for production...
+	✓ 9 modules transformed.
+	19:15:46 [vite-plugin-svelte] dom compile done.
+	package         files    time      avg
+	buildsvelte         2   0.16s   81.9ms
+	dist/index.html                  0.45 kB
+	dist/assets/svelte-a39f39b7.svg  1.95 kB
+	dist/assets/index-9ea02431.css   1.30 kB │ gzip: 0.65 kB
+	dist/assets/index-e83122bb.js    5.62 kB │ gzip: 2.58 kB
+	
+	&#62; buildsvelte@0.0.0 preview
+	&#62; vite preview
+	
+	➜  Local:   http://localhost:4173/
+	➜  Network: use --host to expose
+	
+	</pre>
+	
+	Con i comandi soprascritti si installa tutte le
+	occorrenze per poter compilare in <q>locale</q>
+	la <q>app</q>.
+
+	
+
+  <br><br>
+  </li>
+  <li>
+  Tramite la compilazione si ottiene un <q>file.js</q> utilizzabile
+  come modulo (in parte editabile) e inseribile (come un <q>include</q>
+  nel contesto di un programma html/php. Nel folder <q>dist/assets</q> 
+  esistono i files js e css che permettono di far funzionare il framework.
+  In abbinata occorre preservare il <q>file.svelte</q> in quanto la compilazione
+  ne trasforma la <q>lettura</q>.
+  </li>
+  <li>
+  Qui il <q>file.svelte</q> sorgente
+  
+		<pre style="border-left:solid 0.15rem lightgreen;overflow:auto;">
+		
+
+
+	
+	&#60;!-- parte compiled ini -->
+	&#60;main id="MAIN">
+	
+	&#60;div style="position:fixed;bottom:0rem;left:25%;font-size:75%;"> 
+	ALDo_v00 version 317_step133b 20:23:03:17:08:52
+	&#60;/div>
+	
+	&#60;div  id="APPLIC_AZIONE" > err APPLIC_AZIONE&#60;/div>
+	
+	&#60;div id="test" style="display:none;">⚠test&#60;/div>
+	&#60;!-- script ini -->
+	
+	
+	&#60;script>
+	let NodoText = "NodoText ALDo_v00 version 317_step133b 20:23:03:17:08:52";
+	
+	function TESTAPP(NodoText)&#123;
+		// 
+		// verdescuro rgb(  3, 55, 73);
+		// 
+		// verdemedio rgb( 33, 78, 94);
+		// 
+		// verdelight rgb(128,153,163);
+		// 
+		// clementina rgb(252, 78,  5);
+		// 
+		// alert("RILEVATO INTERNO text da file esterno: "+NodoText);
+
+		let TextoContentToDo = 
+		&#96;
+		$&#123;NodoText&#125;
+		
+		&#96; ; 
+
+
+   let    DESKTOP_CHECK = 1 ;
+   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+    &#123; DESKTOP_CHECK = 0 ; &#125; else &#123; DESKTOP_CHECK = 1 ; &#125;
+   
+   let LarghezzaBody_Rem = window.innerWidth   /16;
+   let AltezzaBody_Rem   = window.innerHeight  /16;  
+	
+
+
+		let BordoBODY = 0.05; 
+		let BordoMAIN = 0.05;
+		let BordoBUON = 0.05;
+		let BordoPOMM = 0.05;
+		let BordoRANG = 0.05;
+		
+		let PaddingBODY = 0.00; 
+		let PaddingMAIN = 0.00;
+		let PaddingBUON = 0.00;
+		let PaddingPOMM = 0.00;
+		let PaddingRANG = 0.00;
+
+		let CompensazioneEventualiBordi = BordoBODY;
+		LarghezzaBody_Rem  =  LarghezzaBody_Rem - CompensazioneEventualiBordi;
+		AltezzaBody_Rem    =  AltezzaBody_Rem   - CompensazioneEventualiBordi;
+
+
+
+
+   let MargineSinistra_Rem = 5 ;
+   if (DESKTOP_CHECK == 0)&#123;MargineSinistra_Rem = 5.0 ;&#125;
+   if (DESKTOP_CHECK == 1)&#123;MargineSinistra_Rem = 2.5 ;&#125;
+   
+   let BordoToggleDevice_Rem;
+   BordoToggleDevice_Rem = MargineSinistra_Rem * 0.50;
+   
+   let LarghezzaApplicazione_Rem = LarghezzaBody_Rem - (MargineSinistra_Rem*2.00);
+   let AltezzaApplicazione_Rem   = AltezzaBody_Rem   - (MargineSinistra_Rem*1.25);
+   AltezzaApplicazione_Rem   = AltezzaApplicazione_Rem  -  PaddingPOMM;  
+   
+   let LarghezzaPianoTerra = LarghezzaApplicazione_Rem;
+   let AltezzaPianoTerra   = AltezzaApplicazione_Rem;
+   
+   let LarghezzaPrimoPiano = LarghezzaApplicazione_Rem;
+   let AltezzaPrimoPiano   = AltezzaApplicazione_Rem;
+
+
+
+
+
+
+		let PianoTerraPrimoPiano=
+		&#96;
+		&#60;div id="PIANO_TERRA">⚠PIANO_TERRA&#60;/div>
+		&#60;div id="PRIMO_PIANO">⚠PRIMO_PIANO&#60;/div>
+		
+		&#96;;
+		
+		
+		let Test_0101=
+		&#96;
+		&#60;div id="TEST_0101"> ⚠TEST_0101&#60;/div>
+		&#96;;
+		
+		let TogSiTogNo=
+		&#96;
+		&#60;div id="TOG_NO" onclick="Tog_No()" style="display:none;">NO&#60;/div>
+		&#60;div id="TOG_SI" onclick="Tog_Si()" style="display:block;">SI&#60;/div>
+		
+		&#96;;
+
+
+
+
+
+
+
+	let Pomeriggio=
+	&#96;
+	&#60;div id="POMERIGGIO" style="padding-top:0.50rem;  display:block;">
+	
+	
+		&#60;button id="DARKMODO" onclick="DarkModo()"  style="position:static;top:0rem;left:0.00rem;margin:0rem;padding:0rem;color:maroon;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> dark mode  &#60;/button>
+		&#60;button id="LIGHTMOD" onclick="LightModo()" style="position:static;top:0rem;left:1.25rem;margin:0rem;padding:0rem;color:orange;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> light mode &#60;/button>
+		
+		&#60;button id="SLIDERSI" onclick="SliderSi()" style="position:static;top:0rem;left:0.00rem;margin:0rem;padding:0rem;color:blue;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> vedi slider    &#60;/button>
+		&#60;button id="SLIDERNO" onclick="SliderNo()" style="position:static;top:0rem;left:1.25rem;margin:0rem;padding:0rem;color:magenta;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> nascondi slider &#60;/button>
+		
+		&#60;button id="BORDERSI" onclick="BorderSi()" style="position:static;top:0rem;left:0.00rem;margin:0rem;padding:0rem;color:blue;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> BorderSi()    &#60;/button>
+		&#60;button id="BORDERNO" onclick="BorderNo()" style="position:static;top:0rem;left:1.25rem;margin:0rem;padding:0rem;color:magenta;font-size:1.25rem;border:solid 0.005rem blue;border-radius:0.5rem;cursor:pointer;"> BorderNo() &#60;/button>
+		
+		
+		&#60;button onclick="BottoneTest()">BottoneTest()&#60;/button>
+	
+	
+	
+		&#60;div id="OGGI">
+			&#60;div style="border:solid 0.075rem rgba(252,78,5,0.5);">
+			
+			&#96;+TextoContentToDo +&#96;
+			
+			&#60;/div>
+		&#60;/div>
+	
+	&#60;/div>
+	&#96;;
+
+
+
+
+	let Immagini=
+	&#96;
+	&#60;article id="IMMAGINI">
+	
+	&#60;!--
+	&#60;img src="https://scrivi.altervista.org/testsvelte/lib221a/svelte_code_1.jpg" alt="case_study_codice_1">&#60;br>
+	&#60;img src="https://scrivi.altervista.org/testsvelte/lib221a/svelte_code_2.jpg" alt="case_study_codice_2">&#60;br>
+	-->
+	
+	
+	&#60;/article>
+	
+	&#96;;
+
+
+
+	let Buongiorno=
+	&#96;
+	&#60;div id="BUONGIORNO" style="font-family:'Dancing Script';display:none;">
+	
+	305aphp 2023:03:05:10:10
+	
+	$&#123;Immagini&#125;
+	
+	(--immagini--)
+	
+	
+	&#60;/div>
+	&#96;;
+
+
+
+	let ContenitoreInputRangeDatalist=
+	&#96;
+	&#60;article id="CONTENITORE_INPUT_0101"  style="display:block;">
+	&#60;div>
+	&#60;input id="INPUT_SCELTO_0101" type="range" list="LISTA_0101" step="0.10" min="0.00" max="6.00" /> 
+	&#60;/div>
+	&#60;/article> 
+	&#60;datalist id="LISTA_0101">
+	&#60;option id="OPZ_00" value="0.00"> &#60;/option> 
+	&#60;option id="OPZ_01" value="0.11"> &#60;/option> 
+	&#60;option id="OPZ_02" value="0.22"> &#60;/option> 
+	&#60;option id="OPZ_03" value="0.33"> &#60;/option> 
+	&#60;option id="OPZ_04" value="0.44"> &#60;/option> 
+	&#60;option id="OPZ_05" value="0.55"> &#60;/option> 
+	&#60;option id="OPZ_06" value="0.66"> &#60;/option> 
+	&#60;option id="OPZ_07" value="0.77"> &#60;/option> 
+	&#60;option id="OPZ_08" value="0.88"> &#60;/option> 
+	&#60;option id="OPZ_09" value="0.99"> &#60;/option> 
+	&#60;option id="OPZ_10" value="1.00"> &#60;/option> 
+	&#60;option id="OPZ_11" value="1.11"> &#60;/option> 
+	&#60;option id="OPZ_12" value="1.22"> &#60;/option> 
+	&#60;option id="OPZ_13" value="1.33"> &#60;/option> 
+	&#60;option id="OPZ_14" value="1.44"> &#60;/option> 
+	&#60;option id="OPZ_15" value="1.55"> &#60;/option> 
+	&#60;option id="OPZ_16" value="1.66"> &#60;/option> 
+	&#60;option id="OPZ_17" value="1.77"> &#60;/option> 
+	&#60;option id="OPZ_18" value="1.88"> &#60;/option> 
+	&#60;option id="OPZ_19" value="1.99"> &#60;/option> 
+	&#60;option id="OPZ_20" value="2.00"> &#60;/option> 
+	&#60;option id="OPZ_21" value="2.11"> &#60;/option> 
+	&#60;option id="OPZ_22" value="2.22"> &#60;/option> 
+	&#60;option id="OPZ_23" value="2.33"> &#60;/option> 
+	&#60;option id="OPZ_24" value="2.44"> &#60;/option> 
+	&#60;option id="OPZ_25" value="2.55"> &#60;/option> 
+	&#60;option id="OPZ_26" value="2.66"> &#60;/option> 
+	&#60;option id="OPZ_27" value="2.77"> &#60;/option> 
+	&#60;option id="OPZ_28" value="2.88"> &#60;/option> 
+	&#60;option id="OPZ_29" value="2.99"> &#60;/option> 
+	&#60;option id="OPZ_30" value="3.00"> &#60;/option> 
+	&#60;option id="OPZ_31" value="3.11"> &#60;/option> 
+	&#60;option id="OPZ_32" value="3.22"> &#60;/option> 
+	&#60;option id="OPZ_33" value="3.33"> &#60;/option> 
+	&#60;option id="OPZ_34" value="3.44"> &#60;/option> 
+	&#60;option id="OPZ_35" value="3.55"> &#60;/option> 
+	&#60;option id="OPZ_36" value="3.66"> &#60;/option> 
+	&#60;option id="OPZ_37" value="3.77"> &#60;/option> 
+	&#60;option id="OPZ_38" value="3.88"> &#60;/option> 
+	&#60;option id="OPZ_39" value="3.99"> &#60;/option> 
+	&#60;option id="OPZ_40" value="4.00"> &#60;/option> 
+	&#60;option id="OPZ_41" value="4.11"> &#60;/option> 
+	&#60;option id="OPZ_42" value="4.22"> &#60;/option> 
+	&#60;option id="OPZ_43" value="4.33"> &#60;/option> 
+	&#60;option id="OPZ_44" value="4.44"> &#60;/option> 
+	&#60;option id="OPZ_45" value="4.55"> &#60;/option> 
+	&#60;option id="OPZ_46" value="4.66"> &#60;/option> 
+	&#60;option id="OPZ_47" value="4.77"> &#60;/option> 
+	&#60;option id="OPZ_48" value="4.88"> &#60;/option> 
+	&#60;option id="OPZ_49" value="4.99"> &#60;/option> 
+	&#60;option id="OPZ_50" value="5.00"> &#60;/option> 
+	&#60;option id="OPZ_51" value="5.11"> &#60;/option> 
+	&#60;option id="OPZ_52" value="5.22"> &#60;/option> 
+	&#60;option id="OPZ_53" value="5.33"> &#60;/option> 
+	&#60;option id="OPZ_54" value="5.44"> &#60;/option> 
+	&#60;option id="OPZ_55" value="5.55"> &#60;/option> 
+	&#60;option id="OPZ_56" value="5.66"> &#60;/option> 
+	&#60;option id="OPZ_57" value="5.77"> &#60;/option> 
+	&#60;option id="OPZ_58" value="5.88"> &#60;/option> 
+	&#60;option id="OPZ_59" value="5.99"> &#60;/option>
+	&#60;option id="OPZ_60" value="6.00"> &#60;/option> 
+	&#60;/datalist> 
+	
+	&#96;;
+	
+	
+	
+
+	let dgebiPianoTerra =
+	&#96;
+	&#60;style>
+	#MAIN&#123;
+	position:fixed;top:0rem;left:0rem;
+	width: &#96;+LarghezzaBody_Rem+&#96;rem;
+	height:&#96;+AltezzaBody_Rem+&#96;rem;
+	
+	&#125;
+	
+	
+	#PIANO_TERRA&#123;
+	position:fixed;top:0rem;left:&#96;+MargineSinistra_Rem+&#96;rem;
+	width: &#96;+LarghezzaPianoTerra+&#96;rem;
+	height:&#96;+AltezzaPianoTerra+&#96;rem;
+	
+	
+	
+	&#125;
+	
+	&#60;/style>
+	
+	
+	&#96;;
+	
+	
+	
+	
+	let dgebiPrimoPiano =
+	&#96;
+	&#60;style>
+	
+	
+	
+	#PRIMO_PIANO&#123;
+	position:fixed;top:0rem;left:&#96;+MargineSinistra_Rem+&#96;rem;
+	width: &#96;+LarghezzaPrimoPiano+&#96;rem;
+	height:&#96;+AltezzaPrimoPiano+&#96;rem;
+	
+	
+	&#125;
+
+	
+	
+	#BUONGIORNO,#POMERIGGIO&#123;
+	position:fixed;top:0rem;left:&#96;+MargineSinistra_Rem+&#96;rem;
+	width: &#96;+LarghezzaPrimoPiano+&#96;rem;
+	height:&#96;+AltezzaPrimoPiano+&#96;rem;
+	text-align:left;
+	overflow:auto;
+	&#125;
+	
+	#BUONGIORNO&#123;
+	padding:&#96;+PaddingBUON+&#96;rem;
+	z-index:10000000;
+	&#125;
+	
+	
+	
+	#POMERIGGIO&#123;
+	padding:&#96;+PaddingPOMM+&#96;rem;
+	z-index:initial;
+	&#125;
+	
+	
+	
+	&#60;/style>
+	
+	
+	&#96;;
+	
+	
+	
+	
+	
+	let dgebiTogSi=
+	&#96;
+	&#60;style>
+	#TOG_SI&#123;position:fixed;bottom:0rem;left:0rem;
+	
+		border-top:solid     &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-right:solid   &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-bottom:solid  &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-left:solid    &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-radius:0.5rem;
+		border-radius:0.0rem;
+		display:inline-block; 
+		cursor:pointer;
+		z-index:10000000;
+	&#125;
+	&#60;/style>
+	
+	&#96;;
+	
+	
+	
+	let dgebiTogNo=
+	&#96;
+	&#60;style>
+	#TOG_NO&#123;position:fixed;bottom:0rem;left:0rem;
+	
+		border-top:solid     &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-right:solid   &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,1);
+		border-bottom:solid  &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-left:solid    &#96;+BordoToggleDevice_Rem+&#96;rem rgba(102,152,105,0);
+		border-radius:0.5rem;
+		border-radius:0.0rem;
+		display:inline-block; 
+		cursor:pointer;
+		z-index:10000000;
+	
+	
+	&#125; 
+	&#60;/style>
+	
+	
+	&#96;;
+	
+
+
+
+	
+	document.getElementById("APPLIC_AZIONE").innerHTML=
+	&#96;
+	$&#123;PianoTerraPrimoPiano&#125;
+	
+	$&#123;Test_0101&#125;
+	
+	$&#123; TogSiTogNo &#125;
+	
+	
+	$&#123;Pomeriggio&#125;
+	
+	$&#123;Buongiorno&#125;
+	
+	$&#123;ContenitoreInputRangeDatalist&#125;
+	
+	
+	&#96;;
+	
+		
+	
+	document.getElementById("PIANO_TERRA").innerHTML=
+	&#96;
+	$&#123;dgebiPianoTerra&#125;
+	
+	&#96;;
+	
+	
+	document.getElementById("PRIMO_PIANO").innerHTML=
+	&#96;
+	
+	$&#123;dgebiPrimoPiano&#125;
+	
+	&#96;;
+	
+	
+	
+	document.getElementById("TOG_SI").innerHTML=
+	&#96;
+	$&#123;dgebiTogSi&#125;
+	
+	&#96;;
+	
+	
+	document.getElementById("TOG_NO").innerHTML=
+	&#96;
+	$&#123;dgebiTogNo&#125;
+	
+	&#96;;
+	
+	
+
+
+
+	let TIPO_DISPOSITIVO=DESKTOP_CHECK  ;
+	let LARGHEZZA_PIANOTERRA = LarghezzaPianoTerra;
+	let ALTEZZA_PRIMOPIANO = AltezzaPrimoPiano;
+	let MARGINE_SINISTRA = MargineSinistra_Rem;
+
+
+
+
+	//
+	// 0=mobile 1=desktop
+	//
+	// alert(TIPO_DISPOSITIVO);
+	//
+	// || 
+	// || internamente a questa funzione
+	// || viene passato TIPO_DISPOSITIVO importante
+	// || riconoscimento del tipo dispositivo
+	// || che rende possibile responsive
+	// || tramite variabili javascrit
+	// || 
+	// || 
+	// \/
+	function sonda_Input_0101(arg0,arg1,arg2,arg3)&#123;
+	
+	let TipoDiDispositivo=arg0;
+	let LarghezzaPianoterra=arg1;
+	let AltezzaPrimopiano=arg2;
+	let MargineSinistra =arg3;
+	
+	
+	//alert("MargineSinistra= " + MargineSinistra );
+	
+	let   VALORE_DI_INPUT_0101=document.getElementById("INPUT_SCELTO_0101").value; 
+	let   DIM_INPUT_0101 = VALORE_DI_INPUT_0101;
+	
+	
+	if (TipoDiDispositivo===0)&#123;
+	DIM_INPUT_0101 = DIM_INPUT_0101 * 0.5;
+	&#125;
+	
+	if (TipoDiDispositivo===1)&#123;
+	DIM_INPUT_0101 = DIM_INPUT_0101 * 0.325;
+	&#125;
+	
+	
+	
+	document.getElementById("TEST_0101").innerHTML=
+	&#96;
+	&#60;style>
+	#CONTENITORE_INPUT_0101&#123;
+	position:fixed;
+	bottom:0rem;left:&#96;+MargineSinistra+&#96;rem;
+	
+	
+	width:&#96;+ LarghezzaPianoterra +&#96;rem;
+	width:&#96;+ (LarghezzaPianoterra * 1) +&#96;rem;
+	
+	
+	height:&#96;+MargineSinistra+&#96;rem;
+	
+	
+	&#125;
+	
+	input[type="range"]&#123;
+	-webkit-appearance:none;
+	
+	background-color:transparent;
+	
+	width:100%;
+	width:99.0%;
+	
+	
+	z-index:1000000!important;
+	
+	&#125;
+	
+	
+	
+	#APPLICAZIONE&#123;font-size:&#96;+DIM_INPUT_0101+&#96;rem!important;&#125;
+	#BUONGIORNO&#123;font-size:&#96;+DIM_INPUT_0101+&#96;rem!important;&#125;
+	#POMERIGGIO&#123;font-size:&#96;+DIM_INPUT_0101+&#96;rem!important;&#125;
+	
+	
+	
+	img&#123;width:&#96;+ (DIM_INPUT_0101 * 20) +&#96;rem!important;&#125;
+	
+	
+	
+	
+	#DARKMODO:hover&#123;background-color:teal!important;color:white!important;&#125;
+	#LIGHTMOD:hover&#123;background-color:teal!important;color:white!important;&#125;
+	
+	#SLIDERSI:hover&#123;background-color:maroon!important;color:white!important;&#125;
+	#SLIDERNO:hover&#123;background-color:maroon!important;color:white!important;&#125;
+	
+	
+	
+	&#60;/style>
+	
+	&#96;;
+	
+	
+	
+	&#125; ;
+	setInterval(sonda_Input_0101, 1, TIPO_DISPOSITIVO,LARGHEZZA_PIANOTERRA ,ALTEZZA_PRIMOPIANO,MARGINE_SINISTRA ) ;
+	
+	
+	
+
+
+
+	
+	
+	// 	alert("2023:03:16:09:28 debug TESTAPP ok!");
+	&#125;; // TESTAPP
+	TESTAPP(NodoText);
+	
+	
+
+
+
+
+
+	// toggle harlequin mode ini 
+	
+	function Tog_No()&#123;
+	document.querySelector("#BUONGIORNO").style.display="none";
+	document.querySelector("#POMERIGGIO").style.display="block";
+	document.querySelector("#TOG_NO").style.display="none";
+	document.querySelector("#TOG_SI").style.display="block";
+	&#125;
+	
+	
+	function Tog_Si()&#123;
+	document.querySelector("#BUONGIORNO").style.display="block";
+	document.querySelector("#POMERIGGIO").style.display="none";
+	document.querySelector("#TOG_NO").style.display="block";
+	document.querySelector("#TOG_SI").style.display="none";
+	&#125;
+	
+	// toggle harlequin mode fin 
+
+
+
+
+	// toggle dark light ini 
+	
+	function DarkModo() &#123; 
+	
+	
+	// ElementoMain = document.querySelector("#MAIN");
+	// ElementoMain.style.color="orange";
+	// ElementoMain.style.backgroundColor="black"; 
+	// 
+	// ElementoPomeriggio = document.querySelector("#POMERIGGIO");
+	// ElementoPomeriggio.style.color="orange";
+	// ElementoPomeriggio.style.backgroundColor="black";
+	// 
+	// ElementoBuongiorno = document.querySelector("#BUONGIORNO");
+	// ElementoBuongiorno.style.color="orange";
+	// ElementoBuongiorno.style.backgroundColor="black";
+	// 
+	// ElementoContenitoreInput_0101 = document.querySelector("#INPUT_SCELTO_0101");
+	// ElementoContenitoreInput_0101.style.color="orange";
+	// ElementoContenitoreInput_0101.style.backgroundColor="black";
+	
+	
+	
+	// eco sistema 
+	ElementoMain = document.querySelector("#MAIN");
+	ElementoMain.style.backgroundColor="rgb(  3, 55, 73)"; 
+	ElementoMain.style.color="rgb(252, 78,  5)";
+	
+	ElementoPomeriggio = document.querySelector("#POMERIGGIO");
+	ElementoPomeriggio.style.backgroundColor="rgb(  3, 55, 73)";
+	ElementoPomeriggio.style.color="rgb(252, 78,  5)";
+	
+	
+	ElementoBuongiorno = document.querySelector("#BUONGIORNO");
+	ElementoBuongiorno.style.backgroundColor="rgb(  3, 55, 73)";
+	ElementoBuongiorno.style.color="rgb(252, 78,  5)";
+	
+	
+	ElementoContenitoreInput_0101 = document.querySelector("#INPUT_SCELTO_0101");
+	ElementoContenitoreInput_0101.style.backgroundColor="rgb(  3, 55, 73)";
+	ElementoContenitoreInput_0101.style.color="rgb(252, 78,  5)";
+	
+	
+	&#125;
+	
+	
+	
+	function LightModo() &#123;
+	
+	ElementoMain = document.querySelector("#MAIN");
+	ElementoMain.style.color="initial";
+	ElementoMain.style.backgroundColor="initial";
+	
+	ElementoPomeriggio = document.querySelector("#POMERIGGIO");
+	ElementoPomeriggio.style.color="initial";
+	ElementoPomeriggio.style.backgroundColor="initial";
+	
+	ElementoBuongiorno = document.querySelector("#BUONGIORNO");
+	ElementoBuongiorno.style.color="initial";
+	ElementoBuongiorno.style.backgroundColor="initial";
+	
+	ElementoContenitoreInput_0101 = document.querySelector("#INPUT_SCELTO_0101");
+	ElementoContenitoreInput_0101.style.color="initial";
+	ElementoContenitoreInput_0101.style.backgroundColor="initial";
+	
+	
+	&#125;
+	
+	// toggle dark light fin 
+	
+	
+	
+	
+	
+	// toggle slider ini 
+	
+	function SliderNo() &#123;
+	ElementoSlider = document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoSlider.style.display="none";
+	
+	&#125;
+	
+	
+	function SliderSi() &#123;
+	ElementoSlider = document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoSlider.style.display="block";
+	
+	&#125;
+	
+	// toggle slider fin 
+	
+	
+	
+	//  border debugging ini 
+	
+	function BorderSi()&#123;
+	ElementoBorder_CONTENITORE_INPUT_0101 = document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoBorder_CONTENITORE_INPUT_0101.style.border="solid "+BordoRANG+"rem magenta";
+	ElementoBorder_MAIN = document.querySelector("#MAIN");
+	ElementoBorder_MAIN.style.border="solid "+BordoMAIN+"rem olive";
+	ElementoBorder_BUONGIORNO = document.querySelector("#BUONGIORNO");
+	ElementoBorder_BUONGIORNO.style.border="solid "+BordoBUON+"rem maroon";
+	ElementoBorder_POMERIGGIO = document.querySelector("#POMERIGGIO");
+	ElementoBorder_POMERIGGIO.style.border="solid "+BordoPOMM+"rem lime";
+	
+	
+	&#125;
+	
+	function BorderNo()&#123;
+	ElementoBorder_CONTENITORE_INPUT_0101 = document.querySelector("#CONTENITORE_INPUT_0101");
+	ElementoBorder_CONTENITORE_INPUT_0101.style.border="solid 0.00rem magenta";
+	ElementoBorder_MAIN = document.querySelector("#MAIN");
+	ElementoBorder_MAIN.style.border="solid 0.00rem olive";
+	ElementoBorder_BUONGIORNO = document.querySelector("#BUONGIORNO");
+	ElementoBorder_BUONGIORNO.style.border="solid 0.00rem maroon";
+	ElementoBorder_POMERIGGIO = document.querySelector("#POMERIGGIO");
+	ElementoBorder_POMERIGGIO.style.border="solid 0.00rem lime";
+	
+	
+	&#125;
+	
+	
+	
+	//  border debugging fin 
+	
+	
+	
+	
+	function BottoneTest()&#123;alert("OK BottoneTest()")&#125;;
+	
+	
+
+
+
+
+
+
+
+	
+	
+	// 	alert("2023:03:16:09:35 svelte compiled ok!");
+	
+	&#60;/script>
+	
+	&#60;!-- script fin -->
+
+
+
+
+
+
+
+	&#60;style>
+	
+	main&#123;
+	
+	background-color:inherit;color:inherit;
+	font-family:"PT Mono", monospace;
+	
+	&#125;
+	
+	
+	img&#123;  
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width:100%;
+	max-height:100%;
+	width: auto;
+	width: 50%;
+	height: auto;
+	text-align:center!important;
+	&#125;
+	
+	
+	
+	.darkmode &#123;
+	background-color: black;
+	color: orange;
+	&#125;
+	
+	
+	.cursore &#123;
+	background: lime;
+	line-height: 17px;
+	margin-left: 3px;
+	-webkit-animation: blink 0.8s infinite;
+	width: 7px;
+	height: 15px;
+	&#125;
+	
+	.cursores &#123;
+	background: lime;
+	line-height: 17px;
+	margin-left: 3px;
+	-webkit-animation: blink 0.8s infinite;
+	width: 7px;   width:  16px;
+	height: 15px; height: 32px;
+	&#125;
+	
+	@-webkit-keyframes blink &#123;
+	0% &#123;background: #222&#125;
+	50% &#123;background: lime&#125;
+	100% &#123;background: #222&#125;
+	&#125;
+	
+	.hack_script&#123;display:none;&#125;
+	
+	&#60;/style>
+	
+	
+	
+	&#60;div class="hack_script">&#60;input type="range" step="1" min="1" max="2">&#60;datalist>&#60;option value="1">&#60;/option>&#60;option value="2">&#60;/option>&#60;/datalist>&#60;/div>
+	&#60;link rel="preconnect" href="https://fonts.gstatic.com">
+	&#60;link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+	&#60;link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet">
+	&#60;link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	
+	&#60;/main>
+	
+	&#60;!-- parte compiled fin -->		
+		<pre>
+  
+  
+  </li>
+  <li>
+  Il file.svelte ha la sua controparte nella compilazione
+	<a href="https://scrivi.altervista.org/317/src/dist317b/assets/index-d07702b7.js"> compilazione js  </a>
+	<a href="https://scrivi.altervista.org/317/src/dist317b/assets/index-3a88ba9f.css"> compilazione css </a>
+	I files sono invocati dal <q>file.html</q> 
+	<pre style="overflow:auto;">	
+	
+	
+	
+	&#60;!DOCTYPE html>
+	&#60;html lang="en">
+	&#60;head>
+		&#60;meta charset="UTF-8" />
+		&#60;link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		&#60;meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		&#60;title>Vite + Svelte&#60;/title>
+		&#60;script type="module" crossorigin src="./assets/index-d07702b7.js">&#60;/script>
+		&#60;link rel="stylesheet" href="./assets/index-3a88ba9f.css">
+	&#60;/head>
+	&#60;body>
+		&#60;div id="app">&#60;/div>
+		
+	&#60;/body>
+	&#60;/html>
+	
+		
+	</pre>
+	Questo schema potrebbe diventare uno <q>standard</q> e con adeguate rinominazioni
+	essere riutilizzato. 
+
+	
+  </li>
+  <li>
+  <article style="font-weight:bold;">
+  Diventa molto importante adesso la parte riservata alla inclusione di
+  file esterni. Una volta stabilito il framework (inteso come cornice) occorre 
+  effettuare una <q>specie di paginazione</q> che non deve essere di peso
+  al framework.
+  <blockquote style="font-weight:initial;">
+  A tale proposito rimanendo nel campo html/javascript si potrebbe utilizzare
+  <q>XMLRequest</q>. Il progetto qui esposto segue una logica <q>vanilla javascrip</q>.
+  
+  </blockquote>
+  
+  </article>
+  </li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+
+
+
+</ol>
+
+<hr>
