@@ -1,0 +1,56 @@
+
+
+
+DESKTOP_CHECK = 1 ;
+DESKTOP_CHECK = 0 ;
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+{ DESKTOP_CHECK = 0 ; } else { DESKTOP_CHECK = 1 ; }
+
+
+
+
+/* mobile first */
+FontSizeStandard__=2.25;
+FontSizeStandard__=2.25*1.00;
+FontSizeStandard__=3.95*1.00;
+
+
+// rilevazione width height
+// i valori possono variare
+// a seconda del tipo di
+// dispositivo
+// 
+function LarghezzaRem__(){let Larghezza__=window.innerWidth/16;return Larghezza__;}
+function AltezzaRem__(){let Altezza__=window.innerHeight/16;return Altezza__;}
+
+Larghezza__=LarghezzaRem__();
+Altezza__=AltezzaRem__();
+
+
+HeightHeader__=10;
+HeightHeader__=15;
+
+
+FattMargin__=1;FattPadding__=1;
+
+MarginHeaderTop__=0;MarginHeaderRight__=0;MarginHeaderBottom__=0;MarginHeaderLeft__=0;
+PaddingHeaderTop__=0;PaddingHeaderRight__=0;PaddingHeaderBottom__=0;PaddingHeaderLeft__=0;
+HeightHeader__=HeightHeader__+(MarginHeaderTop__ * FattMargin__)+(MarginHeaderBottom__ * FattMargin__)+(PaddingHeaderTop__ * FattPadding__)+(PaddingHeaderBottom__ * FattPadding__);
+
+FonteDinamica__=2.5;
+
+
+
+FonteSizeXChiudiHeader__=(FontSizeStandard__*1);
+FonteSizeXApriHeader__= (FonteSizeXChiudiHeader__*1);
+
+
+FonteSizeXQuestionMarkPopUp__=FonteSizeXChiudiHeader__;
+LarghezzaXQuestionMarkPopUp__=(Larghezza__*1)-(FonteSizeXChiudiHeader__*6);
+
+AltezzaXQuestionMarkPopUp__=(Altezza__*1.00)-(HeightHeader__*0.50);
+AltezzaXQuestionMarkPopUp__=(Altezza__*1.00)-(HeightHeader__*0.75);
+AltezzaXQuestionMarkPopUp__=(Altezza__*1.00)-(HeightHeader__*0.95);
+AltezzaXQuestionMarkPopUp__=(Altezza__*1.00)-(HeightHeader__*1.00);
+
+
