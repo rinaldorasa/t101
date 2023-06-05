@@ -1,0 +1,37 @@
+
+/* UTILITIES ini */
+@keyframes spin{ 0%{transform:rotate(0deg);} 100% {transform:rotate(360deg);}}
+
+.spinner{width:48px;height:48px; width:2rem;height:2rem; border:solid 4px red; border:solid 0.25rem red; border:solid 0.25rem red; border:solid 0.25rem red; border-top:solid 4px black; border-top:solid 0.25rem transparent; background-color:transparent; border-radius:50%; overflow:none; animation: spin 1.5s linear infinite;}
+.spinmin
+{
+width: 1.00rem;
+height:1.00rem; 
+border:solid 0.175rem orange; 
+border-top:solid 0.175rem transparent; 
+background-color:transparent; 
+border-radius:50%; 
+display:inline-block;
+animation: spin 1.5s linear infinite;
+}
+
+
+
+
+
+@-webkit-keyframes blink {
+ 0% {background: #222}
+ 50% {background: lime}
+ 100% {background: #222}
+}
+
+.cursore {
+ background: lime;
+ line-height: 17px;
+ margin-left: 3px;
+ -webkit-animation: blink 0.8s infinite;
+ width: 7px;
+ height: 15px;
+}
+
+/* UTILITIES fin */ 
