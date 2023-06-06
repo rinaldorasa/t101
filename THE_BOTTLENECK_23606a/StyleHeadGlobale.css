@@ -1,0 +1,22 @@
+
+html * {font-size:auto;font-family:monospace;}
+
+
+body{border:dotted 0.15rem rgba(255,0,0,0.0);}
+
+
+q{border-bottom:dashed 0.15rem orange;}
+
+
+ol { list-style: none; counter-reset: ColoreCounter__;}
+ol li { counter-increment: ColoreCounter__;}
+ol li::before { content: counter(ColoreCounter__) ". "; background-color:aqua;color: black;font-size:75%;border:solid 0.15rem aqua;border-radius: 100%;display:inline-block;}
+
+
+.spinmincaveat0{font-size:initial;}
+.spinmincaveat1{background-color:white;color:gray;font-size:initial;}
+.spinmincaveat2{background-color:white;color:gray;font-size:initial;}
+
+
+
+

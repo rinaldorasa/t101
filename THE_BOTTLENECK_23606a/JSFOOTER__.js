@@ -1,0 +1,181 @@
+
+document.getElementById("FOOTER__").innerHTML=``;
+
+
+
+//
+// Testing per value responsive
+//
+//
+//
+function RangeDot_Dinamico_Input(){
+
+ValoreInizialeRange__=50;
+
+ if(DESKTOP_CHECK==1){ValoreInizialeRange__=12.5;}
+
+ document.getElementById("LIV_01__").innerHTML=
+ `
+
+ <input id="RANGER__" type="range" value="`+ValoreInizialeRange__+`" step="1" min="1" max="99">
+
+ `;
+
+
+}; // RangeDot_Dinamico_Input()
+RangeDot_Dinamico_Input() ;
+
+
+
+
+// Legge i valori del range
+// 
+// 
+
+function LeggiRangeDot_Dinamico_Input(){
+// Prende il valore dal range
+// 
+// 
+ let LetturaRange__ = document.getElementById("RANGER__").value;
+ FonteDinamica__ = (LetturaRange__ * 0.075) ;
+//
+//
+// 
+document.getElementById("VALORE_di_FonteDinamica__").innerHTML=`<q style="visibility:hidden;">`+( FonteDinamica__.toFixed(2) )+`rem;`+`</q>`;
+
+document.getElementById("SETTAGGI__").innerHTML=
+`
+<style>
+
+#CHECK_STOP_AND_GO__{font-size:`+(FonteDinamica__*0.75)+`rem;}
+#COMMENTI__{font-size:`+(FonteDinamica__*0.75)+`rem;}
+
+#INPUT_NOME_FILE__{width:75%;font-size:2.5rem;}
+#INSERISCE_il_nome_del_file_da_cercare__{font-size:1.25rem;}
+
+#RANGER__{width:75%;}
+
+#VISUALIZZA_TESTO_00__{font-size:`+(FonteDinamica__ * 1)+`rem;overflow:auto!important;
+
+</style>
+`;
+
+
+};
+// LeggiRangeDot_Dinamico_Input();
+setInterval(LeggiRangeDot_Dinamico_Input,1)
+
+
+
+
+
+
+
+
+// Inserimento dei dati (Testo.txt) tramite input
+//
+//
+function PrendeNomeFileDaInput_00(){
+NomeDelFileDaInput__=document.getElementById("INPUT_NOME_FILE__").value;
+
+
+
+
+
+// Cambia colore ogni setInterval
+//
+//	
+        var LettereColoreRandom__ = '0123456789ABCDEF';
+        var CreaColoreRandom__ = '#';
+        var IColoreRandom__;
+        for (IColoreRandom__ = 0; IColoreRandom__ < 6; IColoreRandom__++ ) {
+            CreaColoreRandom__ = CreaColoreRandom__+LettereColoreRandom__[Math.round(Math.random() * 15)];
+        };
+
+
+document.getElementById("COLORE_RANDOM__").innerHTML=
+		`
+		<style>
+		
+#COPY_SI__{background-color:`+CreaColoreRandom__+`!important;}
+#COPY_NO__{background-color:`+CreaColoreRandom__+`!important;}
+
+
+        </style>
+		
+		${CreaColoreRandom__}
+		
+		`
+		;
+        
+
+
+
+
+
+
+
+
+
+
+if(NomeDelFileDaInput__!==""){	
+
+document.getElementById("INPUT_INSERITO__").innerHTML=`File richiesto: `+`<b>`+NomeDelFileDaInput__+`</b>`;
+
+// Viene recuperato il file richiesto
+//
+//
+	LaSceltaInterattivaDinamica__ = NomeDelFileDaInput__;
+	let DirectoryDove__; DirectoryDove__="";
+	let File_00__; File_00__=LaSceltaInterattivaDinamica__;
+
+
+// Viene aggiornato il file richiesto
+//
+//
+	File_00__ = DirectoryDove__+File_00__ + "?"+(new Date().getTime()) + (Math.random()) ;
+
+
+
+// Il file richiesto viene passato
+//
+//
+	let Richiedo_00__ = new XMLHttpRequest(); 
+
+Richiedo_00__.open("GET",File_00__,false);
+Richiedo_00__.onreadystatechange = function(){
+let Trovato_00__ = Richiedo_00__.responseText;
+
+TestoTrovatoDaLeggere__ = Trovato_00__;
+
+document.getElementById("VISUALIZZA_TESTO_00__").innerHTML=`${TestoTrovatoDaLeggere__}`; 
+
+
+document.getElementById("CHECK_STOP_AND_GO__").innerHTML=`${File_00__}`; 
+
+
+} ; Richiedo_00__.send();
+
+
+
+
+}else{document.getElementById("INPUT_INSERITO__").innerHTML=``}; // (NomeDelFileDaInput__!=="")
+
+
+
+
+
+
+
+
+
+};
+// PrendeNomeFileDaInput_00();
+
+// setInterval(PrendeNomeFileDaInput_00, 3000);
+
+EsegueIntervalPrendeNomeFileDaInput_00__ = setInterval(PrendeNomeFileDaInput_00, 3000);
+
+
+
+
