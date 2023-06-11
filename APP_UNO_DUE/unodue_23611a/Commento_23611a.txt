@@ -1,0 +1,28 @@
+
+
+<blockquote id="COMMENTI__">
+<q>
+<ol>
+<li>11 giugno 2023</li>
+
+<li>
+Quando si crea un documento per <q>unodue</q> predisporre uno stile 
+per gli id degli elementi. Caveat: usare elementi id può portare alla 
+duplicazione ...
+<br>
+Un <mark>id</mark> nel text e <mark>uno style nel PhpAllUnoDueV##.txt</mark>
+
+</li>
+<li>Per vedere il file aggiornato usare il link dinamico.</li>
+
+
+<li><pre>word-break:break-all</pre></li>
+<li>Si può tramite <q>fetch</q> di un file.txt inserire (insert) un file.css-like?</li>
+<li>Una simil-compilazione per snellire la lettura del codice</li>
+
+<li></li>
+</ol>
+</q>
+</blockquote>
+
+
