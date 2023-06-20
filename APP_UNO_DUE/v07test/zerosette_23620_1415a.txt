@@ -1,0 +1,136 @@
+
+
+<style>
+xmp{padding-left:0.5rem;background-color:oldlace;color:maroon;border-left:dashed 0.15rem green;overflow:auto;}
+
+
+   .freccia_ini{
+ width:0rem;height:0rem;
+
+border-top:solid  1.00rem   transparent;
+border-right:solid  1.00rem transparent;
+border-bottom:solid  1.00rem transparent;
+border-left:solid  1.00rem orange;
+ display:inline-block;
+  
+  }
+
+   .freccia_fin{
+ width:0rem;height:0rem;
+
+border-top:solid  1.00rem   transparent;
+border-right:solid  1.00rem orange;
+border-bottom:solid  1.00rem transparent;
+border-left:solid  1.00rem transparent ;
+ display:inline-block;
+  
+  }
+
+
+#TESTO_TXT16872481036390 a{ background-color:white; color:fuchsia; font-size:100%; font-family:monospace; border:solid 0.05rem olive;border-radius:0.5rem; }
+#TESTO_TXT16872481036390 blockquote{  color:teal; font-size:250%!important;  font-family:monospace; font-weight:bold; overflow:auto;}
+#TESTO_TXT16872481036390 button{
+border-radius:0.50rem;
+}
+#TESTO_TXT16872481036390 button:hover{
+border-style:dashed;border-color:purple;
+cursor:pointer;
+}
+
+#TESTO_TXT16872481036390 code{ background-color:yellow;color:maroon;  font-size:100%; font-weight:bold; }
+#TESTO_TXT16872481036390 kbd{ background-color:aqua;color:green;  font-size:100%; font-weight:bold; }
+
+
+#TESTO_TXT16872481036390 pre{   font-size:75%;  font-weight:bold; overflow:auto;}
+#TESTO_TXT16872481036390 q{background-color:silver;color:navy;font-size:115%;font-family:monospace;font-weight:bold;font-variant:small-caps;letter-spacing: 0.13rem;display:block;}
+
+#TESTO_TXT16872481036390 ol{
+/*
+list-style:none;counter-reset:item;
+margin-bottom: 5px;
+*/
+border-left:solid 0.00rem orange;}
+#TESTO_TXT16872481036390 li{
+/*
+counter-increment:item;
+background: lightblue;
+display: inline-block;
+*/
+}
+#TESTO_TXT16872481036390 li:before{/* content: counter(item); */}
+
+#TESTO_TXT16872481036390 ol>li{font-family:monospace; font-weight:normal;}
+#TESTO_TXT16872481036390 ol>li>pre{font-size:85%;border-left:solid 0.00rem rgba(0,255,0,0.25);}
+
+#TESTO_TXT16872481036390 section{position:relative;top:5rem;overflow:auto;}
+
+
+pre{overflow:auto!important;}
+
+details{overflow:auto!important;}
+
+div{overflow:auto!important;}
+
+
+</style>
+
+<style> 
+@keyframes spin{ 0%{transform:rotate(0deg);}
+100% 
+{transform:rotate(360deg);}} 
+</style> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- v07.txt ini -->
+
+<section id="TESTO_TXT16872481036390">
+
+<div class="freccia_ini"></div>
+
+<div>
+
+
+
+<br><br><br>
+
+<q style="opacity: 1.00 ;">
+20 giugno 2023
+</q>
+<br>
+When we work with a text based on the different tags it turns into a presentation, in this test of the program we try to define the program as a <q>SandBox</q> where the interferences are very limited with respect to the framework.
+<br>
+Where the interference are very limited compared to the framework. A principle of this kind seeks to limit the entry of potentially drastically interfering information with the framework. Obviously this is impossible if inside a text inclusion there are tags that give a global change to the program such as  &#60;!doctype html> 
+<br>
+<br>
+
+
+<ol>
+<li></li>
+<li></li>
+
+<li></li>
+</ol>
+</div>
+<hr>
+<div class="freccia_fin"></div>
+
+</section>
+<!-- v07.txt fin -->
+
+
