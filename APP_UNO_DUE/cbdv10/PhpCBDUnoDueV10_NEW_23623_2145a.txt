@@ -1,0 +1,173 @@
+<script>
+
+
+/*
+
+
+
+TheRollingThunderProject released 
+
+
+
+CBD_23623_1215a_V10
+
+
+
+*/
+
+
+DESKTOP_CHECK = 1 ; DESKTOP_CHECK = 0 ; if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { DESKTOP_CHECK = 0 ; } else { DESKTOP_CHECK = 1 ; } 
+/* if(DESKTOP_CHECK === 0){alert("mobile");} if(DESKTOP_CHECK === 1){alert("desktop");}*/
+
+/* mobile first */
+FonteSizeStandard__=3.95*1.00;
+
+
+if(DESKTOP_CHECK === 1){/* FonteSizeStandard__=3.95*0.75; */}
+
+// rilevazione width height
+// i valori possono variare
+// a seconda del tipo di
+// dispositivo
+// 
+function LarghezzaRem__(){let Larghezza__=window.innerWidth/16;return Larghezza__;} function AltezzaRem__(){let Altezza__=window.innerHeight/16;return Altezza__;}
+
+Larghezza__=LarghezzaRem__();Altezza__=AltezzaRem__();
+
+
+HeightCapoPagina__=(FonteSizeStandard__*6.125);
+if(DESKTOP_CHECK === 1){/* HeightCapoPagina__=(HeightCapoPagina__*0.75); */}
+
+
+FonteDinamica__=2.5;
+
+
+
+
+
+
+
+document.getElementById("APP_UNO_DUE__").innerHTML=
+`
+<style>
+html * {font-size:auto;font-family:monospace;}
+ol { list-style: none; counter-reset: ColoreCounter__;}
+ol li { counter-increment: ColoreCounter__;}
+ol li::before { content: counter(ColoreCounter__) ". "; background-color:aqua;color: black;font-size:75%;border:solid 0.15rem aqua;border-radius: 100%;display:inline-block;}
+
+
+
+
+</style>
+
+<div id="VISUALIZZA_COMMENTO_01__">
+<div class="spinmin">&nbsp;</div><q style="font-size:0.75rem;">Loading elemento ... VISUALIZZA_COMMENTO_01__</q>
+</div>
+
+
+`;
+
+
+
+
+
+
+
+
+function VisualizzaCommento(){
+
+let DirectoryDove_File_01__="./txt/";
+DirectoryDove_File_01__="";
+  let File_01__="Commento.txt";
+  
+  /* intercetta un altro nome di file diverso da default            */
+  /* File_01__=document.getElementById("INPUT_NOME_FILE__").value;  */
+
+
+ File_01__="Testo.txt";
+
+ UltimoAggiornamento__=new Date();
+
+ File_01__ = DirectoryDove_File_01__+File_01__ + "?"+(new Date().getTime()) + (Math.random()) ; 
+ let Richiedo_01__ = new XMLHttpRequest();
+    
+  Richiedo_01__.open("GET",File_01__,false);
+  Richiedo_01__.onreadystatechange = function(){let Trovato_01__ = Richiedo_01__.responseText;
+          
+      Commento_01__ =    Trovato_01__;
+
+document.getElementById("VISUALIZZA_COMMENTO_01__").innerHTML=
+`
+<style>
+#VISUALIZZA_COMMENTO_01__{}
+#VISUALIZZA_COMMENTO_01__{font-size:`+(FonteSizeStandard__*1)+`rem;}
+
+</style>
+
+<section>
+
+
+
+
+<article>
+<div id="LIV_01__"></div>
+</article>
+
+
+<article>
+Ultimo aggiornamento in memoria:
+</article>
+
+<article style="background-color:orange;color:black;border-bottom:solid 0.05rem black;word-break:break-all;">
+${UltimoAggiornamento__}
+</article>
+
+
+<article>
+
+${Commento_01__}
+
+</article>
+
+</section>
+
+`;
+
+          
+  } ; Richiedo_01__.send();
+  
+function RangeDot_Dinamico_Input(){
+ValoreInizialeRange__=25;   
+ document.getElementById("LIV_01__").innerHTML=
+ `
+ <input id="RANGER__" type="range" value="`+ValoreInizialeRange__+`" step="1" min="1" max="99">
+ `;
+  
+}; 
+RangeDot_Dinamico_Input();
+
+
+function LeggiRangeDot_Dinamico_Input(){
+ let LetturaRange__ = document.getElementById("RANGER__").value;
+ FonteDinamica__ = (LetturaRange__ * 0.075) ;
+
+
+
+
+};
+setInterval(LeggiRangeDot_Dinamico_Input,1)
+
+
+
+
+};
+VisualizzaCommento();
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,119 @@
+<script>
+
+
+/*
+
+
+
+TheRollingThunderProject released 
+
+
+
+CBD_23623_1215a_V10
+
+
+
+*/
+
+DESKTOP_CHECK = 1 ; DESKTOP_CHECK = 0 ; if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { DESKTOP_CHECK = 0 ; } else { DESKTOP_CHECK = 1 ; } 
+
+/* mobile first */
+FonteSizeStandard__=3.95*1.00;
+
+FonteSizeStandard__=FonteSizeStandard__*0.50; /* solo per debugging */
+
+function LarghezzaRem__(){let Larghezza__=window.innerWidth/16;return Larghezza__;} function AltezzaRem__(){let Altezza__=window.innerHeight/16;return Altezza__;}
+
+Larghezza__=LarghezzaRem__();Altezza__=AltezzaRem__();
+
+FonteDinamica__=(2.5*1.00);
+
+
+
+
+
+
+
+document.getElementById("APP_UNO_DUE__").innerHTML=
+`
+<style>
+html * {font-size:auto;font-family:monospace;}
+ol { list-style: none; counter-reset: ColoreCounter__;}
+ol li { counter-increment: ColoreCounter__;}
+ol li::before { content: counter(ColoreCounter__) ". "; background-color:aqua;color: black;font-size:75%;border:solid 0.15rem aqua;border-radius: 100%;display:inline-block;}
+
+
+
+</style>
+
+
+<div id="LIVELLO_RANGE_01__"></div>
+<div id="VisualizzaRange__"></div>
+<div id="SettaggiPerIlCommento_01__"></div>
+<div id="VisualizzaCommento_01__">Questo è un testo con font-size dinamico.</div>
+
+
+`;
+
+
+
+function VisualizzaCommento(){
+
+ document.getElementById("LIVELLO_RANGE_01__").innerHTML=``;
+
+
+
+ function RangeDot_Dinamico_Input(){
+
+  ValoreInizialeRange__=25;   
+  ProprietaInput__=`id="RANGER__" type="range" value="`+ValoreInizialeRange__+`" step="1" min="1" max="99"`;
+  
+  document.getElementById("LIVELLO_RANGE_01__").innerHTML=`<input ${ProprietaInput__}>`;
+ 
+ }; 
+ RangeDot_Dinamico_Input();
+
+
+
+ function LeggiRangeDot_Dinamico_Input(){
+  LetturaRange__=document.getElementById("RANGER__").value;
+  FonteDinamica__=(LetturaRange__*0.075);
+  FonteDinamica__=FonteDinamica__.toFixed(2);
+  AggiornareVisualizzaRange__=`<div style="font-size:`+(FonteDinamica__*1.00)+`rem;">  ${FonteDinamica__}</div>`;
+  AggiornareVisualizzaTesto_01__=`<style>#VisualizzaCommento_01__{font-size:`+(FonteDinamica__*1.00)+`rem;}</style>`;
+
+
+  
+  document.getElementById("VisualizzaRange__").innerHTML=
+  `
+  ${AggiornareVisualizzaRange__}
+ 
+  `;
+
+  document.getElementById("SettaggiPerIlCommento_01__").innerHTML=
+  `
+  ${AggiornareVisualizzaTesto_01__}
+
+  `;
+ 
+ 
+ 
+ };
+ setInterval(LeggiRangeDot_Dinamico_Input,1)
+
+
+
+
+
+};
+VisualizzaCommento();
+
+
+
+
+
+
+
+</script>
+
+

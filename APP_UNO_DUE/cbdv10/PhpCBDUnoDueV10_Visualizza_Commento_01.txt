@@ -1,0 +1,101 @@
+<script>
+
+
+/*
+
+
+
+TheRollingThunderProject released 
+
+
+
+CBD_23623_1215a_V10
+
+
+
+*/
+
+
+
+
+
+document.getElementById("APP_UNO_DUE__").innerHTML=
+`
+
+
+<div id="VISUALIZZA_COMMENTO_01__">
+<div class="spinmin">&nbsp;</div><q style="font-size:0.75rem;">Loading elemento ... VISUALIZZA_COMMENTO_01__</q>
+</div>
+
+
+`;
+
+
+
+
+
+
+let DirectoryDove_File_01__="./txt/";
+DirectoryDove_File_01__="";
+  let File_01__="Commento.txt";
+  // intercetta un altro nome di file diverso da default
+  // File_01__=document.getElementById("INPUT_NOME_FILE__").value;
+
+File_01__="Testo.txt";
+
+UltimoAggiornamento__=new Date();
+
+ File_01__ = DirectoryDove_File_01__+File_01__ + "?"+(new Date().getTime()) + (Math.random()) ; 
+  let Richiedo_01__ = new XMLHttpRequest();
+    
+  Richiedo_01__.open("GET",File_01__,false);
+  Richiedo_01__.onreadystatechange = function(){let Trovato_01__ = Richiedo_01__.responseText;
+          
+      Commento_01__ =    Trovato_01__;
+
+document.getElementById("VISUALIZZA_COMMENTO_01__").innerHTML=
+`
+
+<div style="BORDER:dashed 0.25REM OLIVE;">
+
+<div style="height:`+(8.00)+`rem;font-size:`+(2.25)+`rem;font-variant:small-caps;">
+<div style="background-color:black;color:orange;text-align:center;display:block;">
+Ultimo aggiornamento in memoria:
+</div>
+<div style="background-color:orange;color:black;border-bottom:solid 0.05rem black;word-break:break-all;">
+${UltimoAggiornamento__}
+</div>
+</div>
+
+<!--
+<button id="CHIUDI_CapoPagina__OFF" onclick="ChiudiHeader()"  style="width:100%;font-size:`+(4.25)+`rem;font-variant:small-caps;" >X</button> 
+
+<article id="CONTENITORE_COPY_SI_NO__OFF">
+<button id="COPY_SI__" onclick="COPY_SI()">&#35;</button><button id="COPY_NO__" onclick="COPY_NO()">&#35;</button>
+</article>
+
+<button onclick="SettaggiFinali()" style="width:100%;font-size:`+(4.25)+`rem;font-variant:small-caps;">&#126;</button>
+
+<button onclick="ChiudiQuestionMarkPopup()"  style="width:100%;font-size:`+(4.25)+`rem;font-variant:small-caps;">?</button> 
+
+-->
+
+${Commento_01__}
+
+</div>
+
+`;
+
+          
+  } ; Richiedo_01__.send();
+
+
+
+
+
+
+
+
+
+
+</script>

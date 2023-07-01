@@ -1,0 +1,219 @@
+<script>
+
+
+/*
+
+
+
+TheRollingThunderProject released 
+
+
+
+CBD_23623_1215a_V10
+
+
+
+*/
+
+
+/* VARIABILI GLOBALI INI */
+
+   DESKTOP_CHECK = 1 ; DESKTOP_CHECK = 0 ; if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { DESKTOP_CHECK = 0 ; } else { DESKTOP_CHECK = 1 ; } 
+   
+   /* mobile first */
+   FonteSizeStandard__=3.95*1.00;
+   
+   FonteSizeStandard__=FonteSizeStandard__*0.50; /* solo per debugging */
+   
+   function LarghezzaRem__(){let Larghezza__=window.innerWidth/16;return Larghezza__;} function AltezzaRem__(){let Altezza__=window.innerHeight/16;return Altezza__;}
+   
+   Larghezza__=LarghezzaRem__();Altezza__=AltezzaRem__();
+   
+   FonteDinamica__=(2.5*1.00);
+   
+   
+/* VARIABILI GLOBALI FIN */
+
+
+
+
+document.getElementById("APP_UNO_DUE__").innerHTML=
+`
+<style>
+html * {font-size:auto;font-family:monospace;}
+ol { list-style: none; counter-reset: ColoreCounter__;}
+ol li { counter-increment: ColoreCounter__;}
+ol li::before { content: counter(ColoreCounter__) ". "; background-color:aqua;color: black;font-size:75%;border:solid 0.15rem aqua;border-radius: 100%;display:inline-block;}
+
+</style>
+
+<style>
+/* UTILITIES ini */
+@keyframes spin{ 0%{transform:rotate(0deg);} 100% {transform:rotate(360deg);}}
+
+.spinner{width:48px;height:48px; width:2rem;height:2rem; border:solid 4px red; border:solid 0.25rem red; border:solid 0.25rem red; border:solid 0.25rem red; border-top:solid 4px black; border-top:solid 0.25rem transparent; background-color:transparent; border-radius:50%; overflow:none; animation: spin 1.5s linear infinite;}
+.spinmin{width: 1.00rem;height:1.00rem;background-color:transparent;
+border:solid 0.175rem orange;border-top:solid 0.175rem transparent;border-radius:50%; display:inline-block;
+animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes blink { 0% {background: #222} 50% {background: lime} 100% {background: #222}}
+
+.cursore { background: lime; line-height: 17px; margin-left: 3px;
+ -webkit-animation: blink 0.8s infinite; width: 7px; height: 15px;}
+
+/* UTILITIES fin */ 
+
+</style>
+
+
+
+
+
+
+<div id="VisualizzaRange__"></div>
+
+<div id="COLORE_RANDOM__"></div>
+
+<div><div   id="CambiaColoreOgniSetInterval__"><div class="spinmin">&nbsp;</div><q style="font-size:0.75rem;">Loading elemento ... CambiaColoreOgniSetInterval__</q></div>
+
+<div id="LIVELLO_RANGE_01__"></div>
+
+<div id="SettaggiPerIlCommento_01__"></div>
+
+
+<div id="VisualizzaCommento_01__"><div style="border:solid 0.15rem red;"><div class="spinmin">&nbsp;</div><q style="font-size:0.75rem;">Loading elemento ... VisualizzaCommento_01__</q></div>
+
+
+`;
+
+
+
+function VisualizzaCommento(){
+
+ document.getElementById("LIVELLO_RANGE_01__").innerHTML=``;
+
+
+
+ function RangeDot_Dinamico_Input(){
+
+  ValoreInizialeRange__=25;   
+  ProprietaInput__=`id="RANGER__" type="range" value="`+ValoreInizialeRange__+`" step="1" min="1" max="99"  style="width:100%;"   `;
+  
+  document.getElementById("LIVELLO_RANGE_01__").innerHTML=`<input ${ProprietaInput__}>`;
+ 
+ }; 
+ RangeDot_Dinamico_Input();
+
+
+
+ function LeggiRangeDot_Dinamico_Input(){
+  LetturaRange__=document.getElementById("RANGER__").value;
+
+  FonteDinamica__=(LetturaRange__*0.075);
+  FonteDinamica__=FonteDinamica__.toFixed(2);
+
+  AggiornareVisualizzaRange__=`<div style="font-size:`+(FonteDinamica__*1.00)+`rem;">  ${FonteDinamica__}</div>`;
+  AggiornareVisualizzaRange__=`<div style="font-size:`+`1`+`rem;">  ${FonteDinamica__}</div>`;
+
+  AggiornareVisualizzaTesto_01__=`<style>#VisualizzaCommento_01__ {font-size:`+(FonteDinamica__*1.00)+`rem;}</style>`;
+
+
+  
+  document.getElementById("VisualizzaRange__").innerHTML=
+  `
+  ${AggiornareVisualizzaRange__}
+ 
+  `;
+
+  document.getElementById("SettaggiPerIlCommento_01__").innerHTML=
+  `
+  ${AggiornareVisualizzaTesto_01__}
+
+  `;
+  
+ };
+ setInterval(LeggiRangeDot_Dinamico_Input,1)
+
+
+function CambiaColoreOgniSetInterval(){
+var LettereColoreRandom__ = '0123456789ABCDEF';
+var CreaColoreRandom__ = '#';
+var IColoreRandom__;
+for (IColoreRandom__ = 0; IColoreRandom__ < 6; IColoreRandom__++ ) {
+CreaColoreRandom__ = CreaColoreRandom__+LettereColoreRandom__[Math.round(Math.random() * 15)];
+};
+
+
+document.getElementById("COLORE_RANDOM__").innerHTML=
+`
+<style>
+#VisualizzaRange__{background-color :`+CreaColoreRandom__+`!important;}
+#VisualizzaRange__{color :`+CreaColoreRandom__+`!important;}
+</style>
+`;
+};
+
+
+function PrendeNomeFileDaInput_01(){
+
+NomeDelFileDaInput__="";
+
+/*
+NomeDelFileDaInput__=document.getElementById("INPUT_NOME_FILE__").value;
+*/
+
+ CambiaColoreOgniSetInterval();
+
+NomeDelFileDaInput__="Testo.txt";
+
+if(NomeDelFileDaInput__!==""){
+DirectoryDove_File_01__="";
+File_01__=NomeDelFileDaInput__;
+UltimoAggiornamento__=new Date();
+
+ File_01__ = DirectoryDove_File_01__+File_01__ + "?"+(new Date().getTime()) + (Math.random()) ; 
+ Richiedo_01__ = new XMLHttpRequest();
+    
+  Richiedo_01__.open("GET",File_01__,false);
+  Richiedo_01__.onreadystatechange = function(){
+let Trovato_01__ = Richiedo_01__.responseText;
+          
+  Commento_01__ =    Trovato_01__;
+document.getElementById("VisualizzaCommento_01__").innerHTML=
+`
+
+
+`;
+
+  } ; Richiedo_01__.send();
+
+}else{}
+
+
+
+};
+EsegueIntervalPrendeNomeFileDaInput_01__ = setInterval(PrendeNomeFileDaInput_01, 3000);
+
+
+
+
+
+
+
+
+
+
+
+};
+VisualizzaCommento();
+
+
+
+
+
+
+
+</script>
+
+
