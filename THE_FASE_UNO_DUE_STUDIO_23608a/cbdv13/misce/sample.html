@@ -1,0 +1,64 @@
+
+<!doctype html>
+
+
+<div id="SAMPLE__">err SAMPLE__</div>
+
+
+
+<script>
+
+
+Promise.all([
+  fetch('afile.txt').then(x => x.text())
+]).then(([sampleResp]) => {
+
+document.getElementById("SAMPLE__").innerHTML=
+`
+${sampleResp}
+
+`
+;
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+Promise.all([
+  fetch('sample.txt').then(x => x.text()),
+  fetch('sample2.txt').then(x => x.text())
+]).then(([sampleResp, sample2Resp]) => {
+  console.log(sampleResp);
+  console.log(sample2Resp);
+});
+
+
+*/
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+

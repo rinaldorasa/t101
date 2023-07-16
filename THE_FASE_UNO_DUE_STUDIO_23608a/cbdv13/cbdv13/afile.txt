@@ -1,0 +1,241 @@
+ 
+
+
+<hr>            <pre>
+
+&#60;ol>
+
+&#60;li>
+&#60;xmp>
+
+&#60;/xmp>
+&#60;/li>
+
+&#60;/ol>
+
+</pre> 
+
+ <hr>
+<xmp>
+<pre>
+
+&#60;ol>
+
+&#60;li>
+&#60;xmp>
+
+&#60;/xmp>
+&#60;/li>
+
+&#60;/ol>
+
+</pre> 
+
+</xmp>
+<hr>
+
+<xmp>
+xmp {
+
+inline-size: auto; inline-size: auto;
+    overflow-wrap: break-word;
+    
+    border:solid 0.00rem magenta;
+
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+
+
+</xmp>
+  <br>
+https://www.crockford.com/domjs.html
+<xmp>
+2023-05-27
+Plain Old JavaScript and the DOM
+JavaScript was specifically invented to add interactivity to web browsers. The two parts of this are accepting input from the human and dynamically altering the display. Before there was JavaScript, the display was altered by doing a page replacement. JavaScript gives us more options.
+
+document.write
+We will not discuss this particular mistake here except to mention that it is a security vulnerability waiting for exploitation.
+
+innerHTML
+This was an invention of Microsoft. While slightly less reckless that document.write, it is also unsafe and should no longer be used.
+
+The Document Object Model
+The DOM is a clumsy API for creating, linking, manipulating, and destroying nodes in the document tree. Twenty years ago I was recommending that it not be used directly, that an intervening library should be used instead. My reasons were that the DOM was poorly designed, poorly implemented, and full of inconsistencies from one brand of browser to the other, and from one version to another. The DOM was a deep source of pain and misery that could be mitigated by a good library.
+
+Since then, the web standards community has, for the most part, corrected many of WC3's failures. The DOM is much less deficient and much more portable and reliable. That is why I now recommend abandoning the libraries, which have grown into bloated platforms, and instead using the DOM and plain old JavaScript together.
+
+A modest example
+Somehow, in the course of interacting with the user, we acquire some data that we present as a table:
+
+The Three Stooges
+first	last
+Moe	Howard
+JeromeCurly	Howard
+Larry	Fine
+The DOM is verbose and weird. We make it a little nicer with a wee dom function that makes a node and links text and other nodes to it. Thus armed, we can build the table and link it into a div of output.
+
+
+function dom(tag, ...nodes) {
+    const node = document.createElement(tag);
+    node.append(...nodes);
+    return node;
+}
+
+let rows = [
+    dom(
+        "tr",
+        dom("th", "first"),
+        dom("th", "last")
+    ),
+    dom(
+        "tr",
+        dom("td", "Moe"),
+        dom("td", "Howard")
+    ),
+    dom(
+        "tr",
+        dom(
+            "td",
+            "Jerome",
+            dom("i", "Curly")
+        ),
+        dom("td", "Howard")
+    ),
+    dom(
+        "tr",
+        dom("td", "Larry"),
+        dom("td", "Fine")
+    )
+];
+
+document.getElementById("output").append(dom(
+    "table",
+    dom("caption", "The Three Stooges"),
+    ...rows
+));
+DOM is as DOM does
+</xmp>
+<br>
+    https://driverjs.com/ 
+<br>
+https://component-party.dev/
+<br>
+
+  test
+     <b style="background-color:red;color:white;">
+C'è un qualche problema con il comando logico if then else in php revised 2
+</b>
+  php if then else 
+                                                                           <hr><div style="background-color:orange;">
+Usare un desktop con una serie standard di comandi da poter aggiungere mediante copy and past
+
+</div>
+<br>   Aggiungere un sistema di riconscimento utente <br>
+                          questo dovrebbe apparire prima
+  
+mi vedi?                                                                                                                                                               <style>
+
+* {background-color:black;color:white;}
+</style>                  <hr>
+<xmp>
+* {}
+resetta
+</xmp>
+<hr>                                                                                                    <hr>
+15 luglio 2023
+
+<hr>
+          <ol>
+<li>
+<xmp>
+const getScrollPosition = (el = window) => ({
+  x: el.pageXOffset !== undefined ? el.pageXOffset : el.scrollLeft,
+  y: el.pageYOffset !== undefined ? el.pageYOffset : el.scrollTop
+});
+
+// Example
+getScrollPosition(); // {x: 0, y: 200}
+</xmp>
+</li>
+<li>
+<xmp>
+
+1.How to hide all elements specified?
+
+const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
+
+// Example
+hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
+2.How to check if the element has the specified class?
+
+const hasClass = (el, className) => el.classList.contains(className);
+
+// Example
+hasClass(document.querySelector('p.special'), 'special'); // true
+3.How to toggle a class for an element?
+
+const toggleClass = (el, className) => el.classList.toggle(className);
+
+// Example
+toggleClass(document.querySelector('p.special'), 'special'); 
+// The paragraph will not have the 'special' class anymore
+4.How to get the scroll position of the current page?
+
+const getScrollPosition = (el = window) => ({
+  x: el.pageXOffset !== undefined ? el.pageXOffset : el.scrollLeft,
+  y: el.pageYOffset !== undefined ? el.pageYOffset : el.scrollTop
+});
+
+// Example
+getScrollPosition(); // {x: 0, y: 200}
+5.How to smooth-scroll to the top of the page?
+
+const scrollToTop = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 8);
+  }
+};
+
+// Example
+scrollToTop();
+
+
+
+</xmp>
+</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+</ol>    <hr>
+
+
+https://medium.com/@prashantg9912/how-nextjs-13-4-will-change-front-end-development-883546209786
+
+<hr>
+    <hr>
+
+<hr>            <pre>
+
+&#60;ol>
+
+&#60;li>
+&#60;xmp>
+
+&#60;/xmp>
+&#60;/li>
+
+&#60;/ol>
+
+</pre> 
+
