@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+<meta charset="utf-8">
+
+<title>
+main_prg
+</title>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
+
+
+
+<style>
+
+html * {font-size:1.75rem;}
+html * {font-family: "PT Mono",monospace;}
+html * {word-break:break-all;}
+
+
+
+.pre {
+
+    inline-size: auto;
+    overflow-wrap: break-word;
+    
+    border:solid 0.15rem green;
+}
+
+.pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+
+
+.xmp {
+
+    inline-size: auto;
+    overflow-wrap: break-word;
+    
+    border:solid 0.15rem green;
+}
+
+.xmp {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+<div id="SETTAGGI__">err</div>
+<script>
+document.getElementById("SETTAGGI__").innerHTML=''
++' <style>'
+
++' #area_immissione_testo__{background-color:black;}'
++' #area_immissione_testo__{color:orange;}'
+
++' </style>'
+;
+
+
+
+</script>
+
+
+
+<input type="text" id="INPUT_NOME_FAKE__" value="fake.txt" placeholder="fake.txt" >
+
+
+
+<div style="margin-top:2.75rem;">
+<button onclick="StopFakeInput()">Stop</button>
+<button onclick="GoGoFakeInput()">Go--</button>
+</div>
+<div id="FAKE_FILE__"></div>
+
+<script>
+function FakeInput_01(){
+
+NomeInputFake__=document.getElementById("INPUT_NOME_FAKE__").value;
+
+File_01__=NomeInputFake__;
+File_01__=File_01__+"?"+(Math.random());
+
+Rich_01__=new XMLHttpRequest();
+Rich_01__.open("GET",File_01__,false);
+Rich_01__.onreadystatechange= function (){
+
+Trov_01__=Rich_01__.responseText;
+
+document.getElementById("FAKE_FILE__").innerHTML=`${Trov_01__}`;
+
+
+}; Rich_01__.send();
+
+
+}; EseguoFakeInput_01=setInterval(FakeInput_01, 3000);
+
+
+function StopFakeInput(){/* alert("Stop"); */ clearInterval(EseguoFakeInput_01); EseguoFakeInput_01=null;}
+function GoGoFakeInput(){/* alert("Go--"); */ EseguoFakeInput_01=setInterval(FakeInput_01, 3000);}
+
+
+
+
+</script>
+
+
+</body>
+</html>
+
+

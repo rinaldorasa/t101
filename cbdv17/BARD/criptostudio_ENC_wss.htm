@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+   <title>ENC_JSON_23812_1930a</title>
+   <style>
+   html *{
+   
+   font-family:monospace;
+   }
+   </style>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script src="aes.js"></script>
+
+
+</head>
+<body>
+<!--
+
+https://bard.google.com/?hl=it
+
+-->
+
+
+
+<article></article>
+
+<hr><hr><hr> ENC_JSON_23812_1930a <hr><hr><hr>
+
+
+<input id="text" type="text" placeholder="Enter text to encrypt">
+<input  style="visibility:hidden;"   id="password" type="password" placeholder="Enter password">
+<button style="visibility:visible;" onclick="encrypt()">ENCRYPT</button>
+<button style="visibility:hidden;"  onclick="decrypt()">DECRYPT</button> 
+<aside id="EncryptedValue"></aside>
+<div id="decrypted"></div> 
+
+<script>
+function encrypt() {
+  // Get the value of the text field.
+  var text = document.getElementById("text").value;
+
+  // Get the value of the password field.
+  var password = document.getElementById("password").value;
+
+// password="4321";
+
+password="a b";
+
+//  // Encrypt the text.
+//  
+var encrypted = CryptoJS.AES.encrypt(
+//   
+text,
+//    
+password
+//  
+);
+
+
+/*
+// Encrypt the text in JSON format.
+var encrypted = CryptoJS.AES.encrypt(
+  text,
+  password,
+  {
+    format: CryptoJS.format.JSON
+  }
+);
+
+*/
+
+
+
+  // Store the encrypted text in the localStorage object.
+  localStorage.setItem("encryptedText", encrypted);
+  window.sessionStorage.setItem("encryptedText", encryptedText);
+
+
+
+  // Display the encrypted text.
+  document.getElementById("EncryptedValue").innerHTML = encrypted;
+  document.getElementById("decrypted").innerHTML = "";
+  
+  
+}
+
+
+
+</script>
+
+
+
+
+
+  
+   <br><br><br>
+</body>
+</html>

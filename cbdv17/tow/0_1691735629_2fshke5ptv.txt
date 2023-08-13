@@ -1,0 +1,1071 @@
+ok<hr>
+echo "ciao!";
+
+<hr><pre>
+&#60;hr>
+
+&#60;hr>
+</pre><hr>
+echo "se mi vedi senza echo c'è un problema
+<hr>echo "se mi vedi senza echo c'è un problema";<hr>
+
+<xmp>
+<script>
+alert("hello");
+</script>
+</xmp>
+☝️ questo codice viene eseguito al momento che il blocco di testo è inviato al programma principale 
+<hr>
+ma non quando è richiesto da CBDwip
+<hr>
+un fatto del genere può portare al crash temporaneo dell'editor
+<hr>
+<hr style="color:red; width:10px;">
+ ������ nell'editor viene eseguito un echo che non è un xmlhttprequest
+<hr style="color:red; width:100%;">
+<hr style="color:maroon; width:100%;">
+<hr>
+������ Grinning Face ������ Grinning Face with Big Eyes ������ Grinning Face with Smiling Eyes ������ Beaming Face with Smiling Eyes ������ Grinning Squinting Face ������ Grinning Face with Sweat ������ Face with Tears of Joy ������ Slightly Smiling Face ������ Upside-Down Face ������ Winking Face ������ Smiling Face with Smiling Eyes ������ Smiling Face with Halo ������ Smiling Face with Heart-Eyes ������ Face Blowing a Kiss ������ Kissing Face ☺️ Smiling Face ������ Kissing Face with Closed Eyes ������ Kissing Face with Smiling Eyes ������ Face Savoring Food ������ Face with Tongue ������ Winking Face with Tongue ������ Squinting Face with Tongue ������ Money-Mouth Face ������ Smiling Face with Open Hands ������ Thinking Face ������ Zipper-Mouth Face ������ Neutral Face ������ Expressionless Face ������ Face Without Mouth ������ Smirking Face ������ Unamused Face ������ Face with Rolling Eyes ������ Grimacing Face ������ Relieved Face ������ Pensive Face ������ Sleepy Face ������ Sleeping Face ������ Face with Medical Mask ������ Face with Thermometer ������ Face with Head-Bandage ������ Face with Crossed-Out Eyes ������ Smiling Face with Sunglasses ������ Nerd Face ������ Confused Face ������ Worried Face ������ Slightly Frowning Face ☹️ Frowning Face ������ Face with Open Mouth ������ Hushed Face ������ Astonished Face ������ Flushed Face ������ Frowning Face with Open Mouth ������ Anguished Face ������ Fearful Face ������ Anxious Face with Sweat ������ Sad but Relieved Face ������ Crying Face ������ Loudly Crying Face ������ Face Screaming in Fear ������ Confounded Face ������ Persevering Face ������ Disappointed Face ������ Downcast Face with Sweat ������ Weary Face ������ Tired Face ������ Face with Steam From Nose ������ Enraged Face ������ Angry Face
+
+
+<hr><hr>
+❤️ Red Heart ������ Yellow Heart ������ Green Heart ������ Blue Heart ������ Purple Heart
+������ Waving Hand ������️ Hand with Fingers Splayed ✋ Raised Hand ������ Vulcan Salute ������ OK Hand ✌️ Victory Hand ������ Sign of the Horns ������ Backhand Index Pointing Left ������ Backhand Index Pointing Right ������ Backhand Index Pointing Up ������ Middle Finger ������ Backhand Index Pointing Down ☝️ Index Pointing Up ������ Thumbs Up ������ Thumbs Down ✊ Raised Fist ������ Oncoming Fist ������ Clapping Hands ������ Raising Hands ������ Open Hands ������ Folded Hands ✍️ Writing Hand ������ Nail Polish ������ Flexed Biceps
+������ Eyes ������️ Eye ������ Bust in Silhouette ������ Globe with Meridians ������ Horizontal Traffic Light ������ Vertical Traffic Light ⌛ Hourglass Done ⏳ Hourglass Not Done ������ Crescent Moon ������️ Thermometer ☀️ Sun ������ Full Moon Face ������ Sun with Face ⭐ Star ☁️ Cloud ������ Rainbow ✨ Sparkles ������️ Admission Tickets ������ Ticket ⚽ Soccer Ball ♠️ Spade Suit ♥️ Heart Suit ♦️ Diamond Suit ♣️ Club Suit ������ Artist Palette ������ Glasses ������️ Sunglasses
+
+
+
+<hr>
+<hr>
+codePointAt(0).toString(10); è una conversione di emoticon in codice numerico. Il metodo codePointAt() restituisce il punto codice del carattere all'indice specificato. Il metodo toString() converte il valore in una stringa. L'argomento 10 specifica che il valore deve essere convertito in una stringa in base dieci. Ad esempio, se emoticon è una stringa contenente l'emoticon ������, codePointAt(0).toString(10); restituirà la stringa 128513. Questo perché il punto codice dell'emoticon ������ è 128513. Questa conversione può essere utilizzata per convertire emoticon in codici numerici che possono quindi essere utilizzati per rappresentare le emoticon in formati di testo non formattato, come file CSV o JSON.
+<hr>
+
+openmoji.org
+
+<hr>
+
+<hr>
+All emojis designed by OpenMoji – the open-source emoji and icon project. License: CC BY-SA 4.0
+<hr>
+ /* Slightly Smiling Face ASCII art */
+SpinnerVirtuale__="<div><div style='background-color:orange;color:black;font-size:1.500rem!important; display:inline-block;  border-radius:50%; '>&#58;&#41;</div></div>";
+
+<hr><hr>
+Fin qui riparato il trsto broken.
+<hr><hr>
+<xml style="background-color:oldlace;">
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "myfile.html", true);
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    document.getElementById("mydiv").innerHTML = xhr.responseText;
+  }
+};
+xhr.send();
+</script>
+<div id="mydiv"></div>
+
+</xml>
+
+<hr>cosa succede?<hr>
+<xmp>
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "myfile.html", true);
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    document.getElementById("mydiv").innerHTML = xhr.responseText;
+  }
+};
+xhr.send();
+</script>
+<div id="mydiv"></div>
+</xmp>
+<hr>
+<hr>
+<xmp>
+Richiedo_01__ = new XMLHttpRequest();
+
+Richiedo_01__.open("GET",File_01__,false);
+Richiedo_01__.onreadystatechange = function(){
+Trovato_01__ = Richiedo_01__.responseText;
+</xmp>
+<hr><hr>
+
+&#60;hr>
+&#60;xmp>
+
+&#60;/xmp>
+&#60;hr>
+
+<hr>
+<hr> <xmp> 
+
+la sequenza di comandi Richiedo_01__ = new XMLHttpRequest(); Richiedo_01__.open("GET",File_01__,false); Richiedo_01__.onreadystatechange = function(){ Trovato_01__ = Richiedo_01__.responseText; funziona. Crea un oggetto XMLHttpRequest(), lo apre per ricevere una richiesta GET dal file File_01__ e imposta l'evento onreadystatechange per leggere il testo di risposta.
+
+</xmp> <hr><hr> <xmp> 
+Per capire meglio come funziona questa sequenza di comandi, è utile conoscere i seguenti termini:
+
+XMLHttpRequest(): Un oggetto JavaScript che consente di inviare e ricevere richieste HTTP.
+open(): Il metodo open() viene utilizzato per aprire una richiesta HTTP. Il primo argomento è il metodo HTTP, il secondo argomento è l'URL della risorsa richiesta e il terzo argomento è un booleano che indica se la richiesta deve essere asincrona o sincrona.
+onreadystatechange: L'evento onreadystatechange viene attivato quando lo stato della richiesta cambia.
+responseText: La proprietà responseText contiene il testo di risposta della richiesta.
+</xmp> <hr><hr> <xmp> 
+Nella sequenza di comandi, il metodo open() viene utilizzato per aprire una richiesta HTTP per il file File_01__. L'evento onreadystatechange viene impostato per leggere il testo di risposta della richiesta. Quando la richiesta viene completata, il testo di risposta viene salvato nella variabile Trovato_01__.
+
+
+</xmp> <hr><hr> <br><br><br>  <xmp> 
+Questa sequenza di comandi può essere utilizzata per leggere il testo di qualsiasi file sul tuo computer. Ad esempio, il seguente codice legge il testo di un file chiamato myfile.txt:
+
+</xmp> <hr><hr> <xmp> 
+var Richiedo_01__ = new XMLHttpRequest();
+Richiedo_01__.open("GET", "myfile.txt", false);
+Richiedo_01__.onreadystatechange = function() {
+  if (Richiedo_01__.readyState === 4) {
+    if (Richiedo_01__.status === 200) {
+      var Trovato_01__ = Richiedo_01__.responseText;
+      // Fai qualcosa con il testo di risposta
+    } else {
+      console.log("Errore durante la richiesta: " + Richiedo_01__.status);
+    }
+  }
+};
+Richiedo_01__.send();
+
+</xmp> 
+Questo codice legge il testo del file myfile.txt e lo salva nella variabile Trovato_01__. La variabile Trovato_01__ può quindi essere utilizzata per leggere il testo del file.
+
+<hr><hr> <xmp> 
+
+XMLHttpRequest() ha alcuni problemi di sicurezza. In particolare, XMLHttpRequest() può essere utilizzato per inviare richieste HTTP a qualsiasi dominio, anche se il dominio non è sicuro (non inizia con https://). Questo può essere utilizzato per eseguire attacchi di cross-site request forgery (CSRF), in cui un utente viene ingannato per eseguire azioni che non intendeva eseguire.
+
+</xmp> <hr><hr>
+La libreria CORS è disponibile all'indirizzo web https://fetch.spec.whatwg.org/
+<hr>
+<a href="https://fetch.spec.whatwg.org/">
+https://fetch.spec.whatwg.org/
+</a>
+<hr>
+<hr>
+SÃ¬, codePointAt(0).toString(10); Ã¨ una conversione di emoticon in codice numerico. Il metodo codePointAt() restituisce il punto codice del carattere all'indice specificato. Il metodo toString() converte il valore in una stringa. L'argomento 10 specifica che il valore deve essere convertito in una stringa in base dieci. Ad esempio, se emoticon Ã¨ una stringa contenente l'emoticon ðŸ˜Š, codePointAt(0).toString(10); restituirÃ  la stringa 128513. Questo perchÃ© il punto codice dell'emoticon ðŸ˜Š Ã¨ 128513. Questa conversione puÃ² essere utilizzata per convertire emoticon in codici numerici che possono quindi essere utilizzati per rappresentare le emoticon in formati di testo non formattato, come file CSV o JSON.
+<hr>
+
+<hr> <xmp> 
+
+</xmp> <hr>
+
+
+<hr> <xmp> </xmp> <hr><hr> <pre> 
+ &#60;?php
+$primodellalista = "file.txt";
+$text = "Questo Ã¨ un testo che verrÃ  scritto nel file.";
+$AddTesto = fopen( $primodellalista , "a");
+fwrite($AddTesto, $text);
+fclose($AddTesto);
+?&#62;
+
+</pre> <hr>
+Questo codice scriverÃ  il testo "Questo Ã¨ un testo che verrÃ  scritto nel file." alla fine del file file.txt.
+<hr>
+
+se invece volessi aggiungere un testo all'inizio sarebbe possibile in php SÃ¬, Ã¨ possibile aggiungere un testo all'inizio di un file in PHP. Per farlo, Ã¨ possibile utilizzare la funzione fseek() per spostare il puntatore del file all'inizio del file e quindi utilizzare la funzione fwrite() per scrivere il testo nel file. Ecco un esempio di come farlo:
+
+<hr> <xmp> 
+
+?php
+$file = "file.txt";
+$text = "Questo Ã¨ un testo che verrÃ  scritto all'inizio del file.";
+
+// Apri il file in modalitÃ  lettura e scrittura
+$handle = fopen($file, "r+");
+
+// Sposta il puntatore del file all'inizio del file
+fseek($handle, 0);
+
+// Scrivi il testo nel file
+fwrite($handle, $text);
+
+// Chiudi il file
+fclose($handle);
+?
+</xmp> <hr>
+
+<hr>
+
+
+<hr> se volessi usare sempre fseek() ma per spostare il puntatore a fine file come devo fare Per spostare il puntatore a fine file in PHP, puoi utilizzare la funzione fseek() con il valore SEEK_END come secondo argomento. Ecco un esempio di come fare:
+ <hr>
+
+<hr> <xmp> 
+?php
+$file = "file.txt";
+$handle = fopen($file, "r+");
+fseek($handle, SEEK_END);
+?
+</xmp> <hr>
+
+
+<hr> <hr>
+?php
+
+$file = "file.txt";
+$handle = fopen($file, "r+");
+fseek($handle, SEEK_END);
+
+// Aggiungi il tuo codice qui
+
+fwrite($handle, "Questo è il codice che hai aggiunto.\n");
+fclose($handle);
+?
+<hr><hr>
+puoi aggiungere il codice in posizione intermedia. Per fare ciò, usa la funzione fseek() per spostare il puntatore del file alla posizione in cui desideri aggiungere il codice. Quindi, aggiungi il codice che desideri aggiungere utilizzando la funzione fwrite().
+
+Ecco un esempio di come aggiungere codice in posizione intermedia:
+<hr>
+<xmp>
+?php
+$file = "file.txt";
+$handle = fopen($file, "r+");
+fseek($handle, 10);
+
+// Aggiungi il tuo codice qui
+
+fwrite($handle, "Questo è il codice che hai aggiunto.\n");
+fclose($handle);
+?
+</xmp>
+<hr><hr>
+<pre>
+?php
+$file = "file.txt";
+$size = filesize($file);
+echo "Il file $file ha una dimensione di $size byte.";
+?
+</pre>
+
+<pre>
+?php
+$file = "file.txt";
+$handle = fopen($file, "r");
+$stat = fstat($handle);
+$size = $stat["size"];
+echo "Il file $file ha una dimensione di $size byte.";
+fclose($handle);
+?
+</pre>
+
+<hr><hr>
+è possibile conoscere la posizione precisa di una string in un file PHP. Per fare ciò, è possibile utilizzare la funzione strpos(). La funzione strpos() prende come argomenti il nome del file e la stringa che si desidera trovare. La funzione restituisce la posizione della prima occorrenza della stringa nel file, o -1 se la stringa non viene trovata.
+
+Ecco un esempio di come utilizzare la funzione strpos():
+
+
+<hr>
+
+<xmp>
+<?php
+$file = "file.txt";
+$string = "Hello";
+$position = strpos($file, $string);
+if ($position !== -1) {
+    echo "La stringa 'Hello' si trova alla posizione $position nel file $file.";
+} else {
+    echo "La stringa 'Hello' non viene trovata nel file $file.";
+}
+?>
+</xmp>
+
+<hr>
+È anche possibile utilizzare la funzione strrpos() per trovare l'ultima occorrenza della stringa in un file. La funzione strrpos() funziona allo stesso modo della funzione strpos(), ma cerca l'ultima occorrenza della stringa invece della prima.
+<hr><hr>
+<ol>
+<li>
+Cambiato il sistema di salvataggio
+</li>
+<li>
+Aggiunto bootstrap icon layers attivante altre opzioni nascoste
+
+
+</li>
+
+</ol>
+<hr><pre>
+
+&#60;pre>
+&#60;div>	
+	
+&#60;/div>
+&#60;/pre>
+
+</pre><br>
+<pre>
+
+AltezzaCapopaginaBox__=(FonteSizeStandard__*(2.50+0.25));
+AltezzaCapopaginaBox__=(FonteSizeStandard__*(3.50+0.25)); /* revised 2023071920 */
+
+</pre>
+<br><br>
+
+html * {font size standard}
+
+Font size n%
+
+
+<br><br><br>
+
+<xmp>
+
+
+
+immagine del profilo
+<i  id="EDITOR_AFILE__" onclick="EditoreAppend()" class="bi bi-terminal-fill"  style=" position:fixed; top:`+(FonteSizeStandard__*0.00)+`rem; right:`+(FonteSizeStandard__*0.00)+`rem;background-color:inherit;background-color:orange;"></i>
+
+in questo snippet viene utilizzata una icona bootstrap 5 tramite cdn 
+Visualizza altre bozze
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Yes, the snippet you provided uses a Bootstrap 5 icon via CDN. The class="bi bi-terminal-fill" part of the snippet tells the browser to use the Bootstrap 5 icon with the name "terminal-fill". The style part of the snippet specifies the position and background color of the icon.
+
+To use Bootstrap 5 icons via CDN, you need to add the following code to the <head> tag of your HTML document:
+
+HTML
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+Utilizza il codice con cautela. Scopri di più
+Once you have added this code, you can use the class="bi bi-icon_name" syntax to add Bootstrap 5 icons to your HTML elements.
+
+In the snippet you provided, the icon is positioned at the top and right of the screen, and has an orange background color. You can change the position and background color of the icon by modifying the style attribute.
+
+For more information on how to use Bootstrap 5 icons via CDN, you can refer to the Bootstrap Icons documentation: https://icons.getbootstrap.com/.
+
+
+
+</xmp>
+<br><xmp>
+nel pezzo di codice di cui sopra è possibile aggiungere un fallback nel caso le icone bootstrap via  CDN non fossero disponibili causa momentaneo problema con server CDN
+
+</xmp>
+
+
+
+<xmp>
+
+Certo, è possibile aggiungere un fallback nel caso le icone Bootstrap via CDN non fossero disponibili. Ecco un esempio:
+
+HTML
+<i id="EDITOR_AFILE__" onclick="EditoreAppend()" class="bi bi-terminal-fill"  style=" position:fixed; top:`+(FonteSizeStandard__*0.00)+`rem; right:`+(FonteSizeStandard__*0.00)+`rem;background-color:inherit;background-color:orange;">
+  <noscript>
+    <i class="fa fa-terminal" style="position:fixed; top:`+(FonteSizeStandard__*0.00)+`rem; right:`+(FonteSizeStandard__*0.00)+`rem;background-color:inherit;background-color:orange;"></i>
+  </noscript>
+</i>
+Utilizza il codice con cautela. Scopri di più
+Il tag noscript viene utilizzato per visualizzare un'icona alternativa (in questo caso un'icona Font Awesome) nel caso il browser non supporti il CDN.
+
+È importante notare che il fallback non è perfetto. Nel caso il CDN non sia disponibile, l'icona alternativa potrebbe non essere caricata correttamente. Tuttavia, il fallback è un modo per garantire che l'utente sia in grado di visualizzare il contenuto della pagina anche nel caso di problemi con il CDN.
+
+
+</xmp><xmp>
+
+
+<i id="EDITOR_AFILE__" onclick="EditoreAppend()" class="bi bi-terminal-fill"  style=" position:fixed; top:`+(FonteSizeStandard__*0.00)+`rem; right:`+(FonteSizeStandard__*0.00)+`rem;background-color:inherit;background-color:orange;">
+  <noscript>
+    <svg viewBox="0 0 100 100">
+      <path d="M50 50H0v-20h50v20z" fill="orange"/>
+      <text x="20" y="50" font-size="16px">Terminal</text>
+    </svg>
+  </noscript>
+</i>
+
+</xmp>Aggiunto on off Capopagina
+<br>25 luglio 2023<br>
+
+the CSS code inline-size: auto; overflow-wrap: break-word; is valid. It will cause a word to be broken if it is too long to fit on a single line. The inline-size: auto property will ensure that the word is not resized to fit the container, and the overflow-wrap: break-word property will allow the word to be broken at any point.
+
+The word-wrap property is a synonym for overflow-wrap, so you could also use word-wrap: break-word; instead. However, the overflow-wrap property is the newer, more standard property, so it is generally preferred.
+
+Here is an example of how the code would work:
+<br>
+<xmp>
+<div style="inline-size: auto; overflow-wrap: break-word;">
+  This is a long word that will be broken if it is too long to fit on a single line.
+</div>
+</xmp>
+word "long" is too long to fit on a single line, it will be broken at the point where it overflows. The word will be broken at an arbitrary point, so it is possible that the break will not be in the most optimal place. However, this is the best way to ensure that the word is not truncated.
+
+<br>
+
+<xmp>
+
+<h1 class="animate__animated animate__bounce">An animated element</h1>
+
+</xmp><br>
+
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+<br><br>
+
+<a href="https://getcssscan.com/css-box-shadow-examples">
+https://getcssscan.com/css-box-shadow-examples</a>
+
+<br><xmp>
+
+box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+
+
+
+box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+
+
+
+</xmp><xmp>
+
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+</xmp><br>
+<a href="https://www.cssmatic.com/box-shadow">
+https://www.cssmatic.com/box-shadow
+</a>
+
+
+<br><br>
+<xmp>
+
+.animate.pop {
+  animation-duration: 0.5s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+</xmp>
+<br><br>
+
+
+https://animista.net/play/basic/swing
+
+<br><div style="display:none;">
+
+Se mi vedi c'è un problema!
+
+
+</div><hr>
+display none
+<div style="display:none">
+
+Mi vedi? allora c'è unproblema
+
+</div>
+display none
+<hr><div>Attenzione 1</div>
+<div style="border:solid 0.5rem #BBE3C3;">
+<hr>
+<div style="display:none;">
+
+Venerdì 28 luglio
+
+</div>
+<hr>
+</div>
+<div>Attenzione </div>
+<div>Attenzione 1</div>
+<div style="border:solid 0.5rem #BBE3C3;">
+<hr>
+<div style="visibility:hidden;">
+
+Venerdì 28 luglio ore 13:03 <br>
+Venerdì 28 luglio ore 13:03 <br>
+Venerdì 28 luglio ore 13:03 <br>
+Venerdì 28 luglio ore 13:03 <br>
+Venerdì 28 luglio ore 13:03 <br>
+Venerdì 28 luglio ore 13:03 <br>
+
+</div>
+<hr>
+</div>
+<div>Attenzione 2</div>
+
+<br>
+#28C8B8
+<span style="background-color: #28C8B8">
+color
+<br>
+<br>
+#ED782E
+<span style="background-color: #ED782E">
+color
+<br>
+<br>
+#C4A25D
+<span style="background-color: #C4A25D">
+color
+<br>
+<br>
+#1875D6
+<span style="background-color: #1875D6">
+color
+<br>
+
+<span style="background-color:#1875D6;">#1875D6</span>28 luglio 2023 h.1851luglio 29, 2023 - 0544<div style="background-color:white;color:black;">ripristino colori iniziali</div>test dopo ripristino</div>test n2<br>
+aggiunto un elemento di chiusura . in genere utilizzare un elemento &#60;div&#62; come formattatore html . in caso contrario occorre una lista dei più usati e mettere il carattere di chiusura
+
+<br><br>
+il pulsante play va controllato perché non è responsive last minute
+
+<br><br>
+questa è una nuova versione 31 luglio 2023
+
+<br>----test dopo v15------dopo la ristrutturazione v15---<br>
+INSERIRE un ritorno alla scelta del desk mobidopo la ristrutturazione v15 ---<br><br>
+questo è un test per il 1 agosto 2023
+---
+<br><br>---
+
+---psw
+
+<br><br>
+--- con il nuovo file creato per non provocare conflitti di nome ---
+
+<br><button  onclick="FullPaginaSi()">Ripristina pannello</button><pre>
+
+&#60;button  onclick="FullPaginaSi()">Ripristina pannello&#60;/button>
+
+</pre><xmp>
+
+<button  onclick="FullPaginaSi()">Ripristina pannello</button>
+
+
+</xmp><xmp>
+
+<button  onclick="FullPaginaSi()">Ripristina pannello</button>
+
+
+</xmp>
+
+$ oggi= date('Y-m-d H:i:s A', time())  ;
+
+<xmp>
+<?php
+/*
+// Get all the files in the current directory
+$files = scandir(".");
+
+// Remove the . and .. directories from the list
+unset($files[0], $files[1]);
+
+// Loop through the files and check their length
+foreach ($files as $file) {
+  // Get the file length
+  $length = filesize($file);
+
+  // If the file length is equal to the specified length, delete it
+  if ($length == 100) {
+    unlink($file);
+  }
+}
+*/
+?>
+
+</xmp><xmp>
+
+
+
+/*
+// Get all the files in the current directory
+$files = scandir(".");
+
+// Remove the . and .. directories from the list
+unset($files[0], $files[1]);
+
+// Get the user input
+echo "Enter the length of the files you want to delete: ";
+$length = readline();
+
+// Loop through the files and check their length
+foreach ($files as $file) {
+  // Get the file length
+  $file_length = filesize($file);
+
+  // If the file length is equal to the specified length, delete it
+  if ($file_length == $length) {
+    unlink($file);
+  }
+}
+
+
+
+*/
+</xmp>
+
+<q>
+Per utilizzare questo codice, salvalo in un file chiamato 
+<br>
+<b>delete_files.php</b>. 
+<br>
+Quindi, apri il file nel browser web. Il browser visualizzerà la seguente finestra di dialogo:
+
+Enter the length of the files you want to delete: 
+Inserisci la lunghezza dei file che desideri eliminare e fai clic su Invio. Il codice rimuoverà tutti i file nella directory corrente la cui lunghezza è uguale alla lunghezza specificata dall'utente.
+</q>
+
+
+<xmp>
+
+<input type="text" name="length" />
+
+
+/*
+$length = readline("Enter the length of the files you want to delete: ");
+*/
+</xmp>
+<q>
+esempio di codice HTML che utilizza l'elemento <input> per ottenere l'input dell'utente
+<hr>
+Questo codice visualizzerà una finestra di dialogo all'utente e gli chiederà di inserire la lunghezza dei file che desidera eliminare. L'input dell'utente verrà memorizzato nella variabile $length.
+
+Sia la funzione readline() che l'elemento <input> possono essere utilizzate per ottenere l'input dell'utente. La scelta di quale utilizzare dipende dalle tue esigenze specifiche.
+<hr>
+
+Feature	PHP	JavaScript
+Side	Server	Client
+Purpose	Generate dynamic content	Add interactivity
+Execution	Executed on the server	Executed on the user's browser
+Examples	WordPress, Drupal, Laravel	jQuery, React, Angular
+
+
+
+</q>
+<br>
+
+per cancellare un file dalla directory
+
+
+<xmp>
+
+<?php
+/*
+
+
+
+$files = scandir(".");
+
+unset($files[0], $files[1]);
+
+echo "Enter the length of the files you want to delete: ";
+$length = fgets(STDIN);
+
+foreach ($files as $file) {
+
+  $file_length = filesize($file);
+
+  if ($file_length == $length) {
+    unlink($file);
+  }
+}
+
+
+
+
+*/
+?>
+
+
+
+</xmp>
+
+<hr>
+<xmp>
+
+Questo codice funziona in modo simile al codice che hai fornito in precedenza. Tuttavia, controlla anche l'estensione del file. Se l'estensione del file è .txt e la lunghezza del file è 0, il file viene cancellato.
+
+/*
+
+
+$files = scandir(".");
+
+unset($files[0], $files[1]);
+
+$length = 0;
+
+foreach ($files as $file) {
+
+  $file_extension = pathinfo($file, PATHINFO_EXTENSION);
+
+  if ($file_extension === "txt" && $file_length == 0) {
+    unlink($file);
+  }
+}
+ 
+
+
+*/
+
+
+Questo codice funziona in modo simile al codice che hai fornito in precedenza. Tuttavia, controlla anche la dimensione del file. Se l'estensione del file è .txt e la dimensione del file è superiore a 100 byte, il file viene cancellato.
+
+
+/*
+$files = scandir(".");
+
+unset($files[0], $files[1]);
+
+foreach ($files as $file) {
+
+  $file_extension = pathinfo($file, PATHINFO_EXTENSION);
+
+  if ($file_extension === "txt" && filesize($file) > 100) {
+    unlink($file);
+  }
+}
+
+
+*/
+
+
+
+
+
+Questo codice funziona in modo simile al codice che hai fornito in precedenza. Tuttavia, controlla anche la dimensione del file. Se l'estensione del file è .txt e la dimensione del file è maggiore o uguale a 50 byte e minore o uguale a 100 byte, il file viene cancellato.
+
+
+/*
+
+$files = scandir(".");
+
+unset($files[0], $files[1]);
+
+foreach ($files as $file) {
+
+  $file_extension = pathinfo($file, PATHINFO_EXTENSION);
+
+  if ($file_extension === "txt" && filesize($file) >= 50 && filesize($file) <= 100) {
+    unlink($file);
+  }
+}
+
+
+*/
+
+
+
+</xmp>
+<hr>
+
+
+<xmp>
+<hr>
+
+<html>
+<head>
+<title>My Page</title>
+</head>
+<body>
+<img src="http://www.immagini.com/immagine.webp" alt="This is an image">
+</body>
+</html>
+
+
+
+Sì, è possibile convertire un'immagine in formato .png in formato .webp. Esistono diversi modi per farlo, tra cui:
+
+    Utilizzare un convertitore di immagini online. Esistono molti convertitori di immagini online che supportano la conversione di file PNG in file WebP.
+    Utilizzare un software di grafica. Molti software di grafica, come GIMP e Photoshop, supportano la conversione di file PNG in file WebP.
+    Utilizzare la riga di comando. È possibile convertire un file PNG in un file WebP utilizzando il comando convert.
+
+Ecco i passaggi per convertire un file PNG in un file WebP utilizzando un convertitore di immagini online:
+
+    Accedi a un convertitore di immagini online.
+    Carica il file PNG che desideri convertire.
+    Seleziona il formato di output "WebP".
+    Fai clic sul pulsante "Converti".
+    Il file WebP verrà scaricato sul tuo computer.
+
+Ecco i passaggi per convertire un file PNG in un file WebP utilizzando software di grafica:
+
+    Apri il file PNG in un software di grafica.
+    Seleziona il menu "File" e fai clic su "Esporta".
+    Nella finestra di dialogo "Esporta", seleziona il formato di output "WebP".
+    Fai clic sul pulsante "Esporta".
+    Il file WebP verrà salvato sul tuo computer.
+
+Ecco i passaggi per convertire un file PNG in un file WebP utilizzando la riga di comando:
+
+    Apri una finestra di terminale.
+    Passa alla cartella in cui si trova il file PNG.
+    Esegui il comando seguente:
+
+convert PNG_file.png WEBP_file.webp
+
+Il file WebP verrà salvato nella stessa cartella del file PNG.
+
+
+
+Sì, è possibile convertire un'immagine PNG in base64 e poi convertire base64 in WebP. Ecco i passaggi:
+
+    Convertire l'immagine PNG in base64.
+    Convertire la stringa base64 in un'immagine WebP.
+
+Ecco il codice Python che mostra come convertire un'immagine PNG in base64 e poi convertire base64 in WebP:
+Python
+
+
+
+
+
+import base64
+import io
+from PIL import Image
+
+# Convertire l'immagine PNG in base64
+image = Image.open("image.png")
+byte_array = io.BytesIO()
+image.save(byte_array, format="PNG")
+base64_string = base64.b64encode(byte_array.getvalue())
+
+# Convertire la stringa base64 in un'immagine WebP
+webp_image = Image.open(io.BytesIO(base64.b64decode(base64_string)))
+webp_image.save("image.webp")
+
+
+
+
+
+
+Utilizza il codice con cautela. Scopri di più
+
+Il codice sopra convertirà l'immagine PNG image.png in un'immagine WebP image.webp.
+
+
+Sì, è possibile eseguire la stessa operazione di conversione precedentemente descritta utilizzando JavaScript. Ecco il codice JavaScript che mostra come convertire un'immagine PNG in base64 e poi convertire base64 in WebP:
+
+// Convertire l'immagine PNG in base64
+function encodeImageToBase64(image) {
+  var canvas = document.createElement("canvas");
+  var ctx = canvas.getContext("2d");
+  ctx.drawImage(image, 0, 0);
+  var dataURL = canvas.toDataURL("image/png");
+  return dataURL;
+}
+
+// Convertire la stringa base64 in un'immagine WebP
+function decodeImageFromBase64(dataURL) {
+  var img = new Image();
+  img.src = dataURL;
+  return img;
+}
+
+// Utilizzare le funzioni precedenti per convertire un'immagine PNG in un'immagine WebP
+var image = document.getElementById("image");
+var base64Data = encodeImageToBase64(image);
+var webpImage = decodeImageFromBase64(base64Data);
+document.getElementById("webpImage").appendChild(webpImage);
+
+Questo codice convertirà l'immagine PNG image in un'immagine WebP webpImage e la inserirà nell'elemento HTML webpImage.
+
+
+</xmp>
+<hr><hr>
+
+<xmp>
+
+
+<details><summary>commentino</summary>
+<div id="COMMENTINO_"></div>
+</details>
+<script>
+
+const xhr = new XMLHttpRequest();
+xhr.open("GET", "commentino.txt");
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    // Il file è stato caricato con successo.
+	// alert("Il file è stato caricato con successo.");
+
+trovato_=xhr.responseText;
+   // alert(trovato_);
+    document.getElementById("COMMENTINO_").innerHTML=` ${trovato_} `;
+  } else {
+    // Il file non è stato caricato correttamente.
+		alert("Il file non è stato caricato correttamente.");
+  }
+};
+xhr.send();
+
+</script>
+
+</details>
+</xmp>
+<hr><hr><br>
+
+Formazione della base64
+<br>
+otteniamo una stringa di caratteri che rappresenta la immagine
+<br>
+<xmp>
+  function convertImageToBase64(image) {
+  // Create a canvas element.
+  const canvas = document.createElement("canvas");
+  canvas.width = image.width;
+  canvas.height = image.height;
+
+  // Draw the image to the canvas.
+  const ctx = canvas.getContext("2d");
+  ctx.drawImage(image, 0, 0);
+
+  // Get the base64 representation of the image.
+  const dataURL = canvas.toDataURL("image/png");
+
+  // Return the base64 string.
+  return dataURL.replace("data:image/png;base64,", "");
+};
+
+const image = document.getElementById("image");
+const base64String = convertImageToBase64(image);
+
+BASE64=base64String;
+document.getElementById("BASE64").innerHTML=base64String;
+
+</xmp>
+<br>
+la string è denominata BASE64
+
+<br>
+
+<hr><br><hr><hr><br>
+di per sé BASE64 non visualizza alcunché occorre quindi inserirla in un apposito frame<br><br>
+<pre style="background-color:oldlace; color:maroon;">
+
+BASE64=base64String;
+document.getElementById("BASE64").innerHTML=base64String;
+
+
+BASE64=base64String; 
+
+INCOGNITO64='&#60;img src="<b>data:image/png;base64,</b>'+BASE64+'">';
+document.getElementById("INCOGNITO64").innerHTML=INCOGNITO64;
+</pre>
+
+<br>
+<hr><hr><br>
+<hr><hr><br>
+Qui sotto un esempio di XMHR request
+<br>
+
+<pre>
+/*
+
+
+const xhr = new XMLHttpRequest();
+xhr.<b>open</b>("GET", "commentinoX.txt");
+xhr.<b>onload</b> = function() {
+  if (xhr.<b>status</b> === 200) {
+    // Il file è stato caricato con successo.
+	alert("Il file è stato caricato con successo.");
+	
+  Trovato = xhr.<b>responseText</b>;
+
+} else {
+    // Il file non è stato caricato correttamente.
+		alert("Il file non è stato caricato correttamente.");
+  }
+};
+xhr.<b>send</b>();
+
+
+*/
+</pre>
+<br>
+
+
+
+<hr><hr><br><br>
+<xmp>
+
+<style>
+
+xmp{
+inline-size:auto;
+overflow-wrap:break-word;
+overflow:auto;
+
+}
+</style>
+
+</xmp>
+
+<hr>
+
+<style>
+
+xmp{
+inline-size:auto;
+overflow-wrap:break-word;
+overflow:auto;
+
+}
+</style>
+
+<br>
+
+
+<style>
+
+xmp{
+inline-size:auto!important;
+overflow-wrap:break-word!important;
+overflow:auto!important;
+
+}
+
+pre{
+inline-size:auto!important;
+overflow-wrap:break-word!important;
+overflow:auto!important;
+
+}
+</style>
+<hr>
+
+echo "8 agosto 2023";
+
+<hr>
+
+ echo "9 agosto 2023";
+
+
+mkdir( 'HELLO WORLD' );
+
+echo    'HELLO WORLD' .   '<script> alert("Se mi stai leggendo vuol dire che è stato eseguito uno script javascript mediante un file.txt inserito in un programma php");</script>';
+
+<script> alert("Se mi stai leggendo vuol dire che è stato eseguito uno script javascript mediante un file.txt     MA SENZA AIUTINO PHP");</script>
+
+
+<? mkdir( 'HELLO WORLD'); ?>questo
+<script>alert("bloccati");</script>QUESTO EST UN TESTO

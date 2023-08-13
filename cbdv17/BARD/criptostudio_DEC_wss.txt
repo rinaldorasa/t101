@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+   <title> DEC_JSON_23812_1930a </title>
+   <style>
+   html *{
+   
+   font-family:monospace;
+   }
+   </style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script src="aes.js"></script>
+
+
+</head>
+<body>
+<!--
+
+https://bard.google.com/?hl=it
+
+-->
+
+
+
+<article></article>
+
+<hr><hr><hr> DEC_JSON_23812_1930a <hr><hr><hr>
+
+
+<input id="text" type="text" placeholder="Enter text to encrypt">
+<input id="password" type="password" placeholder="Enter password">
+<button  style="visibility:hidden;" onclick="encrypt()">ENCRYPT</button> 
+<button  style="visibility:visible;"  onclick="decrypt()">DECRYPT</button>
+<aside id="EncryptedValue"></aside> 
+<div id="decrypted"></div>
+
+<script>
+
+function decrypt() {
+  // Get the encrypted text from the EncryptedValue element.
+//  var encryptedText = document.getElementById("EncryptedValue").innerHTML;
+var encryptedText = window.sessionStorage.getItem("encryptedText"); 
+  
+  // Get the value of the password field.
+  var password = document.getElementById("password").value;
+
+  // Decrypt the text from the localStorage object.
+  var decrypted = localStorage.getItem("encryptedText");
+ 
+//  
+decrypted = CryptoJS.AES.decrypt(
+//    
+decrypted,
+//   
+password
+//  
+).toString(CryptoJS.enc.Utf8);
+
+/*
+// Decrypt the text.
+ decrypted = CryptoJS.AES.decrypt(
+  encrypted,
+  password,
+  {
+    format: CryptoJS.format.JSON
+  }
+);
+
+*/
+
+  // Display the decrypted text.
+  document.getElementById("decrypted").innerHTML = decrypted;
+  document.getElementById("EncryptedValue").innerHTML = "";
+}
+
+
+</script>
+
+
+
+
+
+<!--
+
+
+var text = "This is a test string.";
+var password = "my password with space";
+
+// Encrypt the text in JSON format.
+var encrypted = CryptoJS.AES.encrypt(
+  text,
+  password,
+  {
+    format: CryptoJS.format.JSON
+  }
+);
+
+// Decrypt the text.
+var decrypted = CryptoJS.AES.decrypt(
+  encrypted,
+  password,
+  {
+    format: CryptoJS.format.JSON
+  }
+);
+
+console.log(decrypted); // This is a test string.
+
+
+-->
+
+
+
+  
+   <br><br><br>
+</body>
+</html>
