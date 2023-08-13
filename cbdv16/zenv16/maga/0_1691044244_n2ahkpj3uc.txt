@@ -1,0 +1,197 @@
+
+
+
+
+---
+1 agosto 2023 <br>
+test per psw
+--<br><br>---
+
+per non creare alcun conflitto o bug sul nome del file psw
+
+--<br><br>---cambiato il colore per non confondere ---<br>
+<br>
+Test da mobile
+<br>Test effettuato con successo!
+<br>
+test da tablet
+
+<br><br>
+questa è un'area di testo a cui si può accedere utilizzando il CAPTCHA
+<br><br>
+2 agosto 2023
+attenzione rivelato un quirk nella gestione di input interattivo, il form non viene fermato in attesa dell'input ma salta immediatamente allo script di refresh della pagina
+
+
+<br>
+
+
+<br>
+<hr>
+mia grave incomprensione del problema della interattività.
+<hr>
+riguardo alla combinazione tra html php e javascript
+
+
+
+<hr>
+<br><br><hr>
+2 agosto 2023,h18:49
+<br><hr>
+creare una cartella case_study dove inserire la <i>question</i> di input onclick submit etc.etc. che non ho mai chiarito definitivamane
+<br><hr>
+il problema riguarda la sincronicità del programma html
+<pre>
+input --->> submit --> <i> il progrmma si ferma</i>
+<br><hr>
+ma se ho uno script <b>document.location.replace</b> questo sembra bypassare input
+<br><hr>
+creare nella cartella uno <i>case study</i> riguardante
+</pre>
+
+
+<br><hr><br><hr>
+<xmp>
+
+<form action="PSW_TEXTAREA.php" method="get">
+	
+<textarea id="area_immissione_testo__" name="questo_est_un_testo" rows="" cols="" style="background-color:teal; color:orange; font-weight:bold;"></textarea>
+	
+<button  id="invia_testo__" type="submit">
+	INVIA
+	</button>
+	
+</form>
+
+<script>  document.location.replace("CBDWIPMD.php"); </script>
+
+
+</xmp>
+<br><hr><br><hr>
+quando xmlhttprequest non viene eseguito la parte dello script
+
+
+<br><hr>
+MA ALLORA rimane la questione del programma standalone
+
+<br><hr><br><hr>
+1) fare XMLHR<br>
+2) richiedere input <br>
+3) script non eseguito <br>
+4) premere invio <br>
+5) viene eseguito il file.php  <b>ma</b> stavolta anche lo script poichè non filtrato 
+
+
+<br><hr><br><hr>
+<xmp>
+$rn="<br>";
+
+$timestamp = time();
+
+function random_string($length) {
+    $key = '';
+    $keys = array_merge(range(0, 9), range('a', 'z'));
+
+    for ($i = 0; $i < $length; $i++) {
+        $key .= $keys[array_rand($keys)];
+    }
+
+    return $key;
+}
+$randomstringa=random_string(10);
+
+
+
+
+$in_quale_percorso="./psw/";
+chdir($in_quale_percorso);
+
+$nome_del_file_afile="0"."_". $timestamp."_".$randomstringa.".txt";
+
+
+ $VecchioTesto = file_get_contents($primodellalista);
+     
+$Testo = $_GET["questo_est_un_testo"]; 
+	
+	
+    
+    
+   
+    $Aggiornamento="";
+     
+$Aggiornamento = $Testo;
+
+$AddTesto = fopen( $primodellalista , "a"); 
+    
+    fwrite($AddTesto, $Aggiornamento );  
+    
+    fclose($AddTesto);
+
+   
+	
+	rename($primodellalista, $nome_del_file_afile);
+	
+	
+
+
+
+
+
+
+
+
+</xmp>
+<br><hr><br><hr>
+UTILIZZANDO xmlhttprequest si può frizzare un input riguardo javascript e poi inviarlo allalla esecuzione esterna
+
+
+<br><hr><hr><br>
+ATTENZIONE: POSSIBILI TYPOS
+<xmp>
+richiesta=new XMLHttpRequest();
+
+richiesta=(GET, file,false);
+
+
+ richiesta=onreadystatechange function(){ 
+
+response.Text
+ }
+
+richiesta send
+
+
+
+</xmp>
+<br><hr><hr>
+Richiedo=new XMLHttpRequest();
+ <hr>
+Richiedo.open=("GET",nomefile,false);
+<hr>
+Richiedo.onreadystatechange=function(){
+Trovato=Richiedo.responseText;
+
+// dgebi
+
+} ; Richiedo.send();
+
+<hr>
+
+
+<hr>
+XMLHttpRequest
+ <hr>
+.open
+<hr>
+.onreadystatechanga = function(){
+trovato=.responseText
+};
+<hr>
+.send();
+<hr><br>
+
+
+alert("Questo è uno script. Nello script ... e non dovrei essere visto!");
+
+
+<br>
