@@ -1,0 +1,1251 @@
+ 
+
+
+<hr>            <pre>
+
+&#60;ol>
+
+&#60;li>
+&#60;xmp>
+
+&#60;/xmp>
+&#60;/li>
+
+&#60;/ol>
+
+</pre> 
+
+ <hr>
+<xmp>
+<pre>
+
+&#60;ol>
+
+&#60;li>
+&#60;xmp>
+
+&#60;/xmp>
+&#60;/li>
+
+&#60;/ol>
+
+</pre> 
+
+</xmp>
+<hr>
+
+<xmp>
+xmp {
+
+inline-size: auto; inline-size: auto;
+    overflow-wrap: break-word;
+    
+    border:solid 0.00rem magenta;
+
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+
+
+</xmp>
+  <br>
+https://www.crockford.com/domjs.html
+<xmp>
+2023-05-27
+Plain Old JavaScript and the DOM
+JavaScript was specifically invented to add interactivity to web browsers. The two parts of this are accepting input from the human and dynamically altering the display. Before there was JavaScript, the display was altered by doing a page replacement. JavaScript gives us more options.
+
+document.write
+We will not discuss this particular mistake here except to mention that it is a security vulnerability waiting for exploitation.
+
+innerHTML
+This was an invention of Microsoft. While slightly less reckless that document.write, it is also unsafe and should no longer be used.
+
+The Document Object Model
+The DOM is a clumsy API for creating, linking, manipulating, and destroying nodes in the document tree. Twenty years ago I was recommending that it not be used directly, that an intervening library should be used instead. My reasons were that the DOM was poorly designed, poorly implemented, and full of inconsistencies from one brand of browser to the other, and from one version to another. The DOM was a deep source of pain and misery that could be mitigated by a good library.
+
+Since then, the web standards community has, for the most part, corrected many of WC3's failures. The DOM is much less deficient and much more portable and reliable. That is why I now recommend abandoning the libraries, which have grown into bloated platforms, and instead using the DOM and plain old JavaScript together.
+
+A modest example
+Somehow, in the course of interacting with the user, we acquire some data that we present as a table:
+
+The Three Stooges
+first	last
+Moe	Howard
+JeromeCurly	Howard
+Larry	Fine
+The DOM is verbose and weird. We make it a little nicer with a wee dom function that makes a node and links text and other nodes to it. Thus armed, we can build the table and link it into a div of output.
+
+
+function dom(tag, ...nodes) {
+    const node = document.createElement(tag);
+    node.append(...nodes);
+    return node;
+}
+
+let rows = [
+    dom(
+        "tr",
+        dom("th", "first"),
+        dom("th", "last")
+    ),
+    dom(
+        "tr",
+        dom("td", "Moe"),
+        dom("td", "Howard")
+    ),
+    dom(
+        "tr",
+        dom(
+            "td",
+            "Jerome",
+            dom("i", "Curly")
+        ),
+        dom("td", "Howard")
+    ),
+    dom(
+        "tr",
+        dom("td", "Larry"),
+        dom("td", "Fine")
+    )
+];
+
+document.getElementById("output").append(dom(
+    "table",
+    dom("caption", "The Three Stooges"),
+    ...rows
+));
+DOM is as DOM does
+</xmp>
+<br>
+    https://driverjs.com/ 
+<br>
+https://component-party.dev/
+<br>
+
+  test
+     <b style="background-color:red;color:white;">
+C'è un qualche problema con il comando logico if then else in php revised 2
+</b>
+  php if then else 
+                                                                           <hr><div style="background-color:orange;">
+Usare un desktop con una serie standard di comandi da poter aggiungere mediante copy and past
+
+</div>
+<br>   Aggiungere un sistema di riconscimento utente <br>
+                          questo dovrebbe apparire prima
+  
+mi vedi?                                                                                                                                                               <style>
+
+* {background-color:black;color:white;}
+</style>                  <hr>
+<xmp>
+* {}
+resetta
+</xmp>
+<hr>                                                                                                    <hr>
+15 luglio 2023
+
+<hr>
+          <ol>
+<li>
+<xmp>
+const getScrollPosition = (el = window) => ({
+  x: el.pageXOffset !== undefined ? el.pageXOffset : el.scrollLeft,
+  y: el.pageYOffset !== undefined ? el.pageYOffset : el.scrollTop
+});
+
+// Example
+getScrollPosition(); // {x: 0, y: 200}
+</xmp>
+</li>
+<li>
+<xmp>
+
+1.How to hide all elements specified?
+
+const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
+
+// Example
+hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
+2.How to check if the element has the specified class?
+
+const hasClass = (el, className) => el.classList.contains(className);
+
+// Example
+hasClass(document.querySelector('p.special'), 'special'); // true
+3.How to toggle a class for an element?
+
+const toggleClass = (el, className) => el.classList.toggle(className);
+
+// Example
+toggleClass(document.querySelector('p.special'), 'special'); 
+// The paragraph will not have the 'special' class anymore
+4.How to get the scroll position of the current page?
+
+const getScrollPosition = (el = window) => ({
+  x: el.pageXOffset !== undefined ? el.pageXOffset : el.scrollLeft,
+  y: el.pageYOffset !== undefined ? el.pageYOffset : el.scrollTop
+});
+
+// Example
+getScrollPosition(); // {x: 0, y: 200}
+5.How to smooth-scroll to the top of the page?
+
+const scrollToTop = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 8);
+  }
+};
+
+// Example
+scrollToTop();
+
+
+
+</xmp>
+</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+</ol>    <hr>
+
+
+https://medium.com/@prashantg9912/how-nextjs-13-4-will-change-front-end-development-883546209786
+
+<hr>
+    <hr>
+
+<hr>            <pre>
+
+&#60;ol>
+
+&#60;li>
+&#60;xmp>
+
+&#60;/xmp>
+&#60;/li>
+
+&#60;/ol>
+
+</pre> 
+
+     
+<ol>
+
+<li>
+<xmp>
+https://www.postman.com/explore?utm_source=bytes_newsletter&utm_medium=bytes&utm_campaign=email&utm_term=jun_22_2023&utm_content=public_api_network_cta&ck_subscriber_id=1999952824
+</xmp>
+</li>
+
+
+<li>
+<xmp>
+Line-clamp is a CSS property that controls the display of text within an element by specifying the maximum number of lines it should occupy. When the content exceeds the specified number of lines, the text is truncated and an ellipsis is added to indicate the truncation. It provides a simple and elegant way to manage text overflow and ensure that the layout of your web page remains visually appealing.
+
+.module {
+  line-clamp: [none | <integer>];
+}
+
+
+</xmp>
+</li>
+
+<li>
+<xmp>
+
+1. Network Information API
+The Network Information API allows web applications to retrieve information about the user’s network connection, such as the type of connection (e.g., WiFi, cellular) and its effective bandwidth. This API can be valuable for optimizing content delivery, managing offline caching, or providing tailored experiences based on network conditions.
+
+To access network information, you can use the navigator.connection object:
+
+const connection =
+  navigator.connection ||
+  navigator.mozConnection ||
+  navigator.webkitConnection;
+const effectiveType = connection.effectiveType;
+const downlink = connection.downlink;
+
+console.log('connection: ', connection);
+console.log('Effective connection type:', effectiveType);
+console.log('Downlink speed:', downlink);
+
+</xmp>
+</li>
+
+<li>
+<xmp>
+2. Geolocation API
+The Geolocation API allows web applications to retrieve the geographical location of a user’s device. This can be incredibly useful for location-based services, mapping applications, and personalized content delivery. By obtaining the user’s location, you can provide targeted information, directions, or location-specific features.
+
+For instance, to retrieve the user’s current location, you can use the getCurrentPosition() method:
+
+navigator.geolocation.getCurrentPosition(function success(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  console.log('Latitude:', latitude);
+  console.log('Longitude:', longitude);
+});
+
+</xmp>
+</li>
+
+<li>
+<xmp>
+
+Copying text
+Let’s make a button. If we click on the button, the text will be copied.
+
+<!-- HTML -->
+<button id="copy-button">Copy text</button>
+// JavaScript
+var button = document.getElementById("copy-button");
+
+button.onclick = function(){
+  // This is the main part.
+  // Use navigator.clipboard.writeText() to write the text
+  navigator.clipboard.writeText("I know clipboard")
+};
+
+
+<!-- HTML -->
+<button id="read-button">Read text</button>
+// JavaScript
+var button = document.getElementById("read-button");
+
+button.onclick = function(){
+  navigator.clipboard
+    .readText()
+    .then(function(text){
+      console.log(text);
+    });
+};
+
+
+
+</xmp>
+</li>
+
+
+<li>
+<xmp>
+<div class="box">Hello World</div>
+.box::after {
+  content: "!";
+  color: red;
+}
+
+
+<button class="btn">Click Me</button>
+.btn::before {
+  content: "👍";
+}
+
+
+
+
+</xmp>
+</li>
+
+
+<li>
+<xmp>
+
+</xmp>
+</li>
+
+
+<li>
+<xmp>
+
+</xmp>
+</li>
+</ol>
+                                                                  
+<ol>
+
+<li>
+<xmp>
+One of the easiest ways to center a div with CSS is by using Flexbox. It makes positioning and aligning elements much easier.
+
+Here is an example:
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100wh;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: #20126f;
+}
+</xmp>
+</li>
+
+<a 
+ href="https://medium.com/@akashjha9041/32-awesome-javascript-snippets-one-liners-you-should-use-in-2023-2be5e60e34b9">awesome-javascript-snippets</a>
+
+
+</ol>
+  
+<ol>
+
+<li>
+<xmp>
+
+https://blog.devgenius.io/7-css-tips-for-newbies-7ce45702fd16
+
+</xmp>
+</li>
+
+
+
+</ol>
+  
+<ol>
+
+<li>
+<xmp>
+https://betterprogramming.pub/mental-models-programming-fictions-and-wittgenstein-d97f1c849df2
+
+
+</xmp>
+</li>
+
+
+
+</ol>
+  
+<ol>
+
+<li>
+<xmp>
+
+body {
+    position: relative;
+    padding: 50px;
+    font-size: 24px;
+    line-height: 30px;
+    background-image: linear-gradient(to right top, #ffcc00 50%, #eee 50%);
+    background-size: 100% calc(100% - 100vh + 5px);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 5px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    z-index: -1;
+}
+
+
+/**
+ * Unrelated css
+ */
+
+h1 {
+    font-size: 32px;
+    line-height: 60px;
+}
+
+ul {
+    margin-top: 30px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+</xmp>
+</li>
+
+
+
+</ol>
+
+🤔
+<xmp>
+<style>
+
+body {
+    position: relative;
+    padding: 50px;
+    font-size: 24px;
+    line-height: 30px;
+    background-image: linear-gradient(to right top, #ffcc00 50%, #eee 50%);
+    background-size: 100% calc(100% - 100vh + 5px);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 5px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    z-index: -1;
+}
+
+
+/**
+ * Unrelated css
+ */
+
+h1 {
+    font-size: 32px;
+    line-height: 60px;
+}
+
+ul {
+    margin-top: 30px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+</style>
+</xmp>
+
+
+  <ol>
+
+<li>
+<xmp>
+
+We use ::-webkit-scrollbar to change the properties.
+
+/* Set the width of the scroll bar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+/* Change the track to a blue color and give a round border */
+::-webkit-scrollbar-track{
+    background-color: blue;
+    border-radius: 10px;
+}
+/* Making the thumb (which shows how much you've scrolled) a gray color
+  and making it round */
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 10px
+}
+/* A dark gray color when hovered overn */
+::-webkit-scrollbar-thumb:hover{
+    background: darkgray;
+}
+
+
+________
+Copy content to the clipboard
+In order to improve the user experience of the website, we often need to copy the content to the clipboard, so that users can paste it to the designated place.
+
+const copyToClipboard = (content) => navigator.clipboard.writeText(content)
+
+copyToClipboard("Hello fatfish")
+______
+
+# Get the mouse selection
+Have you encountered this kind of situation before?
+
+We need to get the content selected by the user.
+
+const getSelectedText = () => window.getSelection().toString()
+
+getSelectedText()
+______
+4.# Convert rgba to hexadecimal
+We can convert the rgba and hexadecimal color values to each other.
+
+const rgbaToHex = (r, g, b) => "#" + [r, g, b].map(num => parseInt(num).toString(16).padStart(2, '0')).join('')
+
+rgbaToHex(0, 0 ,0) // #000000
+rgbaToHex(255, 0, 127) //#ff007f
+5.# Convert hexadecimal to rgba
+const hexToRgba = hex => {
+  const [r, g, b] = hex.match(/\w\w/g).map(val => parseInt(val, 16))
+  return `rgba(${r}, ${g}, ${b}, 1)`;
+}
+
+hexToRgba('#000000') // rgba(0, 0, 0, 1)
+hexToRgba('#ff007f') // rgba(255, 0, 127, 1)
+_____
+
+
+
+</xmp>
+</li>
+
+
+
+</ol>
+
+🤔
+
+
+
+  <style>
+
+* {background-color:black;color:white;}
+</style>          
+
+
+
+
+      
+<hr>
+https://stackoverflow.com/questions/19083175/generate-random-string-in-php-for-file-name
+
+<hr>
+<xmp>
+
+function random_string($length) {
+    $key = '';
+    $keys = array_merge(range(0, 9), range('a', 'z'));
+
+    for ($i = 0; $i < $length; $i++) {
+        $key .= $keys[array_rand($keys)];
+    }
+
+    return $key;
+}
+
+echo random_string(50);
+</xmp>       <hr>
+https://stackoverflow.com/questions/33446651/get-first-file-in-directory-php
+
+<hr>
+<xmp>
+$directory = "path/to/file/";
+$files = scandir ($directory);
+$firstFile = $directory . $files[2];
+</xmp>          
+
+🤔              
+<xmp>
+echo "<div><div style='background-color:orange;color:black;font-size:1.500rem!important; display:inline-block;  border-radius:50%; '>&#58;&#41;</div></div>";
+</xmp>
+        
+<hr>
+
+https://freesvg.org/search?query=alphabet&q=alphabet&page=2
+
+  
+
+
+
+
+&#60;hr&#62;  
+
+
+<hr>
+🤔
+&#60;hr&#62;
+
+
+
+
+ <hr>                                                                                                                                                                                                                  <hr>
+<form action="aggio.php" method="get">
+<textarea style="width:95%;font-size:2.5rem;"  id="area_immissione_testo__" name="questo_est_un_testo"
+          rows="" cols="">
+
+</textarea>
+
+
+
+<input  style="width:95%;font-size:2.5rem;"  type="submit">
+</form>
+
+
+<hr>
+
+$Testo = $_GET["questo_est_un_testo"]; 
+
+$VecchioTesto = file_get_contents('afile.txt');
+
+$Aggiornamento = $VecchioTesto." ".$Testo." ";
+
+$AddTesto = fopen("afile.txt", "a"); 
+
+fwrite($AddTesto, $Aggiornamento );  
+
+fclose($AddTesto);
+
+
+<hr>  <hr>
+<xmp>
+
+<form action="aggio.php" method="get">
+<textarea style="width:95%;font-size:2.5rem;"  id="area_immissione_testo__" name="questo_est_un_testo"
+          rows="" cols="">
+
+</textarea>
+
+
+
+<input  style="width:95%;font-size:2.5rem;"  type="submit">
+</form>
+
+
+<hr>
+
+$Testo = $_GET["questo_est_un_testo"]; 
+
+$VecchioTesto = file_get_contents('afile.txt');
+
+$Aggiornamento = $VecchioTesto." ".$Testo." ";
+
+$AddTesto = fopen("afile.txt", "a"); 
+
+fwrite($AddTesto, $Aggiornamento );  
+
+fclose($AddTesto);
+
+</xmp>
+<hr>                                                                                                                                                            <hr>
+🤔
+<hr>
+Quando invio la richiesta in contemporanea abbianare un valore kri
+
+<hr>
+                <hr>
+
+il programma che gestisce editor vale a dire <i><b style="background-color:white;color:rgb(87,1,56);"> aggio.php </b></i> dovrebbe contenere al suo interno una funzionalità <i>kri</i>
+
+
+<hr>              <hr>
+<xmp>
+rgb(255, 255, 255);
+rgb(87 ,  1 , 56);
+--------------------
+rgb(168, 254, 199);
+
+considerando la sottrazione un reverse
+ 
+</xmp>
+
+
+
+<xmp>
+
+<div style="background-color:rgb(168, 254, 199); color:rgb(87 ,  1 , 56);font-size:2.5rem;">
+
+mi vedi?
+
+</div>
+
+
+</xmp>
+<hr>
+<div style="background-color:rgb(168, 254, 199); color:rgb(87 ,  1 , 56);font-size:2.5rem;">
+
+mi vedi?
+
+</div>
+<hr>
+
+<hr>
+              <hr>
+La funzione per il reverse è questa 
+<xmp>
+r 255 - 87 xr
+g 255 -  1 xg
+b 255 - 56 xb
+</xmp>
+
+<div>
+
+Dato un colore esempio una variazione del marron 
+<xmp>--bs-marron:rgb(87,1,56);</xmp> da me personalizzata applicando il reverse si ottiene <xmp>--bs-verdolino:rgb(168,254,199);</xmp> un verde molto simile al <i>lightgreen</i> da me personalizzato e denominato <i><b>verdolino</b></i>
+</div>
+<hr>
+                                    <hr>
+<xmp>
+--nome-variabile: valore;
+color: var(--colore-principale);
+</xmp>
+
+<xmp>
+--rosso: calc(var(--colore-principale) * 0.5);
+--verde: calc(var(--colore-principale) * 0.25);
+--blu: calc(var(--colore-principale) * 0.125);
+
+.elemento {
+  color: var(--rosso);
+  background-color: var(--verde);
+  border-color: var(--blu);
+}
+</xmp>
+<hr>
+<xmp>
+Il colore RGB(68,54,99) è un colore marrone chiaro. Il colore in reverse è RGB(99,54,68), che è un colore marrone più scuro.
+
+Per trovare il colore in reverse, basta scambiare i valori della componente R e della componente B. Nel caso di RGB(68,54,99), R è 68, B è 54 e G è 99. Scambiando R e B, otteniamo RGB(99,54,68).
+
+Il colore in reverse è spesso utilizzato per creare effetti visivi interessanti. Ad esempio, può essere utilizzato per creare un'illusione di profondità o per creare un contrasto tra due colori.
+</xmp>
+<hr>
+                                                                      <hr>
+da https://www.rinaldo-rasa.it/aaa/unodue/wip/CBDwip_.php
+<br>
+../../unodue/unoduev14/afile.txt
+<br><br>
+<ol>
+<li>
+<span style="background-color:rgb(87,1,56);color:rgb(255,255,255); border:solid 0.15rem rgb(56,1,87);"> Editor_textarea </span><span> kriptonite </span>
+</li>
+<li>
+<xmp>
+<span style="background-color:rgb(87,1,56);color:rgb(255,255,255); border:solid 0.15rem rgb(56,1,87);"> Editor_textarea </span><span> kriptonite </span>
+</xmp>
+</li>
+
+</ol>
+
+
+
+<hr>
+  <hr>
+
+<span style="background-color:rgb(87,1,56);color:rgb(255,255,255); border:solid 0.15rem rgb(56,1,87);"> Editor_textarea </span><span  style="background-color:rgb(87,1,56);color:rgb(168,254,199); border:solid 0.15rem rgb(56,1,87);"> kriptonite </span>
+
+<hr>                <hr>
+Fare attenzione con uso di criptonite
+
+
+<hr>
+                                                                                                                                            <xmp>
+<i class="bi bi-three-dots-vertical"></i>
+</xmp>
+
+<i style="font-size:2.5rem;" class="bi bi-three-dots-vertical"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-terminal-fill"></i>
+</xmp>
+
+<i style="font-size:2.5rem;" class="bi bi-terminal-fill"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-stop-fill"></i>
+</xmp>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
+  <path d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
+</svg>
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-stop-fill"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-stop-fill"></i>
+</xmp>
+
+<xmp>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stop-fill" viewBox="0 0 16 16">
+  <path d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
+</svg>
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-stop-fill"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-server"></i>
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-server"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-send-fill"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-send-fill"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-save2"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-save2"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-record-btn"></i>
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-record-btn"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-radioactive"></i>
+
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-radioactive"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-power"></i>
+
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-power"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-person-circle"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-person-circle"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-patch-check-fill"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-patch-check-fill"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-paperclip"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-paperclip"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-megaphone"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-megaphone"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-link-45deg"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-link-45deg"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-layers-half"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-layers-half"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-house-door-fill"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-house-door-fill"></i>
+
+<hr>
+  <xmp>
+<i class="bi bi-hash"></i>
+
+</xmp>
+
+<xmp>
+
+</xmp>
+<i style="font-size:2.5rem;" class="bi bi-hash"></i>
+
+<hr>
+                                <hr>
+<xmp>
+<i class="bi bi-globe"></i>
+
+</xmp>
+
+ <i style="font-size:2.5rem;" class="bi bi-globe">
+
+
+
+</i>
+</hr>
+  <hr>
+<xmp>
+<i class="bi bi-filetype-txt">
+
+</i>
+
+</xmp>
+
+ <i style="font-size:2.5rem;" class="bi bi-filetype-txt">
+</i>
+
+<hr>
+  <hr>
+<xmp>
+<i class="bi bi-file-text-fill"></i>
+
+</i>
+
+</xmp>
+
+ <i style="font-size:2.5rem;" class="bi bi-fill">
+</i>
+
+<hr>
+  <hr>
+<xmp>
+<i class="bi bi-file-text-fill"></i>
+
+</i>
+
+</xmp>
+
+ <i style="font-size:2.5rem;" class="bi bi-file-text-fill">
+</i>
+
+<hr>
+  <hr>
+<xmp>
+<i class="bi bi-file-image"></i>
+
+</i>
+
+</xmp>
+
+ <i style="font-size:2.5rem;" class="bi bi-file-image">
+</i>
+
+<hr>
+  <hr>
+<xmp>
+<i class="bi bi-file-earmark"></i>
+
+
+</i>
+
+</xmp>
+
+ <i style="font-size:2.5rem;" class="bi bi-file-earmark">
+</i>
+
+<hr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <hr>
+
+😀 Grinning Face
+😃 Grinning Face with Big Eyes
+😄 Grinning Face with Smiling Eyes
+😁 Beaming Face with Smiling Eyes
+😆 Grinning Squinting Face
+😅 Grinning Face with Sweat
+😂 Face with Tears of Joy
+🙂 Slightly Smiling Face
+🙃 Upside-Down Face
+😉 Winking Face
+😊 Smiling Face with Smiling Eyes
+😇 Smiling Face with Halo
+😍 Smiling Face with Heart-Eyes
+😘 Face Blowing a Kiss
+😗 Kissing Face
+☺️ Smiling Face
+😚 Kissing Face with Closed Eyes
+😙 Kissing Face with Smiling Eyes
+😋 Face Savoring Food
+😛 Face with Tongue
+😜 Winking Face with Tongue
+😝 Squinting Face with Tongue
+🤑 Money-Mouth Face
+🤗 Smiling Face with Open Hands
+🤔 Thinking Face
+🤐 Zipper-Mouth Face
+😐 Neutral Face
+😑 Expressionless Face
+😶 Face Without Mouth
+😏 Smirking Face
+😒 Unamused Face
+🙄 Face with Rolling Eyes
+😬 Grimacing Face
+😌 Relieved Face
+😔 Pensive Face
+😪 Sleepy Face
+😴 Sleeping Face
+😷 Face with Medical Mask
+🤒 Face with Thermometer
+🤕 Face with Head-Bandage
+😵 Face with Crossed-Out Eyes
+😎 Smiling Face with Sunglasses
+🤓 Nerd Face
+😕 Confused Face
+😟 Worried Face
+🙁 Slightly Frowning Face
+☹️ Frowning Face
+😮 Face with Open Mouth
+😯 Hushed Face
+😲 Astonished Face
+😳 Flushed Face
+😦 Frowning Face with Open Mouth
+😧 Anguished Face
+😨 Fearful Face
+😰 Anxious Face with Sweat
+😥 Sad but Relieved Face
+😢 Crying Face
+😭 Loudly Crying Face
+😱 Face Screaming in Fear
+😖 Confounded Face
+😣 Persevering Face
+😞 Disappointed Face
+😓 Downcast Face with Sweat
+😩 Weary Face
+😫 Tired Face
+😤 Face with Steam From Nose
+😡 Enraged Face
+😠 Angry Face
+
+<hr>
+                            
+      
+<hr>
+<xmp>
+<hr>
+
+
+<hr>
+</xmp>
+<hr>        
+<hr>
+<div style="background-color:rgb(87,1,56);color: rgb(168,254,199);">
+🤔
+Quando usiamo i file di tipo 
+
+<i>afile.txt</i> teniamo a mente che un file <i>richiesto con xmlhttps</i> tramite script non può contenere script js
+<br>
+ 😉
+ma può essere un problema secondario se entra nel frame
+</div>
+<hr>  
+<hr>
+<div style="background-color:rgb(87,1,56);color: rgb(168,254,199);">
+🤔
+Quando usiamo i file di tipo 
+
+<i>afile.txt</i> teniamo a mente che un file <i>richiesto con xmlhttps</i> tramite script non può contenere script js
+<br>
+ 😉
+ma può essere un problema secondario se entra nel frame
+</div>
+<hr>        <hr>
+ 🤓 non è necessario js poiché già <i>crinem</i> sta internamente a php(ovvero il frame)
+<br>
+ 😏 nella versione <i>wip</i> lasciare la formattazione al framework... considerare che la wipv14 è una versione maintenance
+
+
+
+<hr>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <ol>
+
+<li>
+<xmp>
+:root{ 
+ --verde:green; 
+ --fonte-standard:2.5rem!important;
+ }
+        .par0_50{ 
+        
+        color:var(--verde); 
+        font-size:calc( 0.5 * var(--fonte-standard) );
+        
+        }
+        .par1_00{ 
+        
+        color:var(--verde); 
+        font-size:calc( 1.00 * var(--fonte-standard) );
+        
+        }        
+        .par1_50{ 
+        
+        color:var(--verde); 
+        font-size:calc( 1.50 * var(--fonte-standard) );
+        
+        }
+</xmp>
+</li>
+
+</ol>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

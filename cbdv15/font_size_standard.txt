@@ -1,0 +1,16 @@
+
+File_00__="font_size_standard.txt";
+
+Richiedo_00__ = new XMLHttpRequest();
+
+Richiedo_00__.open("GET",File_00__,false);
+Richiedo_00__.onreadystatechange = function(){
+Trovato_00__ = Richiedo_00__.responseText;
+
+alert(Trovato_00__);
+
+
+} ; Richiedo_00__.send();
+
+
+
