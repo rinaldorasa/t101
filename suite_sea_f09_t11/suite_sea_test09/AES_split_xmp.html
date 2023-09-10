@@ -1,0 +1,182 @@
+<xmp>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title> 8 SEARCH</title>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script src="aes.js"></script>
+  
+  
+  
+  
+ <style>
+ html * {
+ width:40rem;
+ font-size:1.75rem;
+ font-family:monospace;
+ inline-size: auto;
+ overflow-wrap: break-word;
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ overflow:auto;
+
+  }
+  </style>
+
+ 
+  
+  
+  
+</head>
+<body>
+<!--
+
+U2FsdGVkX1+Yw39xNeyyYXJcAS0bqVoVUt3uoktPEtE=
+
+
+U2FsdGVkX18t1cxMCHXZH0TNbsBkEeEyEKQZtwZ/9qA=
+
+-->
+
+
+<!--
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+-->
+
+<!--
+<div id="W0">err W0</div>
+-->
+
+
+<div id="W1">err W1</div>
+<div id="W2">err W2</div>
+
+<!--
+<div id="W3">err W3</div>
+<div id="W4">err W4</div>
+<div id="W5">err W5</div>
+<div id="W6">err W6</div>
+<div id="W7">err W7</div>
+-->
+
+
+<div id="PAROLA_ID_01__">err PAROLA_ID_01__</div>
+<div id="PAROLA_ID_02__">err PAROLA_ID_02__</div>
+
+
+
+
+<script>
+
+let ALFA = '0ab0cd';
+
+let SEPA='0';
+
+
+let WORD = ALFA.split(SEPA);
+
+
+
+
+ALFA = 'U2FsdGVkX1+Yw39xNeyyYXJcAS0bqVoVUt3uoktPEtE=U2FsdGVkX18t1cxMCHXZH0TNbsBkEeEyEKQZtwZ/9qA=';
+
+SEPA='U2FsdGVkX1';
+
+WORD = ALFA.split(SEPA);
+
+
+
+
+
+document.getElementById("W1").innerHTML=SEPA+WORD[1];
+document.getElementById("W2").innerHTML=SEPA+WORD[2];
+
+
+PAROLA_CIF_01__ = document.getElementById("W1").textContent;
+PAROLA_CIF_02__ = document.getElementById("W2").textContent;
+
+
+PASSWORD__='a b c'; 
+	
+	var bytes  = CryptoJS.AES.decrypt(PAROLA_CIF_01__.toString(), PASSWORD__);
+	var PAROLA_01__ = bytes.toString(CryptoJS.enc.Utf8);
+	
+    var bytes  = CryptoJS.AES.decrypt(PAROLA_CIF_02__.toString(), PASSWORD__);
+	var PAROLA_02__ = bytes.toString(CryptoJS.enc.Utf8);
+	
+
+
+
+/**/
+document.getElementById("PAROLA_ID_01__").innerHTML=PAROLA_01__ ;
+document.getElementById("PAROLA_ID_02__").innerHTML=PAROLA_02__ ;
+
+
+
+
+
+
+
+
+//console.log(words[3]);
+// Expected output: "fox"
+
+const chars = str.split('');
+//console.log(chars[8]);
+// Expected output: "k"
+
+const strCopy = str.split();
+//console.log(strCopy);
+// Expected output: Array ["The quick brown fox jumps over the lazy dog."]
+
+
+</script>
+
+</xmp>
+
+
+
+
+
+<!--
+
+
+<script>
+
+const str = 'The quick brown fox jumps over the lazy dog.';
+
+
+
+const words = str.split(' ');
+console.log(words[3]);
+// Expected output: "fox"
+
+const chars = str.split('');
+console.log(chars[8]);
+// Expected output: "k"
+
+const strCopy = str.split();
+console.log(strCopy);
+// Expected output: Array ["The quick brown fox jumps over the lazy dog."]
+
+
+</script>
+
+
+
+
+-->
+
+
+
+
+
+</body>
+</html>

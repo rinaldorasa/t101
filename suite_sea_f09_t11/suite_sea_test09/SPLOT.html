@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>
+  2125 SPLOT
+  
+  </title>
+  
+  <style>
+  html * {font-size:1.75rem; font-family:monospace;
+  
+  inline-size: auto;
+    overflow-wrap: break-word;
+    
+    border:solid 0.15rem green;
+
+
+
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
+
+
+  
+  }
+  
+  body{width:75%;border:solid 0.15rem green; overflow:auto;}
+  </style>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script src="aes.js"></script>
+
+</head>
+<body>
+
+<div id="ID_RESTORE_SPLIT_WORDS">err ID_RESTORE_SPLIT_WORDS</div>
+<div id="ID_RESTORE_PLAIN_WORDS">err ID_RESTORE_PLAIN_WORDS</div>
+
+<script>
+
+ALFA = 'U2FsdGVkX1+Yw39xNeyyYXJcAS0bqVoVUt3uoktPEtE=U2FsdGVkX18t1cxMCHXZH0TNbsBkEeEyEKQZtwZ/9qA=U2FsdGVkX1+e3W/FRhymbuO9wMJkjewsVrcc2G98f74=U2FsdGVkX195kAUp8dXp55PRKcOEZzW5f+a2XLM/cUM=U2FsdGVkX1+lGhvXNt/cGbLJip+14ZTwsKiLE2+oios=';
+
+
+SEPA='U2FsdGVkX1';
+
+/*
+    ALFA = '01234567890123456789';
+    SEPA='0';
+*/
+
+    SPLITWORDS = ALFA.split(SEPA);
+	
+	LENGTH_SPLITWORDS__ = SPLITWORDS.length;
+	
+    RESTORE_SPLIT_WORDS=[""];
+
+ //   for(n=1; n<LENGTH_SPLITWORDS__; n++){
+ 
+  for(n=0; n<LENGTH_SPLITWORDS__; n++){
+		
+    RESTORE_SPLIT_WORDS[n]=SEPA+SPLITWORDS[n];
+    
+};
+
+document.getElementById("ID_RESTORE_SPLIT_WORDS").innerHTML=
+RESTORE_SPLIT_WORDS;
+
+// alert(RESTORE_SPLIT_WORDS[1]);
+// alert(RESTORE_SPLIT_WORDS.length);
+
+
+PASSWORD__='a b c'; 
+
+DEC_RESTORE_SPLIT_WORDS=[""];
+
+PLAINTEXT=[""];
+
+for(n=0; n<RESTORE_SPLIT_WORDS.length; n++){
+
+//alert(RESTORE_SPLIT_WORDS[n]);
+
+cifrato=RESTORE_SPLIT_WORDS[n];
+
+// alert(cifrato);
+
+decifrato = CryptoJS.AES.decrypt(cifrato.toString(), PASSWORD__);
+
+// alert(decifrato)
+
+plaintext = decifrato.toString(CryptoJS.enc.Utf8);
+
+// alert(plaintext)
+
+
+PLAINTEXT[n]=plaintext;
+
+	
+     };
+	 
+	 
+RISULTATO=[""];	 
+	 
+    
+     
+for(n=1;n<(PLAINTEXT.length); n++){
+
+RISULTATO[n]=PLAINTEXT[n].trim()+" ";
+
+}	 
+	 
+     
+     
+     
+
+
+// TextIs = RISULTATO[1]+RISULTATO[2]+RISULTATO[3]+RISULTATO[4]+RISULTATO[5];
+
+ TextIs="";
+ 
+ /*
+for(conta=1;conta<6;conta++)
+{  TextIs =  TextIs + RISULTATO[conta].toString();}
+
+*/
+
+
+
+for(conta=1;conta<RISULTATO.length;conta++)
+{  TextIs =  TextIs + RISULTATO[conta].toString();}
+
+
+
+
+
+
+
+//alert( TextIs );
+
+//TextIs = "cosa succede";
+	 
+	 
+	 
+    
+document.getElementById("ID_RESTORE_PLAIN_WORDS").innerHTML=
+
+PLAINTEXT +"<br>"+
+"0= "+PLAINTEXT[0]+"<br>"+
+"1= "+PLAINTEXT[1]+"<br>"+
+"2= "+PLAINTEXT[2]+"<br>"+
+"3= "+PLAINTEXT[3]+"<br>"+
+"4= "+PLAINTEXT[4]+"<br>"+
+"5= "+PLAINTEXT[5]+"<br>"+
+"6= "+PLAINTEXT[6]+"<br>"+
+
+"<br>"+
+"<hr>"+
+"length array PLAINTEXT= "+PLAINTEXT.length+"<br>"+
+"<br>"+"<br>"+
+
+RISULTATO
++"<br>"
++"length array RISULTATO= "+RISULTATO.length+"<br>"
+
++"<br>"
++"RISULTATO[0]= "+RISULTATO[0]+"<br>"
+
++"RISULTATO[1]= "+RISULTATO[1]+"<br>"
++"RISULTATO[2]= "+RISULTATO[2]+"<br>"
++"RISULTATO[3]= "+RISULTATO[3]+"<br>"
++"RISULTATO[4]= "+RISULTATO[4]+"<br>"
++"RISULTATO[5]= "+RISULTATO[5]+"<br>"
+
+
++"RISULTATO[6]= "+RISULTATO[6]+"<br>"
+
++"<br>"+"<br>"
++"<div style='background-color:green; color:orange;'>"
++TextIs
++"</div>"
++"<br>"+"<br>"
+
+;
+
+
+
+
+  
+  
+</script>
+
+</body>
+</html>

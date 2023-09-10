@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>
+  2125 SPLOT
+  
+  </title>
+  
+  <style>
+  html * {font-size:1.75rem; font-family:monospace;
+  
+  inline-size: auto;
+    overflow-wrap: break-word;
+    
+    border:solid 0.15rem green;
+
+
+
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
+
+
+  
+  }
+  
+  body{width:75%;border:solid 0.15rem aqua; overflow:auto;}
+  </style>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+<script src="aes.js"></script>
+
+</head>
+<body>
+
+<div id="ID_RESTORE_SPLIT_WORDS">err ID_RESTORE_SPLIT_WORDS</div>
+<div id="ID_RESTORE_PLAIN_WORDS">err ID_RESTORE_PLAIN_WORDS</div>
+
+<script>
+
+// ALFA = 'U2FsdGVkX1+Yw39xNeyyYXJcAS0bqVoVUt3uoktPEtE=U2FsdGVkX18t1cxMCHXZH0TNbsBkEeEyEKQZtwZ/9qA=U2FsdGVkX1+e3W/FRhymbuO9wMJkjewsVrcc2G98f74=U2FsdGVkX195kAUp8dXp55PRKcOEZzW5f+a2XLM/cUM=U2FsdGVkX1+lGhvXNt/cGbLJip+14ZTwsKiLE2+oios=';
+
+
+ALFA = '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';
+
+
+SEPA='U2FsdGVkX1';
+
+/*
+    ALFA = '01234567890123456789';
+    SEPA='0';
+*/
+
+    SPLITWORDS = ALFA.split(SEPA);
+	
+	LENGTH_SPLITWORDS__ = SPLITWORDS.length;
+	
+    RESTORE_SPLIT_WORDS=[""];
+
+ //   for(n=1; n<LENGTH_SPLITWORDS__; n++){
+ 
+  for(n=0; n<LENGTH_SPLITWORDS__; n++){
+		
+    RESTORE_SPLIT_WORDS[n]=SEPA+SPLITWORDS[n];
+    
+};
+
+document.getElementById("ID_RESTORE_SPLIT_WORDS").innerHTML=
+RESTORE_SPLIT_WORDS;
+
+// alert(RESTORE_SPLIT_WORDS[1]);
+// alert(RESTORE_SPLIT_WORDS.length);
+
+
+PASSWORD__='a b c'; 
+
+DEC_RESTORE_SPLIT_WORDS=[""];
+
+PLAINTEXT=[""];
+
+for(n=0; n<RESTORE_SPLIT_WORDS.length; n++){
+
+//alert(RESTORE_SPLIT_WORDS[n]);
+
+cifrato=RESTORE_SPLIT_WORDS[n];
+
+// alert(cifrato);
+
+decifrato = CryptoJS.AES.decrypt(cifrato.toString(), PASSWORD__);
+
+// alert(decifrato)
+
+plaintext = decifrato.toString(CryptoJS.enc.Utf8);
+
+// alert(plaintext)
+
+
+PLAINTEXT[n]=plaintext;
+
+	
+     };
+	 
+	 
+RISULTATO=[""];	 
+	 
+    
+     
+for(n=1;n<(PLAINTEXT.length); n++){
+
+RISULTATO[n]=PLAINTEXT[n].trim()+" ";
+
+}	 
+	 
+     
+     
+     
+
+
+// TextIs = RISULTATO[1]+RISULTATO[2]+RISULTATO[3]+RISULTATO[4]+RISULTATO[5];
+
+ TextIs="";
+ 
+ /*
+for(conta=1;conta<6;conta++)
+{  TextIs =  TextIs + RISULTATO[conta].toString();}
+
+*/
+
+
+
+for(conta=1;conta<RISULTATO.length;conta++)
+{  TextIs =  TextIs + RISULTATO[conta].toString();}
+
+
+
+
+
+
+
+//alert( TextIs );
+
+//TextIs = "cosa succede";
+	 
+	 
+	 
+    
+document.getElementById("ID_RESTORE_PLAIN_WORDS").innerHTML=
+
+PLAINTEXT +"<br>"+
+"0= "+PLAINTEXT[0]+"<br>"+
+"1= "+PLAINTEXT[1]+"<br>"+
+"2= "+PLAINTEXT[2]+"<br>"+
+"3= "+PLAINTEXT[3]+"<br>"+
+"4= "+PLAINTEXT[4]+"<br>"+
+"5= "+PLAINTEXT[5]+"<br>"+
+"6= "+PLAINTEXT[6]+"<br>"+
+
+"<br>"+
+"<hr>"+
+"length array PLAINTEXT= "+PLAINTEXT.length+"<br>"+
+"<br>"+"<br>"+
+
+RISULTATO
++"<br>"
++"length array RISULTATO= "+RISULTATO.length+"<br>"
+
++"<br>"
++"RISULTATO[0]= "+RISULTATO[0]+"<br>"
+
++"RISULTATO[1]= "+RISULTATO[1]+"<br>"
++"RISULTATO[2]= "+RISULTATO[2]+"<br>"
++"RISULTATO[3]= "+RISULTATO[3]+"<br>"
++"RISULTATO[4]= "+RISULTATO[4]+"<br>"
++"RISULTATO[5]= "+RISULTATO[5]+"<br>"
+
+
++"RISULTATO[6]= "+RISULTATO[6]+"<br>"
+
++"<br>"+"<br>"
++"<div style='background-color:green; color:orange;'>"
++TextIs
++"</div>"
++"<br>"+"<br>"
+
+;
+
+
+
+
+  
+  
+</script>
+
+</body>
+</html>

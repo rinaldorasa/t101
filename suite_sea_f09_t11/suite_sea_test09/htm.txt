@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<style>
+html * {
+font-size:1.615rem;
+
+word-break:break-all;}
+
+    inline-size: auto;
+    overflow-wrap: break-word;
+    
+    border:solid 0.15rem green;
+white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+overflow:auto;
+</style>
+
+<div>
+domenica 27 agosto 2023
+</div>
+<hr>
+<div>
+editor minimalistico
+</div>U2FsdGVkX19NShUZFWW8/HAjsWaBnzh6cjiFn0gRXbdbxd2kf8VOXTFokQBz5UT9

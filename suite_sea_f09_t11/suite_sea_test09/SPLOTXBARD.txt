@@ -1,0 +1,64 @@
+<title>SPLOTXBARD</title>
+
+
+<div id="ID_RESTORE_SPLIT_WORDS">err ID_RESTORE_SPLIT_WORDS</div>
+
+<script>
+ALFA = "012345678901234567890123456789";
+SEPA = "0";
+
+SPLITWORDS = ALFA.split(SEPA);
+LENGTH_SPLITWORDS__ = SPLITWORDS.length;
+
+RESTORE_SPLIT_WORDS=[""];
+
+for(n=1; n<LENGTH_SPLITWORDS__-1; n++){
+		
+    RESTORE_SPLIT_WORDS[n]=SEPA+SPLITWORDS[n];
+    
+};
+
+
+document.getElementById("ID_RESTORE_SPLIT_WORDS").innerHTML=`
+
+<div>
+The string to split is ALFA while divisor is SEPA
+</div>
+<hr>
+${RESTORE_SPLIT_WORDS}
+
+<div>
+The split method produces an array like the one above 
+</div>
+
+<div>
+The RESTORE_SPLIT_WORDS array has a length of 
+</div>
+
+${RESTORE_SPLIT_WORDS.length}
+<div>
+To get the two separate words we remove the first and last element of the array
+</div>
+<br>
+first RESTORE_SPLIT_WORDS[0] ${RESTORE_SPLIT_WORDS[0]} 
+<br>
+last RESTORE_SPLIT_WORDS[3]  ${RESTORE_SPLIT_WORDS[LENGTH_SPLITWORDS__]} 
+<div>
+What remains are the elements between zero and LENGTH_SPLITWORDS__
+</div>
+RESTORE_SPLIT_WORDS[1] = ${RESTORE_SPLIT_WORDS[1]}
+<br>
+RESTORE_SPLIT_WORDS[2] = ${RESTORE_SPLIT_WORDS[2]}
+
+
+
+
+
+`
+;
+
+
+
+
+
+</script>
