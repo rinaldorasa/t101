@@ -1,0 +1,33 @@
+
+<!-- rolling dot della front page -->
+<div ID="LEGGI_DINA_INPUT_PAGE_00__"></div> <!-- modello rolling dot  --> 
+<!-- <div ID="TEST_RANGE00__"></div> --> <!-- solo esempio di app style non cambia niente --> 
+<div id="ATTIVA_STILI_PAGE_00__"></div> <!-- passaggio di style  --> 
+ 
+</div> 
+ 
+<script> 
+ 
+function RengDot_Page_00__(){ 
+  ValoreInizialeRange_Page_00__=25; 
+  ProprietaInput_Page_00__=`id="RANGER_Page_00__" type="range" value="`+ValoreInizialeRange_Page_00__+`" step="1" min="0" max="99"  class="centrato___" style=" margin-left:0%;  width:50%; border:solid 0.00rem yellow;"`; 
+  document.getElementById("LEGGI_DINA_INPUT_PAGE_00__").innerHTML=`<input ${ProprietaInput_Page_00__}  >   `; 
+}; 
+RengDot_Page_00__(); 
+ 
+ 
+function LeggiRengDot_Page_00__(){ 
+  LetturaRange_Page_00__=document.getElementById("RANGER_Page_00__").value; 
+ 
+  FonteDinamica_Page_00__=(LetturaRange_Page_00__*0.075).toFixed(2); 
+
+// trasferisce il valore del font tramite style a textarea 
+  document.getElementById("ATTIVA_STILI_PAGE_00__").innerHTML='<style>#Scrivere_in_TEXTAREA_INIZIALE__, #ID_Testo {font-size:'+FonteDinamica_Page_00__+'rem;}'+'</style> <style>#LEGGI_DINA_INPUT_PAGE_00__:hover{border:dotted 0.025rem teal;}</style>'; 
+ 
+ 
+ 
+}; setInterval(LeggiRengDot_Page_00__,1); 
+ 
+ 
+</script> 
+ 

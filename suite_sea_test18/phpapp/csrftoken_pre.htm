@@ -1,0 +1,57 @@
+<pre>
+
+&#60;?php 
+
+
+
+echo "&#60;br>";
+
+$TOKEN = $_POST["csrfToken"];
+
+
+$TOKEN2 = $_COOKIE['csrfToken'];
+
+
+
+if (!isset($_COOKIE['csrfToken'])) { $csrfToken = bin2hex(random_bytes(32));
+setcookie("csrfToken", $csrfToken, time() + 3600); }
+
+
+// On the server side, verify the CSRF token
+if ($_POST['csrfToken'] !== $_COOKIE['csrfToken']) {
+  // CSRF token mismatch
+  // Reject the request
+  echo "&#60;div id='REJECT_REQUEST_PHP__'>";
+  echo "&#60;br>";  
+  echo ' &#60;a id="REJECT_A__" href="csrfxvxx.php" >&#60;i id="ICO_REJECT_A__" class="bi bi-shield-fill-check">&#60;/i>&#60;/a> '; 
+  echo " ";
+  echo ' &#60;button id="RSPLOTV_A__" onclick="'.'PopUpSplot()'.'" style="border-width:0rem;">&#60;i class="bi bi-view-stacked">&#60;/i>&#60;/button> ';
+  echo ' &#60;a id="SPLOTEX_A__" href="SPLOTv16.php" style="border-width:0rem;">&#60;i class="bi bi-book">&#60;/i>&#60;/a> ';
+  
+
+  echo "&#60;/div>";  
+  echo '&#60;script> function csrf(){window.location.replace("csrfxvxx.php");} setTimeout(csrf, 5000)&#60;/script>';   
+
+}
+else
+{
+  echo "&#60;div id='APPROVE_REQUEST_PHP__'>";
+  echo " &#60;div STYLE='BACKGROUND-COLOR:GREEN; COLOR:WHITE; DISPLAY:INLINE-BLOCK; VISIBILITY:HIDDEN;'> &nbsp;&nbsp; &#60;!-- APPROVED REQUEST -->&#60;/div> ";
+  echo "&#60;br>";
+  echo ' &#60;a id="APPROVE_A__" href="csrfxvxx.php">&#60;i id="ICO_APPROVE_A__" class="bi bi-shield-fill-check">&#60;/i>&#60;/a> ';
+
+
+
+  echo " &#60;br> ";  
+
+echo ' &#60;button id="RSPLOTV_A__" onclick="'.'PopUpSplot()'.'" style="border-width:0rem;">&#60;i class="bi bi-view-stacked">&#60;/i>&#60;/button> ';
+echo ' &#60;a id="SPLOTEX_A__" href="SPLOTv16.php" style="border-width:0rem;">&#60;i class="bi bi-book">&#60;/i>&#60;/a> ';
+
+
+
+  echo "&#60;/div>";
+}
+
+?>
+
+</pre>
