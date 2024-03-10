@@ -1,0 +1,795 @@
+
+<!doctype html>
+<html id="HTML">
+<head>
+<meta charset="utf-8">
+<title> 
+
+RES
+
+w_a_0_0_restayling.html
+
+</title>
+
+<style>
+
+html * {word-break:break-all;}
+
+svg{opacity:0.25;}
+
+
+input[type="range"] {
+ appearance: none;
+ width: 100%;
+
+ background-color:aqua; color:aqua; background-color:rgba(0, 255, 255, 0.25);
+ background-color:transparent; color:transparent; 
+ 
+}
+
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb,
+input[type="range"]::-ms-thumb {
+ height: 100px;
+ width: 100px;
+ 
+}
+
+img{ 
+ margin:0 auto; display: block; 
+ max-width:100%; max-height:100%; 
+ width: auto; height: auto; 
+ } 
+
+
+.word_break_all{
+
+ word-break:break-all;
+
+ inline-size: auto;
+
+ white-space: pre-wrap; /* css-3 */
+ white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+ white-space: -pre-wrap; /* Opera 4-6 */
+ white-space: -o-pre-wrap; /* Opera 7 */
+ word-wrap: break-word; /* Internet Explorer 5.5+ */
+
+ overflow:auto;
+
+
+}
+
+</style>
+
+
+
+<style>
+    /* UTILITIES ini */
+    @keyframes spin{ 0%{transform:rotate(0deg);} 100% {transform:rotate(360deg);}}
+    
+    .spinner{width:48px;height:48px; width:2rem;height:2rem; border:solid 4px red; border:solid 0.25rem red; border:solid 0.25rem red; border:solid 0.25rem red; border-top:solid 4px black; border-top:solid 0.25rem transparent; background-color:transparent; border-radius:50%; overflow:none; animation: spin 1.5s linear infinite;}
+    .spinmin_v0{width: 1.00rem;height:1.00rem;background-color:transparent;
+    border:solid 0.175rem orange;border-top:solid 0.175rem transparent;border-radius:50%; display:inline-block;
+    animation: spin 1.5s linear infinite;
+    }
+    .spinmin{width: 3.500rem;height:3.500rem;background-color:transparent;
+    border:solid 1.75rem orange; border:solid 1.75rem #BBE3C3; border-top:solid 1.75rem transparent;border-radius:50%; display:inline-block;
+    animation: spin 1.5s linear infinite;
+    }
+    
+    
+    @-webkit-keyframes blink { 0% {background: #222} 50% {background: lime} 100% {background: #222}}
+    
+    .cursore { background: lime; line-height: 17px; margin-left: 3px;
+    -webkit-animation: blink 0.8s infinite; width: 7px; height: 15px;}
+    
+    /* UTILITIES fin */ 
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body id="BODY">
+
+
+<script>
+Step=49/99; // alert("Step= "+Step);
+
+</script>
+
+
+
+
+<div id="RESPONSIVITY"></div>
+<script>
+
+    FonteSize=5.00;
+
+    LarghezzaFinestraPx=window.innerWidth/1;
+    AltezzaFinestraPx=window.innerHeight/1;
+
+    LarghezzaFinestraRem=window.innerWidth/16;
+    AltezzaFinestraRem=window.innerHeight/16;
+
+    IcoWpx=96+16; // valori w h menu svg
+    IcoHpx=96+16; // valori w h menu svg    
+
+
+    // quando si utilizza /Android/i.test(navigator.userAgent) come responsivity
+    // si deve adattare Fontesize e anche IcoWpx e IcoHpx con un rapporto matematico
+    // proporzionale fattore di riduzione
+    //
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (isMobile) {
+    // Il dispositivo è un dispositivo mobile
+    Dispositivo=1;
+    } else {
+    // Il dispositivo è un dispositivo desktop
+    Dispositivo=0;
+    }
+
+    if(Dispositivo===1)
+    {
+		// Il dispositivo è un dispositivo mobile    
+		FonteSize=5.00;  //  quasi ininfluente
+		
+		IcoWpx=IcoWpx*1.00;
+		IcoHpx=IcoHpx*1.00;
+
+		VisuIdFormaFSize_0000=LarghezzaFinestraRem*0.75;
+		VisuIdFormaFSize_0001=LarghezzaFinestraRem*0.75;
+		VisuIdFormaFSize_0002=LarghezzaFinestraRem*0.75;
+		VisuIdFormaFSize_0003=LarghezzaFinestraRem*0.75;
+		VisuIdFormaFSize_0004=LarghezzaFinestraRem*0.75;
+
+
+			
+		AltezzaSliderRange="auto";  // unused
+		
+    }
+    else
+    {
+		// Il dispositivo è un dispositivo desktop  
+
+		IcoWpx=IcoWpx*1.00*0.50;
+		IcoHpx=IcoHpx*1.00*0.50;
+
+		VisuIdFormaFSize_0000=LarghezzaFinestraRem*0.75;
+		VisuIdFormaFSize_0001=LarghezzaFinestraRem*0.0;
+		VisuIdFormaFSize_0002=LarghezzaFinestraRem*0.75;
+		VisuIdFormaFSize_0003=LarghezzaFinestraRem*0.0;
+		VisuIdFormaFSize_0004=LarghezzaFinestraRem*0.75;
+
+
+	
+		AltezzaSliderRange="auto";  // unused
+	
+    };
+
+
+
+
+    AltezzaDettagli99X=((IcoHpx/16)*(1.25));  // contenitore colore navy
+  
+    LarghezzaRollingDot0000=((LarghezzaFinestraRem-(IcoWpx/16))*(0.750+2*(0.750*0.10)));  // colore aqua
+ 
+ 
+    document.getElementById("RESPONSIVITY").innerHTML=''
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+
+    +'<style> '
+    +'#DETTAGLI_99X{'
+    +''    
+    +'width:'+(LarghezzaFinestraRem*(0.750+0.125+(0.125*0.75)+(0.125*0.00)))+'rem;'    
+    +'height:'+(AltezzaDettagli99X)+'rem;'    
+
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +'border:solid 0.15rem navy; border:solid 0.15rem rgba(0, 0, 128, 0.00);'
+    +'border-bottom:solid 0.15rem navy; border-bottom:solid 0.15rem rgba(0, 0, 128, 1.00);'
+ 
+    +'}'
+
+    +''    
+    +'#DETTAGLI_99_NO{border:solid 0.15rem red; border:solid 0.15rem rgba(255,0,0,0); overflow:auto;}'    
+    +'#DETTAGLI_99_SI{border:solid 0.15rem red; border:solid 0.15rem rgba(255,0,0,0); overflow:auto;}'    
+    +''    
+    +''    
+    +''    
+    +''    
+    +'#DETTAGLI_99_NO_SVG{width:'+(IcoWpx)+'px; height:'+(IcoHpx)+'px; border:solid 0.00rem green; border-right:solid 0.15rem rgba(0,255,0,1); display:inline-block;}'    
+    +'#DETTAGLI_99_SI_SVG{width:'+(IcoWpx)+'px; height:'+(IcoHpx)+'px; border:solid 0.00rem green; border-right:solid 0.15rem rgba(0,255,0,1); display:inline-block;}'    
+    +''    
+    +''    
+    +'#ROLLING_DOT_0000{width:'+(LarghezzaRollingDot0000)+'rem; border:solid 0.15rem aqua; border:solid 0.15rem rgba(0, 255, 255, 0.00); display:inline-block;}'    
+    +''    
+    +''    
+    +'#PAGE_CHIETA_0000{width:'+(LarghezzaRollingDot0000)+'rem; border:solid 0.15rem aqua; border:solid 0.15rem rgba(0, 255, 255, 0.00); display:inline-block;}'    
+    +''    
+    +'#LETTURA_RANGE{width:0rem; display:inline-block;}'    
+
+/*
+	+'#IdFormaFSize_0000{ width:5rem; visibility:visible;}'
+	+'#IdFormaFSize_0001{ width:0rem; visibility:hidden;}'    
+	+'#IdFormaFSize_0002{ width:5rem; visibility:visible;}'
+	+'#IdFormaFSize_0003{ width:0rem; visibility:hidden;}' 
+	+'#IdFormaFSize_0004{ width:5rem; visibility:visible;}'
+*/
+
+
++'#IdFormaFSize_0000{ width:'+((VisuIdFormaFSize_0000)*(1.00))+'rem; visibility:visible;}'
++'#IdFormaFSize_0001{ width:'+((VisuIdFormaFSize_0001)*(1.00))+'rem; visibility:hidden;}'    
++'#IdFormaFSize_0002{ width:'+((VisuIdFormaFSize_0002)*(1.00))+'rem; visibility:visible;}'
++'#IdFormaFSize_0003{ width:'+((VisuIdFormaFSize_0003)*(1.00))+'rem; visibility:hidden;}' 
++'#IdFormaFSize_0004{ width:'+((VisuIdFormaFSize_0004)*(1.00))+'rem; visibility:visible;}'
+
+
+
+    +''    
+    +''    
+    +''     
+ 
+    +'#PAGINA_0000{'
+    +'padding-left:0.5rem; padding-right:0.5rem; '
+    +'font-family:monospace;'
+    +'border:solid 0.15rem fuchsia; border:solid 0.15rem rgba(255, 0, 255, 0.075); '
+    +'border-bottom:solid 0.15rem rgba(255, 0, 255, 0.75); '
+    +'overflow:auto;'
+    +'}'    
+    +''    
+    +''    
+    +'#Visualizza_REQUEST_PAGINA_0000__ {}'    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +'#INPUT_NOME_FILE__{'
+    +'width:100%;'
+    +'background-color:yellow; background-color:rgba(255, 255, 0, 0.25);'
+    +'color:black; '
+    +'font-size:'+(FonteSize*0.50)+'rem; font-family:monospace;'
+    +'font-size:'+(IcoWpx*(1/3))+'px; font-family:monospace;'
+    +'border:solid 0.075rem #BBE3C3;'
+    +'}'    
+    +''    
+    +''    
+
+    +''    
+    +'button#STOP_REQUEST_PAGINA_0000__{background-color:white; border-color:transparent;}'    
+    +'button#GO_REQUEST_PAGINA_0000__{background-color:white; border-color:transparent;}'    
+    +'button#STOP_REQUEST_PAGINA_0000__ svg{opacity:1;}'    
+    +'button#GO_REQUEST_PAGINA_0000__ svg{opacity:1;}'    
+    +''    
+    +'#SVG_STOP_REQUEST_PAGINA_0000__{width:'+(IcoWpx*(2/3))+'px; height:'+(IcoWpx*(2/3))+'px;}'    
+    +''    
+    +'#SVG_GO_REQUEST_PAGINA_0000__{width:'+(IcoWpx*(2/3))+'px; height:'+(IcoWpx*(2/3))+'px;}'    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+    +''    
+
+
+
+    +'</style>'
+
+</script>
+
+
+
+
+
+<main id="MAIN">
+
+
+<section id="DETTAGLI_99X">
+
+ <div onclick="ChiudiDettagli99()" id="DETTAGLI_99_NO" style="display:inline-block;">
+        <svg id="DETTAGLI_99_NO_SVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+        </svg>
+    
+</div>
+
+<div onclick="ApriDettagli99()" id="DETTAGLI_99_SI" style="display:none; ">
+        <svg id="DETTAGLI_99_SI_SVG" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="teal" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+        
+</div>
+
+
+    
+<div id="ROLLING_DOT_0000">
+
+            <input id="IdFormaFSize_0000" type="range" value="15" step="0.49" min="0" max="49">
+            <input id="IdFormaFSize_0001" type="range" value="15" step="0.49" min="0" max="49">
+            <input id="IdFormaFSize_0002" type="range" value="49" step="0.49" min="0" max="49">
+            <input id="IdFormaFSize_0003" type="range" value="15" step="0.49" min="0" max="49">
+            <input id="IdFormaFSize_0004" type="range" value="49" step="0.49" min="0" max="49">
+
+
+</div>
+
+
+
+<div id="PAGE_CHIETA_0000" style="display:none;">
+	
+	
+	<section>
+	<article id="Inserisce_il_nome_del_file_da_cercare__">
+					<input type="text" placeholder="" id="INPUT_NOME_FILE__" value="w_a_0_0_PAGINA.htm">
+	
+	</article>
+	</section>
+				
+				
+				
+	<section>
+				
+	<button id="STOP_REQUEST_PAGINA_0000__" onclick="StopIntervalPrendeNomeFileDaInput_REQUEST_PAGINA_0000__()" style="cursor:pointer;">
+	
+	<svg id="SVG_STOP_REQUEST_PAGINA_0000__" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="red" class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16">
+	<path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z"/>
+	</svg>
+	
+	</button>
+	
+	
+	<button id="GO_REQUEST_PAGINA_0000__" onclick="GoIntervalPrendeNomeFileDaInput_REQUEST_PAGINA_0000__()" style="display:none; cursor:pointer;">
+	
+	<svg id="SVG_GO_REQUEST_PAGINA_0000__" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="green" class="bi bi-bookmark-dash-fill" viewBox="0 0 16 16">
+	<path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM6 6a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z"/>
+	</svg>
+	
+	</button>
+	</section>          
+				
+</div>
+
+
+    <div id="LETTURA_RANGE"></div>
+
+</section>
+
+
+
+
+<section>
+<article id="PAGINA_0000">
+
+
+<div id="Visualizza_REQUEST_PAGINA_0000__"><div class="spinmin"></div><span>Attendere...</span>
+
+<div id="CONTATORE"></div>
+<script>
+    LarghezzaFinestraPx=window.innerWidth/1;
+    AltezzaFinestraPx=window.innerHeight/1;
+
+    LarghezzaFinestraRem=window.innerWidth/16;
+    AltezzaFinestraRem=window.innerHeight/16;
+
+	LarghezzaBar=(LarghezzaFinestraRem*0.5);
+	DecrementoBar=0;
+
+
+function Contatore(){
+DifferenzaLarghezzaBarDecrementoBar=LarghezzaBar-DecrementoBar;
+
+document.getElementById("CONTATORE").innerHTML=''
++''
++'<style>'
++''
++'#CONTATORE{'
++''
++'width:'+(DifferenzaLarghezzaBarDecrementoBar)+'rem;'
++'height:1.00rem;'
++''
++'background-color:red;'
++'color:red;'
++'border-radius:0.50rem;'
++'}'
++''
++'</style>'
++''
++'';
+
+DecrementoBar=DecrementoBar+1;
+if(DecrementoBar>=30){
+StopContatore();
+document.getElementById("CONTATORE").innerHTML=''
++'<style>#CONTATORE{display:none;}</style>';
+
+};
+
+
+}; EseguiContatore=setInterval(Contatore, 1000);
+function StopContatore(){clearInterval(EseguiContatore)};
+
+
+
+</script>
+
+</div>
+
+
+
+
+
+
+
+</article>
+</section>
+
+
+
+
+
+<script>
+function ChiudiDettagli99(){
+// orange
+document.querySelector("#DETTAGLI_99_NO").style.display="none";
+document.querySelector("#DETTAGLI_99_SI").style.display="inline-block";
+document.querySelector("#ROLLING_DOT_0000").style.display="none";
+document.querySelector("#PAGE_CHIETA_0000").style.display="inline-block";
+
+};
+
+function ApriDettagli99(){
+// teal
+document.querySelector("#DETTAGLI_99_NO").style.display="inline-block";
+document.querySelector("#DETTAGLI_99_SI").style.display="none";
+document.querySelector("#ROLLING_DOT_0000").style.display="inline-block";
+document.querySelector("#PAGE_CHIETA_0000").style.display="none";
+
+};
+
+
+
+
+
+
+
+
+function LeggereInputRange00(){
+LeggereIdFormaFSize_0000=document.getElementById("IdFormaFSize_0000").value; // font-size
+LeggereIdFormaFSize_0001=document.getElementById("IdFormaFSize_0001").value; // 
+LeggereIdFormaFSize_0002=document.getElementById("IdFormaFSize_0002").value; // width
+LeggereIdFormaFSize_0003=document.getElementById("IdFormaFSize_0003").value; // 
+LeggereIdFormaFSize_0004=document.getElementById("IdFormaFSize_0004").value; // height
+
+LarghezzaPagina0000=(LarghezzaFinestraRem*(0.750+0.125+(0.125*0.75)+(0.125*0.00)));
+
+
+
+document.getElementById("LETTURA_RANGE").innerHTML=''
++'<style>'
++''
++'#PAGINA_0000{font-size:'+(LeggereIdFormaFSize_0000*0.150)+'rem;}'
++''
++''
++'#PAGINA_0000{width:'+( (LarghezzaFinestraRem*1.00) * ( LeggereIdFormaFSize_0002/50.5) )+'rem;}'
++''
++''
++'#PAGINA_0000{height:'+(LeggereIdFormaFSize_0004*2.000)+'rem;}'
++''
++''
++''
++'</style>'
++''
++''
+;
+
+
+}; EseguiLeggereInputRange00 = setInterval(LeggereInputRange00,1);
+
+
+</script>
+
+</main>
+
+
+<script>
+
+
+function PrendeNomeFileDaInput_REQUEST_PAGINA_0000(){
+
+// NomeDelFileDaInput__=document.getElementById("INPUT_NOME_FILE__").value;
+
+
+function FileEsiste(NomeDelFile)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', NomeDelFile, false);
+    http.send();
+    return http.status!=404;
+}
+NomeDelFileDaInput__=document.getElementById("INPUT_NOME_FILE__").value;
+
+CiSei=FileEsiste(NomeDelFileDaInput__);
+
+CiSeiEsiste=0;
+if(CiSei){
+// alert("Il file esiste");
+CiSeiEsiste=1;
+}
+else
+{
+// alert("Il file non esiste");
+CiSeiEsiste=0;
+}
+
+
+if(CiSeiEsiste===0){NomeDelFileDaInput__="";}
+
+
+if(NomeDelFileDaInput__!==""){
+
+DirectoryDove_File_REQUEST_PAGINA_0000__="";
+File_REQUEST_PAGINA_0000__=NomeDelFileDaInput__;
+UltimoAggiornamento__=new Date();
+
+File_REQUEST_PAGINA_0000__ = DirectoryDove_File_REQUEST_PAGINA_0000__+File_REQUEST_PAGINA_0000__ + "?"+(new Date().getTime()) + (Math.random()) ; 
+Richiedo_REQUEST_PAGINA_0000__ = new XMLHttpRequest();
+
+Richiedo_REQUEST_PAGINA_0000__.open("GET",File_REQUEST_PAGINA_0000__,false);
+Richiedo_REQUEST_PAGINA_0000__.onreadystatechange = function(){
+Trovato_REQUEST_PAGINA_0000__ = Richiedo_REQUEST_PAGINA_0000__.responseText;
+
+
+/* la faccina ascii art */
+//SpinnerVirtuale__="<div><div style='background-color:orange;color:black;font-size:1.500rem!important; display:inline-block;  border-radius:50%; '>&#58;&#41;</div></div>";
+SpinnerVirtuale__="";
+
+document.getElementById("Visualizza_REQUEST_PAGINA_0000__").innerHTML=
+`
+${Trovato_REQUEST_PAGINA_0000__}
+
+${SpinnerVirtuale__}
+
+`;
+
+} ; Richiedo_REQUEST_PAGINA_0000__.send();
+
+} else 
+{ 
+document.getElementById("Visualizza_REQUEST_PAGINA_0000__").innerHTML="File non trovato.";
+};
+
+};
+EsegueIntervalPrendeNomeFileDaInput_REQUEST_PAGINA_0000__ = setInterval(PrendeNomeFileDaInput_REQUEST_PAGINA_0000, 3000);
+
+
+
+
+
+function StopIntervalPrendeNomeFileDaInput_REQUEST_PAGINA_0000__(){
+// alert("Stop!");
+
+clearInterval(EsegueIntervalPrendeNomeFileDaInput_REQUEST_PAGINA_0000__);
+
+document.querySelector("#STOP_REQUEST_PAGINA_0000__").style.display="none";
+document.querySelector("#GO_REQUEST_PAGINA_0000__").style.display="inline-block";
+
+
+};
+
+
+function GoIntervalPrendeNomeFileDaInput_REQUEST_PAGINA_0000__(){
+// alert("Go!");
+
+EsegueIntervalPrendeNomeFileDaInput_REQUEST_PAGINA_0000__ = setInterval(PrendeNomeFileDaInput_REQUEST_PAGINA_0000, 3000);
+
+document.querySelector("#STOP_REQUEST_PAGINA_0000__").style.display="inline-block";
+document.querySelector("#GO_REQUEST_PAGINA_0000__").style.display="none";
+
+
+
+};
+
+
+
+</script>
+
+
+<!--DETECT S.O. E DEVICE-->
+<section style="visibility:visible;">
+<article style="text-align:center;margin-top:2rem;">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.5/platform.min.js"></script> 
+<script> console.log(platform); document.write("<div style='font-size:small;font-family:monospace;font-variant:small-caps;text-align:center;'>you are using " + platform.name + " v" + platform.version + " on " + platform.os); +"</div>" </script> 
+<script> if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){/* true for mobile device */ document.write('<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16"> <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/> <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/> </svg>'); document.write("mobile device"); }else{/* false for not mobile device */ document.write('<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16"> <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/></svg>'); document.write(" NOT MOBILE DEVICE "); } </script> 
+<span id="result" style="font-size:x-small;font-variant:small-caps;"></span> 
+<script>"use strict"; function displayWindowSize(){ var w = document.documentElement.clientWidth;var h = document.documentElement.clientHeight;var wFinestraWIDTH = document.documentElement.clientWidth;var hFinestraHEIGHT = document.documentElement.clientHeight;document.getElementById("result").innerHTML = " " + wFinestraWIDTH + "x" + hFinestraHEIGHT +" <span style='font-size:medium;'>"+(wFinestraWIDTH/16)+"rem "+" x "+(hFinestraHEIGHT/16)+"rem </span>";}window.addEventListener("resize", displayWindowSize);displayWindowSize();+" "</script>
+</article>
+</section>
+
+
+
+
+</body>
+</html>
+
+
+
+<!--
+<pre>
+
+
+Color    RGBA
+aqua    rgba(0, 255, 255, 1)
+black    rgba(0, 0, 0, 1)
+blue    rgba(0, 0, 255, 1)
+fuchsia    rgba(255, 0, 255, 1)
+gray    rgba(128, 128, 128, 1)
+green    rgba(0, 255, 0, 1)
+lime    rgba(0, 255, 0, 1)
+maroon    rgba(128, 0, 0, 1)
+navy    rgba(0, 0, 128, 1)
+olive    rgba(128, 128, 0, 1)
+orange    rgba(255, 165, 0, 1)
+purple    rgba(255, 0, 255, 1)
+red    rgba(255, 0, 0, 1)
+silver    rgba(192, 192, 192, 1)
+teal    rgba(0, 128, 128, 1)
+white    rgba(255, 255, 255, 1)
+yellow    rgba(255, 255, 0, 1)
+
+
+brown    rgba(128, 64, 0, 1)
+gold    rgba(255, 215, 0, 1)
+skyblue    rgba(135, 206, 235, 1)
+lightgreen    rgba(144, 238, 144, 1)
+lightblue    rgba(173, 216, 230, 1)
+
+</pre>
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+
+
+/*
+
+function FileEsiste(NomeDelFile)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', NomeDelFile, false);
+    http.send();
+    return http.status!=404;
+}
+NomeDelFileDaInput__=document.getElementById("INPUT_NOME_FILE__").value;
+
+// CiSei=FileEsiste("Testo.txt");
+
+CiSei=FileEsiste(NomeDelFileDaInput__);
+
+// alert(CiSei);
+
+CiSeiEsiste=0;
+if(CiSei){
+// alert("Il file esiste");
+CiSeiEsiste=1;
+}
+else
+{
+// alert("Il file non esiste");
+CiSeiEsiste=0;
+}
+
+CiSeiEsiste=1;
+
+*/
+
+-->
+
+
+
+
+<!--
+<script>
+
+function PrendeNomeFileDaInput_01(){
+NomeDelFileDaInput__=document.getElementById("INPUT_NOME_FILE__").value;
+
+if(NomeDelFileDaInput__!==""){
+
+DirectoryDove_File_01__="";
+File_01__=NomeDelFileDaInput__;
+UltimoAggiornamento__=new Date();
+
+File_01__ = DirectoryDove_File_01__+File_01__ + "?"+(new Date().getTime()) + (Math.random()) ; 
+Richiedo_01__ = new XMLHttpRequest();
+
+Richiedo_01__.open("GET",File_01__,false);
+Richiedo_01__.onreadystatechange = function(){
+Trovato_01__ = Richiedo_01__.responseText;
+
+
+/* la faccina ascii art */
+SpinnerVirtuale__="<div><div style='background-color:orange;color:black;font-size:1.500rem!important; display:inline-block;  border-radius:50%; '>&#58;&#41;</div></div>";
+SpinnerVirtuale__="";
+
+document.getElementById("VisualizzaCommento_01__").innerHTML=
+`
+
+${Trovato_01__}
+
+${SpinnerVirtuale__}
+
+`;
+
+} ; Richiedo_01__.send();
+
+
+
+
+} else {};
+
+
+};
+EsegueIntervalPrendeNomeFileDaInput_01__ = setInterval(PrendeNomeFileDaInput_01, 3000);
+
+</script>
+-->
+
+
+
+
+<!--
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+
+-->
+
+
