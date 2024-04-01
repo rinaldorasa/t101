@@ -1,0 +1,250 @@
+
+<DIV ID="PUNTO" STYLE="POSITION:FIXED; TOP:0.5REM; RIGHT:0.5REM;">HELLO!!!</DIV>
+
+
+<PRE>
+
+
+A
+B
+C
+D
+E
+F
+G
+H
+I
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+Z
+A
+B
+C
+D
+E
+F
+G
+H
+I
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+Z
+A
+B
+C
+D
+E
+F
+G
+H
+I
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+Z
+A
+B
+C
+D
+E
+F
+G
+H
+I
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+Z
+A
+B
+C
+D
+E
+F
+G
+H
+I
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+Z
+A
+B
+C
+D
+E
+F
+G
+H
+I
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+Z
+A
+B
+C
+D
+E
+F
+G
+H
+I
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+Z
+A
+B
+C
+D
+E
+F
+G
+H
+I
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+Z
+A
+B
+C
+D
+E
+F
+G
+H
+I
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+Z
+
+</PRE>
+
+
+<script>
+  let PRECE_SCROLL=0; // posizione numero precedente
+  let ADESS_SCROLL;   // posizione attuale
+  // definizione di variabili
+  // interessate per controllo
+  // se esiste un movimento
+  // della pagina
+
+function SCROLL(){ 
+  currentScrollY = window.scrollY; // rileva pos attuale
+  ADESS_SCROLL= currentScrollY;    // in alias 
+
+    // il condizionale esegue un
+    // confronto
+    // se uguale vuol dire NO scroll
+    // se differente SI scroll pagina
+    if(ADESS_SCROLL===PRECE_SCROLL){
+    document.querySelector("#PUNTO").style.visibility="visible";
+    }else
+    {  
+    document.querySelector("#PUNTO").style.visibility="hidden";
+    };
+
+    PRECE_SCROLL=currentScrollY; // memorizza valore attuale
+
+  }; // chiusura della funzione
+
+SCROLL_SETINT=setInterval(SCROLL, 1000);
+
+//                         /\
+//                         ||
+//                         ||
+// funzione che sottopone sotto controllo
+// ogni 1sec la posizione dello scroll
+// di pagina
+//
+
+
+  function STOP_SCROLL(){
+  alert("clearInterval");
+  clearInterval( SCROLL_SETINT );
+  };
+//
+// attivato da apposito button onclick
+//
+
+
+</script>
+
+
